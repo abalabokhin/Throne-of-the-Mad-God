@@ -1,0 +1,168 @@
+IF
+    Global("Prep","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Prep","ACIL13",1)
+END
+
+IF
+    PartyHasItem("ac#mg131")  // Korolnor Jewel
+    Global("Gem01","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem01","ACIL13",1)
+        DisplayStringHead("Gem01",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg131")  // Korolnor Jewel
+        DestroyItem("AC#mg131")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST1",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg132")  // Korolnor Jewel
+    Global("Gem02","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem02","ACIL13",1)
+        DisplayStringHead("Gem02",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg132")  // Korolnor Jewel
+        DestroyItem("AC#mg132")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST2",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg133")  // Korolnor Jewel
+    Global("Gem03","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem03","ACIL13",1)
+        DisplayStringHead("Gem03",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg133")  // Korolnor Jewel
+        DestroyItem("AC#mg133")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST3",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg134")  // Korolnor Jewel
+    Global("Gem04","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem04","ACIL13",1)
+        DisplayStringHead("Gem04",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg134")  // Korolnor Jewel
+        DestroyItem("AC#mg134")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST4",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg135")  // Korolnor Jewel
+    Global("Gem05","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem05","ACIL13",1)
+        DisplayStringHead("Gem05",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg135")  // Korolnor Jewel
+        DestroyItem("AC#mg135")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST5",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg136")  // Korolnor Jewel
+    Global("Gem06","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem06","ACIL13",1)
+        DisplayStringHead("Gem06",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg136")  // Korolnor Jewel
+        DestroyItem("AC#mg136")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST6",StartDialogueNoSet([PC]))
+END
+
+IF
+    PartyHasItem("ac#mg137")  // Korolnor Jewel
+    Global("Gem07","ACIL13",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Gem07","ACIL13",1)
+        DisplayStringHead("Gem07",@3019)  // As you grasp it, the gemstone disintegrates into shimmering dust.
+        TakePartyItem("AC#mg137")  // Korolnor Jewel
+        DestroyItem("AC#mg137")  // Korolnor Jewel
+        Wait(1)
+        ActionOverride("AC#13ST7",StartDialogueNoSet([PC]))
+END
+
+IF
+    Global("DoorSword","ACIL13",0)
+    OR(2)
+        Global("AC#Gem","ACIL13",9)
+        Global("AC#Response_right","ACIL13",9)
+THEN
+    RESPONSE #100
+        StartCutSceneMode()
+        SetGlobal("DoorSword","ACIL13",1)
+        CreateCreature("AC#SWO13",[828.259],SW)  // Sword
+        Wait(3)
+        ActionOverride("AC#SWO13",DropItem("AC#KEY13",[828.259]))  // Sword Key
+        SmallWait(1)
+        ActionOverride("AC#SWO13",DestroySelf())
+        CreateVisualEffect("ICPRAYI",[828.259])
+        EndCutSceneMode()
+END
+
+IF
+    Global("Summon_Emeraldgolem","ACIL13",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Summon_Emeraldgolem","ACIL13",2)
+        OpenDoor("DOOR03")
+        Wait(1)
+        CreateCreature("AC#GOLSM",[1054.179],NW)  // Emerald Golem
+END
+
+IF
+    Global("AC#Response_right","ACIL13",7)
+    Global("AC#Gem","ACIL13",7)
+THEN
+    RESPONSE #100
+        Wait(1)
+        SetGlobal("AC#Response_right","ACIL13",8)
+        ActionOverride("AC#13ST8",StartDialogueNoSet(LastTrigger))
+END
+
+IF
+    GlobalLT("AC#Response_right","ACIL13",7)
+    Global("AC#Gem","ACIL13",7)
+    Dead("AC#GOLSM")  // Emerald Golem
+THEN
+    RESPONSE #100
+        Wait(1)
+        SetGlobal("AC#Gem","ACIL13",8)
+        ActionOverride("AC#13ST8",StartDialogueNoSet(LastTrigger))
+END
+
+IF
+    GlobalLT("AC#Response_right","ACIL13",7)
+    Global("AC#Gem","ACIL13",7)
+    Global("Last_Response_right","ACIL13",1)
+THEN
+    RESPONSE #100
+        Wait(1)
+        SetGlobal("AC#Gem","ACIL13",8)
+        ActionOverride("AC#13ST8",StartDialogueNoSet(LastTrigger))
+END
+
+IF
+    Global("Door_Riddle_Intro","ACIL13",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Door_Riddle_Intro","ACIL13",2)
+        OpenDoor("DOOR04")
+        TriggerActivation("Dwarf_01",FALSE)
+        ActionOverride("AC#13DO1",DestroySelf())
+END
+

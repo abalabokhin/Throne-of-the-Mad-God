@@ -1,0 +1,40 @@
+IF
+    See([0.0.ORC])
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (Hast)
+THEN
+    RESPONSE #100
+        Spell([0.0.ORC],WIZARD_HASTE)  // SPWI305.SPL (Hast)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI221.SPL (Strahl der Schwächung)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI221.SPL (Strahl der Schwächung)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_HORROR)  // SPWI205.SPL (Schrecken)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_HORROR)  // SPWI205.SPL (Schrecken)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

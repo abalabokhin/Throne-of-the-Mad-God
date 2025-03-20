@@ -1,0 +1,62 @@
+IF
+    HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (Gift verlangsamen)
+    See("AC#MGFGK")  // Madugg
+    StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+    RESPONSE #100
+        Spell("AC#MGFGK",CLERIC_SLOW_POISON)  // Madugg
+END
+
+IF
+    HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+    See("AC#MGFGK")  // Madugg
+    HPPercentLT(LastSeenBy(Myself),100)
+THEN
+    RESPONSE #100
+        Spell("AC#MGFGK",CLERIC_CURE_MEDIUM_WOUNDS)  // Madugg
+END
+
+IF
+    DifficultyGT(EASY)
+    See("AC#MGFGK")  // Madugg
+    HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (Gesang)
+    OR(2)
+        Global("MaduggFight","ACIL15",1)
+        See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        Spell("AC#MGFGK",CLERIC_CHANT)  // Madugg
+END
+
+IF
+    See("AC#MGFGK")  // Madugg
+    HaveSpell(CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Magie bannen)
+    OR(7)
+        StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+        StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+        StateCheck(LastSeenBy(Myself),STATE_PANIC)
+        StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+        StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+        StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+        StateCheck(LastSeenBy(Myself),STATE_BLIND)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Magie bannen)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (Personen oder Säugetiere bezaubern)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),CLERIC_CHARM_PERSON)  // SPPR204.SPL (Personen oder Säugetiere bezaubern)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastSeenBy(Myself),12)
+END
+

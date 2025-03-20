@@ -1,0 +1,222 @@
+/*
+IF
+    Global("AC#MG_Efreet","GLOBAL",0)
+    HasItem("AC#MGKYK",Myself)  // Gezackter Schlüssel
+THEN
+    RESPONSE #100
+        DestroyItem("AC#MGKYK")  // Gezackter Schlüssel
+END
+*/
+
+IF
+    Detect([PC])
+    !See([PC])
+    HaveSpell(WIZARD_DETECT_INVISIBILITY)  // SPWI203.SPL (Unsichtbares entdecken)
+THEN
+    RESPONSE #100
+        SetGlobal("Detect","LOCALS",1)
+        Spell(Myself,WIZARD_DETECT_INVISIBILITY)  // SPWI203.SPL (Unsichtbares entdecken)
+END
+
+IF
+    Heard([ANYONE],90)
+    Global("SpellTrigger","LOCALS",0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,39968)  // Zauberauslöser: Ausgelöst
+        ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)  // SPWI418.SPL (Roter Feuerschild)
+        ReallyForceSpell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Kleinere Kugel der Unverwundbarkeit)
+        SetGlobal("SpellTrigger","LOCALS",1)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    HaveSpellRES("AC#NGAS")  // Gase neutralisieren
+    OR(4)
+        SpellCast([GOODCUTOFF],WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+        SpellCast([GOODCUTOFF],WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+        SpellCast([GOODCUTOFF],WIZARD_INCENDIARY_CLOUD)  // SPWI810.SPL (Flammende Wolke)
+        SpellCast([GOODCUTOFF],WIZARD_DEATH_FOG)  // SPWI614.SPL (Tödlicher Nebel)
+THEN
+    RESPONSE #100
+        SpellRES("AC#NGAS",Myself)  // Gase neutralisieren
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_SHADOW_DOOR)  // SPWI505.SPL (Phantomtor)
+THEN
+    RESPONSE #100
+        Spell(Myself,WIZARD_SHADOW_DOOR)  // SPWI505.SPL (Phantomtor)
+END
+
+IF
+    Allegiance(Myself,ENEMY)
+    See([GOODCUTOFF.0.0.0.0.SUMMONED])
+    HaveSpell(WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
+END
+
+IF
+    See([EVILCUTOFF.0.DWARF])
+    HaveSpell(WIZARD_RESIST_FEAR)  // SPWI210.SPL (Furcht bannen)
+    StateCheck(LastSeenBy(Myself),STATE_PANIC)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),WIZARD_RESIST_FEAR)  // SPWI210.SPL (Furcht bannen)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_FLAME_ARROW)  // SPWI303.SPL (Flammenpfeil)
+    OR(3)
+        See(NearestEnemyOfType([PC.0.0.BARD_ALL]))
+        See(NearestEnemyOfType([PC.0.0.LONG_BOW]))
+        See(NearestEnemyOfType([PC.0.0.SORCERER]))
+    !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    !HasBounceEffects(LastSeenBy(Myself))
+THEN
+    RESPONSE #100
+        Continue()
+    RESPONSE #80
+        Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)  // SPWI303.SPL (Flammenpfeil)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (Melfs Säurepfeil)
+    OR(3)
+        See(NearestEnemyOfType([PC.0.0.BARD_ALL]))
+        See(NearestEnemyOfType([PC.0.0.LONG_BOW]))
+        See(NearestEnemyOfType([PC.0.0.SORCERER]))
+    !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    !HasBounceEffects(LastSeenBy(Myself))
+THEN
+    RESPONSE #100
+        Continue()
+    RESPONSE #80
+        Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (Melfs Säurepfeil)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    OR(3)
+        See(NearestEnemyOfType([PC.0.0.BARD_ALL]))
+        See(NearestEnemyOfType([PC.0.0.LONG_BOW]))
+        See(NearestEnemyOfType([PC.0.0.SORCERER]))
+    !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+    !CheckStatGT(LastSeenBy(Myself),0,PICKPOCKETMTPBONUS)
+    !HasBounceEffects(LastSeenBy(Myself))
+    Global("MagicMissile","LOCALS",0)
+THEN
+    RESPONSE #100
+        Continue()
+    RESPONSE #80
+        SetGlobal("MagicMissile","LOCALS",1)
+        DisplayString(Myself,8635)  // Geringerer Kettenzauber aktiviert
+        ReallyForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+        ReallyForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Gefühl: Hoffnungslosigkeit)
+    !StateCheck(LastSeenBy(Myself),STATE_PANIC)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Gefühl: Hoffnungslosigkeit)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_HORROR)  // SPWI205.SPL (Schrecken)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_HORROR)  // SPWI205.SPL (Schrecken)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+THEN
+    RESPONSE #100
+        Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+    !StateCheck(LastSeenBy(Myself),STATE_HARMLESS)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_SLOW)  // SPWI312.SPL (Verlangsamen)
+    !StateCheck(LastSeenBy(Myself),STATE_HARMLESS)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_SLOW)  // SPWI312.SPL (Verlangsamen)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_CONFUSION)  // SPWI401.SPL (Verwirrung)
+    !StateCheck(LastSeenBy(Myself),STATE_HARMLESS)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_CONFUSION)  // SPWI401.SPL (Verwirrung)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Kleinere Kugel der Unverwundbarkeit)
+THEN
+    RESPONSE #100
+        Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Kleinere Kugel der Unverwundbarkeit)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (Personen bezaubern)
+    !StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (Personen bezaubern)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

@@ -1,0 +1,13 @@
+IF
+    NumberOfTimesTalkedTo(0)
+    Detect([PC])
+THEN
+    RESPONSE #100
+        ClearAllActions()
+        StartCutSceneMode()
+        MoveViewObject("AC#LANCA",INSTANT)  // Bryam Lancameth
+        Wait(1)
+        MoveToPoint([1255.1648])
+        StartDialogueNoSet([PC])
+END
+

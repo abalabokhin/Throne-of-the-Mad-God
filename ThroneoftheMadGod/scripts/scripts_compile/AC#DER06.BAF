@@ -1,0 +1,69 @@
+IF
+    HasItem("BOLT04",Myself)  // Beißender Bolzen
+    OR(3)
+        See([PC.0.0.LONG_BOW])
+        See([PC.0.0.CLERIC_ALL])
+        See([PC.0.0.BARD_ALL])
+    !StateCheck(LastSeenBy(Myself),STATE_POISONED)
+    CheckStatLT(LastSeenBy(Myself),1,STONESKINS)
+THEN
+    RESPONSE #100
+        EquipRanged()
+        SelectWeaponAbility(SLOT_AMMO1,0)
+        AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+    HasItem("AC#BOLT1",Myself)  // Bolzen der Schwächung
+    OR(3)
+        See([PC.0.0.FIGHTER_ALL])
+        See([PC.0.0.RANGER_ALL])
+        See([PC.0.0.PALADIN_ALL])
+    CheckStatGT(LastSeenBy(Myself),10,STR)
+THEN
+    RESPONSE #100
+        EquipRanged()
+        SelectWeaponAbility(SLOT_AMMO,0)
+        AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+    Range(NearestEnemyOf(Myself),15)
+THEN
+    RESPONSE #30
+        RunAwayFrom(NearestEnemyOf(Myself),15)
+    RESPONSE #50
+        RunAwayFrom(NearestEnemyOf(Myself),6)
+        EquipRanged()
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+    RESPONSE #50
+        EquipRanged()
+        AttackReevaluate(NearestEnemyOf(Myself),15)
+    RESPONSE #50
+        EquipMostDamagingMelee()
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(NearestEnemyOf(Myself),15)
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(SecondNearestEnemyOf(Myself),15)
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(ThirdNearestEnemyOf(Myself),15)
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(FourthNearestEnemyOf(Myself),15)
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(FifthNearestEnemyOf(Myself),15)
+    RESPONSE #10
+        EquipRanged()
+        AttackReevaluate(SixthNearestEnemyOf(Myself),15)
+END
+

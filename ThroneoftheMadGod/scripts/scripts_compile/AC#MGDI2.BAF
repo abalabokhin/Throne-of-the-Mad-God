@@ -1,0 +1,28 @@
+/*
+IF
+    HP(Myself,1)
+    Global("DiinDeath","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDeath","ACIL19",1)
+        StartDialogueNoSet([PC])
+END
+*/
+
+IF
+    GlobalGT("Teleport","LOCALS",0)
+    HasItem("invulner",Myself)  // Ring
+THEN
+    RESPONSE #100
+        DestroyItem("invulner")  // Ring
+        Continue()
+END
+
+IF
+    Die()
+THEN
+    RESPONSE #50
+        PlaySound("AC#MGDI4")
+        ReallyForceSpellDeadRES("AC#MGDD",Myself)  // No such index
+END
+

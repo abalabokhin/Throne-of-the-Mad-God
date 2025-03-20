@@ -1,0 +1,14 @@
+IF
+    HPLT(Myself,10)
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,49970)  // Zu Eurem Schrecken müsst Ihr mit ansehen, wie sich der Körper des Trolls aufbäumt und zwei kleinere Trolle aus seinem Körper hervorbrechen.
+        SmallWait(1)
+        CreateVisualEffectObject("ICCSWOUI",Myself)
+        Wait(1)
+        CreateCreatureObject("AC#MFTS2",Myself,0,0,0)  // Troll
+        CreateCreatureObject("AC#MFTS2",Myself,0,0,0)  // Troll
+        CreateVisualEffectObject("ICCSWOUI",Myself)
+        DestroySelf()
+END
+

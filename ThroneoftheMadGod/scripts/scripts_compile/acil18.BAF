@@ -1,0 +1,239 @@
+IF
+    Global("Prep","ACIL18",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Prep","ACIL18",1)
+        AmbientActivate("Skelettin01GU",FALSE)
+        AmbientActivate("Skelettin02GU",FALSE)
+        AmbientActivate("Holy01",FALSE)
+        AmbientActivate("Holy02",FALSE)
+        AmbientActivate("Holy03",FALSE)
+        AmbientActivate("Holy04",FALSE)
+        AmbientActivate("Holy05",FALSE)
+        AmbientActivate("Holy06",FALSE)
+        AmbientActivate("Holy07",FALSE)
+        AmbientActivate("Holy08",FALSE)
+        AmbientActivate("Holy09",FALSE)
+        AmbientActivate("Holy10",FALSE)
+        AmbientActivate("Karlyndoorfire_01",FALSE)
+        AmbientActivate("Karlyndoorfire_02",FALSE)
+        CreateCreature("AC#MG18S",[1598.667],NWW)  // Sklave
+        CreateCreature("AC#MG181",[1567.559],NW)  // Sklave
+        CreateCreature("AC#MG182",[1520.613],NE)  // Sklave
+        CreateCreature("AC#MG183",[1512.650],SWW)  // Sklave
+        CreateCreature("AC#MG184",[1608.632],S)  // Sklave
+        CreateCreature("AC#MG185",[1672.648],SW)  // Sklave
+        CreateCreature("AC#MG186",[1604.687],SE)  // Sklave
+        CreateCreature("AC#MG187",[171.648],N)  // Sklave
+END
+
+IF
+    Global("DogWizardFight","ACIL18",1)
+    Global("DifficultEncounters","ACIL18",0)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        CreateCreature("AC#DER05",[1644.887],NW)  // Derro
+        CreateCreature("AC#DER05",[1549.968],N)  // Derro
+        CreateCreature("AC#DER05",[1097.675],SSE)  // Derro
+        CreateCreature("AC#DER05",[1386.460],S)  // Derro
+        SetGlobal("DifficultEncounters","ACIL18",1)
+END
+
+IF
+	Global("AC#ACIL18_Elevator_OPEN","GLOBAL",0)
+	OpenState("DOOR01",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#ACIL18_Elevator_OPEN","GLOBAL",1)
+END
+
+IF
+	Global("Door07_OPEN","ACIL18",1)
+	OpenState("DOOR07",FALSE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door07_OPEN","ACIL18",0)
+		CloseDoor("Door08")
+END
+
+IF
+	Global("Door07_OPEN","ACIL18",0)
+	OpenState("DOOR07",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Door07_OPEN","ACIL18",1)
+		OpenDoor("Door08")
+END
+
+IF
+	OpenState("Axes",TRUE)
+	PartyHasItem("AC#MG18X")  //  Axt
+THEN
+	RESPONSE #100
+		TakePartyItem("AC#MG18X")  //  Axt
+END
+
+IF
+	Global("ClangeddinDoor","ACIL18",0)
+	OpenState("Axes",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("ClangeddinDoor","ACIL18",1)
+		AddexperienceParty(4000)
+		OpenDoor("Clangeddin_door")
+		AddJournalEntry(@19002,QUEST)
+END
+
+IF
+    Global("DiinDoor_OPEN","ACIL18",0)
+    OpenState("Diin_door",TRUE)
+    OpenState("Clangeddin_door",TRUE)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDoor_OPEN","ACIL18",1)
+        DisplayString("Diin_door",@3015)
+        CloseDoor("Clangeddin_door")
+END
+
+IF
+    Global("DiinDoor_OPEN","ACIL18",1)
+    OpenState("Diin_door",FALSE)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDoor_OPEN","ACIL18",0)
+        DisplayString("Diin_door",@3016)
+        OpenDoor("Clangeddin_door")
+END
+
+IF
+	Global("LancaDead","ACIL18",0)
+	Dead("AC#LANCA")
+THEN
+	RESPONSE #100
+		SetGlobal("LancaDead","ACIL18",1)
+		AddJournalEntry(@52002,QUEST)
+END
+
+IF
+	Global("LancaDead","ACIL18",1)
+	PartyHasItem("AC#HEAD1")
+THEN
+	RESPONSE #100
+		SetGlobal("LancaDead","ACIL18",2)
+		AddJournalEntry(@52003,QUEST)
+END
+
+IF
+	Global("MadGodInfo","ACIL18",0)
+	Dead("AC#LANCA")
+THEN
+	RESPONSE #100
+		SetGlobal("MadGodInfo","ACIL18",1)
+		AddJournalEntry(@19003,QUEST)
+END
+
+IF
+    GlobalGT("ClangeddinDoor","ACIL18",0)
+    GlobalLT("SpawnFiends","ACIL18",10)
+    Delay(6)
+THEN
+    RESPONSE #100
+        IncrementGlobal("SpawnFiends","ACIL18",1)
+        CreateCreatureEffect("AC#MGSHF","SPFLESHS",[2126.314],SWW)  // Schattenscheusal
+        Continue()
+    RESPONSE #100
+        IncrementGlobal("SpawnFiends","ACIL18",1)
+        CreateCreatureEffect("AC#MGAL2","SPFLESHS",[2126.314],SWW)  // Allip
+        Continue()
+END
+
+IF
+	Global("DogWizDead","ACIL18",0)
+	CombatCounter(0)
+	Dead("AC#DOGWI")  // Dokuriingor
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("DogWizDead","ACIL18",1)
+		StartCutSceneMode()
+		StartCutScene("AC#MG18C")
+END
+
+IF
+	Global("Karlyn","ACIL18",0)
+	Global("DogWizDead","ACIL18",10)
+THEN
+	RESPONSE #100
+		SetGlobal("Karlyn","ACIL18",1)
+		PlaySound("EFF_P94")
+		AmbientActivate("Holy01",FALSE)
+		AmbientActivate("Holy02",FALSE)
+		AmbientActivate("Holy03",FALSE)
+		AmbientActivate("Holy04",FALSE)
+		AmbientActivate("Holy05",FALSE)
+		AmbientActivate("Holy06",FALSE)
+		AmbientActivate("Holy07",FALSE)
+		AmbientActivate("Holy08",FALSE)
+		AmbientActivate("Holy09",FALSE)
+		AmbientActivate("Holy10",FALSE)
+		//CreateCreature("AC#MGKY1",[853.336],13)  // Geist von Karlyn Kuldelver
+END
+
+IF
+    Global("LancamethsParty","ACIL18",0)
+    Dead("AC#DOGWI")  // Dokuriingor
+THEN
+    RESPONSE #100
+        SetGlobal("LancamethsParty","ACIL18",1)
+        CreateCreature("AC#MGNH2",[684.1191],NE)  // Geist von Nhair Ebendar
+        CreateCreature("AC#MGIR2",[708.1233],NE)  // Geist Iremars
+        CreateCreature("AC#MGLD2",[794.1269],NE)  // Maid Sternendorn
+END
+
+IF
+    Global("DropRing","ACIL18",1)
+THEN
+    RESPONSE #100
+        Wait(2)
+        CreateVisualEffect("AC#MG18R",[708.1233])
+        SetGlobal("DropRing","ACIL18",2)
+END
+
+IF
+    Global("FilledSecretdoorskull01","ACIL18",1)
+    Global("FilledSecretdoorskull02","ACIL18",1)
+    Global("KarlynGraveDoor","ACIL18",0)
+THEN
+    RESPONSE #100
+        SetGlobal("KarlynGraveDoor","ACIL18",1)
+        PlaySound("act_09")
+        DetectSecretDoor("Karlyn_door")
+END
+
+IF
+	Contains("AC#MG18A","Secretdoorskull01")  // Feuerstein und Zunder
+	Global("FilledSecretdoorskull01","ACIL18",0)
+THEN
+	RESPONSE #100
+		SetGlobal("FilledSecretdoorskull01","ACIL18",1)
+		ActionOverride("Secretdoorskull01",DestroyItem("AC#MG18A"))  // Feuerstein und Zunder
+		PlaySound("EFF_M33")
+		AmbientActivate("Karlyndoorfire_01",TRUE)
+		ActionOverride("Secretdoorskull01",DisplayStringHead(Myself,@3006))  // Das Anthrazit beginnt mit heller Flamme zu brennen.
+		AddexperienceParty(100)
+END
+
+IF
+	Contains("AC#MG18A","Secretdoorskull02")  // Feuerstein und Zunder
+	Global("FilledSecretdoorskull02","ACIL18",0)
+THEN
+	RESPONSE #100
+		SetGlobal("FilledSecretdoorskull02","ACIL18",1)
+		ActionOverride("Secretdoorskull02",DestroyItem("AC#MG18A"))  // Feuerstein und Zunder
+		PlaySound("EFF_M33")
+		AmbientActivate("Karlyndoorfire_02",TRUE)
+		ActionOverride("Secretdoorskull02",DisplayStringHead(Myself,@3006))  // Das Anthrazit beginnt mit heller Flamme zu brennen.
+		AddexperienceParty(100)
+END
+

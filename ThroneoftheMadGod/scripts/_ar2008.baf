@@ -1,0 +1,13 @@
+IF
+	Global("AC#CreatePriest","AR2008",0)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#CreatePriest","AR2008",1)
+        CreateCreature("AC#MG002",[798.574],4) // Waukeenar Priest
+END
+
+
+
+
+

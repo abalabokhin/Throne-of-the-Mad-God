@@ -1,0 +1,28 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,6)
+	Global("CircleOfMagic","ACIL1W",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CircleOfMagic","ACIL1W",1)
+		DisplayString(Myself,@5)  // Das Wasser dieser Quelle scheint plötzlich ganz klar und rein zu sein.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,6)
+	Global("CircleOfMagic","ACIL1W",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@6)  // Ihr trinkt einen Schluck und f�hlt Euch gesund und erfrischt.
+		ReallyForceSpell(LastTrigger,CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,6)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@7)  // Ihr m�sst n�her herantreten, wenn Ihr aus dem Becken trinken wollt.
+END
+

@@ -1,0 +1,37 @@
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("CastEarthquake","LOCALS",0)
+	GlobalTimerExpired("EarthquakeTimer","LOCALS")
+THEN
+	RESPONSE #100
+		Recoil()
+		ReallyForceSpellRES("AC#MGFG",NearestEnemyOf(Myself))  // Stampfen
+		SetGlobal("CastEarthquake","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("EarthquakeTimer","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobal("CastEarthquake","LOCALS",0)
+		SetGlobalTimer("EarthquakeTimer","LOCALS",FIVE_ROUNDS)
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+

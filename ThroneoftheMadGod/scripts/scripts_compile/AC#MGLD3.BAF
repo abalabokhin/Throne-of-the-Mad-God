@@ -1,0 +1,16 @@
+IF
+    Dead("AC#DOGWI")  // Dokuriingor
+THEN
+    RESPONSE #100
+        DestroySelf()
+END
+
+IF
+    Global("StarthornChange","ACIL1L",3)
+     See([PC])
+THEN
+    RESPONSE #100
+    SetGlobal("StarthornChange","ACIL1L",4)
+     StartDialogueNoSet([PC])
+END
+

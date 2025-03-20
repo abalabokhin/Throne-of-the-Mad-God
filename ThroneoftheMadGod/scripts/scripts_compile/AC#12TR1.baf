@@ -1,0 +1,47 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL12",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@497) //  
+		SetGlobal("Switch01","ACIL12",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL12",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@498) //
+		Wait(1)
+		SetGlobal("Switch01","ACIL12",2)
+		AddXPObject(LastTrigger,200)
+		PlaySound("AC#LEVER")
+		TriggerActivation("Trap_Giant_01",FALSE)
+		TriggerActivation("Trap_Hammer_5",FALSE)
+		TriggerActivation("Trap_Face_03",FALSE)
+		TriggerActivation("Trap_Floor01",FALSE)
+		SoundActivate("ElectricalRoom1",FALSE)
+		SoundActivate("ElectricalRoom2",FALSE)
+		SoundActivate("ElectricalRoom3",FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL12",2)
+THEN
+	RESPONSE #100
+	        PlaySound("AC#CLICK")
+		DisplayString(Myself,@499) //
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702) // Ihr seid zu weit entfernt, um das zu benutzen.
+END

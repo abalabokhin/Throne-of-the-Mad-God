@@ -1,0 +1,39 @@
+IF
+    GlobalGT("DiinDeath","ACIL19",0)
+THEN
+    RESPONSE #100
+        Kill(Myself)
+END
+
+IF
+    OR(3)
+        SpellCastOnMe([ANYONE],CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Magie bannen)
+        SpellCastOnMe([ANYONE],WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie zerstören)
+        SpellCastOnMe([ANYONE],WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (Magie bannen)
+THEN
+    RESPONSE #100
+        Kill(Myself)
+END
+
+IF
+    SpellCastOnMe([ANYONE],0)
+THEN
+    RESPONSE #100
+        ApplySpell(Myself,CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Leichte Wunden heilen)
+END
+
+IF
+    See([PC])
+    CheckStatGT(LastSeenBy(Myself),5,RESISTMAGIC)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastSeenBy(Myself),6)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

@@ -1,0 +1,48 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("RopeActivation","ACIL10",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@22) 
+		SetGlobal("RopeActivation","ACIL10",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("RopeActivation","ACIL10",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@23) 
+		SetGlobal("RopeActivation","ACIL10",2)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("RopeActivation","ACIL10",2)
+THEN
+	RESPONSE #100
+		/*
+		ClearAllActions()
+		StartCutSceneMode()
+		DisplayString(Myself,@24) 
+		Wait(1)
+		FadeToColor([15.0],0)
+		Wait(1)
+		ActionOverride(Player1,FadeFromColor([15.0],0))
+		ActionOverride(Player1,EndCutSceneMode())
+		*/
+		SetGlobal("RopeActivation","ACIL10",3)  
+END
+
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

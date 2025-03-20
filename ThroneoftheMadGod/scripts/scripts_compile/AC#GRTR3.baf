@@ -1,0 +1,15 @@
+IF
+	GlobalTimerExpired("GasFormChange","LOCALS")
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("ac#grt4",Myself)  // No such index
+END
+
+IF
+	Global("GasFormWait","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("GasFormWait","LOCALS",1)
+		SetGlobalTimer("GasFormChange","LOCALS",FOUR_MINUTES)
+END
+

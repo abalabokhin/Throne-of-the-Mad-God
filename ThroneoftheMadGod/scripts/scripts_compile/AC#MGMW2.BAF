@@ -1,0 +1,23 @@
+IF
+    CheckStatLT(LastSummonerOf(Myself),50,INTOXICATION)
+THEN
+    RESPONSE #100
+        ActionOverride(LastSummonerOf(Myself),DisplayStringHead(Myself,@3039)
+        DestroySelf()
+END
+
+IF
+    CheckStatGT(LastSummonerOf(Myself),49,INTOXICATION)
+THEN
+    RESPONSE #100
+        ActionOverride(LastSummonerOf(Myself),ReallyForceSpellRES("AC#MGHW",Myself))  // Heiliges Wort
+        DestroySelf()
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        DestroySelf()
+END
+

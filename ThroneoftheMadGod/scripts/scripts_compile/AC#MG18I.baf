@@ -1,0 +1,34 @@
+IF
+	Clicked([ANYONE])
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1800)
+END
+
+IF
+	Clicked([ANYONE])
+	CheckStatGT(LastTrigger,30,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1800) 
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItemIdentified("AC#BKDWF") 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1800)
+END
+
+IF
+	Clicked([ANYONE])
+	CheckStatLT(LastTrigger,31,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@518) 
+END
+

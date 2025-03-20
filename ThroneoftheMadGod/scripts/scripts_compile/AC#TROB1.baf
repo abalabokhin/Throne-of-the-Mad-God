@@ -1,0 +1,89 @@
+IF
+    StateCheck(Myself,STATE_SLEEPING)
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HPPercentLT(Myself,50)
+    Global("gate","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("gate","LOCALS",1)
+        ReallyForceSpellRES("AC#TRB1",NearestEnemyOf(Myself))  // Tor
+END
+
+IF
+    See(ThirdNearestEnemyOf(Myself))
+    Delay(6)
+    Global("gate","LOCALS",0)
+    Global("Prep","LOCALS",2)
+THEN
+    RESPONSE #100
+        SetGlobal("gate","LOCALS",1)
+        ReallyForceSpellRES("AC#TRB1",ThirdNearestEnemyOf(Myself))  // Tor
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Prep","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Prep","LOCALS",1)
+        SetGlobal("Lightning","LOCALS",1)
+        ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Kettenblitz)
+END
+
+IF
+    Delay(6)
+    See(NearestEnemyOf(Myself))
+    Global("Prep","LOCALS",2)
+    Global("Lightning","LOCALS",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Lightning","LOCALS",2)
+        ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Kettenblitz)
+END
+
+IF
+    Delay(3)
+    See(NearestEnemyOf(Myself))
+    Global("Prep","LOCALS",1)
+THEN
+    RESPONSE #100
+        ForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie zerstören)
+        SetGlobal("Prep","LOCALS",2)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    Allegiance(Myself,NEUTRAL)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),5)
+END
+

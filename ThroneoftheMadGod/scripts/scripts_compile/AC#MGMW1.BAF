@@ -1,0 +1,24 @@
+IF
+    AreaType(OUTDOOR)
+THEN
+    RESPONSE #100
+        ActionOverride(LastSummonerOf(Myself),DisplayStringHead(Myself,@3012)  // Ihr könnt nicht im Freien den Zauber "Steinsicht" einsetzen.
+        DestroySelf()
+END
+
+IF
+    AreaType(DUNGEON)
+THEN
+    RESPONSE #100
+        ActionOverride(LastSummonerOf(Myself),ReallyForceSpellRES("AC#MGMW",Myself))  // Fernsicht
+        DestroySelf()
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        ActionOverride(LastSummonerOf(Myself),DisplayStringHead(Myself,@3013)  // Ihr könnt hier nicht den Zauber "Steinsicht" einsetzen.
+        DestroySelf()
+END
+

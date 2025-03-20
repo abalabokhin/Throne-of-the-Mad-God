@@ -1,0 +1,18 @@
+IF
+	Clicked([ANYONE])
+	CheckStatGT(LastTrigger,20,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@371) // Diese Flagge zeigt das Symbol von Karontor, dem Gott der Fomorischen Riesen. Es das Abbild eines Wolfes.
+END
+
+IF
+	Clicked([ANYONE])
+	CheckStatLT(LastTrigger,21,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@372) // Auf dieser Flagge ist ein Wolf abgebildet.
+END
+

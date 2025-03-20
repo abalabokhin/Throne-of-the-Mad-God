@@ -1,0 +1,10 @@
+IF
+    IsOverMe([PC])
+    Global("SpawnLastSavant","ACIL1K",0)
+    Global("AC#MGEnteredACIL1L","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetGlobal("SpawnLastSavant","ACIL1K",1)
+        CreateCreature("AC#DER12",[3382.1387],NE)  // Kursh Bruchhorn
+END
+

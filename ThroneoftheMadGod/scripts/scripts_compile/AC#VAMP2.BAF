@@ -1,0 +1,15 @@
+IF
+	Global("Move","LOCALS",0)
+THEN
+	RESPONSE #100
+		MoveToPointNoInterrupt([454.492]) // Move to coffin
+		SetGlobal("Move","LOCALS",1)
+END
+
+IF
+	Global("Move","LOCALS",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

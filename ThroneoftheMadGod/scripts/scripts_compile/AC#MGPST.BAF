@@ -1,0 +1,16 @@
+IF
+	Global("FaceBard","LOCALS",0)
+THEN
+	RESPONSE #100
+		Wait(1)
+		FaceObject("AC#BARD1")  // Gisbert the bard
+		SetGlobal("FaceBard","LOCALS",1)
+END
+
+IF
+	Global("AC#HeardLancaBallad","GLOBAL",1)  // ballad told
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+

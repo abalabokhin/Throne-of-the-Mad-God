@@ -1,0 +1,7 @@
+IF
+    HPLT(Myself,10)
+THEN
+    RESPONSE #100
+        ForceSpellRES("AC#MGVC",Myself)  // No such index
+END
+

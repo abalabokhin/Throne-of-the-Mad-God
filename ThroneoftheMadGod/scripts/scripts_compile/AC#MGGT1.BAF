@@ -1,0 +1,48 @@
+IF
+    StateCheck(Myself,STATE_SLEEPING)
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !Dead("AC#DER01")  // Inkagurksul
+THEN
+    RESPONSE #100
+        ProtectObject("AC#DER01",30)  // Inkagurksul
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Range(LastSeenBy(Myself),8)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackReevaluate(LastSeenBy(Myself),5)
+END
+
+IF
+    AttackedBy([ANYONE],RANGED)
+    HPPercentGT(Myself,24)
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
+    AttackedBy([ANYONE],RANGED)
+    HPPercentLT(Myself,25)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),12)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Dead("AC#DER01")  // Inkagurksul
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+

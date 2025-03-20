@@ -1,0 +1,95 @@
+IF
+    Global("Skull","LOCALS",0)
+    HasItem("MISC50",Myself)  // Schädel
+THEN
+    RESPONSE #100
+        SetGlobal("Skull","LOCALS",1)
+        DestroyItem("MISC50")  // Schädel
+    RESPONSE #100
+        SetGlobal("Skull","LOCALS",1)
+END
+
+IF
+    Global("Plate","ACIL15",1)
+    CombatCounter(0)
+    !See([PC])
+    Global("HeardPlate","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("HeardPlate","LOCALS",1)
+        DisplayStringHead(Myself,@3)  // Huh?
+        MoveToObject("DOOR02")
+END
+
+IF
+    Detect([PC])
+    !See([PC])
+    Global("Warning","LOCALS",0)
+    !Global("Plate","ACIL15",1)
+THEN
+    RESPONSE #20
+        SetGlobal("Warning","LOCALS",1)
+        DisplayStringHead(Myself,@3)  // Huh?
+        MoveToObject(LastTrigger)
+    RESPONSE #80
+        RandomWalk()
+END
+
+IF
+    Global("Rats_Help_Giants","ACIL15",2)
+    Global("RatAttack","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("RatAttack","LOCALS",1)
+        CreateCreature("AC#15RTS",[-1.-1],S)  // Ratte
+        CreateCreature("AC#15RTS",[-1.-1],S)  // Ratte
+        CreateCreature("AC#15RTS",[-1.-1],S)  // Ratte
+        CreateCreature("AC#15RTS",[-1.-1],S)  // Ratte
+END
+
+IF
+    See([PC])
+    Global("Warning2","LOCALS",0)
+THEN
+    RESPONSE #30
+        SetGlobal("Warning2","LOCALS",1)
+        Shout(78)
+        DisplayStringHead(Myself,@4)  // Ah!
+    RESPONSE #70
+        SetGlobal("Warning2","LOCALS",1)
+        Shout(78)
+END
+
+IF
+    Heard([ANYONE],78)
+THEN
+    RESPONSE #100
+        MoveToObject(LastHeardBy(Myself))
+        Continue()
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+THEN
+    RESPONSE #100
+        Shout(78)
+        AttackReevaluate(LastAttackerOf(Myself),45)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+    ActionListEmpty()
+    !See([ENEMY])
+    !See(NearestEnemyOf(Myself))
+    !Global("Plate","ACIL15",1)
+THEN
+    RESPONSE #100
+        RandomWalk()
+END
+

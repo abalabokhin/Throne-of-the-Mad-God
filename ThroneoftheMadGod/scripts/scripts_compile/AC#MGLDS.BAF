@@ -1,0 +1,15 @@
+IF
+    Dead("AC#DOGWI")  // Dokuriingor
+THEN
+    RESPONSE #100
+        DestroySelf()
+END
+
+IF
+    Global("StarthornChange","ACIL1L",1)
+THEN
+    RESPONSE #100
+        SetGlobal("StarthornChange","ACIL1L",2)
+        ChangeAnimationNoEffect("AC#LADYS")  // Maid Sternendorn
+END
+

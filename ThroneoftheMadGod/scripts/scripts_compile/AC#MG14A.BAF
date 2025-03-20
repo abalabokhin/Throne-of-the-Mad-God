@@ -1,0 +1,9 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId("AC#MGURS")  // Ursummnogh der Untötbare
+        MoveViewPoint([2232.657],INSTANT)
+        Dialogue([PC])
+END
+

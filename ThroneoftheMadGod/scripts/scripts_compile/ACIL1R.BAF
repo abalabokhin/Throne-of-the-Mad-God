@@ -1,0 +1,11 @@
+IF
+    PartyHasItem("ac#bonew")  // Kinderknochen
+    Global("CreateHammerArchon","ACIL1R",0)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateHammerArchon","ACIL1R",1)
+        CreateVisualEffect("SPPLANAR",[450.474])
+        Wait(2)
+        CreateCreature("AC#MGHAC",[450.474],NWW)  // Astraler Deva
+END
+

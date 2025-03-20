@@ -1,0 +1,20 @@
+IF
+    Global("DiinkarazanFree","ACIL19",1)
+    !Dead("AC#DIIN2")  // Diinkarazan
+THEN
+    RESPONSE #100
+        ActionOverride("AC#DIIN2",JumpToObject(Player1))
+        SetGlobal("DiinAmbush","ACIL19",1)
+        DestroySelf()
+END
+
+IF
+    Global("DiinkarazanFree","ACIL19",0)
+THEN
+    RESPONSE #100
+        CreateCreature("AC#MGVRG",[-1.-1],S)  // Vargouille
+        CreateCreature("AC#MGVRG",[-1.-1],NW)  // Vargouille
+        CreateCreature("AC#MGVRG",[-1.-1],SE)  // Vargouille
+        DestroySelf()
+END
+

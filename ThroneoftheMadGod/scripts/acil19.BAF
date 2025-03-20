@@ -1,0 +1,351 @@
+IF
+	Global("EnteredArea","ACIL19",0)
+THEN
+	RESPONSE #100
+        SetGlobal("EnteredArea","ACIL19",1)
+        StartMovie("AC#MGM19")
+END
+
+IF
+	Global("EnteredArea","ACIL19",1)
+THEN
+	RESPONSE #100
+        SetGlobal("EnteredArea","ACIL19",2)
+        SetRestEncounterProbabilityDay(0)
+        SetRestEncounterProbabilityNight(0)
+        OpenDoor("DOOR08")
+        OpenDoor("DOOR09")
+        OpenDoor("DOOR10")
+        OpenDoor("DOOR11")
+        OpenDoor("DOOR12")
+        OpenDoor("DOOR13")
+		DisplayString(Myself,@578)
+END
+
+IF
+	Global("SetMusic","ACIL19",0)
+    Dead("AC#MGGOH") // Hammer Golem
+	THEN
+	RESPONSE #100
+	SetMusic(NIGHT,%AC#IL19%)
+	SetMusic(DAY,%AC#IL19%)
+	SetGlobal("SetMusic","ACIL19",1)
+	Continue()
+END
+
+IF
+    Global("DiinSpawn","ACIL19",0)
+    Global("DiinkarazanFree","ACIL19",1)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinSpawn","ACIL19",1)
+        SetRestEncounterProbabilityDay(100)
+        SetRestEncounterProbabilityNight(100)
+END
+
+// reset Diinkarazan's minion spawn ability after one hour
+IF
+    GlobalTimerExpired("minionstimer_reset","ACIL19")
+    Global("reset_minions","ACIL19",1)
+    GlobalGT("summon_minions","ACIL19",0)
+  THEN
+    RESPONSE #100
+        SetGlobal("reset_minions","ACIL19",0)
+        SetGlobal("summon_minions","ACIL19",0)
+  END
+  
+IF
+    !GlobalTimerNotExpired("minionstimer_reset","ACIL19")
+    Global("reset_minions","ACIL19",0)
+    GlobalGT("summon_minions","ACIL19",0)
+  THEN
+    RESPONSE #100
+        SetGlobalTimer("minionstimer_reset","ACIL19",ONE_HOUR)
+        SetGlobal("reset_minions","ACIL19",1)
+END
+
+IF
+    Global("DiinSpawn","ACIL19",1)
+    Global("DiinDeath","ACIL19",0)
+    Dead("AC#DIIN2")
+THEN
+    RESPONSE #100
+        SetGlobal("DiinSpawn","ACIL19",2)
+        SetGlobal("DiinDeath","ACIL19",10)
+        AddJournalEntry(@19010,QUEST_DONE)
+        ScreenShake([20.20],10)
+        SetRestEncounterProbabilityDay(0)
+        SetRestEncounterProbabilityNight(0)
+END
+
+IF
+    Global("DiinDeath","ACIL19",10)
+    OpenState("DOOR01",TRUE)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDeath","ACIL19",20)
+        ClearAllActions()
+        StartCutSceneMode()
+        StartCutScene("AC#MG19C")
+END
+/*
+IF
+    Global("DiinDeath","ACIL19",10)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDeath","ACIL19",20)
+        AddJournalEntry(@19010,QUEST_DONE)  // Der Thron des Irren Gottes Ich habe Diinkarazan in seinem alten Thronsaal besiegt. Vielleicht herrscht jetzt wieder Ruhe in der alten Festung.
+        SetRestEncounterProbabilityDay(0)
+        SetRestEncounterProbabilityNight(0)
+END
+*/
+
+IF
+    Global("ReleaseDiin","ACIL19",6)
+    Global("DiinkarazanFree","ACIL19",0)
+THEN
+    RESPONSE #100
+        StartCutSceneMode()
+        SetGlobal("DiinkarazanFree","ACIL19",1)
+        MoveViewPoint([1039.225],INSTANT)
+        CreateVisualEffect("AC#MGPTL",[1039.225])
+        Wait(4)
+        SmallWait(12)
+        CreateVisualEffect("SPFLESHS",[1039.225])
+        CreateCreature("AC#DIIN2",[1048.271],S)  // Diinkarazan
+        CloseDoor("DOOR01")
+        Lock("DOOR01")
+        TriggerActivation("Info_Throne",FALSE)
+        ActionOverride("AC#DIIN2",StartDialogueNoSet(LastTrigger))
+END
+
+IF
+    Global("SigilsGone","ACIL19",5)
+    Global("SigilWarning","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("SigilWarning","ACIL19",1)
+        ActionOverride("Container02",DisplayString(Myself,@1901))  
+        ActionOverride("Container03",DisplayString(Myself,@1901))  
+        ActionOverride("Container04",DisplayString(Myself,@1901))  
+        ActionOverride("Container05",DisplayString(Myself,@1901))  
+        ActionOverride("Container06",DisplayString(Myself,@1901))  
+        ActionOverride("Container07",DisplayString(Myself,@1901))  
+END
+
+IF
+    Global("SpawnMoreMonsters","ACIL19",1)
+THEN
+    RESPONSE #100
+        SetGlobal("SpawnMoreMonsters","ACIL19",2)
+        CreateCreature("AC#MGWNI",[969.233],SE)  // Wild Nishruu
+        CreateCreature("AC#MGWNI",[1107.194],S)  // Wild Nishruu
+        CreateCreature("AC#MGWNI",[369.739],NNE)  // Wild Nishruu
+END
+
+IF
+    Global("SigilWarning","ACIL19",1)
+    Global("VargouilleSpawn","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("VargouilleSpawn","ACIL19",1)
+        CreateCreature("AC#MGVRG",[1134.591],NNW)  // Vargouille
+        CreateCreature("AC#MGVRG",[1155.656],N)  // Vargouille
+        CreateCreature("AC#MGVRG",[1170.758],NNE)  // Vargouille
+        SetRestEncounterProbabilityDay(5)
+        SetRestEncounterProbabilityNight(5)
+END
+
+IF
+    Contains("AC#MG19J","Container08")  // Kronjuwel Korolnors
+    Global("Door08Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door08Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container08",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR08")
+        ContainerEnable("Container08",FALSE)
+END
+
+IF
+    Contains("AC#MG19J","Container09")  // Kronjuwel Korolnors
+    Global("Door09Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door09Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container09",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR09")
+        ContainerEnable("Container09",FALSE)
+END
+
+IF
+    Contains("AC#MG19J","Container10")  // Kronjuwel Korolnors
+    Global("Door10Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door10Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container10",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR10")
+        ContainerEnable("Container10",FALSE)
+END
+
+IF
+    Contains("AC#MG19J","Container11")  // Kronjuwel Korolnors
+    Global("Door11Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door11Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container11",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR11")
+        ContainerEnable("Container11",FALSE)
+END
+
+IF
+    Contains("AC#MG19J","Container12")  // Kronjuwel Korolnors
+    Global("Door12Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door12Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container12",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR12")
+        ContainerEnable("Container12",FALSE)
+END
+
+IF
+    Contains("AC#MG19J","Container13")  // Kronjuwel Korolnors
+    Global("Door13Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door13Closed","ACIL19",1)
+        IncrementGlobal("ReleaseDiin","ACIL19",1)
+        PlaySound("AC#MG19C")
+        ActionOverride("Container13",DestroyItem("AC#MG19J"))  // Kronjuwel Korolnors
+        CloseDoor("DOOR13")
+        ContainerEnable("Container13",FALSE)
+END
+
+
+IF
+    !Contains("AC#MG19J","Container02")  // Kronjuwel Korolnors
+    Global("Door02Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door02Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR02")
+        ContainerEnable("Container02",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD2",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD2")  // No such index
+        ActionOverride("AC#MGTD2",DestroySelf())
+END
+
+IF
+    !Contains("AC#MG19J","Container03")  // Kronjuwel Korolnors
+    Global("Door03Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door03Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR03")
+        ContainerEnable("Container03",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD3",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD3")  // No such index
+        ActionOverride("AC#MGTD3",DestroySelf())
+END
+
+IF
+    !Contains("AC#MG19J","Container04")  // Kronjuwel Korolnors
+    Global("Door04Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door04Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR04")
+        ContainerEnable("Container04",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD4",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD4")  // No such index
+        ActionOverride("AC#MGTD4",DestroySelf())
+END
+
+IF
+    !Contains("AC#MG19J","Container05")  // Kronjuwel Korolnors
+    Global("Door05Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door05Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR05")
+        ContainerEnable("Container05",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD5",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD5")  // No such index
+        ActionOverride("AC#MGTD5",DestroySelf())
+END
+
+IF
+    !Contains("AC#MG19J","Container06")  // Kronjuwel Korolnors
+    Global("Door06Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door06Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR06")
+        ContainerEnable("Container06",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD6",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD6")  // No such index
+        ActionOverride("AC#MGTD6",DestroySelf())
+END
+
+IF
+    !Contains("AC#MG19J","Container07")  // Kronjuwel Korolnors
+    Global("Door07Closed","ACIL19",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Door07Closed","ACIL19",1)
+        PlaySound("EFF_M62")
+        OpenDoor("DOOR07")
+        ContainerEnable("Container07",FALSE)
+        Wait(1)
+        IncrementGlobal("SigilsGone","ACIL19",1)
+        ReallyForceSpell("AC#MGTD7",RED_HOLY_MIGHT)  // No such index
+        ReallyForceSpellRES("AC#MGSN","AC#MGTD7")  // No such index
+        ActionOverride("AC#MGTD7",DestroySelf())
+END
+
+IF
+    !GlobalTimerNotExpired("WildmagicTimer","ACIL19")
+    InMyArea("AC#DIIN2")  // Diinkarazans Avatar
+    !Dead("AC#DIIN2")  // Diinkarazans Avatar
+    Global("DiinWildmagic","ACIL19",1)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("WildmagicTimer","ACIL19",ONE_ROUND)
+    RESPONSE #100
+        ApplySpellRES("AC#DIWS","AC#DIIN2")  // No such index
+        SetGlobalTimer("WildmagicTimer","ACIL19",ONE_ROUND)
+    RESPONSE #100
+        SetGlobalTimer("WildmagicTimer","ACIL19",ONE_ROUND)
+    RESPONSE #100
+        ApplySpellRES("AC#DIBC","AC#DIIN2")  // Zauber zurückwerfen
+        DisplayStringHead("AC#DIIN2",10875)  // Geschützt durch „Zauber zurückwerfen“
+        SetGlobalTimer("WildmagicTimer","ACIL19",ONE_ROUND)
+END

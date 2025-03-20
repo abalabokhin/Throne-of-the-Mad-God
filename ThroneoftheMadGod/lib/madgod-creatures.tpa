@@ -1,0 +1,532 @@
+// Creatures for %MOD_FOLDER%
+
+COPY ~%MOD_FOLDER%/cre/copy~         ~override~
+
+COPY ~%MOD_FOLDER%/cre/AC#MGBOB.cre~ ~override~  // boring beetle
+  SAY NAME1 @3038 SAY NAME2 @3038
+
+COPY ~%MOD_FOLDER%/cre/AC#MGEFR.cre~ ~override~  // Emberon, the noble Efreet
+  SAY NAME1 @3037 SAY NAME2 @3037
+
+COPY ~%MOD_FOLDER%/cre/AC#MGWNI.cre~ ~override~  // Wild Nishruu
+  SAY NAME1 @244 SAY NAME2 @244
+
+COPY ~%MOD_FOLDER%/cre/AC#MGFAM.cre~ ~override~  // Glouris' familiar
+  SAY NAME1 @241 SAY NAME2 @241
+
+COPY ~%MOD_FOLDER%/cre/AC#MGRT1.cre~ ~override~  // Rutterkin (summoned by Staff of hellgate)
+  SAY NAME1 @243 SAY NAME2 @243
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~RUTTERKIN_ACIFER~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGAL1.cre~ ~override~ // Allip
+  SAY NAME1 @242 SAY NAME2 @242
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#NWN_ALLIP~))
+    
+COPY ~%MOD_FOLDER%/cre/AC#MGAL2.cre~ ~override~ // Allip in area ACIL18
+  SAY NAME1 @242 SAY NAME2 @242
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#NWN_ALLIP~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MG16T.cre~ ~override~ // Grubnuk, hidden troll
+  SAY NAME1 @240 SAY NAME2 @240
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MG1KF.cre~ ~override~  // Derro-Späher
+  SAY NAME1 @238 SAY NAME2 @238
+  SAY INITIAL_MEETING @918
+
+COPY ~%MOD_FOLDER%/cre/AC#MGGSM.cre~ ~override~  // goblin shaman
+  SAY NAME1 @237 SAY NAME2 @237
+
+COPY ~%MOD_FOLDER%/cre/AC#MGMN1.cre~ ~override~  // Manes (summoned by Staff of hellgate)
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#MANE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MG1KS.cre~ ~override~  // slave leader
+  SAY NAME1 @236 SAY NAME2 @236
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTRZ.cre~ ~override~  // Derro Trollmaster
+  SAY NAME1 @235 SAY NAME2 @235
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTSN.cre~ ~override~  // tarnished sentry
+  SAY NAME1 @234 SAY NAME2 @234
+
+COPY ~%MOD_FOLDER%/cre/AC#MGHWH.cre~ ~override~  // Howling horror
+  SAY NAME1 @233 SAY NAME2 @233
+
+COPY ~%MOD_FOLDER%/cre/AC#MGHAC.cre~ ~override~  // Hammer archon
+  SAY NAME1 @232 SAY NAME2 @232
+
+COPY ~%MOD_FOLDER%/cre/AC#MGDWC.cre~ ~override~  // dwarven gravedigger
+  SAY NAME1 @231 SAY NAME2 @231
+
+COPY ~%MOD_FOLDER%/cre/AC#MGVBS.cre~ ~override~  // Verbeeg runecaster
+  SAY NAME1 @230 SAY NAME2 @230
+
+COPY ~%MOD_FOLDER%/cre/AC#MG1KT.cre~ ~override~  // infected troll
+  SAY NAME1 @229 SAY NAME2 @229
+
+COPY ~%MOD_FOLDER%/cre/AC#MGDT1.cre~ ~override~  // derro assassin
+  SAY NAME1 @206 SAY NAME2 @206
+  SAY BATTLE_CRY1 @905
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+
+COPY ~%MOD_FOLDER%/cre/AC#MGGOM.cre~ ~override~ // Mithril Golem
+  SAY NAME1 @205 SAY NAME2 @205
+  SAY BATTLE_CRY1 @900
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#GOLEM_MITHRIL~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGGOH.cre~ ~override~ // Hammer Golem
+  SAY NAME1 @204 SAY NAME2 @204
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#GOLEM_HAMMER~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGFGL.cre~ ~override~  // Fire giant leader
+  SAY NAME1 @203 SAY NAME2 @203
+  
+COPY ~%MOD_FOLDER%/cre/AC#MGFG2.cre~ ~override~ // Fire giant #2
+
+COPY ~%MOD_FOLDER%/cre/AC#MG15D.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+
+COPY ~%MOD_FOLDER%/cre/AC#MGGOA.cre~ ~override~ // Ash Golem
+  SAY NAME1 @202 SAY NAME2 @202
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#GOLEM_ASH~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGBNG.cre~ ~override~ // Bone Naga
+  SAY NAME1 @201 SAY NAME2 @201
+
+COPY ~%MOD_FOLDER%/cre/AC#MGCHM.cre~ ~override~ // Chimera
+  SAY NAME1 @423 SAY NAME2 @423
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~CHIMERA~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGGO1.cre~ ~override~ // Goblin
+  SAY INITIAL_MEETING @912
+  SAY UNHAPPY_ANNOYED @913
+  SAY BATTLE_CRY1 @913
+
+COPY ~%MOD_FOLDER%/cre/AC#MGPS1.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS2.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS3.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS4.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS5.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS6.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+COPY ~%MOD_FOLDER%/cre/AC#MGPS7.cre~ ~override~ // Listener
+  SAY NAME1 @200 SAY NAME2 @200
+
+COPY ~%MOD_FOLDER%/cre/AC#MG18C.cre~ ~override~ //Clangeddin statue
+  SAY NAME1 @422 SAY NAME2 @422
+
+COPY ~%MOD_FOLDER%/cre/AC#MGKY1.cre~ ~override~ //Karlyn's ghost
+  SAY NAME1 @421 SAY NAME2 @421
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTI1.cre~ ~override~ // Ice troll #1
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_ICE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTI2.cre~ ~override~ // Ice troll #2
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_ICE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTI3.cre~ ~override~ // Ice troll leader #1
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_ICE~))
+
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTF1.cre~ ~override~ // Fire troll #1
+COPY ~%MOD_FOLDER%/cre/AC#MGTF3.cre~ ~override~ // Fire troll #1
+
+COPY ~%MOD_FOLDER%/cre/AC#MGTL1.cre~ ~override~ // Troll watcher in area ACIL14
+
+COPY ~%MOD_FOLDER%/cre/AC#MG14H.cre~ ~override~ // talking horn creature in area ACIL14
+  SAY NAME1 @1113 SAY NAME2 @1113
+  
+COPY ~%MOD_FOLDER%/cre/AC#MG15H.cre~ ~override~ // talking horn creature in area ACIL15
+  SAY NAME1 @1113 SAY NAME2 @1113
+
+COPY ~%MOD_FOLDER%/cre/AC#ILDRT.cre~ ~override~ // Dretch
+  SAY NAME1 @8 SAY NAME2 @8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~DRETCH_ACIFER~))
+    
+COPY ~%MOD_FOLDER%/cre/AC#MGDR2.cre~ ~override~ // Dretch (summoned by staff of hellgate)
+  SAY NAME1 @8 SAY NAME2 @8
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~DRETCH_ACIFER~))
+
+COPY ~%MOD_FOLDER%/cre/AC#DARC1.cre~ ~override~ // Darcia Lancameth, Lancameth's widow
+  SAY NAME1 @603 SAY NAME2 @603
+
+COPY ~%MOD_FOLDER%/cre/AC#S#HPR.cre~ ~override~ // Sir Kandelar
+  SAY NAME1 @848 SAY NAME2 @848
+
+COPY ~%MOD_FOLDER%/cre/AC#BARD1.cre~ ~override~ // Bard in City Gates District, telling Lancameth's story
+  SAY NAME1 @596 SAY NAME2 @596
+
+COPY ~%MOD_FOLDER%/cre/AC#IREM1.cre~ ~override~ // Iremar (ghost in area ACIL15)
+  SAY NAME1 @344 SAY NAME2 @344
+COPY ~%MOD_FOLDER%/cre/AC#MGIR2.cre~ ~override~ // Iremar (ghost in area ACIL18)
+  SAY NAME1 @344 SAY NAME2 @344
+  
+COPY ~%MOD_FOLDER%/cre/AC#DER01.cre~ ~override~ //Inkagruksul, Derro-Savant 01
+  SAY NAME1 @375 SAY NAME2 @375
+  SAY BATTLE_CRY1 @905
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+COPY ~%MOD_FOLDER%/cre/AC#DER04.cre~ ~override~ //Derro Veterans
+  SAY NAME1 @376 SAY NAME2 @376
+  SAY BATTLE_CRY1 @905
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+COPY ~%MOD_FOLDER%/cre/AC#DER05.cre~ ~override~ //Derro archer
+  SAY NAME1 @376 SAY NAME2 @376
+  SAY BATTLE_CRY1 @911
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+COPY ~%MOD_FOLDER%/cre/AC#DER06.cre~ ~override~ //Derro archer in area ACIL15
+  SAY NAME1 @376 SAY NAME2 @376
+  SAY BATTLE_CRY1 @911
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+COPY ~%MOD_FOLDER%/cre/AC#DER11.cre~ ~override~ //Dlimoruk, Derro-Savant  02
+  SAY NAME1 @379 SAY NAME2 @379
+  SAY BATTLE_CRY1 @905
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909
+COPY ~%MOD_FOLDER%/cre/AC#DER12.cre~ ~override~ //Kursh Borkenhorn
+  SAY NAME1 @491 SAY NAME2 @491
+  SAY BATTLE_CRY1 @905
+  SAY BATTLE_CRY2 @906
+  SAY BATTLE_CRY3 @907
+  SAY BATTLE_CRY4 @908
+  SAY BATTLE_CRY5 @910
+  SAY DAMAGE @909  
+COPY ~%MOD_FOLDER%/cre/AC#JAM01.cre~ ~override~ //Jamrry Streitlacher Gnome Alchemist
+  SAY NAME1 @380 SAY NAME2 @380
+SAY INITIAL_MEETING @381
+SAY SELECT_COMMON1 @382
+SAY SELECT_COMMON2 @382
+SAY SELECT_COMMON3 @382
+SAY SELECT_ACTION1 @382
+SAY SELECT_ACTION2 @382
+SAY SELECT_ACTION3 @382
+SAY SELECT_ACTION4 @382
+SAY SELECT_ACTION5 @382
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~THIEF_MALE_GNOME~))
+
+COPY ~%MOD_FOLDER%/cre/AC#DOGWI.cre~ ~override~ //Dokuriingor, the "Dog Wizard"
+  SAY NAME1 @383 SAY NAME2 @383
+
+COPY ~%MOD_FOLDER%/cre/AC#MGF51.cre~ ~override~
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGF52.cre~ ~override~
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGF53.cre~ ~override~
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/ac#fom15.cre~ ~override~
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGFGK.cre~ ~override~  // Madugg
+  SAY NAME1 @370 SAY NAME2 @370
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FOMORIAN_GIANT_KING~))
+SAY DYING @917
+
+  COPY ~%MOD_FOLDER%/cre/AC#MGFK2.cre~ ~override~ // Madugg Lvl 12
+    SAY NAME1 @370 SAY NAME2 @370
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FOMORIAN_GIANT_KING~))
+  SAY DYING @917
+  
+   COPY ~%MOD_FOLDER%/cre/AC#MGFK3.cre~ ~override~ // Madugg Lvl 14
+    SAY NAME1 @370 SAY NAME2 @370
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FOMORIAN_GIANT_KING~))
+  SAY DYING @917
+
+COPY ~%MOD_FOLDER%/cre/ac#fom10.cre~ ~override~ // Fomorian Giant in area ACIL10 (hurling rocks)
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/AC#FOM1K.cre~ ~override~  // Fomorian giant in area ACIL1K
+  SAY NAME1 @56 SAY NAME2 @56
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_FOMORIAN~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGVB1.cre~ ~override~
+  SAY NAME1 @57 SAY NAME2 @57
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/ac#gihi1.cre~ ~override~
+  SAY NAME1 @57 SAY NAME2 @57
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/ac#15ver.cre~ ~override~  // Verbeeg, Madugg's houseguard
+  SAY NAME1 @57 SAY NAME2 @57
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MG15R.cre~ ~override~  // Verbeeg, Madugg's shaman
+  SAY NAME1 @54 SAY NAME2 @54
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/ac#verb2.cre~ ~override~
+  SAY NAME1 @57 SAY NAME2 @57
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/ac#verb3.cre~ ~override~
+  SAY NAME1 @239 SAY NAME2 @239
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/AC#VERBS.cre~ ~override~  // Verbeeg with javelin
+  SAY NAME1 @57 SAY NAME2 @57
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~GIANT_VERBEEG~))
+
+COPY ~%MOD_FOLDER%/cre/AC#LADYS.cre~ ~override~ // Lady Starthorn (Banshee)
+  SAY NAME1 @971 SAY NAME2 @971
+  
+COPY ~%MOD_FOLDER%/cre/AC#MGLDS.cre~ ~override~ // Lady Starthorn (neutral ghost)
+  SAY NAME1 @971 SAY NAME2 @971
+COPY ~%MOD_FOLDER%/cre/AC#MGLD2.cre~ ~override~ // Lady Starthorn (in area ACIL18)
+  SAY NAME1 @971 SAY NAME2 @971
+COPY ~%MOD_FOLDER%/cre/AC#MGLD3.cre~ ~override~ // Lady Starthorn (in area ACIL1L afte rkilling her banshee form)
+  SAY NAME1 @971 SAY NAME2 @971
+
+COPY ~%MOD_FOLDER%/cre/AC#TRO71.cre~ ~override~ // Snow troll
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_SNOW~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TRSN1.cre~ ~override~ // Snow troll
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_SNOW~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TRSN2.cre~ ~override~ // Snow troll
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TROLL_SNOW~))
+
+COPY ~%MOD_FOLDER%/cre/AC#GRTR1.cre~ ~override~ // Gray troll - DRAGON #199; p. 26
+  SAY NAME1 @226 SAY NAME2 @226
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_GRAY~))
+
+COPY ~%MOD_FOLDER%/cre/AC#GRTR2.cre~ ~override~ // Gray troll - DRAGON #199; p. 26
+  SAY NAME1 @226 SAY NAME2 @226
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_GRAY~))
+
+COPY ~%MOD_FOLDER%/cre/AC#GRTR4.cre~ ~override~ // Gray troll - DRAGON #199; p. 26
+  SAY NAME1 @226 SAY NAME2 @226
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_GRAY~))
+
+/*
+COPY ~%MOD_FOLDER%/cre/AC#TROL2.cre~ ~override~
+  SAY NAME1 @223 SAY NAME2 @223
+  
+COPY ~%MOD_FOLDER%/cre/AC#TROL3.cre~ ~override~
+  SAY NAME1 @223 SAY NAME2 @223
+*/
+COPY ~%MOD_FOLDER%/cre/AC#MGTS1.cre~ ~override~ // Troll shaman #1
+  SAY NAME1 @223 SAY NAME2 @223
+  
+COPY ~%MOD_FOLDER%/cre/AC#MGTS2.cre~ ~override~ // Troll shaman #2 (dead / regenerating form)
+  SAY NAME1 @223 SAY NAME2 @223
+
+COPY ~%MOD_FOLDER%/cre/AC#TROL4.cre~ ~override~ // Phasetroll
+  SAY NAME1 @225 SAY NAME2 @225
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_PHASE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROL5.cre~ ~override~
+  SAY NAME1 @225 SAY NAME2 @225
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_PHASE~))
+
+  COPY ~%MOD_FOLDER%/cre/AC#MGST1.cre~ ~override~  // Stonetroll  in ACIL1K
+  SAY NAME1 @392 SAY NAME2 @392
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_STONE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROL6.cre~ ~override~  // Stonetroll
+  SAY NAME1 @392 SAY NAME2 @392
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_STONE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROL7.cre~ ~override~
+  SAY NAME1 @392 SAY NAME2 @392
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_STONE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROL8.cre~ ~override~
+  SAY NAME1 @225 SAY NAME2 @225
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_PHASE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROHO.cre~ ~override~ //Trollhound  DRAGON #199; p. 24
+  SAY NAME1 @490 SAY NAME2 @490
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLLHOUND~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROH2.cre~ ~override~ //Trollhound  DRAGON #199; p. 24
+  SAY NAME1 @490 SAY NAME2 @490
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLLHOUND~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROB1.cre~ ~override~ // Black troll   DRAGON #141; p. 16
+  SAY NAME1 @551 SAY NAME2 @551
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_BLACK~))
+       
+COPY ~%MOD_FOLDER%/cre/AC#TROB9.cre~ ~override~ // Black troll in area acil19   DRAGON #141; p. 16
+  SAY NAME1 @551 SAY NAME2 @551
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_BLACK~))
+
+COPY ~%MOD_FOLDER%/cre/AC#TROB2.cre~ ~override~  // Black troll: Narg the black   DRAGON #141; p. 16
+  SAY NAME1 @557 SAY NAME2 @557
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_BLACK~))
+       
+COPY ~%MOD_FOLDER%/cre/AC#TROB3.cre~ ~override~  // Black troll: Narg the black   DRAGON #141; p. 16
+  SAY NAME1 @557 SAY NAME2 @557
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_BLACK~))
+
+COPY ~%MOD_FOLDER%/cre/AC#MGVRG.cre~ ~override~ // Vargouille, Volo's guide to monsters, p.195
+  SAY NAME1 @221 SAY NAME2 @221
+	WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#VARGOUILLE~))
+	
+COPY ~%MOD_FOLDER%/cre/AC#MGVR2.cre~ ~override~ // Vargouille, area ACIL19 (summoned bei Diinkarazan's minion spell)
+  SAY NAME1 @221 SAY NAME2 @221
+	WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#VARGOUILLE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#VARGD.cre~ ~override~ // Vargouille (dead)
+  SAY NAME1 @221 SAY NAME2 @221
+        WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#VARGOUILLE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#13DO1.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+  
+COPY ~%MOD_FOLDER%/cre/AC#13RI1.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+COPY ~%MOD_FOLDER%/cre/AC#13RI2.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+COPY ~%MOD_FOLDER%/cre/AC#13RI3.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+COPY ~%MOD_FOLDER%/cre/AC#13RI4.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+
+COPY ~%MOD_FOLDER%/cre/AC#13ST1.cre~ ~override~
+  SAY NAME1 @199 SAY NAME2 @199
+  
+/* Adding 6 others statues */
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST2.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST2~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST3.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST3~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST4.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST4~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST5.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST5~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST6.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST6~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST7.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST7~ #32 // Death Variable
+    
+COPY_EXISTING ~AC#13ST1.CRE~ ~override/AC#13ST8.CRE~
+    WRITE_ASCII 0x280 ~AC#13ST8~ #32 // Death Variable
+    SAY NAME1 @575 SAY NAME2 @575
+
+COPY ~%MOD_FOLDER%/cre/AC#MGURS.cre~ ~override~ // Ursummnogh: Fell troll, 2-headed
+  SAY NAME1 @224 SAY NAME2 @224
+      WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FELL_TROLL~))
+      SAY INITIAL_MEETING @919
+      
+COPY ~%MOD_FOLDER%/cre/AC#MGUR2.cre~ ~override~ // Ursummnogh: Fell troll, 2-headed: harder version
+  SAY NAME1 @224 SAY NAME2 @224
+      WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FELL_TROLL~))
+      SAY INITIAL_MEETING @919
+      
+COPY ~%MOD_FOLDER%/cre/AC#MGUR3.cre~ ~override~ // Ursummnogh: Fell troll, 2-headed: hardest version
+  SAY NAME1 @224 SAY NAME2 @224
+      WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#FELL_TROLL~))
+      SAY INITIAL_MEETING @919
+
+COPY ~%MOD_FOLDER%/cre/AC#NHAIR.cre~ ~override~ // Nhair Ebendar, halfling
+  SAY NAME1 @564 SAY NAME2 @564
+COPY ~%MOD_FOLDER%/cre/AC#MGNH2.cre~ ~override~ // Nhair Ebendar, halflingin area ACIL18
+  SAY NAME1 @564 SAY NAME2 @564
+
+COPY ~%MOD_FOLDER%/cre/AC#SKEGI.cre~ ~override~ //Giant Skeleton
+  SAY NAME1 @411 SAY NAME2 @411
+  
+COPY ~%MOD_FOLDER%/cre/AC#LANCA.cre~ ~override~ // Doomed Lancameth
+  SAY NAME1 @572 SAY NAME2 @572
+	WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#VARGOUILLE~))
+
+COPY ~%MOD_FOLDER%/cre/AC#SKET3.cre~ ~override~ //Skelettin
+  SAY NAME1 @419 SAY NAME2 @419
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#NWN_BONE_GOLEM~))
+
+COPY ~%MOD_FOLDER%/cre/AC#SKET1.cre~ ~override~ //Skelettin
+  SAY NAME1 @419 SAY NAME2 @419
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#NWN_BONE_GOLEM~))
+
+COPY ~%MOD_FOLDER%/cre/AC#SKET2.cre~ ~override~ //Skelettin
+  SAY NAME1 @419 SAY NAME2 @419
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#NWN_BONE_GOLEM~))
+
+COPY ~%MOD_FOLDER%/cre/AC#GOLSM.cre~ ~override~ // Emerald Golem
+  SAY NAME1 @570 SAY NAME2 @570
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#GOLEM_EMERALD~))
+
+COPY ~%MOD_FOLDER%/cre/AC#BLAD1.cre~ ~override~
+  SAY NAME1 @547 SAY NAME2 @547
+  
+COPY ~%MOD_FOLDER%/cre/ac#diin2.cre~ ~override~
+  SAY NAME1 @55 SAY NAME2 @55
+  SAY INITIAL_MEETING @901
+  SAY BATTLE_CRY1 @901
+  SAY BATTLE_CRY2 @902
+  SAY BATTLE_CRY3 @903
+  SAY DAMAGE @904
+  //SAY DYING @916
+  SAY UNHAPPY_ANNOYED @915
+
+COPY ~%MOD_FOLDER%/cre/AC#VETRO.cre~ ~override~ // Venom Troll; Mordenkainen's tome of foes p.245
+  SAY NAME1 @1108 SAY NAME2 @1108
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
+
+COPY ~%MOD_FOLDER%/cre/AC#VETR2.cre~ ~override~ // Venom Troll; Mordenkainen's tome of foes p.245
+  SAY NAME1 @1108 SAY NAME2 @1108
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
+
+COPY ~%MOD_FOLDER%/cre/AC#VETR3.cre~ ~override~ // Venom Troll (ranged attack); Mordenkainen's tome of foes p.245
+  SAY NAME1 @1108 SAY NAME2 @1108
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
+
+
+COPY ~%MOD_FOLDER%/cre/AC#FRTRO.cre~ ~override~ // Faerzress-infused Troll (inspired by "Underdark", p.86)
+  SAY NAME1 @1110 SAY NAME2 @1110  
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_FAERZRESS~))
+       
+  
+COPY ~%MOD_FOLDER%/cre/AC#FRTR2.cre~ ~override~ // Faerzress-infused Troll (inspired by "Underdark", p.86)
+  SAY NAME1 @1110 SAY NAME2 @1110
+       WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_FAERZRESS~))
+       
+
+COPY ~%MOD_FOLDER%/cre/AC#VAMP1.cre~ ~override~ // Vampire in ACIL1U
+  SAY NAME1 @975 SAY NAME2 @975
+  
+COPY ~%MOD_FOLDER%/cre/AC#15RAT.cre~ ~override~ // Cranium Rat speaker
+  // no name assigned SAY NAME1 @ SAY NAME2 @
+  
+COPY ~%MOD_FOLDER%/cre/AC#MGMA1.cre~ ~override~ // Zhentarim Mage
+  SAY NAME1 @613 SAY NAME2 @613

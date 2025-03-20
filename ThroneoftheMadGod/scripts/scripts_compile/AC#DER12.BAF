@@ -1,0 +1,111 @@
+IF
+    Detect([PC])
+    !See([PC])
+    HaveSpell(WIZARD_DETECT_INVISIBILITY)  // SPWI203.SPL (Unsichtbares entdecken)
+THEN
+    RESPONSE #100
+        SetGlobal("Detect","LOCALS",1)
+        Spell(Myself,WIZARD_DETECT_INVISIBILITY)  // SPWI203.SPL (Unsichtbares entdecken)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Prep","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Prep","LOCALS",1)
+        DisplayString(Myself,39968)  // Zauberauslöser: Ausgelöst
+        ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+        ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (Kugel der Unverwundbarkeit)
+        ApplySpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (Schutz vor normalen Geschossen)
+END
+
+IF
+    Allegiance(Myself,ENEMY)
+    See([GOODCUTOFF.0.0.0.0.SUMMONED])
+    HaveSpell(WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
+END
+
+IF
+    See([EVILCUTOFF.0.DWARF])
+    HaveSpell(WIZARD_RESIST_FEAR)  // SPWI210.SPL (Furcht bannen)
+    StateCheck(LastSeenBy(Myself),STATE_PANIC)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),WIZARD_RESIST_FEAR)  // SPWI210.SPL (Furcht bannen)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie zerstören)
+    Global("Haste","LOCALS",0)
+    OR(5)
+        CheckSpellState(LastSeenBy(Myself),RESIST_FEAR)
+        CheckSpellState(LastSeenBy(Myself),BENEFICIAL_CHANT)
+        CheckSpellState(LastSeenBy(Myself),PROTECTION_FROM_EVIL)
+        CheckSpellState(LastSeenBy(Myself),BLESS)
+        StateCheck(LastSeenBy(Myself),STATE_HASTED)
+    !StateCheck(LastSeenBy(Myself),STATE_SLOWED)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie zerstören)
+END
+
+IF
+    See([PC])
+    HPLT(LastSeenBy(Myself),20)
+    !Race(LastSeenBy(Myself),ELF)
+    HaveSpell(WIZARD_POWER_WORD_SLEEP)  // SPWI220.SPL (Wort der Macht: Schlaf)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),WIZARD_POWER_WORD_SLEEP)  // SPWI220.SPL (Wort der Macht: Schlaf)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_BLINDNESS)  // SPWI106.SPL (Blindheit)
+THEN
+    RESPONSE #100
+        Spell(Myself,WIZARD_BLINDNESS)  // SPWI106.SPL (Blindheit)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_DEAFNESS)  // SPWI223.SPL (Taubheit)
+    OR(4)
+        See(NearestEnemyOfType([0.0.0.SORCERER]))
+        See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+        See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+        See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_DEAFNESS)  // SPWI223.SPL (Taubheit)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (Personen bezaubern)
+    !StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_CHARM_PERSON)  // SPWI104.SPL (Personen bezaubern)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

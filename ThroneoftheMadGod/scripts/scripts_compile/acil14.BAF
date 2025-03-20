@@ -1,0 +1,223 @@
+IF
+    Global("AC#ACIL18_Elevator_OPEN","GLOBAL",1)
+    OpenState("DOOR03",FALSE)
+THEN
+    RESPONSE #100
+        TriggerActivation("Info_elevator",FALSE)
+        Continue()
+END
+
+IF
+    Global("AC#ACIL18_Elevator_OPEN","GLOBAL",1)
+    OpenState("DOOR03",FALSE)
+THEN
+    RESPONSE #100
+        OpenDoor("DOOR03")
+END
+
+IF
+    PartyHasItem("AC#MGMD1")  // Gussform (unterer Teil)
+	Global("HasLowerMoldPart","ACIL14",0)
+THEN
+    RESPONSE #100
+        SetGlobal("HasLowerMoldPart","ACIL14",1)
+		AddJournalEntry(@17003,QUEST)
+END
+
+IF
+    Global("Prep","ACIL14",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Prep","ACIL14",1)
+        TriggerActivation("Tracil17",FALSE)
+        SpawnPtDeactivate("Trolls_entry")
+        CreateCreature("AC#VARGD",[587.460],S)  // Vargouille
+        CreateCreature("AC#VARGD",[877.694],W)  // Vargouille
+        CreateCreature("AC#VARGD",[182.747],SEE)  // Vargouille
+        CreateCreature("AC#VARGD",[480.1020],SEE)  // Vargouille
+        CreateCreature("AC#VARGD",[1963.1081],SE)  // Vargouille
+        CreateCreature("AC#MG14S",[627.485],S)  // Sklave
+        CreateCreature("AC#MGGOA",[912.306],NE)  // Aschegolem
+        CreateCreature("AC#MGBNG",[1650.978],E)  // Knochen-Naga
+        CreateCreature("AC#TRDEA",[1555.373],E)  // Troll
+        CreateCreature("AC#TRDEA",[1394.244],N)  // Troll
+        CreateCreature("AC#TRDEA",[1071.187],E)  // Troll
+END
+
+IF
+    Global("AC#MGFoundry","GLOBAL",1)
+THEN
+    RESPONSE #100
+        SetGlobal("AC#MGFoundry","GLOBAL",2)
+        CreateCreature("AC#MGFGL",[1760.2072],SE)  // Thragmorr
+        CreateCreature("AC#MGFG2",[1522.1957],SE)  // Feuerriese
+        CreateCreature("AC#MGFG2",[1786.1877],SE)  // Feuerriese
+        TriggerActivation("Tracil17",TRUE)
+        TriggerActivation("Tracil1u",FALSE)
+END
+
+IF
+    Global("Fight_Ursu","ACIL14",1)
+    OR(2)
+        DifficultyGT(NORMAL)
+        LevelPartyGT(12)
+THEN
+    RESPONSE #100
+        SetGlobal("Fight_Ursu","ACIL14",2)
+        CreateCreature("AC#GRTR1",[1959.637],S)  // Grautroll
+        CreateCreature("AC#TROL4",[2099.697],S)  // Phasentroll
+        CreateCreature("AC#VETRO",[2366.672],S)  // Gifttroll
+        CreateCreature("AC#FRTRO",[2259.720],S)  // Faerzress-Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+END
+
+IF
+    Global("Fight_Ursu","ACIL14",1)
+    OR(2)
+        DifficultyGT(NORMAL)
+        LevelPartyGT(9)
+THEN
+    RESPONSE #100
+        SetGlobal("Fight_Ursu","ACIL14",2)
+        CreateCreature("AC#GRTR1",[1959.637],S)  // Grautroll
+        CreateCreature("AC#TROL4",[2099.697],S)  // Phasentroll
+        CreateCreature("AC#VETRO",[2366.672],S)  // Gifttroll
+        CreateCreature("AC#FRTRO",[2259.720],S)  // Faerzress-Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+        CreateCreatureOffScreen("AC#MGTL2",S)  // Troll
+END
+
+IF
+    Global("Fight_Ursu","ACIL14",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Fight_Ursu","ACIL14",2)
+        CreateCreature("AC#GRTR1",[1959.637],S)  // Grautroll
+        CreateCreature("AC#TROL4",[2099.697],S)  // Phasentroll
+        CreateCreature("AC#VETRO",[2366.672],S)  // Gifttroll
+        CreateCreature("AC#FRTRO",[2259.720],S)  // Faerzress-Troll
+END
+
+IF
+    Global("Meet_Ursu","ACIL14",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Meet_Ursu","ACIL14",2)
+        CreateCreature("AC#TROB3",[2010.1175],SW)  // Blacktroll: Narg the Black
+END
+
+// OLD
+/*
+IF
+    Global("TalkHorn","ACIL14",10)
+    Global("UrsuSpawn","ACIL14",0)
+THEN
+    RESPONSE #100
+        SetGlobal("UrsuSpawn","ACIL14",1)
+        CreateCreature("AC#TRMU1",[2232.657],S)  // Ursummnogh the unkillable
+        ActionOverride("AC#URSU1",StartDialogueNoSet([PC]))
+END
+*/
+
+// NEW:
+// Create hardest Ursummnogh, high level
+
+IF
+    Global("TalkHorn","ACIL14",10)
+    Global("UrsuSpawn","ACIL14",0)
+    OR(2)
+        Difficulty(HARDEST)
+        LevelPartyGT(13)
+THEN
+    RESPONSE #100
+        SetGlobal("UrsuSpawn","ACIL14",1)
+        ClearAllActions()
+        StartCutSceneMode()
+        CreateCreature("AC#MGUR3",[2504.689],S)  // Ursummnogh der Untötbare
+        StartCutScene("AC#MG14A")
+END
+
+// Create harder Ursummnogh, mid level
+IF
+    Global("TalkHorn","ACIL14",10)
+    Global("UrsuSpawn","ACIL14",0)
+    OR(2)
+        DifficultyGT(NORMAL)
+        LevelPartyGT(9)
+THEN
+    RESPONSE #100
+        SetGlobal("UrsuSpawn","ACIL14",1)
+        ClearAllActions()
+        StartCutSceneMode()
+        CreateCreature("AC#MGUR2",[2504.689],S)  // Ursummnogh der Untötbare
+        StartCutScene("AC#MG14A")
+END
+
+// Create generic Ursummnogh, lowest level
+IF
+    Global("TalkHorn","ACIL14",10)
+    Global("UrsuSpawn","ACIL14",0)
+THEN
+    RESPONSE #100
+        SetGlobal("UrsuSpawn","ACIL14",1)
+        ClearAllActions()
+        StartCutSceneMode()
+        CreateCreature("AC#MGURS",[2504.689],S)  // Ursummnogh der Untötbare
+        StartCutScene("AC#MG14A")
+END
+
+IF
+    Global("TrollSpawn","ACIL14",0)
+    Dead("AC#MGTI2")  // Eistroll
+THEN
+    RESPONSE #100
+        SetGlobal("TrollSpawn","ACIL14",1)
+        SpawnPtActivate("Trolls_entry")
+END
+
+IF
+    Global("TrollSpawn","ACIL14",1)
+    Dead("AC#DIIN2")  // Diinkarazan
+THEN
+    RESPONSE #100
+        SetGlobal("TrollSpawn","ACIL14",2)
+        SpawnPtDeactivate("Trolls_entry")
+        SpawnPtDeactivate("Trolls")
+END
+
+/*
+IF
+    Global("Meet_Ursu","ACIL14",2)
+    Dead("AC#URSU2")  // Ursummnogh the unkillable
+THEN
+    RESPONSE #100
+        SetGlobal("Meet_Ursu","ACIL14",3)
+END
+*/
+
+IF
+    OpenState("DOOR01",TRUE)
+    OpenState("DOOR02",FALSE)
+    GlobalGT("OrcsFree","ACIL14",0)
+THEN
+    RESPONSE #100
+        OpenDoor("DOOR02")
+END
+
+IF
+    PartyHasItem("AC#MG1U2")  // Schatullen-Runenstein
+    PartyHasItem("AC#MG1UK")  // Sargschlüssel
+    Global("HasCoffinKey","ACIL14",0)    
+THEN
+    RESPONSE #100
+        DisplayStringHeadOwner("AC#MG1U2",@1409)
+        TakePartyItem("AC#MG1U2")  // Schatullen-Runenstein
+        DestroyItem("AC#MG1U2")  // Schatullen-Runenstein
+        Unlock("dwarven_crate02")
+        AmbientActivate("Coffinstoneempty",FALSE)
+        SetGlobal("HasCoffinKey","ACIL14",1)
+END
+

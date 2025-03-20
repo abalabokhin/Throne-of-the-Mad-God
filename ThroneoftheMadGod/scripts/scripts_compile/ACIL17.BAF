@@ -1,0 +1,29 @@
+IF
+	Global("AC#MG_Move1UTo17","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MG_Move1UTo17","GLOBAL",1)
+		MoveContainerContents("ACIL1U*Chest01","ACIL17*Chest01")
+		MoveContainerContents("ACIL1U*Chest02","ACIL17*Chest02")
+		Explore()
+END
+
+IF
+    Global("Leverpulled","ACIL17",1)
+    Contains("AC#MGMD1","Foundry")  // Gussform (unterer Teil)
+    Contains("AC#MGMD2","Foundry")  // Gussform (oberer Teil)
+    Global("FoundryKey","ACIL17",0)
+THEN
+    RESPONSE #100
+        ActionOverride("Foundry",DestroyItem("AC#MGMD1"))  // Gussform (unterer Teil)
+        ActionOverride("Foundry",DestroyItem("AC#MGMD2"))  // Gussform (oberer Teil)
+        SetGlobal("FoundryKey","ACIL17",1)
+        PlaySound("AC#MG17S")
+        ScreenShake([20.45],15)
+        ActionOverride("Foundry",CreateItem("AC#MGMD3",0,0,0))  // Zwergenschlüssel
+        Wait(2)
+		ActionOverride("Foundry",DisplayString(Myself,@1701)) 
+        AddJournalEntry(@17010,QUEST_DONE)
+        AddexperienceParty(1000)
+END
+

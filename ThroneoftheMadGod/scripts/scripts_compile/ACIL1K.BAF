@@ -1,0 +1,36 @@
+IF
+    Global("ChangeSpawns","ACIL1K",0)
+THEN
+    RESPONSE #100
+        SetGlobal("ChangeSpawns","ACIL1K",1)
+        SpawnPtDeactivate("Derro_ambush_01")
+        SpawnPtDeactivate("Derro_ambush_02")
+END
+
+IF
+    Global("AC#MGEnteredACIL1L","GLOBAL",1)
+    Global("Derro_Ambush","ACIL1K",0)
+THEN
+    RESPONSE #100
+        SetGlobal("Derro_Ambush","ACIL1K",1)
+        SpawnPtActivate("Derro_ambush_01")
+        SpawnPtActivate("Derro_ambush_02")
+END
+
+IF
+    Global("DiificultyAdjustment","ACIL1K",0)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        SetGlobal("DiificultyAdjustment","ACIL1K",1)
+END
+
+IF
+    Global("AC#MG_Efreet","GLOBAL",0)
+    Global("DisableEfreetContainer","ACIL1K",0)
+THEN
+    RESPONSE #100
+        SetGlobal("DisableEfreetContainer","ACIL1K",1)
+        ContainerEnable("Genie_cage",FALSE)
+END
+

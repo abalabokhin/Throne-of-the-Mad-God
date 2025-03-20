@@ -1,0 +1,57 @@
+// Dialogue Vampire
+
+BEGIN ~AC#VAMP1~
+
+CHAIN IF ~NumTimesTalkedTo(0)~ THEN AC#VAMP1 hello_01
+@4700
+END
+IF~~THEN REPLY @4701 EXTERN AC#VAMP1 no_fear
+IF~~THEN REPLY @4702 EXTERN AC#VAMP1 trolls
+IF~~THEN REPLY @4703 EXTERN AC#VAMP1 search_bryam
+IF~~THEN REPLY @4704 EXTERN AC#VAMP1 fight
+
+CHAIN IF ~~ THEN AC#VAMP1 trolls
+@4705
+END
+IF~~THEN REPLY @4706 EXTERN AC#VAMP1 fight
+IF~~THEN REPLY @4703 EXTERN AC#VAMP1 search_bryam
+IF~~THEN REPLY @4707 EXTERN AC#VAMP1 new_masters
+
+CHAIN IF ~~ THEN AC#VAMP1 search_bryam
+@4708
+== KeldorJ IF ~InParty("keldorn") !StateCheck("keldorn",CD_STATE_NOTVALID)~ THEN @4709
+== JaheiraJ IF ~InParty("jaheira") !StateCheck("jaheira",CD_STATE_NOTVALID)~ THEN  @4710
+== MinscJ IF ~InParty("minsc") !StateCheck("minsc",CD_STATE_NOTVALID)~ THEN @4711
+== HEXXATJ IF ~InParty("hexxat") !StateCheck("hexxat",CD_STATE_NOTVALID)~ THEN @4712
+== MazzyJ IF ~InParty("Mazzy") !StateCheck("Mazzy",CD_STATE_NOTVALID)~ THEN @4713
+== RASAADJ IF ~InParty("RASAAD") !StateCheck("RASAAD",CD_STATE_NOTVALID)~ THEN @4714
+== AC#VAMP1 @4715
+END
+IF~~THEN REPLY @4707 EXTERN AC#VAMP1 new_masters
+IF~~THEN REPLY @4716 EXTERN AC#VAMP1 which_trap
+IF~~THEN REPLY @4717 EXTERN AC#VAMP1 fight
+IF~~THEN REPLY @4718 EXTERN AC#VAMP1 fight
+
+	CHAIN IF ~~ THEN AC#VAMP1 new_masters
+	@4719
+	END
+	IF~~THEN REPLY @4701 EXTERN AC#VAMP1 no_fear
+	IF~~THEN REPLY @4716 EXTERN AC#VAMP1 which_trap
+	IF~~THEN REPLY @4704 EXTERN AC#VAMP1 fight
+	
+	CHAIN IF ~~ THEN AC#VAMP1 which_trap
+	@4720
+	END
+	IF~~THEN REPLY @4721 EXTERN AC#VAMP1 new_masters
+	IF~~THEN REPLY @4704 EXTERN AC#VAMP1 fight
+
+CHAIN IF ~~ THEN AC#VAMP1 no_fear
+@4722
+END
+IF~~THEN EXTERN AC#VAMP1 fight
+
+CHAIN IF ~~ THEN AC#VAMP1 fight
+@4723
+DO ~SetGlobal("Vampire_Cloudkill","ACIL1U",1)
+Enemy()~ EXIT
+

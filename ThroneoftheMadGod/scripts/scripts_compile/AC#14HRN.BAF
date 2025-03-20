@@ -1,0 +1,128 @@
+IF
+    Range([PC],30)
+    GlobalLT("TalkHorn","ACIL14",2)
+    Global("HornBark","ACIL14",0)
+    Dead("AC#TROB3")  // Narg the Black
+    !GlobalTimerNotExpired("HornBarkTimer","ACIL14")
+THEN
+    RESPONSE #100
+        SetGlobal("HornBark","ACIL14",1)
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3020)  // 
+END
+
+IF
+    Range([PC],30)
+    GlobalLT("TalkHorn","ACIL14",2)
+    Global("HornBark","ACIL14",1)
+    Dead("AC#TROB3")  // Narg the Black
+    !GlobalTimerNotExpired("HornBarkTimer","ACIL14")
+THEN
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3021)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3022)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3023)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3024)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3025)  // 
+        Continue()	
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3026)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3027)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3028)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3029)  // 
+        Continue()	
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3030)  // 
+        Continue()
+	RESPONSE #100
+		SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+		DisplayString(Myself,@3031)  // 
+		Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3031)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3033)  // 
+        Continue()
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        DisplayString(Myself,@3034)  // 
+        Continue()				
+    RESPONSE #100
+        SetGlobalTimer("HornBarkTimer","ACIL14",TWO_MINUTES)
+        Continue()
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL14",10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1400) 
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL14",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1401)  
+		SetGlobal("TalkHorn","ACIL14",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL14",1)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassableAllowOverlap("AC#MG14H",[2185.447],0)  
+		SetGlobal("TalkHorn","ACIL14",2)
+		ActionOverride("AC#MG14H",StartDialogNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL14",2)
+THEN
+	RESPONSE #100
+		ActionOverride("AC#MG14H",StartDialogNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,18)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

@@ -1,0 +1,32 @@
+IF
+    StateCheck(Myself,STATE_SLEEPING)
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
+    See("AC#MGGOM")  // Mithrilgolem
+    !Dead("AC#MGGOM") 
+THEN
+    RESPONSE #100
+        AttackReevaluate("AC#MGGOM",12)  // Mithrilgolem
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    ActionListEmpty()
+    See(NearestEnemyOf(Myself))
+    !See("AC#MGGOM")  // Mithrilgolem
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

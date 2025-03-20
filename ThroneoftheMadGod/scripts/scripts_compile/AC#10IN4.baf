@@ -1,0 +1,53 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@521) /* AAuf diesem gro�en Stein steht in Zwergenrunen geschrieben:
+"An dieser Furt erschlug Karlyn vom Clan Kuldelver mit einem Hieb seiner Axt den feigen Kutlog, K�nig der H�gelriesen." */
+
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	CheckStatGT(LastTrigger,30,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@521)  /* AAuf diesem gro�en Stein steht in Zwergenrunen geschrieben:
+"An dieser Furt erschlug Karlyn vom Clan Kuldelver mit einem Hieb seiner Axt den feigen Kutlog, K�nig der H�gelriesen."*/
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@521) /* Auf diesem gro�en Stein steht in Zwergenrunen geschrieben:
+"An dieser Furt erschlug Karlyn vom Clan Kuldelver mit einem Hieb seiner Axt den feigen Kutlog, K�nig der H�gelriesen."*/
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	CheckStatLT(LastTrigger,31,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@518) // Auf diesem gro�en Stein sind zahlreiche Zwergenrunen eingraviert, die Ihr nicht entziffern k�nnt.
+END
+

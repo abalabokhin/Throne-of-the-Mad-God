@@ -1,0 +1,19 @@
+IF
+    Range([PC],15)
+    NumberOfTimesTalkedTo(0)
+    Detect([PC])
+THEN
+    RESPONSE #100
+        StartDialogueNoSet([PC])
+END
+
+IF
+    Global("LancamethsParty","ACIL18",10)
+    Global("DropRing","ACIL18",0)
+THEN
+    RESPONSE #100
+        DropItem("AC#MGRI3",[-1.-1])  // Ring der Kameradschaft
+        SetGlobal("DropRing","ACIL18",1)
+        Continue()
+END
+

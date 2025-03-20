@@ -1,0 +1,28 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("HistoryStatue02","ACIL13",0)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassable("AC#13RI2",[1057.743],13)  // Verwitterte Zwergenstatue
+		SetGlobal("HistoryStatue02","ACIL13",1)
+		ActionOverride("AC#13RI2",StartDialogueNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("HistoryStatue02","ACIL13",1)
+THEN
+	RESPONSE #100
+		ActionOverride("AC#13RI2",StartDialogueNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

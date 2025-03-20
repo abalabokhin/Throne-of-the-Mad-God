@@ -1,0 +1,20 @@
+IF
+	Global("Prep","ACIL11",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACIL11",1)
+		AmbientActivate("Firepit02",FALSE)
+		AmbientActivate("Smoke",FALSE)
+		SoundActivate("Fireplace",FALSE)
+END
+
+IF
+	Global("AC#Fireseeds","ACIL11",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#Fireseeds","ACIL11",2)
+		AmbientActivate("Firepit02",FALSE)
+		AmbientActivate("Smoke",TRUE)
+		SoundActivate("Fireplace",FALSE)
+END
+

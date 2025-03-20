@@ -1,0 +1,8 @@
+IF
+	Entered([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(LastTrigger,@26)  // Falle zugeschnappt
+		ForceSpell(LastTrigger,TRAP_LIGHTNING_BOLT)  // SPWI002.SPL (Blitzstrahl)
+END
+

@@ -1,0 +1,26 @@
+IF
+	Global("Prep","ACIL1V",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACIL1V",1)
+		AmbientActivate("Amsteam01",FALSE)
+		AmbientActivate("Amsteam02",FALSE)
+		SoundActivate("Pipes_tubes",FALSE)
+		SoundActivate("Steam_bubbles",FALSE)
+END
+
+IF
+	Global("Prep","ACIL1V",1)
+	Global("Handwheel","ACIL1V",10)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACIL1V",2)
+		SetGlobal("AC#MGFoundry","GLOBAL",1)
+		AmbientActivate("Amsteam01",TRUE)
+		AmbientActivate("Amsteam02",TRUE)
+		SoundActivate("Pipes_tubes",TRUE)
+		SoundActivate("Steam_bubbles",TRUE)
+		EraseJournalEntry(@17000)
+		AddJournalEntry(@17001,QUEST)
+END
+

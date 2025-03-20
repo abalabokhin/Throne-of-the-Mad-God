@@ -1,0 +1,129 @@
+IF
+    Global("AC#Arrived_ACIL10","GLOBAL",0)
+THEN
+	RESPONSE #100
+	        SetGlobal("AC#Arrived_ACIL10","GLOBAL",1)
+			TriggerActivation("TrRope01",FALSE)
+			TriggerActivation("TrRope02",FALSE)
+			AmbientActivate("Rope02",FALSE)
+			StartMovie("AC#MGM10")
+			//TextScreen("AC#MGM10")
+END
+
+IF
+	Global("SetMusic","ACIL10",0)
+	Dead("AC#FOM10")
+	CombatCounter(0)
+THEN
+RESPONSE #100
+	SetMusic(NIGHT,%AC#IL10%)
+	SetMusic(DAY,%AC#IL10%)
+	SetGlobal("SetMusic","ACIL10",1)
+	Continue()
+END
+
+
+IF
+	Global("RopeActivation","ACIL10",3)
+THEN
+RESPONSE #100
+	SetGlobal("RopeActivation","ACIL10",4)
+	ClearAllActions()
+	StartCutSceneMode()
+	DisplayString("RopeInfo",@24) 
+	Wait(2)
+	FadeToColor([15.0],0)
+	TriggerActivation("RopeInfo",FALSE)
+	TriggerActivation("TrRope01",TRUE)
+	TriggerActivation("TrRope02",TRUE)
+	AmbientActivate("Rope01",FALSE)
+	AmbientActivate("Rope02",TRUE)
+	ActionOverride(Player1,Wait(1))
+	ActionOverride(Player1,FadeFromColor([15.0],0))
+	ActionOverride(Player1,EndCutSceneMode())
+END
+
+IF
+    Global("DifficultEncounters","ACIL10",0)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        CreateCreature("AC#MGOA1",[1046.1778],E)  // Orkischer Bogenschütze
+        CreateCreature("AC#MGOA2",[1323.2045],E)  // Orkischer Bogenschütze
+        CreateCreature("AC#FOM10",[3774.540],SE)  // Fomorischer Riese
+		CreateCreature("AC#MGFAM",[2529.418],N)  // Glouris' Vertrauter
+        SetGlobal("DifficultEncounters","ACIL10",1)
+END
+
+IF
+	Global("Chimera","ACIL10",1)
+THEN
+	RESPONSE #100
+		CreateCreature("AC#MGCHM",[2778.413],NEE)  // Chimera
+		SetGlobal("Chimera","ACIL10",2)
+END
+
+IF
+	Global("CreateTrolls","ACIL10",0)
+	GlobalGT("AC#MGEnteredACIL12","GLOBAL",0)
+	Dead("AC#MGMA1")
+	Dead("AC#MGCHM")
+THEN
+	RESPONSE #100
+		//CreateCreature("TROLGI01",[2778.332],NEE)  // Riesentroll
+		//CreateCreature("TROLGI01",[2456.511],NWW)  // Riesentroll
+		//CreateCreature("TROLGI01",[2565.287],N)  // Riesentroll
+		SetGlobal("CreateTrolls","ACIL10",1)
+END
+
+//XZAR
+
+IF
+	InParty("L#XZA")
+	Dead("AC#MGMA1")
+	!Dead("L#XZA")
+	AreaCheck("ACIL10")
+	Global("ACIL10#ZhentarimXzar","ACIL10",0)
+	THEN
+	RESPONSE #100
+	SetGlobalTimer("ACIL10#ZhentarimXzarTime","ACIL10",3)
+	SetGlobal("ACIL10#ZhentarimXzar","ACIL10",1)
+	END
+	
+	IF
+	InParty("L#XZA")
+	!Dead("L#XZA")
+	Global("ACIL10#ZhentarimXzar","ACIL10",1)
+	GlobalTimerExpired("ACIL10#ZhentarimXzarTime","ACIL10")
+	THEN
+	RESPONSE #100
+	DisplayStringHead("L#XZA",@3017)
+	SetGlobal("ACIL10#ZhentarimXzar","ACIL10",2)
+	END
+	
+	//MONTARON
+	
+	IF
+	InParty("L#MON")
+	Dead("AC#MGMA1")
+	!Dead("L#MON")
+	AreaCheck("ACIL10")
+	Global("ACIL10#ZhentarimMontaron","ACIL10",0)
+	THEN
+	RESPONSE #100
+	SetGlobalTimer("ACIL10#ZhentarimMontaronTime","ACIL10",8)
+	SetGlobal("ACIL10#ZhentarimMontaron","ACIL10",1)
+	END
+	
+	IF
+	InParty("L#MON")
+	!Dead("L#MON")
+	Global("ACIL10#ZhentarimMontaron","ACIL10",1)
+	GlobalTimerExpired("ACIL10#ZhentarimMontaronTime","ACIL10")
+	THEN
+	RESPONSE #100
+	DisplayStringHead("L#MON",@3018)
+	SetGlobal("ACIL10#ZhentarimMontaron","ACIL10",2)
+	END
+
+

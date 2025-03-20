@@ -1,0 +1,7 @@
+IF
+    !See([GOODCUTOFF])
+THEN
+    RESPONSE #100
+        MoveToObject("AC#MGURS")  // Ursummnogh der Untötbare
+END
+

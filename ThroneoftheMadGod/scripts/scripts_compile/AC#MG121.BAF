@@ -1,0 +1,17 @@
+IF
+	Entered([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(LastTrigger,@26)  // Falle zugeschnappt
+		ForceSpell(LastTrigger,TRAP_LIGHTNING_BOLT)  // SPWI002.SPL (Blitzstrahl)
+END
+
+IF
+	Disarmed([ANYONE])
+	Global("AC#Trap01","ACIL12",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#Trap01","ACIL12",1)
+		SoundActivate("ElectricalRoom1",FALSE)
+END
+

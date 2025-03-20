@@ -1,0 +1,14 @@
+IF
+    OnCreation()
+THEN
+    RESPONSE #100
+        ReallyForceSpellRES("AC#MGRM",Myself)  // No such index
+END
+
+IF
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+

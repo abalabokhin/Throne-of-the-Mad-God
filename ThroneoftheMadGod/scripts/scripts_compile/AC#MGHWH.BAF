@@ -1,0 +1,39 @@
+IF
+    Allegiance(LastSummonerOf(Myself),ENEMY)
+    Global("npc","LOCALS",0)
+THEN
+    RESPONSE #100
+        Enemy()
+        SetGlobal("npc","LOCALS",1)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+
+IF
+    !See([GOODCUTOFF])
+    Range(Player1,40)
+    Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        MoveToObject(Player1)
+END
+
+IF
+    SpellCastOnMe([ANYONE],0)
+THEN
+    RESPONSE #100
+        ApplySpell(LastSummonerOf(Myself),CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Leichte Wunden heilen)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

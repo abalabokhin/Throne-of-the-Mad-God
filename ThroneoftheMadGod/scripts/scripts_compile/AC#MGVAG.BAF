@@ -1,0 +1,27 @@
+IF
+    Global("Vargouille_Scream","LOCALS",0)
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        SetGlobal("Vargouille_Scream","LOCALS",1)
+        DisplayString(Myself,@227)  // Schrei
+        ReallyForceSpellRES("AC#MGVS",NearestEnemyOf(Myself))  // Schrei der Vargouille
+END
+
+IF
+    Delay(6)
+    See(NearestEnemyOf(Myself))
+    Global("Vargouille_Scream","LOCALS",1)
+THEN
+    RESPONSE #100
+        ForceSpellRES("AC#MGVK",LastSeenBy(Myself))  // Kuss der Vargouille
+        SetGlobal("Vargouille_Scream","LOCALS",2)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

@@ -1,0 +1,9 @@
+IF
+    Entered([ANYONE])
+THEN
+    RESPONSE #100
+        CreateCreatureEffect("AC#DER05","SPFLESHS",[2769.1692],NE)  // Derro
+        CreateCreatureEffect("AC#DER05","SPFLESHS",[2809.1708],NE)  // Derro
+        CreateCreatureEffect("AC#DER06","SPFLESHS",[2674.1642],NE)  // Derro
+END
+

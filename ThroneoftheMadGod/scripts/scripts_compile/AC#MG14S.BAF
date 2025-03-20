@@ -1,0 +1,19 @@
+IF
+    Global("SlaveBoom","ACIL14",0)
+    See([PC])
+THEN
+    RESPONSE #100
+        SetGlobal("SlaveBoom","ACIL14",1)
+        StartDialogueNoSet([PC])
+END
+
+IF
+    Global("SlaveBoom","ACIL14",1)
+    OpenState("DOOR01",TRUE)
+    See([PC])
+THEN
+    RESPONSE #100
+        SetGlobal("SlaveBoom","ACIL14",2)
+        Dialogue([PC])
+END
+

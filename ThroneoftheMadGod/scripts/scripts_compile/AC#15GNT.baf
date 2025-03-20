@@ -1,0 +1,15 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung könnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@969)
+END

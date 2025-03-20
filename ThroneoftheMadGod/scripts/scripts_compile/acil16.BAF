@@ -1,0 +1,33 @@
+IF
+    Global("SpawnPointsGone","ACIL16",0)
+    Dead("AC#DIIN2")  // Diinkarazan
+THEN
+    RESPONSE #100
+        SetGlobal("SpawnPointsGone","ACIL16",1)
+        SpawnPtDeactivate("Goblins01")
+        SpawnPtDeactivate("Goblins02")
+        SpawnPtDeactivate("Goblins03")
+END
+
+IF
+    DifficultyGT(EASY)
+    Global("CreateOrks","ACIL16",0)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateOrks","ACIL16",1)
+        CreateCreatureImpassableAllowOverlap("AC#ORC09",[1126.997],S)  // Orkischer Bogenschütze
+        CreateCreatureImpassableAllowOverlap("AC#ORC09",[1314.857],S)  // Orkischer Bogenschütze
+        CreateCreatureImpassableAllowOverlap("AC#ORC09",[1839.482],S)  // Orkischer Bogenschütze
+        CreateCreatureImpassableAllowOverlap("AC#ORC09",[2036.341],SE)  // Orkischer Bogenschütze
+END
+
+IF
+    DifficultyGT(EASY)
+    Global("CreateGoblinShamans","ACIL16",0)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateGoblinShamans","ACIL16",1)
+        CreateCreature("AC#MGGSM",[998.1138],S)  // Goblin-Schamane
+        CreateCreature("AC#MGGSM",[1370.1414],S)  // Goblin-Schamane
+END
+

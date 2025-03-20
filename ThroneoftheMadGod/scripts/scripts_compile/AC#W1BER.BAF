@@ -1,0 +1,46 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,25)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359)  // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@565)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	CheckStatGT(LastTrigger,30,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@565)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	PartyHasItemIdentified("AC#BKDWF")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@565) 
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	CheckStatLT(LastTrigger,31,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@58)
+END
+

@@ -1,0 +1,14 @@
+IF
+	StateCheck(Myself,STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

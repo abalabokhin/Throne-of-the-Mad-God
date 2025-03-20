@@ -1,0 +1,37 @@
+IF
+	Contains("ac#shan7",Myself)  // High Shanatar stone
+	Global("HighShanatarItem","ACIL15",0)
+THEN
+	RESPONSE #100
+		SetGlobal("HighShanatarItem","ACIL15",1)
+		DisplayString(Myself,@1500)
+END
+
+IF
+	!Contains("ac#shan7",Myself)  // High Shanatar stone
+	Global("HighShanatarItem","ACIL15",1)
+	Global("PlantedItems","ACIL15",0)
+THEN
+	RESPONSE #100
+		SetGlobal("HighShanatarItem","ACIL15",0)
+		DisplayString(Myself,@1501) 
+END
+
+/*
+IF
+	OR(9)
+	Contains("ac#shan1","Myself")  // Ammonit
+	Contains("ac#shan2","Myself")  // Goldbarren
+	Contains("ac#shan3","Myself")  // Zardazil
+	Contains("ac#shan4","Myself")  // Eisenerz
+	Contains("ac#shan5","Myself")  // Silberbarren
+	Contains("ac#shan6","Myself")  // beschliffener Juwel
+	Contains("ac#shan7","Myself")  // Kieselsteine
+	Contains("ac#shan8","Myself")  // Adamantit
+	Contains("ac#shan9","Myself")  // Mithril
+	Global("DrakkalorWrongItem","ACIL15",0)
+THEN
+	RESPONSE #100
+		SetGlobal("DrakkalorWrongItem","ACIL15",1)
+END
+*/

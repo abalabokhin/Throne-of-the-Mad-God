@@ -1,0 +1,102 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Handwheel","ACIL1V",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1402)  
+		SetGlobal("Handwheel","ACIL1V",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItem("AC#MGHDW")  
+	Global("Handwheel","ACIL1V",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1404)  
+		SetGlobal("Handwheel","ACIL1V",2)
+		PlaySound("AC#LEVER")
+		TakePartyItemNum("AC#MGHDW",1)   
+		DestroyItem("AC#MGHDW") 
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12) 
+	Global("Handwheel","ACIL1V",2)
+	Global("OvenDoorOpen01","ACIL1V",1)
+	Global("OvenDoorOpen02","ACIL1V",1)
+	Global("OvenDoorOpen03","ACIL1V",1)
+	Global("OvenDoorOpen04","ACIL1V",1)
+	OpenState("DOOR01",FALSE)
+	OpenState("DOOR02",FALSE)
+	OpenState("DOOR03",FALSE)
+	OpenState("DOOR04",FALSE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1406)  
+		SetGlobal("Handwheel","ACIL1V",10)
+		PlaySound("AC#LEVER")
+		AddexperienceParty(300)
+		CreateVisualEffectObject("ICMAGICH",Myself)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12) 
+	Global("Handwheel","ACIL1V",2)
+	Global("OvenDoorOpen01","ACIL1V",1)
+	Global("OvenDoorOpen02","ACIL1V",1)
+	Global("OvenDoorOpen03","ACIL1V",1)
+	Global("OvenDoorOpen04","ACIL1V",1)
+	OR(4)
+	OpenState("DOOR01",TRUE)
+	OpenState("DOOR02",TRUE)
+	OpenState("DOOR03",TRUE)
+	OpenState("DOOR04",TRUE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1408)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12) 
+	Global("Handwheel","ACIL1V",2)
+	OR(4)
+	Global("OvenDoorOpen01","ACIL1V",0)
+	Global("OvenDoorOpen02","ACIL1V",0)
+	Global("OvenDoorOpen03","ACIL1V",0)
+	Global("OvenDoorOpen04","ACIL1V",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1407)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Handwheel","ACIL1V",10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1405)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1403)   
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

@@ -1,0 +1,53 @@
+IF
+    Heard([ANYONE],111)
+THEN
+    RESPONSE #100
+        MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+    Global("Verbeeg_Bridge","ACIL10",1)
+    Global("Move","LOCALS",0)
+THEN
+    RESPONSE #100
+        MoveToPointNoInterrupt([1145.1723])
+        SetGlobal("Move","LOCALS",1)
+END
+
+IF
+    OR(2)
+        See(NearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+        See(NearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+THEN
+    RESPONSE #100
+        EquipRanged()
+        AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+    OR(3)
+        See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+        See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+        See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+THEN
+    RESPONSE #100
+        EquipRanged()
+        AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    ActionListEmpty()
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

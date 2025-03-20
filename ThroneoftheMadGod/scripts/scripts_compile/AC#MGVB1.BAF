@@ -1,0 +1,16 @@
+IF
+	Global("Welcome_Goblin","ACIL10",1)
+	Global("Attack","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Attack","LOCALS",1)
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

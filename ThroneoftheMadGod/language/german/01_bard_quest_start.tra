@@ -1,0 +1,154 @@
+@4000 = ~Ich habe gehört, diese Ballade lässt selbst die härtesten Krieger weinen.~
+@4001 = ~Hoffentlich erzählt er auch die Stelle mit dem Drachen richtig!~
+@4002 = ~Ich wette, ich könnte auch ein Barde werden, wenn ich nur die Zeit hätte!~
+@4003 = ~Mal sehen, ob es der Barde dieses Mal schafft, ohne sich zu verhaspeln.~
+@4004 = ~Jedes Mal, wenn ich diese Geschichte höre, bekomme ich Gänsehaut.~
+@4005 = ~Ist das die Geschichte, wo am Ende alle sterben? Ich mag keine traurigen Enden!~
+@4006 = ~Ich hoffe, die Geschichte ist nicht so lang... Mein Bier wird nicht ewig halten.~
+@4007 = ~Hört und lauscht meiner Stimme und den Klängen der Yarting - und wenn Euch mein Werk gefällt, wird die ein oder andere Perle in meinem Beutel den Strom meiner Muse weiter nähren und meine Poesie zum Sprudeln bringen.~
+@4008 = ~Und nun steht still vor Ehrfurcht und lauscht meiner Ballade mit dem Titel "Lancameths letzte Expedition", die auf einer wahren Begebenheit beruht...~
+@4009 = ~"Die Ballade von Lancameths letzter Expedition"~
+@4010 = ~...von Gisbert aus Myratma. (Das bin ich.)~
+@4011 = ~*Räusper*~ [ACT_01]
+@4012 = ~Es lebte einst ein Krieger,
+		der war ein tapf'rer Mann
+		gegen Böses wollt' er kämpfen, 
+		schloss sich der Wache an.~
+@4013 = ~wollt' immer mehr erreichen
+		auf Ruhme ward' er aus,
+		in die Trollberge wollt' er reisen
+		verließ dafür Frau und Haus.~
+@4014 = ~Eine Festung der alten Zwerge
+		hatte es ihm angetan
+		begleitet von vier Helden
+		aus Amn und Calimshan.~
+@4015 = ~Doch das Böse, das war schlauer
+		durch viel Fallen, Gier und List
+		und durch alte Zwergenmauern
+		half ihm kein Alchimist.~
+@4016 = ~He! Unterbrecht mich nicht und hört Euch das Lied bis zu Ende an!~
+@4017 = ~Wo war ich stehengeblieben? Ach ja...~
+@4018 = ~Die Recken kämpften tapfer
+		sich tief unter den Berg
+		doch sie fanden nicht das Erhoffte
+		weder Gold, noch Ruhm, noch Zwerg.~
+@4019 = ~verloren zu letzter Stunde
+		ohne Hoffnung auf ein Zurück,
+		so gingen sie zugrunde, 
+		ohne Grab und ohne Glück.~
+@4020 = ~Die Festung blieb ihr Grabmal
+		kamen niemals mehr 'draus hervor,
+		der Witwe blieb nur das Trauern
+		am Standbild von Kelemvor.~
+@4021 = ~Die Helden sind gefallen
+		die Geschichte lebt aber fort
+		in den Liedern guter Skalden
+		und Tavernen wie diesem Ort.~
+@4022 = ~...~
+@4023 = ~(Jetzt sollte eigentlich der Applaus einsetzen...)~
+@4024 = ~Ähem... FERTIG! Das ist das Ende der Ballade über "Lancameths letzte Expedition"!~
+@4025 = ~Liebe Leute, wie wäre es vielleicht mit einem kleinen Obulus für meine Darbietung? Nur ein paar Münzen?~
+@4026 = ~Nichts? Gar nichts? *Seufz*.~
+@4027 = ~Verdammte Banausen! Kein Verständnis für Kunst! Und was wollt Ihr von mir?~
+@4028 = ~Mir hat Eure Ballade gefallen.~
+@4029 = ~Eure Ballade ist wirklich furchtbar.~
+@4030 = ~Ich fand die Ballade nicht schlecht.~
+@4031 = ~Ich gehe jetzt wieder.~
+@4032 = ~Nicht schlecht? Mit Mittelmaß gebe ich mich nicht zufrieden. Aber sei's drum, immerhin habt Ihr mein Lied bis zu Ende angehört.~
+@4033 = ~Ihr sagtet, das Lied beruhe auf einer wahren Begebenheit?~
+@4034 = ~Die Geschichte, die Ihr erzählt, ist wahr?~
+@4035 = ~Ja, ja. Legt ruhig noch Euren Finger in meine blutende Sangeswunde!~
+@4036 = ~Was in aller Welt hat Euch denn zu solch einem Lied inspiriert?~
+@4037 = ~Na, die Geschichte von den Abenteurern ist wirklich passiert!~
+@4038 = ~Woher wisst Ihr das?~
+@4039 = ~Erzählt mir Genaueres.~
+@4040 = ~Oh! Das freut mich!~
+@4041 = ~Wie Ihr wollt. Vielleicht habe ich beim nächsten Publikum mehr Glück!~
+@4042 = ~Die Geschichte hinter der Ballade ist wirklich passiert, ja. Gut, ich habe sie vielleicht noch etwas ausgeschmückt - des Dramas wegen - aber im Großen und Ganzen beruht sie auf einer wahren Begebenheit.~
+@4043 = ~Woher wisst Ihr das alles?~
+@4044 = ~Man redet hier in der Stadt noch über Hauptmann Lancameth, der auszog, um sein letztes Abenteuer zu beschreiten, doch niemals zurückkehrte. Das Ende seiner Lebensgeschichte steht leider in roter Tinte geschrieben.~
+@4045 = ~Erzählt mir mehr über diesen Lancameth.~
+@4046 = ~Irgendwann geht jedes Abenteurerleben eben einmal zu Ende.~
+@4047 = ~Lancameth? Noch nie gehört.~
+@4048 = ~Natürlich! Hört gut zu...~
+@4049 = ~Nicht so hochmütig, mein Freund! Der Abenteurer, um den es hier geht, war alles andere als ein Grünschnabel.~
+@4050 = ~Bryam Lancameth ließ sich von den Geschichten, die sich um das Bauwerk und die Trollberge rankten, nicht beunruhigen. Er war wild entschlossen, diesem Ort einen Besuch abzustatten und begann, Nachforschungen über den Zwergenclan, der in der Gegend gelebt haben sollte, anzustellen. Viele hielten seinen Ehrgeiz für kopflos, denn bisher war es noch keiner Gruppe gelungen, lebend wieder aus den Bergen herauszukommen.~
+@4051 = ~Manche erzählen auch, dass Lancameth die Aussicht auf unermesslichen Reichtum dazu brachte, über seine sonstige Zurückhaltung hinwegzusehen. Gerüchte erzählen, dass in der alten Zwergenfestung uraltes Wissen und mächtige Magie verschüttet wäre. Und wo derlei Dinge verborgen sind, könnte neben Heldenmut auch ein wenig Gier den Anstoß zu diesem Abenteuer gegeben haben.~
+@4052 = ~Die Aussicht auf den ein oder anderen Edelstein kann bei einem Abenteuer niemals schaden.~
+@4053 = ~Gier hat schon so manches ruhmreiche Abenteuer scheitern lassen, vielleicht auch dieses.~
+@4054 = ~Fahrt fort.~
+@4055 = ~In solchen Zwergenruinen könnte alles Mögliche herumliegen. Edelsteine, mächtige Waffen, ein schlafender Drache? Ich weiß es nicht. Doch die Geschichte dieser Region ist eng mit der Geschichte der Zwerge verknüpft, auch wenn diese Dinge schon längst in Vergessenheit geraten sind.~
+@4056 = ~Ich habe bereits das Geheimnis einiger alter Zwergenbauwerke gelüftet.~
+@4057 = ~Ihr erweckt mein Interesse. Wie ging es weiter?~
+@4058 = ~Naja, jedenfalls schenkte Lancameth den Warnungen keinen Glauben. Er war überzeugt, dieses letzte große Abenteuer um des Abenteuers Willen bestehen zu müssen. Er scharte einige der besten Abenteurer um sich, die er bekommen konnte. Auch diese ließen sich von der Aussicht auf Schätze und Heldentum auf das Wagnis ein.~
+@4059 = ~Eine gute Entscheidung, nicht allein auf dieses Abenteuer aufzubrechen.~
+@4060 = ~Wer waren die anderen Abenteurer?~
+@4061 = ~Interessant. Fahrt mit der Geschichte fort.~
+@4062 = ~Neben Lancameth gingen noch vier weitere Helden mit ihm in die Trollberge: Ein Halblingsdieb hier aus Athkatla, eine elfische Bogenschützin, eine Priesterin und ein seltsamer kleiner Magier.~
+@4063 = ~Könnt Ihr mir etwas über Lancameths Begleiter erzählen?~
+@4064 = ~Und weiter?~
+@4065 = ~Über Lancameths Begleiter kann ich nicht viel berichten - außer über einen. Der Halblingsdieb hieß Nhair Ebendar. Er war ein bekanntes Gesicht in Athkatla. Hatte ständig Ärger mit der Stadtwache und den Schattendieben. Erwischen konnte ihn keiner von beiden, weil ihm die hier ansässigen Halblinge immer sicheren Unterschlupf gewährten.~
+@4066 = ~Er soll einem Adeligen einen wertvollen Dolch entwendet haben, welchen er seitdem bei sich trug - und deshalb vor den Schergen des Edelmannes immerwährend auf der Flucht war. Deshalb sah er wohl das Abenteuer mit Bryam Lancameth als willkommene Gelegenheit, Gras über die Sache wachsen zu lassen.~
+@4067 = ~Ich habe Lancameth einmal kennengelernt, als er noch Hauptmann der Wache hier in Athkatla war. Hatte mich eingebuchtet, weil ich mir von einer reichen Schickse im Regierungsviertel einen Ring ausgeliehen hatte.~
+@4068 = ~Er war ein netter Kerl. Im Gefängnis hatte er mich öfter besucht, weil ihm meine Balladen so gut gefallen haben. Hätte nie gedacht, dass ich über ihn einmal auch eine Ballade verfassen würde! Er hat mich dann irgendwann laufen lassen. Ich habe ihn nie wieder gesehen.~
+@4069 = ~Alle aus Lancameths Gruppe waren erfahrene Abenteurer, ein jeder mit mächtigen Waffen ausgestattet - bereit, jedes Übel, das sich ihnen in den Weg stellt, beiseite zu räumen.~
+@4070 = ~Was geschah mit der Gruppe?~
+@4071 = ~Scheint ihnen nicht viel genützt zu haben.~
+@4072 = ~Jede Waffe ist nur so gut wie der Schwertarm, der sie schwingt.~
+@4073 = ~Vielleicht hätte neben guten Waffen auch mehr Verstand geholfen, das Abenteuer zu berstehen.~
+@4074 = ~Die fünf Helden sind eines Tages also in die Trollberge aufgebrochen und nie mehr zurückgekehrt. Niemand hat jemals mehr etwas von ihnen gehört oder gesehen.~
+@4075 = ~Könnt Ihr mir sagen, wo sich dieser Ort befindet, zu dem die Expedition aufgebrochen ist?~
+@4076 = ~Könnt Ihr mir noch einmal sagen, wo sich dieser Ort befindet, zu dem die Expedition aufgebrochen ist?~
+@4077 = ~Und Ihr habt die Ballade über sie geschrieben.~
+@4078 = ~Danke, dass Ihr mir das alles erzählt habt.~
+@4079 = ~So ist es. Ich wusste, dass die Leute tragische Heldengeschichten mögen.~
+@4080 = ~Ich habe Lancameth einmal kennengelernt, als er noch Hauptmann der Wache hier in Athkatla war. Hatte mich eingebuchtet, weil ich mir von einer reichen Schickse im Regierungsviertel einen Ring ausgeliehen hatte. Er war ein netter Kerl. Im Gefängnis hatte er mich öfter besucht, weil ihm meine Balladen so gut gefallen haben. Hätte nie gedacht, dass ich über ihn einmal auch eine Ballade verfassen würde! Er hat mich dann irgendwann laufen lassen. Ich habe ihn nie wieder gesehen.~
+@4081 = ~Und Ihr habt die Ballade über ihn geschrieben.~
+@4082 = ~Nun kennt Ihr also die Geschichte von "Lancameths letzter Expedition".~
+@4083 = ~Wo finde ich diese alte Zwergenfestung?~
+@4084 = ~Die alte Zwergenfeste liegt irgendwo in den Trollbergen. Soll eine große, aus Stein gehauene Statue sein, die man den "Klagenden Zwerg" nennt. Die Winde sollen durch den geöffneten Steinmund durchfegen, dass einem Angst und Bange werden kann.~
+@4085 = ~Danke! Das freut mich! Wenn hier nur jeder so interessiert und so... spendabel wäre...~
+@4086 = ~Passt auf Euch auf, ja? Ich werde mich nach einer anderen Taverne umsehen. Vielleicht gibt es in dieser Stadt noch Zuhörer, die meine Lieder mehr zu schätzen wissen als diese Leute hier. Euch ausgenommen, versteht sich. So lebt denn wohl!~
+@4087 = ~Liebe Leute! Spitzt die Ohren, kommt herbei! Denn ich werde gleich eine Ballade zum Besten geben!~
+@4088 = ~Das ist ganz nach meinem Geschmack! Stimmt das Lied an, Barde!~
+@4089 = ~Kann ja nicht schaden, einem Liedchen in dieser Taverne zu lauschen.~
+@4090 = ~Eine Ballade? Die werde ich mir später anhören.~
+@4091 = ~Was denn, niemand will zuhören? Lasst Euch nicht ewig Zeit, bevor ich in eine andere Taverne weiterziehe und Ihr die Geschichte verpasst!~
+@4092 = ~Tretet näher - es geht gleich los! Meine Yarting ist gestimmt, meine Stimme geölt - macht Euch gefasst auf ein Heldenlied, eine ganz und gar wahre Geschichte voll von Abenteuerlust und Wagnis mit tragischem Ausgang!~
+@4093 = ~Könntet Ihr nicht einmal zur Abwechslung eine Geschichte mit einem fröhlichen Ende darbieten?~
+@4094 = ~He, seid still! Ich will die Ballade hören!~
+@4095 = ~Ach, das Lied können wir doch nicht mehr hören! Immer die gleiche alte Leier...~
+@4096 = ~Ich kenne die Ballade noch nicht! Also fangt schon an, Barde!~
+@4097 = ~Ruhe! RUHE, liebe Leute!~
+@4098 = ~Ich kannte einmal einen Oger, der konnte besser reimen als dieser Barde hier.~
+@4099 = ~Und ich habe Leuten schon für weitaus nichtigere Dinge die Zunge herausgeschnitten.~
+@4100 = ~Es ist das Los aller großen und kleinen Künstler, ständig unterbrochen zu werden. Lasst den Barden singen, denn jede Unterbrechung ist wie ein Schnitt ins Fleisch der Melodie.~
+@4101 = ~Hört auf, den Barden zu unterbrechen! Eine gute Ballade ist wie ein starker Schwertarm – man sollte nicht versuchen, ihnen Einhalt zu gebieten!~
+@4102 = ~Still! Ich finde die Ballade gar nicht schlecht.~
+@4103 = ~Was ist ein Alchimist?~
+@4104 = ~Wie, schon fertig?~
+@4105 = ~Nun ja, ich weiß nicht, was ich von der Ballade halten soll...~
+@4106 = ~Lasst uns gehen. War nichts besonderes.~
+@4107 = ~Ich hörte, in den "Fünf Krügen" sei eine Schauspieltruppe einquartiert. Die hätten wir uns eher ansehen sollen.~
+@4108 = ~Lasst uns zu den "Fünf Krügen" gehen!~
+@4109 = ~Ja, ich sterbe hier vor Langeweile. Gehen wir!~
+@4110 = ~Vor einigen Jahren lebte hier in Amn ein Hauptmann der amnischen Armee, der sich auch als Abenteurer einen Namen gemacht hatte. Sein Name war Bryam Lancameth, und er war wegen seines Mutes und seiner ehrenhaften Art in der Bevölkerung und gleichwohl bei seinen Soldaten sehr beliebt.~
+@4111 = ~Ich kann mich noch gut an diesen Hauptmann erinnern. Er war einer der anständigsten Männer, die mir in Athkatlas Stadtwache je begegnet sind.~
+@4112 = ~Das muss schon eine ganze Weile zurück liegen, denn dieser Name ist mir in meiner Zeit hier in Athkatla bisher noch nicht begegnet.~
+@4113 = ~Ein Freund von Steckrüben war er jedenfalls nicht.~
+@4114 = ~Als das Ende seiner Dienstzeit näher rückte, beschloss er, noch ein letztes großes Abenteuer zu erleben. Er wollte die Trollberge von den Monstern befreien, die dieser Gegend ihren Namen gaben.~
+@4115 = ~Die Trolle plagen diese Ländereien schon seit Langem, das ist wahr.~
+@4116 = ~Ein hehres Ziel, dieses Land von der Trollplage aus den Bergen zu befreien.~
+@4117 = ~Seiner Meinung nach hausten die Biester in einem alten Bauwerk der Zwerge, welches "Der Klagende Zwerg" genannt wird. Soll ein riesiges Monument eines Zwergenkriegers sein. Sicher ein erhebender Anblick. Naja, wenn es nicht wie gesagt von Trollen bevölkert wäre.~
+@4118 = ~Riesige Zwergenmonumente machen mir keine Angst.~
+@4119 = ~Trolle sind wahrhaft lästige Biester.~
+@4120 = ~Lancameths Witwe könnte vielleicht mehr darüber wissen. Sie steht nach all den Jahren immer noch am Standbild Kelemvors auf dem Friedhof. Ihr könntet sie einmal über den Verbleib ihres Mannes fragen - wenn sie denn mit Euch reden will. Ist sicher nicht einfach für sie, einen Mann zu betrauern, der seit einigen Jahren verschollen ist.~
+@4121 = ~Ich weiß nur zu gut, wie es ist, einen geliebten Menschen im Ungewissen zu verlieren. Lasst uns der Witwe helfen, die Wahrheit über ihren Mann zu finden, auf dass sie nicht länger diese quälende Ungewissheit erleiden muss.~
+@4122 = ~Hauptmann Bryam Lancameth war ein Mann von Ehre und Pflichtbewusstsein. Es ist nur recht und billig, dass wir seiner Witwe unsere Unterstützung anbieten. Lasst uns mit ihr sprechen und alles in unserer Macht Stehende tun, um seinen Verbleib zu klären.~
+@4123 = ~Der Krieg fordert oft seinen bitteren Tribut, und ein Soldat ist stets der Gefahr des Schlachtfeldes ausgesetzt. Doch ist es eines Priesters Pflicht, den Hinterbliebenen Trost zu spenden.~
+@4124 = ~Eine trauernde Witwe und ihr verlorener Hauptmann? Solche sentimentalen Angelegenheiten sind nicht unser Belang.~
+@4125 = ~Oh, die arme Frau! Ihr Schmerz muss unerträglich sein. Wir müssen ihr unbedingt helfen. Lasst uns sofort zu ihr gehen und sehen, was wir tun können, um ihr beizustehen.~
+@4126 = ~Normalerweise muss man die Frau retten. Jetzt ist die Frau hier und der Mann weg? Das ist sehr verwirrend. Aber egal, wir müssen der armen Frau helfen, ihren Mann zu finden!~
+@4127 = ~Danke für Eure Ausführungen. Hier habt Ihr zehn Goldmünzen.~
+@4128 = ~Dann werde ich der Witwe einmal einen Besuch abstatten.~
+@4129 = ~Das klingt nach einem typischen Halblings-Problem. Auch wenn dieser Nhair ein Langfinger gewesen ist, sehe ich es als meine Pflicht an, nach seinem Verbleib zu suchen.~

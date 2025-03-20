@@ -1,0 +1,62 @@
+// area files
+
+
+COPY ~%MOD_FOLDER%/areas/copy~         ~override~
+
+COPY ~%MOD_FOLDER%/areas/ACIL10.are~          ~override~
+   SAY 0x351c @1000  // Info skulls
+   SAY 0x3458 @1001     // Info flag
+   SAY 0x5514 @1002     // Wailing dwarf main entrance
+
+COPY ~%MOD_FOLDER%/areas/ACIL11.are~          ~override~
+   SAY 0xc98 @51
+   SAY 0x106c @489
+   SAY 0xe20 @528
+   SAY 0xd5c @489
+   SAY 0xfa8 @52
+   
+COPY ~%MOD_FOLDER%/areas/ACIL12.are~          ~override~
+   SAY 0xe98 @543
+   SAY 0xf5c @544 // Info Chasm
+   
+COPY ~%MOD_FOLDER%/areas/ACIL14.are~          ~override~
+  SAY 0x1c94 @1114  // info elevator
+  SAY 0x1ee0 @1115  // Info altar
+  SAY 0x2068 @1116  // info headless #1
+  SAY 0x212c @1116  // info headless #2
+  SAY 0x3d14 @1121  // info door lvl acil15 needs special key
+  SAY 0x28b0 @1122  // info container needs special key (from vampire)
+  SAY 0x5598 @1410  // map note exit
+  SAY 0x55cc @1411  // map note to 2nd level
+  SAY 0x5600 @1412  // map note foundry
+  SAY 0x5634 @1413  // map note smithy
+
+COPY ~%MOD_FOLDER%/areas/ACIL18.are~          ~override~
+  SAY 0xec4 @3000 //Info Clangeddin
+  SAY 0xaf0 @3001 //Info Diinkarazan
+  SAY 0xd3c @3002 //Info Giantskull
+  SAY 0xc78 @3002 //Info Giantskull 2
+  SAY 0xbb4 @3003 //Info Ilsensine
+  SAY 0xe00 @3004 //Info Karlyn
+  SAY 0xa2c @3005 //Info Horn
+  SAY 0x135c @3007 //Info throne access
+  SAY 0x14e4 @3008 //Info Diin_01
+  SAY 0x15a8 @3009 //Info Diin_02
+  SAY 0x166c @3010 //Info Diin_03
+  SAY 0x2600 @3011 //Info axe altar
+  SAY 0x43f4 @1801 // map note exit  
+  SAY 0x4428 @1802 // map note elevator
+  SAY 0x445c @1803 // map note throneroom
+
+COPY ~%MOD_FOLDER%/areas/ACIL1L.are~          ~override~
+  SAY 0x6fc @407
+  SAY 0x638 @408
+
+COPY ~%MOD_FOLDER%/areas/ACIL1R.are~          ~override~
+
+COPY ~%MOD_FOLDER%/areas/ACIL1U.are~          ~override~
+  SAY 0xc24 @1120
+
+COPY ~%MOD_FOLDER%/areas/ACIL1W.are~          ~override~
+
+

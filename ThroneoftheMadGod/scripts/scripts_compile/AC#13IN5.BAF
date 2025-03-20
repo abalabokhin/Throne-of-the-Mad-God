@@ -1,0 +1,15 @@
+IF
+	Clicked([ANYONE])
+	Class(LastTrigger,RANGER_ALL)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1118) 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1119) 
+END
+

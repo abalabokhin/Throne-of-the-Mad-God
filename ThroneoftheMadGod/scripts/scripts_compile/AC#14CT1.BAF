@@ -1,0 +1,14 @@
+IF
+    IsOverMe([PC])
+    Global("Ursummnogh","ACIL14",0)
+THEN
+    RESPONSE #100
+        ClearAllActions()
+        StartCutSceneMode()
+        CreateCreature("CUTSPY",[1223.1558],S)  // No such index
+        MoveViewPoint([1139.1683],INSTANT)
+        MoveViewPoint([1291.1587],BD_FAST)
+        Wait(1)
+        ActionOverride("AC#TROB2",StartDialogueNoSet(Player1))
+END
+

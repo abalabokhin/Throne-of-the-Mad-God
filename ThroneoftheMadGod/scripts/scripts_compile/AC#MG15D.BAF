@@ -1,0 +1,9 @@
+IF
+	Global("AC#15Statue","ACIL15",1)
+	NumberOfTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#15Statue","ACIL15",2)
+		StartDialogueNoSet([PC])
+END
+

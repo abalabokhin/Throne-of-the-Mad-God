@@ -1,0 +1,25 @@
+IF
+    Global("Prep","ACIL1W",0)
+THEN
+    RESPONSE #100
+        TriggerActivation("Trigger_water",FALSE)
+        SetGlobal("Prep","ACIL1W",1)
+END
+
+IF
+    Global("CleanPool","ACIL1W",0)
+    Dead("AC#MGSF1")  // Teilungsschleim
+    OR(2)
+        Dead("AC#MGTUO")  // Troll
+        Dead("AC#MFTS2")  // Troll
+    CombatCounter(0)
+THEN
+    RESPONSE #100
+        Wait(1)
+        CreateVisualEffect("ICRMPAR2",[805.386])
+        Wait(1)
+        TriggerActivation("Trigger_water",TRUE)
+        ActionOverride("Trigger_water",DisplayString(Myself,@5))  // Das Wasser dieser Quelle scheint plötzlich ganz klar und rein zu sein.
+        SetGlobal("CleanPool","ACIL1W",1)
+END
+

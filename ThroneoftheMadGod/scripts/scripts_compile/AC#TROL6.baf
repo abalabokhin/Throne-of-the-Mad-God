@@ -1,0 +1,87 @@
+IF
+    See(NearestEnemyOf(Myself))
+    Range(NearestEnemyOf(Myself),4)
+    HPPercentLT(Myself,30)
+    Global("Stoneskin","LOCALS",0)
+    DifficultyGT(EASY)
+THEN
+    RESPONSE #100
+        SetGlobal("Stoneskin","LOCALS",1)
+        ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+        RunAwayFrom(LastSeenBy(Myself),5)
+END
+
+IF
+    OR(2)
+        HitBy([ANYONE],FIRE)
+        HitBy([ANYONE],MAGICFIRE)
+    RealGlobalTimerNotExpired("ColdTimer","LOCALS")
+THEN
+    RESPONSE #100
+        DestroyItem("MONHP1")  // No such index
+        DestroyItem("TROLLIMM")  // Ring
+        AddexperienceParty(7000)
+        ReallyForceSpellRES("AC#STRD",Myself)  // zerschmettert
+END
+
+IF
+    OR(2)
+        HitBy([ANYONE],COLD)
+        HitBy([ANYONE],MAGICCOLD)
+    RealGlobalTimerNotExpired("FireTimer","LOCALS")
+THEN
+    RESPONSE #100
+        DestroyItem("MONHP1")  // No such index
+        DestroyItem("TROLLIMM")  // Ring
+        AddexperienceParty(7000)
+        ReallyForceSpellRES("AC#STRD",Myself)  // zerschmettert
+END
+
+IF
+    OR(2)
+        HitBy([ANYONE],FIRE)
+        HitBy([ANYONE],MAGICFIRE)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("FireTimer","LOCALS",ONE_ROUND)
+END
+
+IF
+    OR(2)
+        HitBy([ANYONE],COLD)
+        HitBy([ANYONE],MAGICCOLD)
+THEN
+    RESPONSE #100
+        SetGlobalTimer("ColdTimer","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    Allegiance(Myself,NEUTRAL)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),5)
+END
+

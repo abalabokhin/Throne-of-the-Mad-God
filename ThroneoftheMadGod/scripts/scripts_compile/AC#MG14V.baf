@@ -1,0 +1,46 @@
+IF
+    Clicked([ANYONE])
+    !Range(LastTrigger,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@359)  // Aus dieser Entfernung könnt Ihr nichts erkennen.
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,15)
+    OR(2)
+        Race(LastTrigger,DWARF)
+        HasItemEquiped("AC#MGBLT",LastTrigger)  // Zwergengürtel
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1117) 
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,15)
+    CheckStatGT(LastTrigger,30,LORE)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1117) 
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,15)
+    PartyHasItemIdentified("AC#BKDWF")  // Sprache und Schrift der Zwerge
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1117)   
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,15)
+    CheckStatLT(LastTrigger,31,LORE)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@518)  // Auf diesem großen Stein sind zahlreiche Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.
+END
+

@@ -1,0 +1,7 @@
+IF
+	Dead("AC#DOGWI")  // Dokuriingor
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

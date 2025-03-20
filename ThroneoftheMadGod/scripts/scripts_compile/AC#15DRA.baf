@@ -1,0 +1,49 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@961)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	CheckStatGT(LastTrigger,30,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@961) 
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@961)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	CheckStatLT(LastTrigger,31,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@363) // Auf dem Boden steht eine kleine Zwergenstatue. Auf dem Metallboden daneben sind kleine Zwergenrunen eingelassen. Ihr k�nnt sie jedoch nicht entziffern.
+END
+

@@ -1,0 +1,132 @@
+IF
+    Die()
+THEN
+    RESPONSE #100
+        CreateVisualEffectObject("SPHOLY",Myself)
+        DestroySelf()
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(NPC_BLADE_BARRIER)  // SPPR698.SPL (Klingenbarierre)
+    Global("BladeBarrier","LOCALS",0)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,NPC_BLADE_BARRIER)  // SPPR698.SPL (Klingenbarierre)
+        SetGlobal("BladeBarrier","LOCALS",1)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See([GOODCUTOFF.0.SKELETON.0.0.SUMMONED])
+    HaveSpell(CLERIC_SUNRAY)  // SPPR707.SPL (Sonnenstrahl)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,CLERIC_SUNRAY)  // SPPR707.SPL (Sonnenstrahl)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HitBy([ANYONE],CRUSHING)
+    HaveSpell(CLERIC_IRONSKIN)  // SPPR506.SPL (Eisenhaut)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,CLERIC_IRONSKIN)  // SPPR506.SPL (Eisenhaut)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_CONFUSION)  // SPPR709.SPL (Verwirrung)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,CLERIC_CONFUSION)  // SPPR709.SPL (Verwirrung)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !Range(LastSeenBy(Myself),4)
+    HPPercentLT(Myself,10)
+    HaveSpell(CLERIC_HEAL)  // SPPR607.SPL (Heilung)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,CLERIC_HEAL)  // SPPR607.SPL (Heilung)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_FINGER_OF_DEATH)  // SPPR708.SPL (Finger des Todes)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),CLERIC_FINGER_OF_DEATH)  // SPPR708.SPL (Finger des Todes)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_FLAME_STRIKE)  // SPPR503.SPL (Flammenschlag)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),CLERIC_FLAME_STRIKE)  // SPPR503.SPL (Flammenschlag)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+    !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Mantel der Furcht)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        Spell(Myself,CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Mantel der Furcht)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    ActionListEmpty()
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

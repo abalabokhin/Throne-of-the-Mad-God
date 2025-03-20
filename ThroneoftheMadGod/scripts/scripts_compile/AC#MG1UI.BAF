@@ -1,0 +1,17 @@
+IF
+	Clicked([ANYONE])
+	Global("Foundry","ACIL1U",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Foundry","ACIL1U",1)
+		AddJournalEntry(@17000,QUEST)
+		DisplayString(Myself,@1700) 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1700) 
+END
+

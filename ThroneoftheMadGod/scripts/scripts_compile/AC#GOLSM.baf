@@ -1,0 +1,66 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("behaviour","LOCALS",5)
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT) // SPWI308.SPL (Lightning Bolt)
+		SetGlobal("behaviour","LOCALS",6)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("behaviour","LOCALS",4)
+	RandomNum(3,1)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT) // SPWI308.SPL (Lightning Bolt)
+		SetGlobal("behaviour","LOCALS",5)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("behaviour","LOCALS",2)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT) // SPWI308.SPL (Lightning Bolt)
+		SetGlobal("behaviour","LOCALS",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("behaviour","LOCALS",3)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("behaviour","LOCALS",4)
+END
+
+IF
+	Range(NearestEnemyOf(Myself),15)
+	Global("behaviour","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,GOLEM_GASCLOUD) // SPIN979.SPL (Gaswolke)
+		//ForceSpell(Myself,WIZARD_CLOUDKILL) // Todeswolke
+		SetGlobal("behaviour","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("behaviour","LOCALS",1)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("behaviour","LOCALS",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

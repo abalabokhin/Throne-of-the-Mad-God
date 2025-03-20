@@ -1,0 +1,17 @@
+IF
+	InMyArea(Player1)
+	Global("AC#MadGod_StoryStart","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MadGod_StoryStart","GLOBAL",1)
+		CreateCreature("AC#BARD1",[1094.346],2) // Gisbert the bard
+		CreateCreature("AC#MGPS1",[933.394],9) // peasant
+		CreateCreature("AC#MGPS2",[997.343],9) // peasant
+		CreateCreature("AC#MGPS3",[979.386],3) // peasant
+		CreateCreature("AC#MGPS4",[1004.430],3) // peasant
+		CreateCreature("AC#MGPS5",[1055.437],3) // peasant
+		CreateCreature("AC#MGPS6",[1115.424],3) // peasant
+		CreateCreature("AC#MGPS7",[1174.380],3) // peasant
+END
+
+

@@ -1,0 +1,29 @@
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,20)
+    OR(4)
+        Race(LastTrigger,DWARF)
+        HasItemEquiped("AC#MGBLT",LastTrigger)  // Zwergengürtel
+        CheckStatGT(LastTrigger,30,LORE)
+        PartyHasItemIdentified("AC#BKDWF")  // Sprache und Schrift der Zwerge
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@584)  
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@583)  
+END
+
+IF
+    Clicked([ANYONE])
+    !Range(LastTrigger,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

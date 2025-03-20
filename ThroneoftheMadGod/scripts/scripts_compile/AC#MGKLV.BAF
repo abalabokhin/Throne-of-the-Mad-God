@@ -1,0 +1,9 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        DropItem("AC#MGGOD",[-1.-1])  // Wächter der Toten
+        CreateVisualEffectObject("SPFLESHS",Myself)
+        DestroySelf()
+END
+

@@ -1,0 +1,27 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	GlobalGT("AC#14Elevator","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@417) // ~Dies scheint der gleiche Aufzugsschacht zu sein, den Ihr auch im Stockwerk dar�ber gesehen habt. Er muss noch weiter nach unten in die Tiefe zu f�hren.~
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("AC#14Elevator","GLOBAL",0)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@418) // ~Ein Schacht f�hrt von oben kommend weiter nach unten in die Tiefe.~
+END
+

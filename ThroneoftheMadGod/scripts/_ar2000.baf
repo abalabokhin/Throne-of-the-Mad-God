@@ -1,0 +1,13 @@
+IF
+	Global("AC#MadGodStory","GLOBAL",0)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MadGodStory","GLOBAL",1)
+        CreateCreature("AC#MG001",[1508.1407],0) // Messenger
+END
+
+
+
+
+

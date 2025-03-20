@@ -1,0 +1,61 @@
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Dretch_Behavior","LOCALS",1)
+THEN
+    RESPONSE #100
+        SetGlobal("Dretch_Behavior","LOCALS",2)
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    Global("Dretch_Behavior","LOCALS",2)
+    See(NearestEnemyOf(Myself))
+    !StateCheck(LastAttackerOf(Myself),STATE_PANIC)
+    Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        SetGlobal("Dretch_Behavior","LOCALS",3)
+        ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_SPOOK)  // SPWI125.SPL (Spuk)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Dretch_Behavior","LOCALS",3)
+THEN
+    RESPONSE #100
+        SetGlobal("Dretch_Behavior","LOCALS",4)
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Dretch_Behavior","LOCALS",4)
+THEN
+    RESPONSE #100
+        ReallyForceSpellRES("AC#GLDK",NearestEnemyOf(Myself))  // Kugel der Dunkelheit
+        SetGlobal("Dretch_Behavior","LOCALS",5)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Dretch_Behavior","LOCALS",5)
+THEN
+    RESPONSE #100
+        SetGlobal("Dretch_Behavior","LOCALS",6)
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    ActionListEmpty()
+THEN
+    RESPONSE #100
+        RandomWalk()
+END
+

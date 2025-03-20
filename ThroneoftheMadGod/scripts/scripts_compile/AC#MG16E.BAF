@@ -1,0 +1,11 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("AC#MG16",Myself)  // No such index
+		Wait(1)
+		ReallyForceSpellDead(Myself,RED_HOLY_MIGHT)  // SPWI985.SPL (No such index)
+		Wait(1)
+		DestroySelf()
+END
+

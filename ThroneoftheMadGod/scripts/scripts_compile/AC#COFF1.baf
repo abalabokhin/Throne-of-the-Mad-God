@@ -1,0 +1,69 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Coffin1","ACIL1U",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,35811) // Nachdem Ihr den Vampir besiegt habt, hat er sich in seinen Sarg zur�ckgezogen. Wenn Ihr �ber einen Holzpflock verf�gt, k�nnt Ihr versuchen, ihn zu t�ten.
+		SetGlobal("Coffin1","ACIL1U",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItem("MISC6W") // Holzpflock
+	Global("Coffin1","ACIL1U",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,35847) // Ihr sto�t den Holzpflock durch das finstere Herz des Vampirs. Diese Kreatur wird sich nie mehr vom Blut anderer Wesen ern�hren.
+		SetGlobal("Coffin1","ACIL1U",2)
+		AddExperienceParty(9000)
+		PlaySound("VAMPP07")
+		TakePartyItemNum("misc6w",1) // Holzpflock
+		DestroyItem("misc6w") // Holzpflock
+		CreateVisualEffectObject("SPDEATH3",Myself)
+		Wait(1)
+		CreateVisualEffectObject("SPFLESH2",Myself)
+		Wait(1)
+		DisplayString(Myself,@484)
+		GiveItemCreate("AC#MGHDW",LastTrigger,1,0,0)
+		AddJournalEntry(@17004,QUEST)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Coffin1","ACIL1U",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,35849) // Der Vampir ist endg�ltig tot, und der Sarg riecht nach Verwesung. Es gibt hier nichts mehr zu tun.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,35811) // Nachdem Ihr den Vampir besiegt habt, hat er sich in seinen Sarg zur�ckgezogen. Wenn Ihr �ber einen Holzpflock verf�gt, k�nnt Ihr versuchen, ihn zu t�ten.
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702) // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+
+
+
+
+
+
+
+
+
+
+
+

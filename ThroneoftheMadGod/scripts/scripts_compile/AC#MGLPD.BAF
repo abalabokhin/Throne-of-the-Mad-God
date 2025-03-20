@@ -1,0 +1,10 @@
+IF
+    Global("LancamethsParty","ACIL18",10)
+THEN
+    RESPONSE #100
+        PlaySound("VAMPP07")
+        CreateVisualEffectObject("SPDEATH3",Myself)
+        Wait(1)
+        DestroySelf()
+END
+

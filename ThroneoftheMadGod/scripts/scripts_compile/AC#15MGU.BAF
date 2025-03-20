@@ -1,0 +1,17 @@
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	Global("MaduggFight","ACIL15",0)
+THEN
+	RESPONSE #100
+		Enemy()
+		SetGlobal("MaduggFight","ACIL15",1)
+END
+
+IF
+	Global("MaduggFight","ACIL15",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

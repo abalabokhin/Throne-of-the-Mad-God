@@ -1,0 +1,46 @@
+IF
+	Clicked([ANYONE])
+	Global("Info_Shanatar_Once","ACIL15",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@413) 
+		SetGlobal("Info_Shanatar_Once","ACIL15",1) 
+END
+
+IF
+	Clicked([ANYONE])
+	//Range(LastTrigger,12)
+	Race(LastTrigger,DWARF)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@355) // Als Zwerg f�llt es Euch leicht, die alten Dethek-Runen zu entziffern. Auf dem Metallboden steht in gro�en Buchstaben der Name "Shanatar" geschrieben, das legend�re Zwergenreich, von dem so viele Lieder Eurer Vorfahren handeln und das vor Jahrhunderten untergegangen ist.
+END
+
+IF
+	Clicked([ANYONE])
+	OR(2)
+		CheckStatGT(LastTrigger,30,LORE)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@356) // Ihr habt solche Runen schon oft gesehen. Es sind Dethek-Runen, die Schrift der Zwerge. Auf dem Metallboden steht in gro�en Buchstaben der Name "Shanatar" geschrieben, das legend�re Zwergenreich, das sich in grauer Vorzeit unter den s�dlichen L�ndern an der Schwertk�ste erstreckte.
+END
+
+IF
+	Clicked([ANYONE])
+	//Range(LastTrigger,12)
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@357) // Anhand des Buches �ber die Schrift der Zwerge k�nnt Ihr die Dethek-Runen m�helos entziffern. Auf dem Metallboden steht in gro�en Buchstaben der Name "Shanatar" geschrieben, das legend�re Zwergenreich, das sich in grauer Vorzeit unter den s�dlichen L�ndern an der Schwertk�ste erstreckte.
+END
+
+IF
+	Clicked([ANYONE])
+	//Range(LastTrigger,12)
+	CheckStatLT(LastTrigger,31,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@358) // Auf dem Metallboden sind dicke Zwergenrunen eingegossen. Ihr k�nnt sie jedoch nicht entziffern.
+END
+

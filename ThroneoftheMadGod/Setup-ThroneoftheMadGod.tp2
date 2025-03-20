@@ -1,0 +1,759 @@
+
+BACKUP ~ThroneoftheMadGod/backup~
+AUTHOR ~Acifer~
+//README ~ThroneoftheMadGod/readme.ThroneoftheMadGod.%LANGUAGE%.html~ ~readme.ThroneoftheMadGod.english.html~
+VERSION ~V 0.9~
+
+ALWAYS
+
+/*
+  ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+  
+  LAF HANDLE_CHARSETS
+  INT_VAR
+  infer_charset = 1
+  STR_VAR
+  tra_path = EVAL ~ThroneoftheMadGod/language~
+  reload_array = fl#reload
+  END
+*/
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_TEXT_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
+
+  //either use cpmvars that have these variables set or add this variable declaration somewhere in your tp2 code
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET wmp_xCoord_SoA = 0 //in relation to BG2/BG2:EE WORLDMAP.WMP add 0 px correction to X coordinate
+    OUTER_SET wmp_yCoord_SoA = 2283 //in relation to BG2/BG2:EE WORLDMAP.WMP add 2283 px correction to Y coordinate
+    OUTER_TEXT_SPRINT wmp_worldmap_ToB "worldmap" //when editing ToB worldmap use WORLDMAP.WMP instead of WORLDM25.WMP
+  END ELSE BEGIN
+    OUTER_SET wmp_xCoord_SoA = 0
+    OUTER_SET wmp_yCoord_SoA = 0
+    OUTER_TEXT_SPRINT wmp_worldmap_ToB "worldm25"
+  END
+END
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+//
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+AUTO_TRA ~ThroneoftheMadGod/language/%s~
+
+LANGUAGE ~Deutsch~
+         ~german~
+         ~ThroneoftheMadGod/language/german/Setup-ThroneoftheMadGod.tra~
+         ~ThroneoftheMadGod/language/german/ThroneoftheMadGod_Journal.tra~
+         
+LANGUAGE ~English~
+         ~english~
+         ~ThroneoftheMadGod/language/english/Setup-ThroneoftheMadGod.tra~
+         ~ThroneoftheMadGod/language/english/ThroneoftheMadGod_Journal.tra~
+
+BEGIN ~Throne of the Mad God V 0.9~
+
+//REQUIRE_PREDICATE GAME_IS ~bg2ee eet~       ~This mod runs only on Enhanced Edition engine.~
+REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ && FILE_EXISTS ~engine.lua~) ~Requires BG2:EE or EET patched to 2.0 or higher.~  // Requires BG2:EE or EET patched to 2.0 or higher.
+
+INCLUDE ~ThroneoftheMadGod/lib/extra_regexp_vars.tph~
+INCLUDE ~ThroneoftheMadGod/lib/functions.tph~
+
+ADD_JOURNAL @15000 @15001 @15002 @17000 @17001 @17002 @17003 @17004 @17010 @19000 @19001 @19002 @19003 @19010 @50000 @50001 @51000 @52001 @52002 @52003 @52004 @52008 @52009 @52010 @52050 @52051 @52052 @52060 @55000 @70000 @80000 @80001 USING ~ThroneoftheMadGod/language/%LANGUAGE%/ThroneoftheMadGod_Journal.tra~
+
+///////////////////////////////////////////////////////////////////////
+// Patching IDS files
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~ThroneoftheMadGod/lib/patches.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// Animations
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~ThroneoftheMadGod/lib/madgod-animations.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// 2DA files
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~ThroneoftheMadGod/lib/madgod-2da.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// ARE files
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~ThroneoftheMadGod/lib/madgod-areas.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// BAM files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/bam/copy~         ~override~
+
+COPY ~ThroneoftheMadGod/bam/bam_item_BG2EE~         ~override~
+  
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#MITH.bam~ ~override~ // Mithril desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1001.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#RUBY.bam~ ~override~  // Drakkalor desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1002.pvrz~
+ END
+ END
+
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGADM.bam~ ~override~  // Adamant desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1003.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#GOLD.bam~ ~override~  // silver / gold desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1004.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#SHN4.bam~ ~override~  // iron ball desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1005.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGLND.bam~ ~override~  // Lancameth's head (retributed form)
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1006.pvrz~
+ END
+ END
+
+COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG1UD.bam~ ~override~  // coffin key desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1007.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGSKD.bam~ ~override~  // sword key desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1008.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGLNV.bam~ ~override~  // Lancameth's head (Vargouille form)
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1009.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGRD3.bam~ ~override~  // fellowship ring desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END 
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1010.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#CLKBD.bam~ ~override~  // clockwork blade desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1011.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGHDD.bam~ ~override~  //  handwheel  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1012.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGKD1.bam~ ~override~  //  handwheel  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1013.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGKD2.bam~ ~override~  //  handwheel  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1014.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#AX1D2.bam~ ~override~  //  axe vs giants  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1015.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGDM1.bam~ ~override~  //  watcher's amulet desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1016.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGKY4.bam~ ~override~  //  Mithril plate mail (full) desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1017.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGRD2.bam~ ~override~  //  Berronar's ring desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1018.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGBLD.bam~ ~override~  //  dwarven belt desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1019.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#SHN6.bam~ ~override~  //  Korolnor jewel desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1020.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#SHN7.bam~ ~override~  //  glacier stone desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1021.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#RUNED.bam~ ~override~  //   runestone desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1022.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGDD2.bam~ ~override~  //   mold upper part desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1023.pvrz~
+ END
+ END
+
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGDD1.bam~ ~override~  //    mold lower part desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1025.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGDD3.bam~ ~override~  //    dwarven key exit area acil14 desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1026.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG19D.bam~ ~override~  //    korolnor crown jewel desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1027.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGSTD.bam~ ~override~  //    sticking oil desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1028.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGBKD.bam~ ~override~  //    dwarven book (generic) desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1029.pvrz~
+ END
+ END
+ 
+ /*
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGB5D.bam~ ~override~  //    Moradin book desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1030.pvrz~
+ END
+ END
+ */
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGB9D.bam~ ~override~  //    history of Korolnor book  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1031.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGFLD.bam~ ~override~  //    Flayerslayer  desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1032.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGTDK.bam~ ~override~  //    tankard desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1033.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/DAC#AMO4.bam~ ~override~  //    seastar desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1034.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#DAQUD.bam~ ~override~  //    punching dagger desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1035.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGSHD.bam~ ~override~  //     shrunk head desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1036.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG14D.bam~ ~override~  //     dwarven praying stone desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1037.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG18D.bam~ ~override~  //     anthrazit desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1038.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGDHG.bam~ ~override~  //     staff of hellgate desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1039.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGMSD.bam~ ~override~  //     bone star desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1040.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGD19.bam~ ~override~  //     lever area acil19 desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1041.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGILD.bam~ ~override~  //     Ildanfal fire giant hammer desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1042.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG1U4.bam~ ~override~  //     dwarven chest coin desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1043.pvrz~
+ END
+ END
+
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGGDD.bam~ ~override~  //     guardian shield Kelemvor desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1044.pvrz~
+ END
+ END
+
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#ZARDD.bam~ ~override~  //     zardazil desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1045.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#CHEED.bam~ ~override~  //     fomorian cheese desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1046.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGAMD.bam~ ~override~  //     astral mace of blasting desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1047.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGCCD.bam~ ~override~  //     cloak of chaos desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1048.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGHD1.bam~ ~override~  //     Mountain warden helmet desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1049.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGSLD.bam~ ~override~  //     crown diadem desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1050.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGTBD.bam~ ~override~  //     troll belt desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1051.pvrz~
+ END
+ END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGTSD.bam~ ~override~  //     thundershield desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1052.pvrz~
+ END
+ END
+ 
+   COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGEVD.bam~ ~override~  //     evertorch desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1053.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGHMD.bam~ ~override~  //     airhammer desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1054.pvrz~
+ END
+ END
+ 
+ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGBMD.bam~ ~override~  //     beer mace desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1055.pvrz~
+ END
+ END
+///////////////////////////////////////////////////////////////////////
+// VVC files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/vvc/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// portrait files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/portrait~         ~override~
+
+
+///////////////////////////////////////////////////////////////////////
+// Pro files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/pro~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// Spell files
+//
+///////////////////////////////////////////////////////////////////////
+
+COPY ~ThroneoftheMadGod/spl/copy~         ~override~
+
+COPY ~ThroneoftheMadGod/spl/AC#GLDK.spl~          ~override~
+SAY NAME1 @9
+
+COPY ~ThroneoftheMadGod/spl/AC#MGVS.spl~            ~override~
+  SAY NAME1 @548
+
+COPY ~ThroneoftheMadGod/spl/AC#MGVK.spl~            ~override~
+  SAY NAME1 @228
+
+COPY ~ThroneoftheMadGod/spl/AC#MGPG.spl~          ~override~
+SAY NAME1 @556
+
+COPY ~ThroneoftheMadGod/spl/AC#STRD.spl~           ~override~
+SAY NAME1 @1106
+
+COPY ~ThroneoftheMadGod/spl/AC#VTR1.spl~           ~override~
+SAY NAME1 @1109
+
+COPY ~ThroneoftheMadGod/spl/AC#MGBL.spl~           ~override~ // Astral mace of blasting spell (deafness)
+SAY NAME1 @2037
+
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#MGDR.PRO~ // death rain projectile
+COPY ~ThroneoftheMadGod/spl/AC#MGDR.spl~         ~override~
+       SAY NAME1 @984
+       WRITE_SHORT   0x98 ~%AC#MGDR%~
+       
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#MGCLN.PRO~ // mithril golem chain lightning projectile
+COPY ~ThroneoftheMadGod/spl/AC#MGCL.spl~         ~override~
+       WRITE_SHORT   0x98 ~%AC#MGCLN%~
+       
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#MGMNG.PRO~ // manes: acid gas cloud
+COPY ~ThroneoftheMadGod/spl/AC#MGMN.spl~         ~override~
+       WRITE_SHORT   0x98 ~%AC#MGMNG%~
+       
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#MGWZN.PRO~ // wildzone
+COPY ~ThroneoftheMadGod/spl/AC#MGWZ.spl~         ~override~
+       SAY NAME1 @1909
+       WRITE_SHORT   0x98 ~%AC#MGWZN%~
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@31) STR_VAR bam_file = AC#WILMG RET icon END
+COPY_EXISTING ~AC#MGWZ.spl~         ~override~
+LPF ALTER_EFFECT INT_VAR match_opcode = 142 match_parameter2 = 0 parameter2 = icon END
+
+COPY ~ThroneoftheMadGod/spl/AC#MGD8.spl~           ~override~ // Diinkarazan's Gem jump spell
+SAY NAME1 @1902
+
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#MGCHS.PRO~ // fireworks projectile
+COPY ~ThroneoftheMadGod/spl/AC#DII3.spl~           ~override~ // Messy mumbo jumbo
+SAY NAME1 @1903
+WRITE_SHORT   0x98 ~%AC#MGCHS%~
+
+COPY ~ThroneoftheMadGod/spl/AC#DII4.spl~           ~override~ // fumbled sorcery
+SAY NAME1 @1904
+
+COPY ~ThroneoftheMadGod/spl/AC#DII5.spl~           ~override~ // chaos sphere
+
+COPY ~ThroneoftheMadGod/spl/AC#DII0.spl~           ~override~ // mirrorimage
+
+COPY ~ThroneoftheMadGod/spl/AC#DII1.spl~           ~override~ // timestop
+
+COPY ~ThroneoftheMadGod/spl/AC#DII6.spl~           ~override~ // Ilsensine's Illusions spell
+SAY NAME1 @1906
+
+COPY ~ThroneoftheMadGod/spl/AC#DII7.spl~           ~override~ // summon Vargouille
+SAY NAME1 @956
+
+COPY ~ThroneoftheMadGod/spl/AC#DII8.spl~           ~override~ // Diinkarazan's windblast
+SAY NAME1 @1910
+
+COPY ~ThroneoftheMadGod/spl/AC#DII9.spl~           ~override~ // Diinkarazan's polymorph other
+
+COPY ~ThroneoftheMadGod/spl/AC#DIIS.spl~           ~override~ // Diinkarazan's stoneskin spell
+
+COPY ~ThroneoftheMadGod/spl/AC#DIIT.spl~           ~override~ // summon minions (Diinkarazan spell)
+SAY NAME1 @1911
+
+COPY ~ThroneoftheMadGod/spl/AC#DIIB.spl~           ~override~ // summon blacktroll (Diinkarazan spell)
+SAY NAME1 @1912
+
+COPY ~ThroneoftheMadGod/spl/AC#MGFG.spl~           ~override~ // Madugg stomp spell
+SAY NAME1 @1905
+
+COPY ~ThroneoftheMadGod/spl/AC#ALLI.spl~           ~override~ // Allip: Madness
+SAY NAME1 @1908
+
+COPY ~ThroneoftheMadGod/spl/AC#MGVC.spl~           ~override~ // Infected troll: Vargouille change
+SAY NAME1 @1913
+
+COPY ~ThroneoftheMadGod/spl/AC#NGAS.spl~           ~override~ // Neutralize Gases lvl 7 wizard spell
+SAY NAME1 @549
+SAY 0x50  @550
+
+COPY ~ThroneoftheMadGod/spl/AC#LLMD.spl~           ~override~ // Larloch's mass drain wizard spell
+SAY NAME1 @552
+SAY 0x50  @553
+
+COPY ~ThroneoftheMadGod/spl/AC#LLM2.spl~           ~override~ // Larloch's mass drain #2 subspell wizard spell
+SAY NAME1 @552
+SAY 0x50  @553
+
+COPY ~ThroneoftheMadGod/spl/AC#LLM3.spl~           ~override~ // Larloch's mass drain: Diinkarazan's spell without wildsurge risk
+SAY NAME1 @552
+SAY 0x50  @553
+
+COPY ~ThroneoftheMadGod/spl/AC#MGBT.spl~           ~override~ // Boots of night shadow invisibilty
+SAY NAME1 @558
+SAY 0xce  @559
+
+// patching chaos shield and improved chaos shield to prevent from the negative effects of the cloak of chaos
+
+COPY_EXISTING ~SPWI222.spl~ ~override~
+
+  LPF ADD_SPELL_EFFECT INT_VAR
+    opcode        = 206  // protection form spell
+    target        = 1    // target self
+    power         = 2    // power
+    timing        = 0    // Instant/Limited - 0
+    resist_dispel = 0    // Natural/Nonmagical (0)
+    duration      = 270
+    STR_VAR resource = ~AC#MGC6~
+  END
+  LPF ADD_SPELL_EFFECT INT_VAR
+    opcode        = 206  // protection form spell
+    target        = 1    // target self
+    power         = 2    // power
+    timing        = 0    // Instant/Limited - 0
+    resist_dispel = 0    // Natural/Nonmagical (0)
+    duration      = 270
+    STR_VAR resource = ~AC#MGC7~
+  END
+  LPF ADD_SPELL_EFFECT INT_VAR
+    opcode        = 206  // protection form spell
+    target        = 1    // target self
+    power         = 2    // power
+    timing        = 0    // Instant/Limited - 0
+    resist_dispel = 0    // Natural/Nonmagical (0)
+    duration      = 270
+    STR_VAR resource = ~AC#MGC8~
+  END
+  LPF ADD_SPELL_EFFECT INT_VAR
+    opcode        = 206  // protection form spell
+    target        = 1    // target self
+    power         = 2    // power
+    timing        = 0    // Instant/Limited - 0
+    resist_dispel = 0    // Natural/Nonmagical (0)
+    duration      = 270
+    STR_VAR resource = ~AC#MGC9~
+  END
+  LPF ADD_SPELL_EFFECT INT_VAR
+    opcode        = 206  // protection form spell
+    target        = 1    // target self
+    power         = 2    // power
+    timing        = 0    // Instant/Limited - 0
+    resist_dispel = 0    // Natural/Nonmagical (0)
+    duration      = 270
+    STR_VAR resource = ~AC#MGC0~
+  END
+
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+// add Music files
+///////////////////////////////////////////////////////////////////////
+INCLUDE ~ThroneoftheMadGod/lib/add_music_acil10.tph~
+INCLUDE ~ThroneoftheMadGod/lib/add_music_acil19.tph~
+
+///////////////////////////////////////////////////////////////////////
+//WAV files
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/sounds/copy~         ~override~
+COPY ~ThroneoftheMadGod/sounds/%LANGUAGE%~ ~override~
+
+///////////////////////////////////////////////////////////////////////
+// Script files
+//
+///////////////////////////////////////////////////////////////////////
+
+INCLUDE ~ThroneoftheMadGod/lib/madgod-scripts.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// CRE files
+//
+///////////////////////////////////////////////////////////////////////
+INCLUDE ~ThroneoftheMadGod/lib/madgod-creatures.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// STO files
+//
+///////////////////////////////////////////////////////////////////////
+
+COPY ~ThroneoftheMadGod/sto/ac#jamst.sto~ ~override~
+SAY 0xc @387
+
+COPY ~ThroneoftheMadGod/sto/AC#MGRST.sto~ ~override~
+SAY 0xc @3035
+
+
+///////////////////////////////////////////////////////////////////////
+// Dialog files
+//
+///////////////////////////////////////////////////////////////////////
+
+// compile all dialogues in folder "dialogues_compile"
+COMPILE
+~ThroneoftheMadGod/dlg/dialogues_compile~
+
+///////////////////////////////////////////////////////////////////////
+// ITM files
+///////////////////////////////////////////////////////////////////////
+INCLUDE ~ThroneoftheMadGod/lib/madgod-items.tpa~
+
+///////////////////////////////////////////////////////////////////////
+// MOS files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/mos/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// Movies
+//
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/movies~     ~movies~
+
+///////////////////////////////////////////////////////////////////////
+// EFF files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/eff/copy~         ~override~
+COPY ~ThroneoftheMadGod/eff/AC#MGFSS.eff~  ~override~ // tentacle cutting message
+SAY 0x1c  @27
+///////////////////////////////////////////////////////////////////////
+// pvrz / tis files
+///////////////////////////////////////////////////////////////////////
+COPY_LARGE ~ThroneoftheMadGod/pvrz/copy~   ~override~      // PVRZ tiles for v2 TIS files
+
+///////////////////////////////////////////////////////////////////////
+// Lightmap files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/lightmaps/copy~         ~override~
+///////////////////////////////////////////////////////////////////////
+// Searchmap files
+///////////////////////////////////////////////////////////////////////
+COPY ~ThroneoftheMadGod/searchmaps/copy~         ~override~
+
+///////////////////////////////////////////////////////////////////////
+// Worldmap
+///////////////////////////////////////////////////////////////////////
+OUTER_SET include_saves = 0
+
+INCLUDE ~ThroneoftheMadGod/lib/madgod-worldmap.tpa~

@@ -1,0 +1,42 @@
+IF
+	Global("AC#_LancamethPlot","GLOBAL",50)
+	Global("AC#MG_Kelemvor","AR0800",0)
+	!InMyArea("AC#DARC1")
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MG_Kelemvor","AR0800",1)
+		DisplayStringPoint([842.561],@3014) 
+		Wait(1)
+		CreateVisualEffect("ICPRAYI",[842.561])
+		Wait(1)
+        CreateCreature("AC#MGKLV",[776.606],13) // Kelemvors shield carrier
+END
+
+IF
+	InMyArea(Player1)
+	Global("AC#_Lancameths_Widow","GLOBAL",1)
+	Global("AC#_LancamethPlot","GLOBAL",0)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#_LancamethPlot","GLOBAL",1)
+        CreateCreature("AC#DARC1",[779.620],10) // Darcia Lancameth, Lancameth's widow
+END
+
+
+IF
+	InMyArea(Player1)
+	Global("AC#_LancamethPlot","GLOBAL",2)
+	Global("AC#MG_Dwarf","AR0800",0)
+	AreaType(OUTDOOR)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MG_Dwarf","AR0800",1)
+        CreateCreature("AC#MGDWC",[1341.608],3) // dwarven gravedigger
+END
+
+
+
+
+

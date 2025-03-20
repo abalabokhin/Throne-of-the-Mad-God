@@ -1,0 +1,26 @@
+IF
+    Global("AC#MGEnteredACIL1L","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("AC#MGEnteredACIL1L","GLOBAL",1)
+END
+
+IF
+    Global("StarthornChange","ACIL1L",2)
+    Dead("AC#LADYS")  // Maid Sternendorn
+THEN
+    RESPONSE #100
+        SetGlobal("StarthornChange","ACIL1L",3)
+        CreateVisualEffect("SPFLESHS",[653.374])
+        CreateCreature("AC#MGLD3",[653.374],S)  // Maid Sternendorn
+END
+
+IF
+    Global("AdjustDiffLevel","ACIL1L",0)
+    DifficultyLT(EASY)
+THEN
+    RESPONSE #100
+        SetGlobal("AdjustDiffLevel","ACIL1L",1)
+        SpawnPtDeactivate("Infected_trolls")
+END
+

@@ -1,0 +1,23 @@
+// Throne of the mad god 2da files
+
+APPEND ~MastArea.2da~
+~ACIL10     value~
+UNLESS ~ACIL10~
+
+APPEND ~MastArea.2da~
+~ACIL96     value~
+UNLESS ~ACIL96~
+
+COPY ~ThroneoftheMadGod/2da/copy~         ~override~
+
+APPEND itemexcl.2da ~AC#MGAM1 1~
+BUT_ONLY
+
+/*
+COPY ~ThroneoftheMadGod/2da/AC#MGM10.2DA~ ~override~
+REPLACE ~999999~ @512
+*/
+// Adding Spawn groups to spawngrp.2da
+APPEND_COL ~spawngrp.2da~ "$ $ RDAC#DER 150 AC#DER04 AC#DER04 AC#DER04 AC#DER04 AC#DER05 AC#DER05 AC#DER05 AC#DER05"
+
+

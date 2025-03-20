@@ -1,0 +1,65 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("ACIL10_TREE","ACIL10",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@12) 
+		SetGlobal("ACIL10_TREE","ACIL10",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("ACIL10_TREE","ACIL10",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@13) 
+		SetGlobal("ACIL10_TREE","ACIL10",2)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("ACIL10_TREE","ACIL10",2)
+	CheckStatLT(LastTrigger,18,STR)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@14)  
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("ACIL10_TREE","ACIL10",2)
+	CheckStatGT(LastTrigger,17,STR)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		StartCutSceneMode()
+		SmallWait(5)
+		ActionOverride(LastTrigger,FaceObject("Broken_tree"))
+		ActionOverride(LastTrigger,SwingOnce())
+		SetGlobal("ACIL10_TREE","ACIL10",3)  // Der klagende Zwerg
+		DisplayString(Myself,@15)  // Mit einigen starken Hieben Eurer Waffen schlagt Ihr eine Kerbe in das Holz, bis der Stamm sich zur Seite zu neigen beginnt...
+		Wait(2)
+		FadeToColor([30.0],0)
+		Wait(2)
+		OpenDoor("Door01")
+		DisplayString(Myself,@16) // Der Stamm ist ideal gefallen. Ihr seid mit Eurer Arbeit zufrieden.
+		TriggerActivation("Broken_tree",FALSE)
+		AmbientActivate("Tree",FALSE)
+		ActionOverride(Player1,Wait(2))
+		ActionOverride(Player1,CreateVisualEffect("AC#10TRE",[2501.787]))
+		ActionOverride(Player1,FadeFromColor([30.0],0))
+		ActionOverride(Player1,EndCutSceneMode())
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

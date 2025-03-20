@@ -1,0 +1,15 @@
+IF
+	OR(2)
+		Entered([ANYONE])
+		Opened([ANYONE])
+	Global("OvenDoorOpen01","ACIL1V",0)	
+THEN
+	RESPONSE #100
+		SetGlobal("OvenDoorOpen01","ACIL1V",1)	
+		DisplayString(LastTrigger,@395)
+		CreateVisualEffectObject("ICMAGICH",Myself)
+		CreateVisualEffectObject("SPFIREPI",Myself)
+		CreateCreatureObject("ELFIR01",LastTrigger,0,0,0)
+END
+
+

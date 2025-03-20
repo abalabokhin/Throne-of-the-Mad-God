@@ -1,0 +1,35 @@
+IF
+	Global("AC#Vampire_Killed","ACIL1U",1)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#Vampire_Killed","ACIL1U",0)
+		Lock("DOOR01")
+		TriggerActivation("Info_Vampire",FALSE)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDeadRES("AC#MGVM",Myself)  // No such index
+END
+
+/*
+IF
+	See([PC])
+	Global("Vampire_Rises_Again","ACIL1U",1)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END
+*/
+
+IF
+	See([PC])
+	Delay(12)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell([PC],VAMPIRE_DOMINATION)  // SPIN883.SPL (Beherrschung)
+END
+

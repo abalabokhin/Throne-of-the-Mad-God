@@ -1,0 +1,70 @@
+IF
+	Global("Deactivate","ACIL1U",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate","ACIL1U",1)
+		TriggerActivation("Info_Vampire",FALSE)
+END
+
+IF
+    PartyHasItem("AC#MGMD2")  // Gussform (oberer Teil)
+	Global("HasUpperMoldPart","ACIL1U",0)
+THEN
+    RESPONSE #100
+        SetGlobal("HasUpperMoldPart","ACIL1U",1)
+		AddJournalEntry(@17002,QUEST)
+END
+/*
+IF
+	GlobalLT("Coffin1","ACIL1U",2)
+	Global("Vampire_Respawn","ACIL1U",0)
+	Dead("AC#VAMP1")  // Moldark
+	Global("AC#Vampire_Killed","ACIL1U",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("AC#_Vampire_Reawakening","ACIL1U",ONE_DAY)
+		SetGlobal("Vampire_Respawn","ACIL1U",1)
+END
+
+IF
+	GlobalLT("Coffin1","ACIL1U",2)
+	Global("Vampire_Respawn","ACIL1U",1)
+	GlobalTimerExpired("AC#_Vampire_Reawakening","ACIL1U")
+THEN
+	RESPONSE #100
+		SetGlobal("Vampire_Respawn","ACIL1U",0)
+		SetGlobal("Vampire_Rises_Again","ACIL1U",1)
+		CloseDoor("DOOR01")
+		CreateCreature("AC#VAMP1",[630.578],S)  // Moldark
+END
+*/
+
+IF
+	Global("Deactivate","ACIL1U",1)
+	OpenState("DOOR01",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("Deactivate","ACIL1U",2)
+		TriggerActivation("Info_Vampire",TRUE)
+END
+
+IF
+	Global("AC#MG1U_AC#MGVAN","GLOBAL",0)
+	PartyHasItem("AC#MGVAN")  // Vertrag
+THEN
+	RESPONSE #100
+		SetGlobal("AC#MG1U_AC#MGVAN","GLOBAL",1)
+END
+
+IF
+	OR(2)
+		DifficultyGT(EASY)
+		LevelGT(Player1,11)
+	Global("Vampire_Cloudkill","ACIL1U",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Vampire_Cloudkill","ACIL1U",3)
+		CreateCreature("MISTVA01",[637.682],E)  // Vampirischer Nebel
+		CreateCreature("MISTVA01",[796.629],NE)  // Vampirischer Nebel
+END
+

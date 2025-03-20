@@ -1,0 +1,21 @@
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),6)
+END
+
+IF
+    ActionListEmpty()
+THEN
+    RESPONSE #100
+        RandomWalk()
+END
+

@@ -1,0 +1,30 @@
+IF
+	GlobalGT("Meet_Ursu","ACIL14",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+
+IF
+	HPLT(Myself,12)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+		ChangeAnimationNoEffect("HGTRL02")  // Feuertroll
+END
+
+IF
+	TimerExpired(77)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+

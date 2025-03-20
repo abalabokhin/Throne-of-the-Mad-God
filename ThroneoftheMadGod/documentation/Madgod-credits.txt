@@ -1,0 +1,11 @@
+***Throne of the Mad God - Credits***
+
+Acifer: Graphics, design, programming 
+Lava: Worldmap icon, Beta Testing
+Megrimlock: Proofreading
+
+The following assets were used to create the mod:
+
+Textures:
+This project uses textures created by David Gurrea and published at http://www.davegh.com
+Trigger - 200279_KopanoNanyane_SD100_Term4.wav by 2584 -- https://freesound.org/s/657445/ -- License: Attribution NonCommercial 4.0

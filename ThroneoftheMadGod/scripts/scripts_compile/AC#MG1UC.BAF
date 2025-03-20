@@ -1,0 +1,10 @@
+IF
+	Detect([PC])
+	Range(LastSeenBy,20)
+	Global("Vampire_Cloudkill","ACIL1U",1)
+THEN
+	RESPONSE #100
+		ForceSpellPoint([732.652],WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+		SetGlobal("Vampire_Cloudkill","ACIL1U",2)
+END
+

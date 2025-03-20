@@ -1,0 +1,497 @@
+// ThroneoftheMadGod Item Files
+
+
+COPY ~ThroneoftheMadGod/itm/copy~         ~override~
+
+COPY ~%MOD_FOLDER%/itm/AC#MGDRW.itm~         ~override~    // staff of defense
+  SAY NAME2 @2133
+  SAY DESC @2134
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBBG.itm~         ~override~    // Bag of Capricious Gems and Beetles
+  SAY NAME2 @2131
+  SAY DESC @2132
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBMC.itm~         ~override~    // drunken wink
+  SAY NAME2 @2129
+  SAY DESC @2130
+
+COPY ~%MOD_FOLDER%/itm/AC#MGRBU.itm~         ~override~    // rat bullet
+  SAY NAME2 @2127
+  SAY DESC @2128
+
+COPY ~%MOD_FOLDER%/itm/AC#MGDSC.itm~         ~override~    // dwarf's 2nd skin
+  SAY NAME2 @2125
+  SAY DESC @2126
+
+COPY ~%MOD_FOLDER%/itm/AC#MGCND.itm~         ~override~    // smoke candle
+  SAY NAME2 @2123
+  SAY DESC @2124
+
+COPY ~%MOD_FOLDER%/itm/AC#MGHMA.itm~         ~override~    // air hammer
+  SAY NAME2 @2121
+  SAY DESC @2122
+
+COPY ~%MOD_FOLDER%/itm/AC#MGSCI.itm~         ~override~    // prismatic scimitar
+  SAY NAME2 @2119
+  SAY DESC @2120
+
+COPY ~%MOD_FOLDER%/itm/AC#MGKYK.itm~         ~override~    // genie cage key
+  SAY NAME2 @2117
+  SAY DESC @2118
+
+COPY ~%MOD_FOLDER%/itm/AC#MGEVT.itm~         ~override~    // Evertorch
+  SAY NAME2 @2115
+  SAY DESC @2116
+
+COPY ~%MOD_FOLDER%/itm/AC#MG1LS.itm~         ~override~    // destroyed shield
+  SAY DESC @2114
+
+COPY ~%MOD_FOLDER%/itm/AC#LLMDN.itm~         ~override~    // Larloch's mass drain wizard spell
+  SAY NAME2 @552
+  SAY DESC @553
+
+COPY ~%MOD_FOLDER%/itm/AC#MGTBT.itm~         ~override~    // Belt of trolls, carried by Ursummnogh the unkillable
+  SAY NAME2 @2112
+  SAY DESC @2113
+
+COPY ~%MOD_FOLDER%/itm/AC#MGGOD.itm~         ~override~    // Guardian of the dead, Kelemvor's shield
+  SAY NAME2 @2110
+  SAY DESC @2111
+
+COPY ~%MOD_FOLDER%/itm/AC#MGSLW.itm~         ~override~    // Diadem of whispering truth
+  SAY NAME1 @2106
+  SAY NAME2 @2107
+  SAY UNIDENTIFIED_DESC @2108
+  SAY DESC @2109
+
+COPY ~%MOD_FOLDER%/itm/AC#ALLIP.itm~         ~override~  // Allip's attack
+  SAY 0x13e @1123
+
+COPY ~%MOD_FOLDER%/itm/AC#MGTRH.itm~         ~override~    // Trollhand
+  SAY NAME1 @2102
+  SAY NAME2 @2103
+  SAY UNIDENTIFIED_DESC @2104
+  SAY DESC @2105
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBC1.itm~         ~override~    // Blacksmith's gloves
+  SAY NAME2 @2100
+  SAY DESC @2101
+
+COPY ~%MOD_FOLDER%/itm/AC#MGRI3.itm~         ~override~    // Ring of fellowship
+  SAY NAME2 @2098
+  SAY DESC @2099
+
+COPY ~%MOD_FOLDER%/itm/AC#MGHE1.itm~         ~override~    // Bergwaechterhelm
+  SAY NAME2 @2096
+  SAY DESC @2097
+
+COPY ~%MOD_FOLDER%/itm/AC#MGCCS.itm~         ~override~    // cloak of chaos
+  SAY NAME2 @2094
+  SAY DESC @2095
+
+COPY ~%MOD_FOLDER%/itm/AC#MGHAR.itm~         ~override~    // Hammer of the archons
+  SAY NAME2 @2092
+  SAY DESC @2093
+
+COPY ~%MOD_FOLDER%/itm/AC#MGTSH.itm~         ~override~    // Thundershield
+  SAY NAME2 @2090
+  SAY DESC @2091
+
+COPY ~%MOD_FOLDER%/itm/AC#NGASI.itm~         ~override~    // Neutralize Gases scroll
+  SAY NAME2 @549
+  SAY DESC @550
+
+COPY ~%MOD_FOLDER%/itm/AC#MGNTU.itm~         ~override~    // Ursummnogh's note
+  SAY NAME2 @2088
+  SAY DESC @2089
+
+COPY ~%MOD_FOLDER%/itm/AC#MGNTK.itm~         ~override~    // Trollmaster's note
+  SAY NAME1 @2084
+  SAY NAME2 @2085
+  SAY UNIDENTIFIED_DESC @2086
+  SAY DESC @2087
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK9.itm~         ~override~    // Dwarven book #9: History of Korolnor
+  SAY NAME2 @2082
+  SAY DESC @2083
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK8.itm~         ~override~    // Dwarven book #8: dwarves dont use magic!
+  SAY NAME2 @2080
+  SAY DESC @2081
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK7.itm~         ~override~    // Dwarven book #7: 5 things
+  SAY NAME2 @2078
+  SAY DESC @2079
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK6.itm~         ~override~    // Dwarven book #6: Berronar
+  SAY NAME2 @2076
+  SAY DESC @2077
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK5.itm~         ~override~    // Dwarven book #5: The creation of dwarves
+  SAY NAME2 @2074
+  SAY DESC @2075
+
+COPY ~%MOD_FOLDER%/itm/AC#MG19J.itm~         ~override~    // Crown Jewel of Korolnor
+  SAY NAME2 @2072
+  SAY DESC @2073
+
+ADD_PROJECTILE      ~ThroneoftheMadGod/pro/AC#FLBOT.PRO~ // flying bottle projectile
+COPY ~%MOD_FOLDER%/itm/AC#MGSTK.itm~         ~override~    // Sticking oil
+  SAY NAME2 @2066
+  SAY DESC @2067
+  WRITE_SHORT   0x9c ~%AC#FLBOT%~
+
+COPY ~%MOD_FOLDER%/itm/AC#MGFLS.itm~         ~override~    // Flayerslayer
+  SAY NAME2 @2064
+  SAY DESC @2065
+
+COPY ~%MOD_FOLDER%/itm/AC#MGLN2.itm~         ~override~    // Lancameth's head (Retributed)
+  SAY NAME2 @2060
+  SAY DESC @2061
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK4.itm~         ~override~    // History of shield dwarves, vol. 2
+  SAY NAME2 @2058
+  SAY DESC @2059
+
+COPY ~%MOD_FOLDER%/itm/AC#MGLD1.itm~         ~override~    // Bryam Lancameth's diary
+  SAY NAME2 @2056
+  SAY DESC @2057
+
+COPY ~%MOD_FOLDER%/itm/AC#MGTNK.itm~         ~override~    // dwarven tankard
+  SAY NAME1 @2052
+  SAY NAME2 @2053
+  SAY UNIDENTIFIED_DESC @2054
+  SAY DESC @2055
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBT1.itm~         ~override~    // Nightstalker's boots (in vampire's possession)
+  SAY NAME2 @2050
+  SAY DESC @2051
+
+COPY ~%MOD_FOLDER%/itm/AC#MG1U2.itm~         ~override~    // dwarven keystone (in vampire's possession)
+  SAY NAME2 @2046
+  SAY DESC @2047
+
+COPY ~%MOD_FOLDER%/itm/AC#MGSHH.itm~         ~override~    // The Scolding Stendal
+  SAY NAME1 @2042
+  SAY NAME2 @2043
+  SAY UNIDENTIFIED_DESC @2044
+  SAY DESC @2045
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBKG.itm~         ~override~    // Book about giants
+  SAY NAME2 @2040
+  SAY DESC @2041
+
+COPY ~%MOD_FOLDER%/itm/AC#MGAMB.itm~         ~override~    // Astral mace of blasting
+  SAY NAME2 @2035
+  SAY DESC @2036
+
+COPY ~%MOD_FOLDER%/itm/AC#MGMS1.itm~         ~override~    // Bone morning star
+  SAY NAME2 @2033
+  SAY DESC @2034
+
+LAF cd_new_portrait_icon INT_VAR string = RESOLVE_STR_REF(@30) STR_VAR bam_file = AC#IMDIS RET icon END
+
+COPY ~%MOD_FOLDER%/itm/AC#MGRI2.itm~         ~override~    // Berronar's ring
+  SAY NAME2 @2031
+  SAY DESC @2032
+  LPF ALTER_EFFECT INT_VAR match_opcode = 142 match_parameter2 = 0 parameter2 = icon END
+
+COPY ~%MOD_FOLDER%/itm/AC#MGAM1.itm~         ~override~    // Guardians' amulet
+  SAY NAME2 @2029
+  SAY DESC @2030
+
+COPY ~%MOD_FOLDER%/itm/AC#MGSP1.itm~         ~override~    // Blackfang
+  SAY NAME2 @2027
+  SAY DESC @2028
+
+COPY ~%MOD_FOLDER%/itm/AC#RING9.itm~         ~override~    // ring of lore
+  SAY NAME2 @485
+  SAY DESC @486
+
+COPY ~%MOD_FOLDER%/itm/AC#MGKY3.itm~         ~override~  // part#3 of mithril plate
+  SAY NAME1 @2019
+  SAY NAME2 @2025
+  SAY UNIDENTIFIED_DESC @2021
+  SAY DESC @2026
+
+COPY ~%MOD_FOLDER%/itm/AC#MGKY2.itm~         ~override~  // part#2 of mithril plate
+  SAY NAME1 @2019
+  SAY NAME2 @2023
+  SAY UNIDENTIFIED_DESC @2021
+  SAY DESC @2024
+
+COPY ~%MOD_FOLDER%/itm/AC#MGKY1.itm~         ~override~  // part#1 of mithril plate
+  SAY NAME1 @2019
+  SAY NAME2 @2020
+  SAY UNIDENTIFIED_DESC @2021
+  SAY DESC @2022
+
+COPY ~%MOD_FOLDER%/itm/AC#MGPL4.itm~         ~override~   // Karlyn'S mithril full plate +2 (forged by Cromwell)
+  SAY NAME2 @2017
+  SAY DESC @2018
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBLT.itm~         ~override~   // girdle of dwarvenkind
+  SAY NAME2 @71
+  SAY DESC @72
+
+COPY ~%MOD_FOLDER%/itm/AC#MGMD1.itm~         ~override~   // casting mold, lower part
+  SAY NAME2 @69
+  SAY DESC @70
+
+COPY ~%MOD_FOLDER%/itm/AC#MGMD2.itm~         ~override~   // casting mold, upper part
+  SAY NAME2 @67
+  SAY DESC @68
+
+COPY ~%MOD_FOLDER%/itm/AC#MGMD3.itm~         ~override~   // Dwarven key
+  SAY NAME2 @65
+  SAY DESC @66
+
+COPY ~%MOD_FOLDER%/itm/AC#MGHDW.itm~         ~override~   // Handwheel
+  SAY NAME2 @63
+  SAY DESC @64
+
+COPY ~%MOD_FOLDER%/itm/AC#11LNT.itm~         ~override~   // Lancameths note #1 in area ACIL11
+  SAY NAME2 @61
+  SAY DESC @62
+
+COPY ~%MOD_FOLDER%/itm/AC#MGRI1.itm~         ~override~   // Ring of acid resistance
+  SAY NAME2 @20
+  SAY DESC @21
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK1.itm~         ~override~   // book of trolls
+  SAY NAME2 @18
+  SAY DESC @19
+
+COPY ~%MOD_FOLDER%/itm/ac#mg131.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+ COPY ~%MOD_FOLDER%/itm/ac#mg132.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg133.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg134.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg135.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg136.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg137.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#mg138.itm~         ~override~   // Korolnor juwel
+  SAY NAME2 @10
+  SAY DESC @11
+  
+COPY ~%MOD_FOLDER%/itm/ac#bookl.itm~         ~override/ac#bookl.itm~  // Lancameth's Journal
+  SAY NAME2 @605
+  SAY DESC @606
+
+COPY ~%MOD_FOLDER%/itm/ac#note7.itm~         ~override~  // Krakelige Notiz; Troll's note
+  SAY NAME2 @554
+  SAY DESC @555
+
+COPY ~%MOD_FOLDER%/itm/ac#shan1.itm~         ~override~   // Ammonit
+  SAY NAME2 @318
+  SAY DESC @319
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan2.itm~         ~override~   // Goldbarren
+  SAY NAME2 @320
+  SAY DESC @321
+
+COPY ~%MOD_FOLDER%/itm/ac#shan3.itm~         ~override~   // Zardazil
+  SAY NAME2 @322
+  SAY DESC @323
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan4.itm~         ~override~   // Eisenerz
+  SAY NAME2 @324
+  SAY DESC @325
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan5.itm~         ~override~   // Silberbarren
+  SAY NAME2 @326
+  SAY DESC @327
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan6.itm~         ~override~   // beschliffener Juwel
+  SAY NAME2 @328
+  SAY DESC @329
+
+COPY ~%MOD_FOLDER%/itm/ac#shan7.itm~         ~override~   // Kieselsteine
+  SAY NAME2 @330
+  SAY DESC @331
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan8.itm~         ~override~   // Adamantit
+  SAY NAME2 @332
+  SAY DESC @333
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan9.itm~         ~override~   // Mithril
+  SAY NAME2 @334
+  SAY DESC @335
+  
+COPY ~%MOD_FOLDER%/itm/ac#shan0.itm~         ~override~   // Rubinknauf
+  SAY NAME2 @336
+  SAY DESC @337
+  
+COPY ~%MOD_FOLDER%/itm/AC#BOW01.itm~         ~override~  // Bow of Death's Rain
+  SAY NAME2 @495
+  SAY DESC @496
+  
+COPY ~%MOD_FOLDER%/itm/ac#rune1.itm~         ~override~ // dwarven runestone
+  SAY NAME1 @405
+  SAY NAME2 @405
+  SAY DESC @406
+  
+COPY ~%MOD_FOLDER%/itm/ac#arm01.itm~   ~override~   // damaged dwarven armor
+  SAY NAME1 @409
+  SAY NAME2 @409
+  SAY DESC @410
+  
+COPY ~%MOD_FOLDER%/itm/ac#bonew.itm~         ~override~  // Child bones
+  SAY NAME2 @515
+  SAY DESC @516
+
+COPY ~%MOD_FOLDER%/itm/ac#key1v.itm~   ~override~  // key for fire giant forge
+  SAY NAME1 @398
+  SAY NAME2 @398
+  SAY DESC @399
+
+COPY ~%MOD_FOLDER%/itm/ac#let10.itm~         ~override~ // letter found outside the wailing dwarf
+  SAY NAME1 @59
+  SAY NAME2 @59
+  SAY DESC @60
+  
+COPY ~%MOD_FOLDER%/itm/AC#AX1H2.itm~         ~override~  // Narjor +2, +4 against Trolls
+  SAY NAME2 @566
+  SAY DESC @567
+
+/*
+COPY ~%MOD_FOLDER%/itm/AC#WAND8.itm~         ~override~  // Staff of eyes
+  SAY NAME2 @541
+  SAY DESC @542
+*/  
+COPY ~%MOD_FOLDER%/itm/AC#KEY13.itm~         ~override~  // Swordkey ACIL13 DOOR 02
+  SAY NAME2 @576
+  SAY DESC @577
+  
+COPY ~%MOD_FOLDER%/itm/ac#14le1.itm~         ~override~  // Letter from the knightly order Kuldar of Barakmordin
+  SAY NAME2 @510
+  SAY DESC @511
+
+COPY ~%MOD_FOLDER%/itm/AC#DAQUS.itm~         ~override~  // Sto�dolch von Quar-Shan
+  SAY NAME2 @610
+  SAY DESC  @611
+  
+COPY ~%MOD_FOLDER%/itm/ac#irent.itm~         ~override~ // iremar's notes
+  SAY NAME2 @316
+  SAY DESC @317
+  
+COPY ~%MOD_FOLDER%/itm/AC#CHEE1.itm~         ~override~   // Cheese
+  SAY NAME2 @972
+  SAY DESC @973
+  
+COPY ~%MOD_FOLDER%/itm/AC#CLKBL.itm~         ~override~ // clockwork blade of venom
+  SAY NAME2 @2038
+  SAY DESC @2039
+
+COPY ~%MOD_FOLDER%/itm/AC#MG18X.itm~         ~override~ // Clangeddin's axe
+  SAY NAME2 @1103
+  SAY DESC @1104
+
+COPY ~%MOD_FOLDER%/itm/AC#KEY19.itm~         ~override~  // Diinkarazan's Key
+  SAY NAME2 @585
+  SAY DESC @586
+  
+COPY ~%MOD_FOLDER%/itm/ac#clk05.itm~         ~override~   // Cloak of petrification
+  SAY NAME2 @846
+  SAY DESC @847
+
+COPY ~%MOD_FOLDER%/itm/AC#BOLT1.itm~         ~override~   // Bolzen der Schw�chung
+  SAY NAME2 @377
+  SAY DESC @378
+
+LAF cd_new_summon_table STR_VAR descript = "Hellgate_summons" 2da_file = AC#MGSHG RET table END
+
+COPY ~%MOD_FOLDER%/itm/AC#MGSHG.itm~         ~override~   // staff of hellgate
+  SAY NAME2 @384
+  SAY DESC @385
+  LPF ALTER_EFFECT INT_VAR match_opcode = 331 parameter2 = table END
+  
+COPY ~%MOD_FOLDER%/itm/AC#HAMM1.itm~         ~override~  // Ildanfal
+  SAY NAME2 @487
+  SAY DESC @488
+  
+COPY ~%MOD_FOLDER%/itm/ac#head1.itm~         ~override~  // Lancameth's head
+  SAY NAME2 @573
+  SAY DESC @574
+
+COPY ~%MOD_FOLDER%/itm/ac#note9.itm~         ~override~  // Verbeeg's note
+  SAY NAME2 @554
+  SAY DESC @983
+
+COPY ~%MOD_FOLDER%/itm/AC#VARGO.itm~         ~override~  // Vargouille: bite
+  SAY 0xde @1107
+  SAY 0x10e @1107
+  SAY 0x13e @1107
+  SAY 0x16e @1107
+
+/*
+COPY ~%MOD_FOLDER%/itm/ac#zepko.itm~         ~override~  // Korolnor-Zepter
+  SAY NAME1 @581
+  SAY NAME2 @579
+  SAY UNIDENTIFIED_DESC @582
+  SAY DESC @580
+*/
+COPY ~%MOD_FOLDER%/itm/ac#key14.itm~         ~override~  // Troll leader's key
+  SAY NAME2 @585
+  SAY DESC @1111
+
+COPY ~%MOD_FOLDER%/itm/AC#BKDWF.itm~         ~override~ //Book about dwarven language
+  SAY NAME2 @2000
+  SAY DESC @2001
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK2.itm~         ~override~ //Hstory of shield dwarves #1
+  SAY NAME2 @2002
+  SAY DESC @2003
+
+COPY ~%MOD_FOLDER%/itm/AC#MGBK3.itm~         ~override~ //book dwarven pantheon
+  SAY NAME2 @2004
+  SAY DESC @2005
+
+COPY ~%MOD_FOLDER%/itm/AC#MG14A.ITM~         ~override~ // dwarven praying stone #1
+  SAY NAME2 @2008
+  SAY DESC @2009
+  
+COPY ~%MOD_FOLDER%/itm/AC#MG14B.ITM~         ~override~ // dwarven praying stone #2
+  SAY NAME2 @2008
+  SAY DESC @2010
+  
+COPY ~%MOD_FOLDER%/itm/AC#MG1UK.ITM~         ~override~ // vampire's coffin key
+  SAY NAME2 @2011
+  SAY DESC @2012
+  
+COPY ~%MOD_FOLDER%/itm/AC#MGVAN.itm~         ~override~ // Vampire's contract
+  SAY NAME2 @2006
+  SAY DESC @2007
+
+COPY ~%MOD_FOLDER%/itm/AC#MGDWD.itm~         ~override~ // Dog Wizard's diary
+  SAY NAME2 @2013
+  SAY DESC @2014
+  
+COPY ~%MOD_FOLDER%/itm/AC#MG18A.itm~         ~override~ // Coal
+  SAY NAME2 @2015
+  SAY DESC @2016
+
+// Adding specificprojectile for the rock hurling Fomorian Giants
+ADD_PROJECTILE      ~%MOD_FOLDER%/pro/AC#FOMBL.PRO~ // hurling rocks
+COPY ~%MOD_FOLDER%/itm/AC#FOMBL.itm~         ~override~
+	WRITE_SHORT   0x9c ~%AC#FOMBL%~

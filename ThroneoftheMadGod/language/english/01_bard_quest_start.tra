@@ -1,0 +1,156 @@
+@4000 = ~I've heard this ballad makes even the toughest warriors cry.~
+@4001 = ~Hopefully, he gets the part with the dragon right!~
+@4002 = ~I bet I could be a bard too, if I only had the time!~
+@4003 = ~Let's see if the bard can get through it without stumbling this time.~
+@4004 = ~Every time I hear this story, I get goosebumps.~
+@4005 = ~Is this the story where everyone dies at the end? I don’t like sad endings!~
+@4006 = ~I hope the story isn’t too long… My ale won’t last forever.~
+@4007 = ~Listen now to my voice and the sounds of the yarting – and if my work pleases you, mayhap a pearl or two in my pouch shall keep my muse flowing and my poetry inspired.~
+@4008 = ~Now stand in awe and heed my ballad, titled "Lancameth’s Last Expedition", based on a true tale…~
+@4009 = ~"The Ballad of Lancameth’s Last Expedition"~
+@4010 = ~…by Gisbert of Myratma. (That’s me.)~
+@4011 = ~*Ahem*~ [ACT_01]
+@4012 = ~A warrior strong once wandered,
+with steel firm in his hand,
+he swore to shield the helpless,
+and joined the watch’s band.~
+@4013 = ~He longed for greater glory,
+for fame he sought his way,
+to the Troll Mountains he did venture,
+left home and wife that day.~
+@4014 = ~A fortress built by dwarven hand,
+which time served to embalm,
+with comrades bold he set his path,
+from Calimshan and Amn.~
+@4015 = ~But evil proved the wiser,
+with traps and foes most fierce,
+and through the dwarven stonework,
+no alchemist could pierce.~
+@4016 = ~Hey! Don't interrupt me and listen to the song until the end!~
+@4017 = ~Where was I? Ah yes...~
+@4018 = ~Through tunnels dark they fought their fight,
+yet found no gems or gold,
+in vain they sought fortune and light,
+and the route they were not told.~
+@4019 = ~In the end, no hope remained,
+their doom they could not atone,
+lost, past all hope of the return,
+they perished, tombless and alone.~
+@4020 = ~The fortress was their silent grave,
+grief the captain’s widow bore,
+and she took the offering she gave,
+to the shrine of Kelemvor.~  
+@4021 = ~No epitaph, no stone was set,
+to mark their place of rest,
+yet bards ensure their names live on,
+sung of the valiant quest.~
+@4022 = ~...~
+@4023 = ~(This is where the applause should start...)~
+@4024 = ~Ahem... DONE! That was the end of the ballad of "Lancameth’s Last Expedition"!~
+@4025 = ~Gentle folk, how about a little contribution for my performance? Just a few coins?~
+@4026 = ~Nothing? Not a single coin? *Sigh*.~
+@4027 = ~Bloody philistines! No appreciation for art! And what do *you* want from me?~
+@4028 = ~I enjoyed your ballad.~
+@4029 = ~Your ballad was truly dreadful.~
+@4030 = ~I didn’t think it was bad.~
+@4031 = ~I’m leaving now.~
+@4032 = ~Not bad? I don’t settle for mediocrity! But fine, at least you listened to the end.~
+@4033 = ~You said the song was based on a true story?~
+@4034 = ~The tale you told… is it true?~
+@4035 = ~Yes, yes. Go on, pour salt into the wound of my struggling craft!~
+@4036 = ~What in the world inspired you to write such a song?~
+@4037 = ~Well, the story of those adventurers really happened!~
+@4038 = ~And how do you know that?~
+@4039 = ~Tell me more.~
+@4040 = ~Oh! That pleases me!~
+@4041 = ~As you wish. Mayhap my next audience will be more generous!~
+@4042 = ~Yes, the story behind the ballad is true. I may have added some flair—for dramatic effect, of course—but for the most part, it’s based on real events.~
+@4043 = ~How do you know all this?~
+@4044 = ~People in town still talk about Captain Lancameth, who set out on his final adventure and never returned. The last chapter of his life was written in red ink, I fear.~
+@4045 = ~Tell me more about this Lancameth.~
+@4046 = ~Every adventurer’s tale must end one day.~
+@4047 = ~Lancameth? Never heard of him.~
+@4048 = ~Of course! Listen well...~
+
+@4049 = ~Not so haughty, my friend! The adventurer in this tale was no greenhorn.~
+@4050 = ~Bryam Lancameth paid no heed to the stories surrounding the fortress and the Troll Mountains. He was dead set on venturing there and began researching the dwarven clan that supposedly lived in the region. Many thought his ambition reckless, for no group had ever returned from those mountains alive.~
+@4051 = ~Some say the promise of immeasurable riches made Lancameth cast aside his usual caution. Rumors told of ancient knowledge and powerful magic buried in the old dwarven stronghold. And where such things are hidden, heroism may not have been the only driving force—mayhap a touch of greed played its part as well.~
+@4052 = ~A gem or two never hurts when setting out on an adventure.~
+@4053 = ~Greed has led to the downfall of many a grand adventure—mayhap this one too.~
+@4054 = ~Go on.~
+@4055 = ~Who knows what treasures lie within such dwarven ruins? Gems, mighty weapons… a sleeping dragon, mayhap? I cannot say. But the history of this region is closely tied to the history of the dwarves, even if much of it has been long forgotten.~
+@4056 = ~I’ve uncovered the secrets of a few old dwarven strongholds before.~
+@4057 = ~You have my interest. What happened next?~
+@4058 = ~Well, in any case, Lancameth paid no heed to the warnings. He was convinced he had to see this last great adventure through, for adventure’s sake. He gathered some of the finest adventurers he could find, and they, too, were drawn in by the lure of treasure and glory.~
+@4059 = ~A wise decision not to embark on this journey alone.~
+@4060 = ~Who were these other adventurers?~
+@4061 = ~Interesting. Please, continue.~
+@4062 = ~Lancameth was joined by four others on his expedition into the Troll Mountains: A halfling thief from Athkatla, an elven archer, a priestess, and a peculiar little mage.~
+@4063 = ~Can you tell me more about Lancameth’s companions?~
+@4064 = ~And then?~
+@4065 = ~I don’t know much about Lancameth’s companions—except for one. The halfling thief’s name was Nhair Ebendar. He was a well-known figure in Athkatla, always in trouble with the city guard and the Shadow Thieves. Yet neither could ever catch him, for the local halflings always sheltered him.~
+@4066 = ~It’s said he once stole a valuable dagger from a noble, a theft that put him on the run from the noble’s agents ever since. Mayhap he saw the expedition with Bryam Lancameth as a good way to let the whole affair blow over.~
+@4067 = ~I met Lancameth once, back when he was a captain of the guard here in Athkatla. He had me locked up for ‘borrowing’ a ring from some noble lady in the Government District.~
+@4068 = ~He was a decent fellow. While I was in jail, he’d visit me from time to time—he was quite fond of my ballads. Never thought I’d end up composing one about him! Eventually, he let me go. I never saw him again after that.~
+@4069 = ~Every one of Lancameth’s group was an experienced adventurer, well-armed with powerful weapons—ready to face any evil that crossed their path.~
+@4070 = ~What became of the group?~
+@4071 = ~Seems it didn’t help them much.~
+@4072 = ~A weapon is only as good as the arm that wields it.~
+@4073 = ~Perhaps a bit more wisdom, alongside good steel, would have seen them through.~
+@4074 = ~So the five heroes set out for the Troll Mountains one day… and never returned. No one ever saw or heard from them again.~
+@4075 = ~Can you tell me where this place is—the one they set out for?~
+@4076 = ~Could you remind me where this place is?~
+@4077 = ~And you wrote a ballad about them.~
+@4078 = ~Thank you for sharing this tale.~
+@4079 = ~That’s right. I knew folks enjoy a good tragic hero’s tale.~
+@4080 = ~I met Lancameth once, back when he was a captain of the guard here in Athkatla. He had me locked up for ‘borrowing’ a ring from some noble lady in the Government District. He was a decent fellow. While I was in jail, he’d visit me from time to time—he was quite fond of my ballads. Never thought I’d end up composing one about *him*! Eventually, he let me go. I never saw him again after that.~
+@4081 = ~And you wrote a ballad about him.~
+@4082 = ~And so, now you know the story of "Lancameth’s Last Expedition".~
+@4083 = ~Where can I find this old dwarven stronghold?~
+
+@4084 = ~The old dwarven stronghold lies somewhere in the Troll Mountains. It is said to be marked by a great stone-carved statue known as the "Wailing Dwarf". The wind howls through its open mouth, sending shivers down the spine of those who pass by.~
+@4085 = ~Thank you! That pleases me! If only everyone here were as interested and… generous as you…~
+@4086 = ~Take care, will you? I think I’ll seek out another tavern—mayhap I’ll find an audience more appreciative of my songs elsewhere. Present company excluded, of course. Farewell!~
+@4087 = ~Good people! Lend me your ears and gather round! For I am about to perform a ballad!~
+@4088 = ~Now that’s what I like! Strike up the tune, bard!~
+@4089 = ~Can’t hurt to listen to a song or two in this tavern.~
+@4090 = ~A ballad? I’ll listen to it later.~
+@4091 = ~What, no one wants to listen? Don’t take too long deciding, or I’ll be off to another tavern, and you’ll miss out on a fine tale!~
+@4092 = ~Step closer—it’s about to begin! My yarting is tuned, I've loosened my tongue—prepare yourselves for a hero’s tale, a story of adventure and daring with a tragic end!~
+@4093 = ~Couldn’t you, for once, sing a tale with a happy ending?~
+@4094 = ~Hey, shut up! I want to hear the ballad!~
+@4095 = ~Ugh, not this song again! Always the same old tune…~
+@4096 = ~I haven’t heard this ballad before! So get on with it, bard!~
+@4097 = ~Silence! SILENCE, good people!~
+@4098 = ~I once met an ogre who could rhyme better than this bard.~
+@4099 = ~And I’ve cut out tongues for far lesser offenses.~
+@4100 = ~It is the fate of all great and humble artists alike—to be constantly interrupted. Let the bard sing! Every interruption is like a dagger to the heart of the melody.~
+@4101 = ~Stop interrupting the bard! A good ballad is like a strong sword arm—one should not try to stop it!~
+@4102 = ~Quiet! I think the ballad isn’t half bad.~
+@4103 = ~What’s an alchemist?~
+@4104 = ~Wait, it’s already over?~
+@4105 = ~Well, I don’t know what to make of that ballad…~
+@4106 = ~Let’s go. That was nothing special.~
+@4107 = ~I heard there’s a troupe of actors staying at the “Five Flagons”. We should have gone there instead.~
+@4108 = ~Let’s head to the “Five Flagons”!~
+@4109 = ~Yeah, I’m dying of boredom here. Let’s go!~
+@4110 = ~Some years ago, there was a captain of the Amnian guard who had also made a name for himself as an adventurer. His name was Bryam Lancameth, and he was well-loved by both the people and his soldiers for his bravery and honor.~
+@4111 = ~I remember that captain well. He was one of the finest men I ever met in Athkatla’s city guard.~
+@4112 = ~That must have been a long time ago. I’ve never heard his name during my time here in Athkatla.~
+@4113 = ~One thing’s for sure—he wasn’t fond of turnips.~
+@4114 = ~As the end of his service neared, he decided to undertake one last great adventure. He sought to cleanse the Troll Mountains of the monsters that gave them their name.~
+@4115 = ~The trolls have plagued these lands for a long time—that much is true.~
+@4116 = ~A noble goal, to rid the land of the troll scourge from the mountains.~
+@4117 = ~He believed the beasts laired in an old dwarven structure called "The Wailing Dwarf". Supposedly, it’s a massive monument of a dwarven warrior. Must be quite a sight. Well… if it weren’t infested with trolls, that is.~
+@4118 = ~Giant dwarven monuments don’t scare me.~
+@4119 = ~Trolls truly are troublesome beasts.~
+@4120 = ~Lancameth’s widow might know more. She still visits the statue of Kelemvor in the graveyard, even after all these years. You could ask her about her husband’s fate—if she’s willing to speak of it. It can’t be easy mourning a man lost for so long.~
+@4121 = ~I know all too well the pain of losing a loved one without closure. We should help the widow uncover the truth about her husband so she doesn’t have to endure this endless uncertainty.~
+@4122 = ~Captain Bryam Lancameth was a man of honor and duty. It is only fitting that we extend our support to his widow. Let’s speak with her and do all we can to uncover the truth of his fate.~
+@4123 = ~War takes a heavy toll, and a soldier is always at risk on the battlefield. But it is a priest’s duty to bring comfort to those left behind.~
+@4124 = ~A grieving widow and her lost captain? Such sentimental affairs are none of our concern.~
+@4125 = ~Oh, the poor woman! Her sorrow must be unbearable. We must help her! Let’s go to her at once and see what we can do.~
+@4126 = ~Usually, it’s the lady who needs saving. But here, the lady is fine, and the hero is missing? That’s confusing. But whatever—let’s help the poor lady find her husband!~
+@4127 = ~Thanks for your story. Here, have ten gold coins.~
+@4128 = ~I think I’ll pay the widow a visit.~
+@4129 = ~Sounds like a typical halfling problem. Even if this Nhair was a scoundrel, I still feel obligated to find out what happened to him.~

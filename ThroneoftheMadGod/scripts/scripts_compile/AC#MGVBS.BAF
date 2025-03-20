@@ -1,0 +1,23 @@
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(CLERIC_CALL_LIGHTNING)  // SPPR302.SPL (Blitze herbeirufen)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),CLERIC_CALL_LIGHTNING)  // SPPR302.SPL (Blitze herbeirufen)
+END
+
+IF
+    See(FourthNearestEnemyOf(Myself))
+    HaveSpell(CLERIC_GLYPH_OF_WARDING)  // SPPR304.SPL (Glyphe der Abwehr)
+THEN
+    RESPONSE #100
+        Spell(LastSeenBy(Myself),CLERIC_GLYPH_OF_WARDING)  // SPPR304.SPL (Glyphe der Abwehr)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastSeenBy(Myself),12)
+END
+

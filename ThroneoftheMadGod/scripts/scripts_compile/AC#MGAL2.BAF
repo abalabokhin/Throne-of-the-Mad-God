@@ -1,0 +1,44 @@
+IF
+    Dead("ac#diin2")  // Diinkarazan
+THEN
+    RESPONSE #100
+        DestroySelf()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("moved","LOCALS",0)
+THEN
+    RESPONSE #100
+        SetGlobal("moved","LOCALS",1)
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    Delay(6)
+    ActionListEmpty()
+    !See([ENEMY])
+    Global("moved","LOCALS",0)
+    GlobalGT("ClangeddinDoor","ACIL18",0)
+THEN
+    RESPONSE #100
+        MoveToPoint([1580.637])
+END
+
+IF
+    ActionListEmpty()
+    !See([ENEMY])
+    Global("moved","LOCALS",1)
+    GlobalGT("ClangeddinDoor","ACIL18",0)
+THEN
+    RESPONSE #100
+        RandomWalk()
+END
+

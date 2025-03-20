@@ -1,0 +1,26 @@
+IF
+	Clicked([ANYONE])
+	OR(3)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+		CheckStatGT(LastTrigger,30,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@415) // ~Auf dieser m�chtigen S�ule steht in Zwergenrunen geschrieben: "Erbaut von Karlyn Kuldelver, Herr von Korolnor, im Jahre 433 nach der Gr�ndung seines Hauses. M�gen diese Hallen ewig stehen und stets ein sicherer Hort f�r die Br�der und Schwestern Shanatars sein.~
+END
+
+IF
+	Clicked([ANYONE])
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@415) // ~Auf dieser m�chtigen S�ule steht in Zwergenrunen geschrieben: "Erbaut von Karlyn Kuldelver, Herr von Korolnor, im Jahre 433 nach der Gr�ndung seines Hauses. M�gen diese Hallen ewig stehen und stets ein sicherer Hort f�r die Br�der und Schwestern Shanatars sein.~
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@416) // ~Auf dieser m�chtigen S�ule sind zahlreiche Zwergenrunen eingraviert. Ihr k�nnt sie jedoch nicht entziffern.~
+END
+

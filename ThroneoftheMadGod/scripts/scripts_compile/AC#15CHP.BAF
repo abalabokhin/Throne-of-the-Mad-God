@@ -1,0 +1,29 @@
+IF
+    Clicked([ANYONE])
+    !Range(LastTrigger,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("Rats_Cheese","ACIL15",1)
+    Global("Rats_Pan","ACIL15",0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1530)  
+        SetGlobal("Rats_Pan","ACIL15",1)
+        TriggerActivation("Info_pan",FALSE)
+END
+
+IF
+    Clicked([ANYONE])
+    Range(LastTrigger,12)
+    Global("Rats_Cheese","ACIL15",0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself,@1531)  
+END
+

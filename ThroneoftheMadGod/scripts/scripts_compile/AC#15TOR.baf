@@ -1,0 +1,49 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@367) // Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Da Ihr ein Zwerg seid, k�nnt Ihr diese m�helose entziffern. Sie lauten "Torglor, das Silberk�nigreich".
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	CheckStatGT(LastTrigger,30,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@368) // Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Torglor, das Silberk�nigreich".
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@369) // Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Anhand des Buches �ber die Schrift der Zwerge k�nnt Ihr die Dethek-Runen m�helos entziffern. Sie lauten "Torglor, das Silberk�nigreich".
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	CheckStatLT(LastTrigger,31,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@363) // Auf dem Boden steht eine kleine Zwergenstatue. Auf dem Metallboden daneben sind kleine Zwergenrunen eingelassen. Ihr k�nnt sie jedoch nicht entziffern.
+END
+

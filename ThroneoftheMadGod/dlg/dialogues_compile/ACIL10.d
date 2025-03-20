@@ -1,0 +1,163 @@
+// Dialogue Goblin greeting commitee
+
+BEGIN ~AC#MGGO1~
+
+CHAIN IF ~NumTimesTalkedTo(0)~ THEN AC#MGGO1 hello_01
+@4750
+END
+IF~~THEN REPLY @4751 EXTERN AC#MGGO1 fight
+IF~~THEN REPLY @4752 EXTERN AC#MGGO1 giants_or_trolls
+IF~~THEN REPLY @4753 EXTERN AC#MGGO1 giants_or_trolls
+IF~~THEN REPLY @4754 EXTERN AC#MGGO1 giants_or_trolls
+
+	CHAIN IF ~~ THEN AC#MGGO1 giants_or_trolls
+	@4755
+	END
+	IF~~THEN EXTERN AC#MGGO1 fight
+
+CHAIN IF ~~ THEN AC#MGGO1 fight
+@4756
+DO ~SetGlobal("Welcome_Goblin","ACIL10",1)
+VerbalConstant(Myself,UNHAPPY_ANNOYED)
+MoveToPoint([3901.1027])
+DestroySelf()~ EXIT
+
+// Dialogue Verbeeg Leader
+
+BEGIN ~AC#VERB3~
+
+IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0 
+  SAY @4757
+  IF ~~ THEN REPLY @4758 GOTO 1
+  IF ~~ THEN REPLY @4759 GOTO fight
+  IF ~~ THEN REPLY @4760 GOTO fight
+END
+
+IF ~~ THEN BEGIN 1 
+  SAY @4761 
+  IF ~~ THEN REPLY @4762 GOTO new_ruler
+  IF~~THEN REPLY @4763 EXTERN AC#VERB3 fight
+  IF~~THEN REPLY @4764 EXTERN AC#VERB3 smart
+END
+
+	CHAIN IF ~~ THEN AC#VERB3 new_ruler
+	@4765
+	END
+	IF~~THEN REPLY @4766 EXTERN AC#VERB3 fight
+	IF~~THEN REPLY @4767 EXTERN AC#VERB3 smart
+	IF~~THEN REPLY @4768 EXTERN AC#VERB3 fight
+	
+	CHAIN IF ~~ THEN AC#VERB3 smart
+	@4769
+	END
+	IF~~THEN EXTERN AC#VERB3 fight
+	
+
+CHAIN IF ~~ THEN AC#VERB3 fight
+@4770
+DO ~Enemy()
+SetGlobal("Verbeeg_Bridge","ACIL10",1)
+MoveToPointNoInterrupt([1128.1914])~ EXIT
+
+// Dialogue Zhentarim mage
+
+BEGIN ~AC#MGMA1~
+
+CHAIN IF ~NumTimesTalkedTo(0)~ THEN AC#MGMA1 hello_01
+@4771
+=
+@4772
+END
+IF~~THEN REPLY @4773 EXTERN AC#MGMA1 speak_with_me
+IF~~THEN REPLY @4774 EXTERN AC#MGMA1 wheres_troll
+IF~~THEN REPLY @4775 EXTERN AC#MGMA1 not_angry
+IF~~THEN REPLY @4809 EXTERN AC#MGMA1 charnames_crushing_finger
+IF~~THEN REPLY @4776 EXTERN AC#MGMA1 kill
+
+	CHAIN IF ~~ THEN AC#MGMA1 wheres_troll
+	@4777
+	END
+	IF~~THEN REPLY @4775 EXTERN AC#MGMA1 not_angry
+	IF~~THEN REPLY @4778 EXTERN AC#MGMA1 who_are_you
+	IF~~THEN REPLY @4776 EXTERN AC#MGMA1 kill
+	IF~~THEN REPLY @4779 EXTERN AC#MGMA1 who_are_you
+	
+	CHAIN IF ~~ THEN AC#MGMA1 speak_with_me
+	@4780
+	END
+	IF~~THEN REPLY @4775 EXTERN AC#MGMA1 not_angry
+	IF~~THEN REPLY @4779 EXTERN AC#MGMA1 who_are_you
+	IF~~THEN REPLY @4781 EXTERN AC#MGMA1 who_are_you
+	IF~~THEN REPLY @4782 EXTERN AC#MGMA1 lektion 	
+	
+		CHAIN IF ~~ THEN AC#MGMA1 not_angry
+		@4783
+		END
+		IF~~THEN EXTERN AC#MGMA1 who_are_you
+		
+		CHAIN IF ~~ THEN AC#MGMA1 lektion
+		@4784
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+	
+	CHAIN IF ~~ THEN AC#MGMA1 who_are_you
+	@4785
+	== NEERAJ IF ~InParty("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @4786
+	== BEDWIN IF ~InParty("EDWIN") !StateCheck("EDWIN",CD_STATE_NOTVALID) InParty("NEERA") !StateCheck("NEERA",CD_STATE_NOTVALID)~ THEN @4787
+	END
+	IF~~THEN REPLY @4788 EXTERN AC#MGMA1 arrogant
+	IF~~THEN REPLY @4789 EXTERN AC#MGMA1 just_landed
+	IF~~THEN REPLY @4790 EXTERN AC#MGMA1 spawn_troll
+	IF~~THEN REPLY @4791 EXTERN AC#MGMA1 kill
+	
+		CHAIN IF ~~ THEN AC#MGMA1 spawn_troll
+		@4792
+		END
+		IF~~THEN EXTERN AC#MGMA1 just_landed
+		
+	CHAIN IF ~~ THEN AC#MGMA1 just_landed
+	@4793
+	END
+	IF~~THEN REPLY @4794 EXTERN AC#MGMA1 chimera
+	IF~~THEN REPLY @4795 EXTERN AC#MGMA1 what_is_chimera
+	IF~~THEN REPLY @4796 EXTERN AC#MGMA1 charnames_crushing_finger
+	IF~~THEN REPLY @4797 EXTERN AC#MGMA1 kill
+	
+	CHAIN IF ~~ THEN AC#MGMA1 arrogant
+	@4798
+	END
+	IF~~THEN REPLY @4799 EXTERN AC#MGMA1 charnames_crushing_finger
+	IF~~THEN REPLY @4800 EXTERN AC#MGMA1 charnames_crushing_finger
+	IF~~THEN REPLY @4801 EXTERN AC#MGMA1 nice_to_meet_you
+	IF~~THEN REPLY @4796 EXTERN AC#MGMA1 charnames_crushing_finger
+	IF~~THEN REPLY @4802 EXTERN AC#MGMA1 kill
+	
+		CHAIN IF ~~ THEN AC#MGMA1 charnames_crushing_finger
+		@4803
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+	
+		CHAIN IF ~~ THEN AC#MGMA1 what_is_chimera
+		@4804
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+		
+		CHAIN IF ~~ THEN AC#MGMA1 chimera
+		@4805
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+		
+		CHAIN IF ~~ THEN AC#MGMA1 nice_to_meet_you
+		@4806
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+		
+		CHAIN IF ~~ THEN AC#MGMA1 kill
+		@4807
+		END
+		IF~~THEN EXTERN AC#MGMA1 fight
+
+CHAIN IF ~~ THEN AC#MGMA1 fight
+@4808
+DO ~SetGlobal("Chimera","ACIL10",1)
+Enemy()~ EXIT

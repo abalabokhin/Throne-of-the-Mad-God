@@ -1,0 +1,42 @@
+IF
+    Global("AC#MGEnteredACIL12","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("AC#MGEnteredACIL12","GLOBAL",1)
+        CreateCreature("AC#TROB1",[419.973],NE)  // Schwarztroll
+END
+
+IF
+	Global("DisableContainer","ACIL12",0)
+THEN
+	RESPONSE #100
+                ContainerEnable("chest01",FALSE)
+                ContainerEnable("chest02",FALSE)
+                ContainerEnable("chest03",FALSE)
+		SetGlobal("DisableContainer","ACIL12",1)
+END
+
+
+IF
+	Global("DisableContainer","ACIL12",1)
+	OpenState("DOOR01",TRUE)
+THEN
+	RESPONSE #100
+        ContainerEnable("chest01",TRUE)
+        ContainerEnable("chest02",TRUE)
+        ContainerEnable("chest03",TRUE)
+		SetGlobal("DisableContainer","ACIL12",2)
+END
+
+/*
+IF
+	Global("ursuhint","ACIL12",0)
+	PartyHasItem("AC#NOTE7")
+THEN
+	RESPONSE #100
+	        SetGlobal("ursuhint","ACIL12",1)
+	        AddJournalEntry(@14002,QUEST)
+END
+*/
+
+

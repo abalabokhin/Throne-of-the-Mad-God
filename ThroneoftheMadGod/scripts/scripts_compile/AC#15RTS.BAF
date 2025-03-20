@@ -1,0 +1,29 @@
+IF
+	See("AC#FOM01")  // Fomorischer Riese
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!See("AC#FOM01")  // Fomorischer Riese
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		EscapeArea()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+

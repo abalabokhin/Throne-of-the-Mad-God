@@ -1,0 +1,47 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL15",10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1400) 
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL15",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1401)  
+		SetGlobal("TalkHorn","ACIL15",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL15",1)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassableAllowOverlap("AC#MG15H",[1356.256],0)  
+		SetGlobal("TalkHorn","ACIL15",2)
+		ActionOverride("AC#MG15H",StartDialogNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,18)
+	Global("TalkHorn","ACIL15",2)
+THEN
+	RESPONSE #100
+		ActionOverride("AC#MG15H",StartDialogNoSet([PC]))
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,18)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+

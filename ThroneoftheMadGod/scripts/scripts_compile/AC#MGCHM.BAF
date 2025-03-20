@@ -1,0 +1,36 @@
+IF
+    See(NearestEnemyOf(Myself))
+    Range(NearestEnemyOf(Myself),8)
+    Global("Breathweapon","LOCALS",0)
+    OR(2)
+        CheckStatGT("AC#MGMA1",99,RESISTFIRE)  // Belanor
+        Dead("AC#MGMA1")  // Belanor
+THEN
+    RESPONSE #100
+        ForceSpellRES("AC#MGCM",NearestEnemyOf(Myself))  // Flammenfächer
+        SetGlobal("Breathweapon","LOCALS",1)
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Delay(6)
+    Range(NearestEnemyOf(Myself),8)
+    Global("Breathweapon","LOCALS",1)
+    OR(2)
+        CheckStatGT("AC#MGMA1",99,RESISTFIRE)  // Belanor
+        Dead("AC#MGMA1")  // Belanor
+THEN
+    RESPONSE #70
+        ForceSpellRES("AC#MGCM",NearestEnemyOf(Myself))  // Flammenfächer
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+

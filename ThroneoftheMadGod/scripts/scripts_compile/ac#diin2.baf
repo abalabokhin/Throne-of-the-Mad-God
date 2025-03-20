@@ -1,0 +1,796 @@
+IF
+  Die()
+THEN
+  RESPONSE #50
+      PlaySound("AC#MGDI4")
+      ReallyForceSpellDeadRES("AC#MGDD",Myself)  // No such index
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Prep","LOCALS",0)
+  !Dead("ac#diin2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      ApplySpellRES("AC#DIIS",Myself)  // SPWI408.SPL (Stoneskin)
+      ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (Schutz vor magischen Waffen)
+      ApplySpell(Myself,WIZARD_SPELL_TRAP)  // SPWI902.SPL (Zauberfalle)
+      SetGlobal("Prep","LOCALS",1)
+      Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("timestop","LOCALS",0)
+  HaveSpellRES("AC#DII1")  // Timestop
+THEN
+  RESPONSE #100
+      SetGlobal("timestop","LOCALS",1)
+      SpellRES("AC#DII1",Myself)  // Timestop
+END
+
+IF
+  GlobalGT("Teleport","LOCALS",0)
+  HasItem("invulner",Myself)  // Ring
+THEN
+  RESPONSE #100
+      DestroyItem("invulner")  // Ring
+      Continue()
+END
+
+////////////////////////////////////////////////////
+//// Recast stoneskin depending on party level and difficulty setting
+////////////////////////////////////////////////////
+IF
+  See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  LevelPartyGT(15)
+  GlobalGT("Teleport","LOCALS",0)
+  GlobalLT("Stoneskin_cheat","LOCALS",8)
+  CheckStatLT(Myself,1,STONESKINS)
+  !Dead("ac#diin2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      IncrementGlobal("Stoneskin_cheat","LOCALS",1)
+      ApplySpellRES("AC#DIIS",Myself)  // Stoneskin
+      ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR315.SPL (Cure Medium Wounds)
+      Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  LevelPartyGT(12)
+  LevelPartyLT(16)
+  GlobalGT("Teleport","LOCALS",0)
+  GlobalLT("Stoneskin_cheat","LOCALS",6)
+  CheckStatLT(Myself,1,STONESKINS)
+  !Dead("ac#diin2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      IncrementGlobal("Stoneskin_cheat","LOCALS",1)
+      ApplySpellRES("AC#DIIS",Myself)  // Stoneskin
+      ApplySpell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Cure Medium Wounds)
+      Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  LevelPartyGT(10)
+  LevelPartyLT(13)
+  GlobalGT("Teleport","LOCALS",0)
+  GlobalLT("Stoneskin_cheat","LOCALS",3)
+  CheckStatLT(Myself,1,STONESKINS)
+  !Dead("ac#diin2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      IncrementGlobal("Stoneskin_cheat","LOCALS",1)
+      ApplySpellRES("AC#DIIS",Myself)  // Stoneskin
+      ApplySpell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Cure Medium Wounds)
+      Continue()
+END
+
+////////////////////////////////////////////////////
+//// This section is inspired by David Gaider's Ascension mod and BioWare's Balthazar script
+////////////////////////////////////////////////////
+
+IF
+  Global("Jumper","LOCALS",10)
+  Global("Teleport","LOCALS",2)
+  DifficultyGT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("Teleport","LOCALS",10) // stop jumping around
+END
+
+IF
+  Global("Jumper","LOCALS",6)
+  Global("Teleport","LOCALS",2)
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("Teleport","LOCALS",10) // stop jumping around
+END
+
+IF
+  Global("Jumper","LOCALS",3)
+  Global("Teleport","LOCALS",2)
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("Teleport","LOCALS",10) // stop jumping around
+END
+
+IF
+  Global("TimeToMove","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("Teleport","LOCALS",2)
+  //!StateCheck(Myself,STATE_INVISIBLE)
+  Range(NearestEnemyOf(Myself),8)
+  Range(SecondNearestEnemyOf(Myself),8)
+  Range(ThirdNearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("Teleport","LOCALS",2)
+  HPPercentLT(Myself,60)
+  //!StateCheck(Myself,STATE_INVISIBLE)
+  Range(NearestEnemyOf(Myself),8)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  Global("TimeToMove","LOCALS",1)
+  !Range("Platf01",35)  // Platf01
+  !Range("Platf02",35)  // Platf02
+  !Range("Platf03",35)  // Platf03
+  !GlobalTimerNotExpired("Spell","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+	VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ForceSpellPointRES("AC#MGD8",[431.781])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+	VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ForceSpellPointRES("AC#MGD8",[1049.291])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+	VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ForceSpellPointRES("AC#MGD8",[1810.524])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+END
+
+IF
+  Global("TimeToMove","LOCALS",1)
+  Range("Platf01",35)  // Platf01
+  !GlobalTimerNotExpired("Spell","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_STINKING_CLOUD)
+    ForceSpellPointRES("AC#MGD8",[1049.291])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_STINKING_CLOUD)
+    ForceSpellPointRES("AC#MGD8",[1810.524])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+END
+
+IF
+  Global("TimeToMove","LOCALS",1)
+  Range("Platf02",35)  // Platf02
+  !GlobalTimerNotExpired("Spell","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_STINKING_CLOUD)
+    ForceSpellPointRES("AC#MGD8",[431.781])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_STINKING_CLOUD)
+    ForceSpellPointRES("AC#MGD8",[1810.524])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+END
+
+IF
+  Global("TimeToMove","LOCALS",1)
+  Range("Platf03",35)  // Platf03
+  !GlobalTimerNotExpired("Spell","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ForceSpellPointRES("AC#MGD8",[431.781])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+  RESPONSE #100
+    SetGlobalTimer("Spell","LOCALS",6)
+    VerbalConstant(Myself,INITIAL_MEETING)
+    ReallyForceSpell(Myself,WIZARD_TELEPORT_FIELD)
+    ForceSpellPointRES("AC#MGD8",[1049.291])
+    ApplySpell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    IncrementGlobal("Jumper","LOCALS",1)
+END
+
+////////////////////////////////////////////////////
+//// Fighting action
+////////////////////////////////////////////////////
+IF
+	See(NearestEnemyOf(Myself))
+	StateCheck(Myself,STATE_SILENCED)
+	HaveSpell(WIZARD_VOCALIZE) // SPWI219.SPL (Vocalize)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_VOCALIZE) // SPWI219.SPL (Vocalize)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	HaveSpell(WIZARD_TRUE_SIGHT) // SPWI609.SPL (True Sight)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_TRUE_SIGHT) // SPWI609.SPL (True Sight)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!See(LastSeenBy(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+	!HaveSpell(WIZARD_TRUE_SIGHT) // SPWI609.SPL (True Sight)
+	Delay(10)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT) // SPWI609.SPL (True Sight)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,1,STONESKINS)
+	TookDamage()
+	Global("Prep2","LOCALS",0)
+	!Dead("AC#DIIN2")
+THEN
+	RESPONSE #100
+		//DisplayString(Myself,3302) // Kombinierter Notfall - Zauber zur�ckwerfen
+		//ApplySpell(NearestEnemyOf(Myself),WIZARD_SPELL_TURNING) // SPWI701.SPL (Zauber zur�ckwerfen)
+		DisplayString(Myself,40240) // Kombinierter Notfall: Mislead
+		ApplySpell(SecondNearestEnemyOf(Myself),WIZARD_MISLEAD) // SPWI607.SPL (Mislead)
+		SetGlobal("Prep2","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,1,STONESKINS)
+	TookDamage()
+	Global("Prep2","LOCALS",1)
+	!Dead("AC#DIIN2")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,40252) // Notfall: Schutz vor Magischen Waffen
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS) // SPWI611.SPL (Schutz vor Magischen Waffen)
+		SetGlobal("Prep2","LOCALS",2)
+END
+
+// If Party tries to rest: Diinkarazan teleports to player1 and starts dialogue
+IF
+    See(NearestEnemyOf(Myself))
+    Global("DiinAmbush","ACIL19",1)
+THEN
+    RESPONSE #100
+        SetGlobal("DiinAmbush","ACIL19",2)
+        ApplySpellRES("AC#DIIS",Myself)  // SPWI408.SPL (Stoneskin)
+        StartDialogueNoSet([PC])
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("mumbojumbo","LOCALS",0)
+    HaveSpellRES("AC#DII3")  // magic mumbojumbo
+THEN
+    RESPONSE #100
+        SpellRES("AC#DII3",NearestEnemyOf(Myself))  // magic mumbojumbo
+        SetGlobal("mumbojumbo","LOCALS",1)
+        VerbalConstant(Myself,UNHAPPY_ANNOYED)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("mumbojumbo","LOCALS",1)
+    HaveSpellRES("AC#DII4")  // fumbled sorcery
+THEN
+    RESPONSE #100
+        SpellRES("AC#DII4",NearestEnemyOf(Myself))   // fumbled sorcery
+        SetGlobal("mumbojumbo","LOCALS",2)
+        VerbalConstant(Myself,UNHAPPY_ANNOYED)
+END
+
+/*
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_NPC_SYMBOL_STUN)  // SPWI898.SPL (Symbol der Betäubung)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_STUN)  // SPWI898.SPL (Symbol der Betäubung)
+END
+*/
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpellRES("AC#DII5")  // Chaos Sphere
+THEN
+  RESPONSE #100
+    SpellRES("AC#DII5",NearestEnemyOf(Myself)) // Chaos Sphere
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("SpellTrigger","LOCALS",0)
+  !Dead("AC#DIIN2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      Wait(1)
+      DisplayString(Myself,39968)  // Zauberauslöser: Ausgelöst
+      DisplayString(Myself,40249)  // Zauberauslöser: Magie bannen
+      ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie zerstören)
+      DisplayString(Myself,45727)  // Zauberauslöser: Todeszauber
+      ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
+      ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+      SetGlobal("SpellTrigger","LOCALS",1)
+      SetGlobal("DiinWildmagic","ACIL19",1)
+END
+
+/*
+
+______________________________________________
+
+Diinkarazan teleoprts the first time
+______________________________________________
+
+
+*/
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Teleport","LOCALS",0)
+	!Dead("ac#diin2")
+THEN
+	RESPONSE #100
+        Wait(1)
+		VerbalConstant(Myself,INITIAL_MEETING)
+		Wait(1)
+        CreateVisualEffectObject("SPDIMNDR",Myself)
+        Wait(1)
+		JumpToPoint([1786.531])
+        SetGlobal("Teleport","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("recaststoneskin","LOCALS",0)
+  CheckStatLT(Myself,1,STONESKINS)
+THEN
+  RESPONSE #100
+      DisplayString(Myself,29736)  // Notfall: Stoneskin
+      ApplySpellRES("AC#DIIS",Myself)  // SPWI408.SPL (Stoneskin)
+      SetGlobal("recaststoneskin","LOCALS",1)
+END
+
+/*
+If no enmeies are present, Diinkarazan summons minions each turn. 
+ These wander aimlessly. If they spot  a party member, they shout. 
+ In that case, Diinkarazan teleports to the minion's location using his "gem jump" ability.
+*/
+IF
+  Heard([ANYONE],151)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+      ForceSpellRES("AC#MGD8",LastHeardBy(Myself))  // Gem Jump
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  !GlobalTimerNotExpired("minionstimer","ACIL19")
+  Global("timestop","LOCALS",1)
+  Global("summon_blacktroll","LOCALS",0)
+  GlobalLT("summon_minions","ACIL19",6)
+THEN
+  RESPONSE #100
+      SetGlobalTimer("minionstimer","ACIL19",ONE_TURN)
+      IncrementGlobal("summon_minions","ACIL19",1)
+      SetGlobal("summon_blacktroll","LOCALS",1)
+      ForceSpellRES("AC#DIIB",Myself)  // summon minions: Blacktroll
+END
+
+IF
+  !See(NearestEnemyOf(Myself))
+  DifficultyGT(EASIEST)
+  !GlobalTimerNotExpired("minionstimer","ACIL19")
+  Global("timestop","LOCALS",1)
+  GlobalLT("summon_minions","ACIL19",6)
+THEN
+  RESPONSE #100
+      SetGlobalTimer("minionstimer","ACIL19",ONE_TURN)
+      IncrementGlobal("summon_minions","ACIL19",1)
+      ForceSpellRES("AC#DIIT",Myself)  // summon minions
+  RESPONSE #100
+      SetGlobalTimer("minionstimer","ACIL19",ONE_TURN)
+      IncrementGlobal("summon_minions","ACIL19",1)
+      ForceSpellRES("AC#DII7",Myself)  // summon Vargouille
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpellRES("AC#MGWZ")  // Zone wilder Magie
+THEN
+  RESPONSE #100
+      SpellRES("AC#MGWZ",NearestEnemyOf(Myself))  // Zone wilder Magie
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CHAOS)  // SPWI508.SPL (Chaos)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CHAOS)  // SPWI508.SPL (Chaos)
+END
+
+/*
+______________________________________________
+
+Diinkarazan teleoprts the first time
+______________________________________________
+
+
+*/
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("Teleport","LOCALS",1)
+  !Dead("ac#diin2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      Wait(1)
+      VerbalConstant(Myself,INITIAL_MEETING)
+      ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)  // SPWI502.SPL (Cloudkill)
+      Wait(1)
+      CreateVisualEffectObject("SPDIMNDR",Myself)
+      Wait(1)
+      JumpToPoint([413.775])
+      SetGlobal("Teleport","LOCALS",2)
+      SetGlobal("SpawnMoreMonsters","ACIL19",1)
+      ApplySpellRES("AC#DIIS",Myself)  // Stoneskin
+      ApplySpell(Myself,CLERIC_HEAL)  // SPPR607.SPL (Heilung)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("recaststoneskin","LOCALS",1)
+  CheckStatLT(Myself,1,STONESKINS)
+THEN
+  RESPONSE #100
+      DisplayString(Myself,29736)  // Notfall: Stoneskin
+      ApplySpellRES("AC#DIIS",Myself)  // SPWI408.SPL (Stoneskin)
+      SetGlobal("recaststoneskin","LOCALS",2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("2ndSpellTrigger","LOCALS",0)
+  !Dead("AC#DIIN2")  // Diinkarazan
+THEN
+  RESPONSE #100
+      DisplayString(Myself,39968)  // Zauberauslöser: Ausgelöst
+      ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+      ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_THE_ELEMENTS)  // SPWI702.SPL (Schutz vor den Elementen)
+      ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)  // SPWI803.SPL (Schutz vor Energie)
+      SetGlobal("2ndSpellTrigger","LOCALS",1)
+      Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_GREATER_MALISON)  // SPWI412.SPL (Greater Malison)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)  // SPWI412.SPL (Greater Malison)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See([GOODCUTOFF.0.0.PALADIN_ALL])
+  Kit(LastSeenBy(Myself),INQUISITOR)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  HPGT(LastSeenBy(Myself),30)
+  HaveSpellRES("ac#dii9")  // Andere verwandeln
+  DifficultyGT(EASY)
+  Global("Polymorph_Inquisitor","LOCALS",0)
+THEN
+  RESPONSE #100
+      SetGlobal("Polymorph_Inquisitor","LOCALS",1)
+      SpellRES("ac#dii9",LastSeenBy(Myself))  // Andere verwandeln
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpellRES("AC#DII6")  // Ilsensine's Illusions
+THEN
+  RESPONSE #100
+      SpellRES("AC#DII6",NearestEnemyOf(Myself))  // Ilsensine's Illusions
+      DisplayStringHead(Myself,@1907)
+END
+
+/*
+IF
+  Allegiance(Myself,ENEMY)
+  See([GOODCUTOFF.0.0.PALADIN_ALL])
+  Kit(LastSeenBy(Myself),INQUISITOR)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  !StateCheck(LastSeenBy(Myself),STATE_STONE_DEATH)
+  HPGT(LastSeenBy(Myself),30)
+  HaveSpell(WIZARD_BIGBYS_CRUSHING_HAND)  // SPWI918.SPL (Bigbys zermalmende Faust)
+THEN
+  RESPONSE #100
+      Spell(LastSeenBy(Myself),WIZARD_BIGBYS_CRUSHING_HAND)  // SPWI918.SPL (Bigbys zermalmende Faust)
+END
+*/
+
+IF
+  See(NearestEnemyOf(Myself))
+  HaveSpellRES("AC#LLM3")  // Larloch's Mass Drain
+  HPPercentLT(Myself,100)
+  Global("massdrain","LOCALS",0)
+THEN
+  RESPONSE #100
+      SpellRES("AC#LLM3",NearestEnemyOf(Myself))  // Larloch's Mass Drain
+      SetGlobal("massdrain","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See([GOODCUTOFF.0.0.PALADIN_ALL])
+  Kit(LastSeenBy(Myself),INQUISITOR)
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  !StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+  HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (Domination)
+  DifficultyGT(EASY)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (Domination)
+END
+
+IF
+  Range(NearestEnemyOf(Myself),7)
+  Range(SecondNearestEnemyOf(Myself),8)
+  Range(ThirdNearestEnemyOf(Myself),8)
+  See(NearestEnemyOf(Myself))
+  Global("Windblast","LOCALS",0)
+THEN
+  RESPONSE #100
+      SetGlobal("Windblast","LOCALS",1)
+      ReallyForceSpellRES("AC#DII8",LastSeenBy(Myself))  // Wind blast
+END
+
+
+IF
+  See(NearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_MIRRORIMAGE)
+  HaveSpellRES("AC#DII0")  // SPWI212.SPL (Mirror Image)
+THEN
+  RESPONSE #100
+      SpellRES("AC#DII0",Myself)  // SPWI212.SPL (Mirror Image)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+      DifficultyGT(NORMAL)
+      LevelPartyGT(15)
+  HaveSpell(WIZARD_WAIL_OF_THE_BANSHEE)  // SPWI913.SPL (Wail of the Banshee)
+THEN
+  RESPONSE #100
+      Spell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)  // SPWI913.SPL (Wail of the Banshee)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),7)
+  Range(SecondNearestEnemyOf(Myself),10)
+  Range(ThirdNearestEnemyOf(Myself),10)
+  HaveSpell(WIZARD_SUN_FIRE)  // SPWI523.SPL (Sunfire)
+THEN
+  RESPONSE #100
+      Spell(Myself,WIZARD_SUN_FIRE)  // SPWI523.SPL (Sunfire)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+      DifficultyGT(NORMAL)
+      LevelPartyGT(15)
+  HaveSpell(WIZARD_METEOR_SWARM)  // SPWI911.SPL (Meteor Swarm)
+THEN
+  RESPONSE #100
+      Spell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)  // SPWI911.SPL (Meteor Swarm)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  OR(2)
+      DifficultyGT(NORMAL)
+      LevelPartyGT(15)
+  HaveSpell(WIZARD_METEOR_SWARM)  // SPWI911.SPL (Meteor Swarm)
+THEN
+  RESPONSE #100
+      Spell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)  // SPWI911.SPL (Meteor Swarm)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONFUSION)  // SPWI401.SPL (Verwirrung)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CONFUSION)  // SPWI401.SPL (Verwirrung)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpellRES("AC#DII7") // Summon Vargouille
+THEN
+	RESPONSE #100
+		SpellRES("AC#DII7",NearestEnemyOf(Myself)) // Summon Vargouille
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SHADOW_DOOR) // SPWI505.SPL (Phantomtor)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SHADOW_DOOR) // SPWI505.SPL (Phantomtor)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol der Furcht)
+THEN
+    RESPONSE #100
+        Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol der Furcht)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING) // SPWI812.SPL (Abi-Dalzims Abscheuliche Austrocknung)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING) // SPWI812.SPL (Abi-Dalzims Abscheuliche Austrocknung)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FINGER_OF_DEATH) // SPWI713.SPL (Finger des Todes)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH) // SPWI713.SPL (Finger des Todes)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FLESH_TO_STONE) // SPWI604.SPL (Fleisch zu Stein)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FLESH_TO_STONE) // SPWI604.SPL (Fleisch zu Stein)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_DISINTEGRATE) // SPWI616.SPL (Aufl�sung)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE) // SPWI616.SPL (Aufl�sung)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_DOMINATION) // SPWI506.SPL (Domination)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_DOMINATION) // SPWI506.SPL (Domination)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FIRE_SHIELD_RED) // SPWI418.SPL (Feuerschild (Rot))
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_FIRE_SHIELD_RED) // SPWI418.SPL (Feuerschild (Rot))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SLOW) // SPWI312.SPL (Verlangsamen)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_SLOW) // SPWI312.SPL (Verlangsamen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FLAME_ARROW) // SPWI303.SPL (Flammenpfeil)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW) // SPWI303.SPL (Flammenpfeil)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MELF_ACID_ARROW) // SPWI211.SPL (Melfs S�urepfeil)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MELF_ACID_ARROW) // SPWI211.SPL (Melfs S�urepfeil)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_LARLOCH_MINOR_DRAIN) // SPWI119.SPL (Entzug von Lebenskraft)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_LARLOCH_MINOR_DRAIN) // SPWI119.SPL (Entzug von Lebenskraft)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_POLYMORPH_OTHER) // SPWI415.SPL (Andere verwandeln)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_POLYMORPH_OTHER) // SPWI415.SPL (Andere verwandeln)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

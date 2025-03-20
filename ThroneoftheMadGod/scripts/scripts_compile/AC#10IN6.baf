@@ -1,0 +1,30 @@
+IF
+	Clicked([ANYONE])
+	OR(2)
+		Race(LastTrigger,DWARF)
+		HasItemEquiped("AC#MGBLT",LastTrigger) 
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@538) /* ~Diese Br�cke wurde eindeutig von Zwergenhand erbaut und scheint fr�her �ber den rei�enden Fluss gef�hrt zu haben. Leider ist sie schon seit langem eingest�rzt. Ihr erkennt, dass sie wohl mithilfe einer Vorrichtung zum Einsturz gebracht worden ist, um Angreifer mit in die Tiefe zu rei�en.~ */
+
+END
+
+IF
+	Clicked([ANYONE])
+	CheckStatGT(LastTrigger,30,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@539)  /* ~Diese Br�cke scheint fr�her �ber den rei�enden Fluss gef�hrt zu haben. Leider ist sie schon seit langem eingest�rzt. Ihr erkennt, dass sie wohl mithilfe einer Vorrichtung zum Einsturz gebracht worden ist, um Angreifer mit in die Tiefe zu rei�en.~ */
+END
+
+
+IF
+	Clicked([ANYONE])
+	CheckStatLT(LastTrigger,31,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@540) // ~Diese Br�cke scheint fr�her �ber den rei�enden Fluss gef�hrt zu haben. Leider ist sie schon seit langem eingest�rzt.~
+END
+

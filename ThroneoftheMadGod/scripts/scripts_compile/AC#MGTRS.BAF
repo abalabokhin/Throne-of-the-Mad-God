@@ -1,0 +1,8 @@
+IF
+	Entered([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(LastTrigger,@25)  // Falle zugeschnappt
+		ForceSpellRES("AC#MGSP",LastTrigger)  // flying spear trap
+END
+

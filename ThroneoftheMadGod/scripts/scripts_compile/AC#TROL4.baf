@@ -1,0 +1,200 @@
+IF
+    StateCheck(Myself,STATE_SLEEPING)
+THEN
+    RESPONSE #100
+        NoAction()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("prep","LOCALS",0)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        SetGlobal("prep","LOCALS",1)
+        ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HPLT(Myself,35)
+    Global("prep","LOCALS",1)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        SetGlobal("prep","LOCALS",2)
+        ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    HPPercentLT(Myself,50)
+    HPGT(Myself,12)
+    DifficultyGT(EASIEST)
+    !StateCheck(Myself,STATE_INVISIBLE)
+    !StateCheck(Myself,STATE_SLEEPING)
+    !GlobalTimerNotExpired("Ethereal","LOCALS")
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        SetGlobalTimer("Ethereal","LOCALS",THREE_ROUNDS)
+        ReallyForceSpellRES("AC#MGET",Myself)  // Ätherisch
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        RunAwayFrom(LastAttackerOf(Myself),5)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !Range(NearestEnemyOf(Myself),7)
+    !StateCheck(Myself,STATE_SLEEPING)
+THEN
+    RESPONSE #100
+        ForceSpellRES("AC#MGPT",NearestEnemyOf(Myself))  // Dimensionstor
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_SLEEPING)
+    DifficultyGT(NORMAL)
+    GlobalLT("Teleport_start","LOCALS",12)
+    HPGT(Myself,12)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player1)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player1)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player2)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player2)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player3)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player3)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player4)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player4)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player5)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player5)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player6)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player6)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_SLEEPING)
+    DifficultyGT(EASY)
+    GlobalLT("Teleport_start","LOCALS",8)
+    HPGT(Myself,12)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player1)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player1)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player2)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player2)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player3)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player3)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player4)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player4)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player5)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player5)
+    RESPONSE #100
+        IncrementGlobal("Teleport_start","LOCALS",1)
+        ForceSpellRES("AC#MGPT",Player6)  // Dimensionstor
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        AttackOneRound(Player6)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !StateCheck(Myself,STATE_SLEEPING)
+    HPGT(Myself,12)
+THEN
+    RESPONSE #10
+        ForceSpell(Player1,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player1)
+    RESPONSE #10
+        ForceSpell(Player2,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player2)
+    RESPONSE #10
+        ForceSpell(Player3,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player3)
+    RESPONSE #10
+        ForceSpell(Player4,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player4)
+    RESPONSE #10
+        ForceSpell(Player5,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player5)
+    RESPONSE #10
+        ForceSpell(Player6,PHASE_SPIDER_TELEPORT)  // SPWI994.SPL (Dimensionstor)
+        AttackOneRound(Player6)
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+    RESPONSE #100
+        Continue()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    Allegiance(Myself,NEUTRAL)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),5)
+END
+

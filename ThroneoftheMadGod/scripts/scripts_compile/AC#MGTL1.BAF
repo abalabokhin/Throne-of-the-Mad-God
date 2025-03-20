@@ -1,0 +1,8 @@
+IF
+	GlobalGT("Meet_Ursu","ACIL14",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

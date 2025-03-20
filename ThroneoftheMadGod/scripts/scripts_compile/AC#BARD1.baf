@@ -1,0 +1,16 @@
+IF
+	Range([PC],14)
+	NumTimesTalkedTo(0)
+	See([PC])
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+	Global("AC#_LancamethPlot","GLOBAL",50)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

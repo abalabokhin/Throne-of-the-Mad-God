@@ -1,0 +1,50 @@
+IF
+    HitBy([ANYONE],CRUSHING)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        Attack(LastAttackerOf(Myself))
+END
+
+IF
+    HitBy([ANYONE],PIERCING)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        Attack(LastAttackerOf(Myself))
+END
+
+IF
+    HitBy([ANYONE],SLASHING)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        Attack(LastAttackerOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Range(NearestEnemyOf(Myself),3)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
+        Attack(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Class(NearestEnemyOf(Myself),MAGE)
+THEN
+    RESPONSE #100
+        EquipRanged()
+        Attack(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        EquipRanged()
+        Attack(NearestEnemyOf(Myself))
+END
+

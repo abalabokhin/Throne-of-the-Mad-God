@@ -1,0 +1,1545 @@
+@3 	  = ~Huh?~ [AC#MFFO1]
+@4	  = ~Ah!~ [FOMOR06A] //[AC#MFFO2] 
+@5 	  = ~Das Wasser dieser Quelle scheint plötzlich ganz klar und rein zu sein.~
+@6	  = ~Ihr trinkt einen Schluck und fühlt Euch gesund und erfrischt.~
+@7	  = ~Ihr müsst näher herantreten, wenn Ihr aus dem Becken trinken wollt.~
+@8	  = ~Dretch~
+@9 	  = ~Kugel der Dunkelheit~
+@10	  = ~Korolnor-Juwel~
+@11   = ~Dies ist ein beschliffener Edelstein des Hauses Korolnor, einem untergegangenem Zwergenreich, welches für seine Kunst, Edelsteine zu schleifen, berühmt geworden ist. Der Stein hat keine besonderen magischen Eigenschaften, dürfte aber aufgrund seines Schliffs bei einem Händler eine gute Summe Gold einbringen.~
+@12   = ~Dieser abgestorbene Baum ist mit seinen Wurzeln fest im Gestein verankert. Der Baumstamm scheint noch stark genug zu sein, ein schweres Gewicht tragen zu können.~
+@13   = ~Ihr könntet versuchen, den Stamm zu fällen und über die kleine Schlucht zurück zum Ausgang zu gelangen.~
+@14   = ~Ihr seid zu schwach, um den Baum zu fällen.~
+@15   = ~Mit einigen starken Hieben Eurer Waffe schlagt Ihr eine Kerbe in das Holz, bis der Stamm sich zur Seite zu neigen beginnt...~
+@16   = ~Der Stamm ist ideal gefallen. Ihr seid mit Eurer Arbeit zufrieden.~ [AC#10TRE]
+@17   = ~Die Pfanne fällt mit einem lauten Knall zu Boden.~ [AC#15POT]
+@18   = ~Trolle und ihre Unterarten~
+@19	  = ~Trolle und ihre Unterarten
+
+Von Glouris Mristifos, Beschwörer im Turm der Kunst, Zhentilfeste
+Im Auftrage des Magiers Thagdal, Meister des Turmes der Kunst
+
+Auftrag: Neue Troll-Arten für Zuchtprogramme suchen
+Ort: Zwergenbauwerk in den Trollbergen
+
+Vorbemerkung: Trolle zeigen ein beachtliches Abwandlungsvermögen. Zum Einen kreuzen sie sich mit vielen anderen primitiven Rassen, zum Anderen nehmen sie Einflüsse ihrer Mitwelt in sich auf. Beides kann immer neue Troll-Subtypen mit völlig neuen Eigenschaften hervorbringen. Dies macht Trolle zu idealen Zuchtobjekten für die Armeen der Zhentilfeste. 
+
+Meine Aufgabe ist, in den Ruinen einer alten Zwergenfestung, die die Einwohner den "Klagenden Zwerg" nennen, nach weiteren Trollvarianten zu suchen. Man hörte von den Einheimischen dort reichhaltige Geschichten über schauerliche neue Kreuzungen. 
+
+Die vielversprechendsten Exemplare werde ich katalogisieren, damit unser Stoßtrupp diese fangen und in die Monsterzucht der Zhentilfeste aufnehmen kann.
+
+Bisher gefundene Exemplare:
+
+Geistertroll - Dieser Troll stellt nicht, wie man erwarten würde, eine untote Variante eines Trolles dar. Vielmehr handelt es sich um die Kreuzung aus einem Unsichtbaren Pirscher und einem ordinären Troll.
+
+Spektraltroll - Dies scheint tatsächlich eine Form eines untoten Trolles zu sein - vielleicht eines Trolles, der Kontakt mit einem Todesalb gehabt hatte?
+
+Grautroll - Eine weitere Form eines Trolles, der von Untoten  entartet wurde. Es scheint, dass ein vollständiger Lebenskraftentzug einen Grautroll hervorbringen kann.
+
+Phasentroll - Dieser Troll hatte Kontakt mit der Ätherebene, was ihn befähigt, ähnlich einer Phasenspinne kurzzeitig zwischen den Ebenen zu wechseln, um sich an eine andere Stelle zu befördern. Außerdem kann diese Troll-Art Spiegelbilder ihrer selbst erzeugen und so den Angreifer verwirren. Sehr interessante Art, nur schwer zu kontrollieren.
+
+Steintroll - Eine Troll-Art, die aus irgendeinem Grunde die Fähigkeit besitzt, ihre Haut hart wie Fels werden zu lassen. Sehr schwer zu erlegen. Unbedingt für die Zucht einfangen!
+
+Schwarztroll - Eine sehr gefährliche Troll-Art. Schwarztrolle tragen das Blut der unteren Ebenen in sich. Sie können niedere Scheusale beschwören, mächtige Blitzzauber wirken und Gegner in Dunkelheit hüllen.
+
+Faerzress-Troll - Diese Trolle hatten im Unterreich Berührung mit einer seltenen magischen Aura, die die Drow 'Faerzress' nennen, was zu erstaunlichen Eigenschaften führt. Sie sind hochgradig gegen Magie immun und können mit ihrer Berührung Magie zum Erliegen bringen.
+
+Gifttroll - Trolle, deren regenerative Eigenschaft durch ein starkes Gift auf die Probe gestellt wurde, verwandeln sich in seltenen Fällen in einen Gifttroll. Das giftige Blut dieser Troll-Art vergiftet Umstehende, wenn es verspritzt wird - auch, wenn man seine Klinge in diese Biester treibt! Hervorragend als Zucht geeignet, da leicht herzustellen. Wir müssen auch kein Exemplar mitnehmen, sondern sollten in der Zhentilfeste mit verschiedenen Giftstoffen und ordinären Trollen experimentieren.
+
+Aus dem Osten scheint noch eine Trollart eingewandert zu sein, welche die Größe von Riesen und zwei Köpfe besitzt. Da diese Art unaufhörlich andere Trolle zu dominieren sucht, eignet sie sich nicht für Zuchtprogramme.
+
+Daneben hat die Zentilfeste Gerüchte gehört, dass in der Festung ein merkwürdige, alte und vergessene, arkane Magie aus Zwergenzeiten schlummern soll. Zwerge und Magie? Ein eigenartiger Gedanke. Auch diesem Gerücht werde ich nachgehen.
+~
+@20   = ~Ring der Säureresistenz~
+@21   = ~Ring der Säureresistenz,  'Zabarins Torheit'
+
+Bei seinen Beschwörungen verschiedener Schleime und Gallerte wusste sich der sembianische Magier Zabarin mit Hilfe dieses Ringes vor den negativen Auswirkungen der herbeigerufenen Kreaturen zu schützen. 
+Seine Spezialität waren kleinere Formen des schwarzen Puddings, welche er in präparierte Einmachgläser abfüllte und Rivalen in die Speisekammer zu stellen pflegte. Zabarin fand sein gerechtes Ende unter einer riesigen Masse eines Avatars Ghaunadaurs, den er zu kontrollieren versuchte. 
+Gegen die schiere Macht und Bosheit des Herrn des Schleimes war selbst sein geliebter Ring nutzlos.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Resistenz gegen Säure: +40%
+~
+@22   = ~Jemand hat hier ein Seil liegen gelassen - vermutlich, um sich damit auf eine andere Ebene abzuseilen.~
+@23   = ~Wenn Ihr möchtet, könnt Ihr das Seil an der eingestürzten Brücke befestigen.~
+@24   = ~Ihr wickelt das Seil um einen Mauerstein. Man kann sich jetzt an dem Seil hoch- und wieder herunter bewegen.~
+@25   = ~Falle zugeschnappt~ [AC#MGTR1] // Spear trap
+@26   = ~Falle zugeschnappt~ [AC#MGTR2] // Ground plate trap
+@27   = ~Tentakel durchtrennt~ [AC#MGFLS]
+
+@30 = ~Schutz vor Krankheit~
+@31 = ~Unbändige Magie~
+@51   = ~Dieser Durchgang ist durch zahlreiche Felsbrocken versperrt. Ihr müsst Euch einen anderen Weg ins Innere der Zwergenstadt suchen.~
+@52	  = ~Dies scheint das Lager einer Abenteurergruppe gewesen zu sein.~
+@53   = ~Eine Bronzeplatte mit Zwergenrunen, die Ihr jedoch nicht entziffern könnt.~
+@54   = ~Verbeeg-Schamane~
+@55   = ~Diinkarazan~
+@56   = ~Fomorischer Riese~
+@57   = ~Verbeeg~
+@58   = ~Diese Statue stellt zweifelsohne eine Euch unbekannte zwergische Göttin dar.~
+@59   = ~Notiz eines Schatzsuchers~
+@60   = ~Bei den Göttern! Nichts hält mich mehr an diesem Ort. Wir dachten, wir könnten, nachdem dieser amnische Hauptmann den Weg freigeräumt hat, ohne Probleme in das Bauwerk vordringen und es nach Herzenslust plündern. Wir nahmen an, die Trolle seien das Schlimmste - weit gefehlt! 
+
+Dabei hatte alles so verheißungsvoll begonnen. Wir hatten einen Schacht entdeckt, von dem wir hofften, dass er uns schnurstraks tiefer in die Festung bringen könnte - ohne noch mehr Trollen gegenübertreten zu müssen. Barkley hat sich heruntergelassen und wurde von einem geflügelten Scheusal gebissen. Wir konnten das Untier abwehren, aber nach der anschließenden Rast ist Barkleys Kopf plötzlich von seinen Schulter gerissen, die Ohren haben sich zu Flügeln ausgebreitet und er ist mit Gekreische auf mich losgegangen! 
+Bei Beshaba, ich bin hinausgerannt wie von der Phasenspinne gestochen. Jetzt muss ich mich nur wieder durch die Eingangshalle zurückschleichen und dann nichts wie fort von diesem Ort!~
+@61   = ~Nhairs Tagebuch~
+@62   = ~Tag 2 der Expedition
+Wir sind am 'Klagenden Zwerg' angekommen, haben die klapprige Hängebrücke überquert, uns durch die Rätsel vorgearbeitet und stehen nun im Angesicht dieses riesigen Standbildes. Der Wind pfeift und heult. Auf die Idee, ein solches Monument aus dem Berg zu hauen, können auch nur Zwerge kommen!
+
+Tag 3 der Expedition
+Es ist schon ein seltsames Unterfangen. Hier stehen wir nun, in der Eingangshalle von Korolnor, und ich muss sagen, es ist gruselig ruhig. Zu ruhig für meinen Geschmack. Die anderen scheint das nicht zu stören, aber ein Halbling weiß, wenn etwas nicht stimmt. Die Haare an meinen Füßen kräuseln sich bei jedem weiteren Schritt ein wenig mehr.
+
+Tag 4 der Expedition
+Hauptmann Bryam, unser tapferer Anführer, marschiert voran, als gäbe es Gold zu verdienen an jeder Ecke. Maid Sternendorn, die Elfin, ist immer so ernst und nachdenklich - sie beobachtet jede Rune an den Wänden. Unser Magier, der Hexerhund, dieser Kerl ist ein Rätsel, murmelt immer wieder vor sich hin – ich verstehe kein Wort. Und dann ist da noch unsere Priesterin Mutter Iremar, die alles und jeden mit einer Ruhe segnet, die mir fast unheimlich ist. Bleib wachsam, Nhair!
+
+Tag 5 der Expedition
+Wir sind in die große Halle gelangt. Die Bronzetafeln auf dem Boden sprechen von der  bewegten Geschichte dieses Bauwerks. Alles ist wie leergefegt. Kein Troll weit und breit! Ich trau' der Ruhe hier nicht. Kein Laut außer unserem eigenen Echo. Ich habe das Gefühl, wir tanzen auf einer dünnen Eisdecke des Shaengarne, und unter uns lauert der Wastrilith. Ich halte die Augen offen, vor allem nachts. Wer weiß, vielleicht ist das alles eine Falle, und wir sind die Narren, die blindlings hineinlaufen? Ich werde ein Auge auf die Türen und Schatten halten. Wenn etwas lauert, dann möchte ich's als Erster sehen. 
+
+Tag 6 der Expedition
+Bryam ist mit den anderen in die zweite Ebene vorausgegangen. Wollte mich noch an einer dieser alten Zwergentruhen versuchen, da geschah es - mit einem lauten Rattern ist das Fallgitter hinter mir heruntergesaust. Es gibt keinen Weg zurück! Es war wirklich ein Hinterhalt. Jetzt heißt es schnell die Falle vor mir entschärfen und dann die anderen warnen...~
+@63 = ~Handrad~
+@64 = ~Dies ist ein Handrad, um irgendeine Art von Ventil zu öffnen. Es sieht so aus, als wäre es in der Vergangenheit großer Hitze ausgesetzt gewesen.~
+@65 = ~Zwergenschlüssel~
+@66 = ~Diesen Zwergenschlüssel habt Ihr in der alten Gießerei hergestellt. Er scheint zu einem ganz besonderen Schloss zu gehören.~
+@67 = ~Gussform (oberer Teil)~
+@68 = ~Dies ist der Deckel einer alten zwergischen Gussform, mit der man einen Schlüssel gießen kann. Die Form ist schon ziemlich korrodiert - vermutlich, weil in der Vergangenheit häufiger heiß geschmolzenes Metall in diese Form gepresst wurde. Ohne den unteren Teil ist die Form ziemlich nutzlos.~
+@69 = ~Gussform (unterer Teil)~
+@70 = ~Dies ist das Unterteil einer alten zwergischen Gussform, mit der man einen Schlüssel gießen kann. Die Form ist schon ziemlich korrodiert - vermutlich, weil in der Vergangenheit häufiger heiß geschmolzenes Metall in diese Form gepresst wurde. Ohne den Deckel ist die Form ziemlich nutzlos.~
+@71 = ~Zwergengürtel~
+@72 = ~Dieser Gürtel aus Zwergenherstellung wird an verdiente Mitglieder anderer Rassen verliehen, denen die misstrauischen Zwerge derart trauen, dass sie ihnen die Möglichkeit geben wollen, ihre komplizierte Sprache und Schrift zu verstehen. 
+
+Die schrulligen Eigenarten und Sitten der Zwerge können dem Träger des Gürtels jedoch nicht so einfach nahegebracht werden, erschließt sich dieses doch in der Regel erst durch langes Zusammenleben mit dem für seine Mürrischheit und Dickköpfigkeit bekannten Volk.
+
+Zwerge können diesen Gürtel nicht benutzen. Eine spezielle Verzauberung verhindert ebenfalls, dass sich die Schnalle um eine Elfentaille schließt.
+
+EIGENSCHAFTEN:
+
+– Der Träger ist imstande, die Zwergenrunen Shanatars entziffern und die grundlegende Bedeutung zwergischer Sprache verstehen zu können
+– Konstitution: +1
+
+Gewicht: 2~
+@199 = ~Verwitterte Zwergenstatue~
+@200 = ~Zuhörer~
+@201 = ~Knochen-Naga~
+@202 = ~Aschegolem~
+@203 = ~Thragmorr~
+@204 = ~Hammergolem~
+@205 = ~Mithrilgolem~
+@206 = ~Derro-Meuchelmörder~
+
+@221 = ~Vargouille~
+@222 = ~Schrei der Vargouille~
+@223 = ~Troll-Schamane~
+@224 = ~Ursummnogh der Untötbare~
+@225 = ~Phasentroll~
+@226 = ~Grautroll~
+@227 = ~Schrei~ [AC#VARGS]
+@228 = ~Kuss der Vargouille~ 
+@229 = ~Infizierter Troll~
+@230 = ~Grullak Runenwirker~
+@231 = ~Durnak Grabstein~
+@232 = ~Hammer-Archon~
+@233 = ~Heulender Horror~
+@234 = ~Angelaufener Wächter~ // Tarnished Sentry
+@235 = ~Grexilor~
+@236 = ~Sklave Aglar~
+@237 = ~Goblin-Schamane~
+@238 = ~Derro-Späher~
+@239 = ~Vorgul Starkspeer~
+@240 = ~Grubnuk~
+@241 = ~Glouris' Vertrauter~
+@242 = ~Allip~
+@243 = ~Rottenknecht~ //Rutterkin
+@244 = ~Wilder Nishruu~
+
+@316 = ~Iremars Aufzeichnungen~
+@317 = ~Mit Freude habe ich mich Bryam Lancameth angeschlossen, um die Geheimnisse des alten Zwergenbauwerks des Königreiches Korolnor zu untersuchen. 
+
+Seit jeher bin ich an der Geschichte Shanatars interessiert, und die Möglichkeit, eines der alten Reiche einmal mit eigenen Augen zu sehen, möchte ich mir nicht entgehen lassen.
+
+Lancameths Wahl seiner Gefährten mag überraschen, doch ein jeder ist ein fähiger Abenteurer - bereit, jedem Übel, das sich entgegenstellt, ins Auge zu sehen. Mit Maid Sternendorn, der elfischen Bogenschützin, habe ich mich sogleich angefreundet. Einzig der merkwürdige Magier, der sich selbst nur als Hundehexer bezeichnet, ist mir nicht geheuer. Er scheint eine Art Zwerg zu sein - vielleicht ein Duergar? Jedenfalls hat er viel Erfahrung im Erkunden von Gewölben. Vielleicht stammt er aus dem Unterreich?
+
+Leider haben wir unseren Halblingsdieb Nhair Ebendar verloren. Seine Leiche ist für mich unerreichbar, und so gibt es keine Möglichkeit, ihn zurück ins Leben zu holen. Nun bleiben nur noch Lancameth, Sternendorn, der Hundehexer und ich. 
+
+Wir haben endlich die alte Versammlungshalle erreicht, in der sich vor Jahrhunderten die Abgesandten der verschiedenen Königreiche Shanatars zusammenfanden. 
+
+Ich konnte die Symbole zu beiden Seiten des Gangs entziffern - ein jedes steht für eines der Unterkönigreiche. 
+Weiterhin sind die Namen und die Titel der Königreiche vermerkt. 
+Ein jedes hatte einen zu seiner Haupttätigkeit passenden Titel - so nannte man Ultoksamrin wegen seiner reichen Zardazilvorkommen das Zardazilkönigreich. Einzig die gierigen Zwerge Drakkalors erhielten für Ihre Stadt keinen Mineraliennamen, sondern den passenden Titel 'Stadt des Geizes'.
+
+Die Symbole sind:
+
+Sondarr, das Seesternkönigreich - Symbol einer Geldmünze, vermutlich des Gottes Vergadain
+
+Holorarar, das Goldkönigreich - Moradins Symbol eines Amboss
+
+Ultoksamrin, das Zardazilkönigreich - Symbol Dumathoins (ein Berg mit einem Kristall)
+
+Barakuir, das Eisenkönigreich - Symbol Laduguers (Schild mit Pfeil)
+
+Torglor, das Silberkönigreich - unbekanntes Symbol (nach abwärts gehende Spirale?), unbekannte Gottheit
+
+Korolnor, das Juwelenkönigreich - sieben Edelsteine, Symbol einer unbekannten Gottheit - der alten Schutzgottheit dieses Bauwerkes?
+
+Hoch-Shanatar, das Gletscherkönigreich - Symbol Thard Harrs (zwei Handschuhe)
+
+Xothaerin, das Adamantitkönigreich - Symbol Sharindlars (eine brennende Nadel)
+
+Iltkazar, das Mithrilkönigreich - Symbol Clandgeddins (zwei gekreuzte Äxte)
+
+Drakkalor, die Stadt des Geizes - Symbol Abbathors (Juwelenbesetzter Dolch)
+
+Neben jedem der Symbole ist ein kleiner Opferaltar angebracht. Offensichtlich haben die Gesandten der einzelnen Königreiche dort ihre Herrschaftssymbole platziert. Der Zweck des Ganzen ist mir noch unbekannt.
+ 
+Ich werde hier kurz Rasten und mich dann meinen weiteren Forschungen widmen. Ich muss nur aufpassen, dass ich nicht einschlafe, denn aus den umliegenden Gängen dringen seltsame Geräusche, und von meinen verbliebenen Gefährten habe ich lange nichts mehr gesehen. Wo müssen sich diese auch immer herumtreiben?~
+@318 = ~Meeresschmuck~
+@319 = ~Dies ist ein zusammengesetzter Schmuck aus Korallen und einem Seestern in der Mitte. Der Gegenstand muss an einem Ort gefertigt worden sein, an dem vor vielen Jahrhunderten einmal ein Meer gewesen ist.~
+@320 = ~Goldklumpen~
+@321 = ~Dies ein massiver Klumpen reinstes Gold. Sein Wert muss unermesslich sein, doch irgendetwas sagt Euch, dass Ihr ihn nicht einfach verkaufen solltet.~
+@322 = ~Zardazil~
+@323 = ~Zardazil ist ein seltenes, bernsteinfarbenes Erz. Da es ein sehr weiches Metall ist, wird es niemals in reiner Form verwendet, sondern legiert oder zum emaillieren anderer Metalle verwendet. Es kann mit anderen Metallen zu perfekten Gebinden verarbeitet werden und scheint mit diesen Legierungen regelrecht zu verschmelzen.
+
+Ihr habt das Gefühl, dass dieser Zardazilbrocken nicht für einen Schmelzofen bestimmt war, da er ziemlich abgegriffen ist, als wäre er im Laufe der Jahrhunderte bereits durch viele verschiedene Hände gereicht worden.~
+@324 = ~Eisenkugel~
+@325 = ~Dies ist eine leicht rostige Kugel aus Eisen. Ihr Zweck ist unklar.~
+@326 = ~Silbererz~
+@327 = ~Dies ein massiver Brocken Silbererz. Ihr habt das Gefühl, dass er nicht für einen Schmelzofen bestimmt war, da er ziemlich abgegriffen ist, als wäre er im Laufe der Jahrhunderte bereits durch viele verschiedene Hände gereicht worden.~
+@328 = ~Beschliffener Juwel~
+@329 = ~Bei diesem Edelstein handelt es sich um einen beschliffenen Juwel. Es könnte sich um einen Smaragd handeln, doch ganz sicher seid Ihr Euch nicht. 
+
+Die Art des Schliffs zeugt jedoch von großer Handwerkskunst, auch wenn die Ränder des einst makellosen Steines im Laufe der Jahrhunderte etwas brüchig geworden sind.
+
+Da Ihr in dem Bauwerk bereits ähnliche solcher Steine zu Gesicht bekommen habt, seid Ihr Euch sicher, dass dieser Juwel hier an diesem Ort gefertigt sein muss. Ihr solltet ihn nicht einfach von hier entfernen, ohne seinen genauen Zweck gefunden zu haben.
+
+Es scheint, dieser Stein wäre häufiger in eine Art Fassung oder einen anderen Mechanismus gesetzt worden.~
+@330 = ~Gletscherstein~
+@331 = ~Dieser glatte, runde Stein muss von einem Gletscher stammen, dessen stete Bewegung die Oberfläche des Steines während der Jahrhunderte blank poliert hat. Der Stein liegt gut in der Hand. Wie er von der Oberfläche den langen Weg hier herunter in die verfallene unterirdische Zwergenstadt gefunden hat, bleibt unklar.~
+@332 = ~Adamant~
+@333 = ~Adamant ist ein reines, pechschwarzes Metallerz. Es zählt gleichzeitig zu den härtesten, leichtesten und sprödesten Erzen und wird zur Herstellung der Legierung Adamantit verwendet. Es wird oft von den Rassen des Unterreichs, zum Beispiel den Dunkelelfen, für Waffen und Rüstungen genutzt.
+
+Dieser Adamantbrocken war wohl nicht für einen Schmelzofen bestimmt. Seine Ränder sind abgegriffen, als wäre er im Laufe der Jahrhunderte bereits durch viele verschiedene Hände gereicht worden.~
+@334 = ~Mithril~
+@335 = ~Mithril ist ein silbrig-blaues, glänzendes Metall und wird aus Erz gewonnen, das in seltenen Adern und Gruben überall auf Faerûn in den Tiefen des Unterreichs gefunden wird.
+
+Mithril ist eines der leichtesten und geschmeidigsten Metalle - jedoch hart genug, um für die Herstellung von Rüstungen verwendet zu werden. 
+
+Dieses Stück Mithril scheint jedoch einen anderen Zweck zu haben.~
+@336 = ~Rubinknauf~
+@337 = ~Dieser große Rubin sieht aus, als wäre er für den Knauf einer wertvollen Klingenwaffe geschaffen worden. Allerdings müsste die Klinge unglaublich groß sein - vielleicht die Klinge in einem Bild oder einer anderen Darstellung der Zwerge?~
+@338 = ~...muss... Zugang...zu unterer Ebene... finden...~
+@339 = ~...zehn Königreiche Shanatars... zehn Schlüssel...~
+@340 = ~Ultoksamrin... das Zardazilkönigreich...~
+@341 = ~Barakuir... Heimat von Clan Duergar, den Eisenschmieden...~
+@342 = ~Torglor... Silberkönigreich... unbekannter Zwergengott... einer der zwei Ausgestoßenen?~
+@343 = ~Drakkalor... Stadt des Geizes... Anbeter des Abbathor...~
+@344 = ~Geist Iremars~
+@355 = ~Als Zwerg fällt es Euch leicht, die alten Dethek-Runen zu entziffern. Auf dem Metallboden steht in großen Buchstaben der Name "Shanatar" geschrieben, der Name des legendären Zwergenreiches, von dem so viele Lieder Eurer Vorfahren handeln und das vor Jahrhunderten untergegangen ist.~
+@356 = ~Ihr habt solche Runen schon oft gesehen. Es sind Dethek-Runen, die Schrift der Zwerge. Auf dem Metallboden steht in großen Buchstaben der Name "Shanatar" geschrieben, der Name des legendären Zwergenreiches, das sich in grauer Vorzeit unter den südlichen Ländern an der Schwertküste erstreckte.~
+@357 = ~Anhand des Buches über die Schrift der Zwerge könnt Ihr die Dethek-Runen mühelos entziffern. Auf dem Metallboden steht in großen Buchstaben der Name "Shanatar" geschrieben, der Name des legendären Zwergenreiches, das sich in grauer Vorzeit unter den südlichen Ländern an der Schwertküste erstreckte.~
+@358 = ~Auf dem Metallboden sind dicke Zwergenrunen eingegossen. Ihr könnt sie jedoch nicht entziffern.~
+@359 = ~Aus dieser Entfernung könnt Ihr nichts erkennen.~
+@360 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Iltkazar, das Mithrilkönigreich".~
+@361 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Iltkazar, das Mithrilkönigreich".~
+@362 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Anhand des Buches über die Schrift der Zwerge könnt Ihr die Dethek-Runen mühelos entziffern. Sie lauten "Iltkazar, das Mithrilkönigreich".~
+@363 = ~Auf dem Boden steht eine kleine Zwergenstatue. Auf dem Metallboden daneben sind kleine Zwergenrunen eingelassen. Ihr könnt sie jedoch nicht entziffern.~
+@364 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Korolnor, das Juwelenkönigreich".~
+@365 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Korolnor, das Juwelenkönigreich".~
+@366 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Anhand des Buches über die Schrift der Zwerge könnt Ihr die Dethek-Runen mühelos entziffern. Sie lauten "Korolnor, das Juwelenkönigreich".~
+@367 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Torglor, das Silberkönigreich".~
+@368 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Sie lauten "Torglor, das Silberkönigreich".~
+@369 = ~Auf dem Boden steht eine kleine Zwergenstatue. Neben ihr sind auf dem Boden in die Metallplatte kleine Runen eingelassen. Anhand des Buches über die Schrift der Zwerge könnt Ihr die Dethek-Runen mühelos entziffern. Sie lauten "Torglor, das Silberkönigreich".~
+@370 = ~Madugg~
+@371 = ~Diese Flagge zeigt das Symbol von Karontor, dem Gott der Fomorischen Riesen. Es ist das Abbild eines Winterwolfes.~
+@372 = ~Auf dieser Flagge ist mit groben Strichen ein weißer Wolf abgebildet.~
+@375 = ~Inkagurksul~
+@376 = ~Derro~
+@377 = ~Bolzen der Schwächung~
+@378 = ~Diese Armbrustbolzen wurden von den Derro, einer zwergenähnlichen Rasse aus dem Unterreich, hergestellt. Gleichsam berüchtigt für ihre Grausamkeit und ihren Wahnsinn, präparieren die Derro solche Bolzen mit einem lähmenden Gift, das bei einem Treffer die Kraft des Opfers schwächt, ähnlich den Auswirkungen eines Strahls der Schwächung. Dem Opfer steht ein Rettungswurf zu, um der Wirkung des Giftes zu entgehen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W8 (Fernkampfwaffe, Stichwaffe)
+Spezielle Merkmale: Stärkeraubendes Gift (bei Rettungswurf gegen Tod keine Wirkung)
+Gewicht: 0
+Wird verschossen von: Armbrust~
+@379 = ~Dlimoruk~
+@380 = ~Jamrry Streitlacher~
+@381 = ~Entschuldigung, bitte lasst mich sprechen, bevor Ihr angreift.~ [AC#LOTH1]
+@382 = ~Mein Leben ist ein heilloses Durcheinander.~ [AC#LOTH2]
+@383 = ~Dokuriingor~
+@384 = ~Stab des Höllentores~
+@385 = ~Dieser Stab ist aus einer schweren Metalllegierung gefertigt und scheint das Böse förmlich auszustrahlen. 
+
+Der Name 'Höllentor' bezieht sich dabei nicht auf die Ebene der Neun Höllen, sondern auf die untergegangene Stadt Ascalhorn, welche mittlerweile nur noch als Höllentorfeste bekannt ist. Zahlreiche Anwender arkaner Magie lieferten sich Duelle im Beschwören verschiedener Scheusale der unteren Ebenen, bis die Stadt schließlich von einer großen Horde Tanar'ri - Dämonen der Abyss - überrannt wurde.
+
+Genau solche Kreaturen kann der Träger mit Hilfe dieses Stabes, der Gegnern des berühmten Magiers Wulgreth von Ascalhorn zugeschrieben wird, beschwören. 
+
+Mit Hilfe des Stabes kann der Anwender kurzzeitig ein Portal in die Abyss öffnen und einigen niederen Dämonen, Tanar'ri genannt, für eine Phase Zugang zur materiellen Ebene verschaffen. Die Tanar'ri können gemäß ihrer chaotischen Natur mehr oder weniger gut kontrolliert werden, greifen jedoch niemals ihren Beschwörer an. Man kann sich nie ganz sicher sein, welches Scheusal dem Ruf des Anwenders folgt - sehr wahrscheinlich meist niedere Tanar'ri wie Manen, Rottenkriecher oder Dretche, seltener ein Imp.
+
+Es besteht jedoch eine geringe Chance, dass ein höherer Tanar'ri - ein Nabassu - dem Ruf des Stabes folgt und durch das Portal tritt. Der Nabassu kann nicht kontrolliert werden und greift jedes Wesen, das ihm begegnet und nicht mit dem Zauber "Schutz vor Bösem" belegt ist, umgehend an.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Beschwört einmal täglich für eine Phase einige niedere Tanar'ri , die dem Anwender dienen. In 10% der Fälle erscheint ein Nabassu-Dämon, der jeden in seinem Umfeld attackiert.
+Mindestintelligenz: 12~
+
+@387 = ~Jamrrys Tränke~
+@392 = ~Steintroll~
+@393 = ~Schmiedearbeiter~
+
+@395 = ~Ihr öffnet die Tür des Hochofens, aus dessen Innerem plötzlich ein wütender Feuerelementar herausspringt!~
+
+@398 = ~Angeschmolzener Schlüssel~
+@399 = ~Dieser Schlüssel sieht aus, als wäre er lange Zeit einer sehr großen Hitze ausgesetzt gewesen.~
+@400 = ~Ihr öffnet die Tür des Hochofens, und aus dessen Innerem springt plötzlich ein mächtiger Feuerelementar heraus!~
+@405 = ~Zwergen-Runentafel~
+@406 = ~Dies ist die Aufzeichnung von Dwolin vom Clan Minenschatten, Wächter der Pforte der 'caurak' und treuer Diener des mächtigen Korolnor und seines geliebten Königs Karlyn.
+"Wir haben die Wege in das Unterreich versiegelt. Damit ist uns jede Rückzugsmöglichkeit genommen. Die Plage, die der Ausgestoßene mit den geflügelten Bestien über uns gebracht hat, soll nicht auf weitere Unterkönigreiche Shanatars übergreifen. Meine Aufgabe ist es, mit Garbo, meinem Waffenbruder, hier auszuharren und die versiegelte Pforte zu bewachen. Viele Verzweifelte versuchen aus der Stadt zu fliehen, doch hier gibt es kein Durchkommen, nachdem die Abtrünnigen, die dem Ausgestoßenen nicht abgeschworen haben, auf diesem Wege aus der Stadt verbannt wurden."~
+@407 = ~"Auf Geheiß des Königshauses Kuldelver wurden die Wege in die tiefen Lande alle versiegelt, damit die Seuche, die den Clan heimsucht, nicht auf die anderen Unterkönigreiche übergreift. Damit ist Korolnor gegen seine inneren und äußeren Feinde fortan auf sich allein gestellt. Möge das Reich entweder in seiner schwersten Stunde erneut erblühen oder für immer zugrunde gehen."~
+@408 = ~Dieser ehemalige Durchgang ist mit massiven Felsbrocken versperrt. Es sieht so aus, als hätte der Weg früher in das Unterreich geführt, aber ein Durchkommen ist jetzt nicht mehr möglich.~
+@409 = ~Kaputte Zwergenrüstung~
+@410 = ~Diese Rüstung ist aus einem unbekannten Metall geschmiedet und scheint sehr alt zu sein. Es sieht aus, als habe der Träger dieser Rüstung zahlreiche Kämpfe mit ihr ausgetragen, doch den letzten Kampf nicht überlebt. Da sie völlig zerstört ist, ist sie zu nichts mehr zu gebrauchen.~
+@411 = ~Riesenskelett~
+@413 = ~In diesem Raum ist eine riesige bronzene Landkarte auf dem Boden angebracht, auf der verschiedene steinerne Figuren stehen, die Zwerge darstellen.~
+@415 = ~Auf dieser mächtigen Säule steht in Zwergenrunen geschrieben: "Erbaut von Karlyn Kuldelver, Herr von Korolnor, im Jahre 433 nach der Gründung seines Hauses. Mögen diese Hallen ewig stehen und stets ein sicherer Hort für die Brüder und Schwestern Shanatars sein."~
+@416 = ~Auf dieser mächtigen Säule sind zahlreiche Zwergenrunen eingraviert. Ihr könnt sie jedoch nicht entziffern.~
+@417 = ~Dies scheint der gleiche Aufzugsschacht zu sein, den Ihr auch im Stockwerk darüber gesehen habt. Er muss noch weiter nach unten in die Tiefe zu führen.~
+@418 = ~Ein Schacht führt von oben kommend weiter nach unten in die Tiefe.~
+@419 = ~Skelett-Ettin~
+@420 = ~Altes Buch~
+@421 = ~Geist von Karlyn Kuldelver~
+@422 = ~Standbild Clangeddins~
+@423 = ~Chimäre~
+@484 = ~Nachdem der gequälte Schrei des Vampirs verhallt ist, stellt Ihr fest, dass seine Leiche ein kleines Handrad zur Bedienung einer Maschine in seinen Händen umschlossen hatte. Ihr nehmt das Rad und steckt es ein.~
+@485 = ~Ring der Sagenkunde~
+@486 = ~Dieser unscheinbare Ring erweitert das Wissen seines Trägers beträchtlich, indem er ihm kleinere Erinnerungen an lange zurückliegende Ereignisse übermittelt sowie geschichtliche Zusammenhänge besser einordnen und alte Schriften und Sprachen einfacher verstehen lässt. Gegenstände dieser Art sind somit begehrte Objekte von Gelehrten.
+
+Man erzählt sich, dass Oghma einst einen solchen Ring einem ignoranten Philosophen zum Geschenk machte, welcher daraufhin seine Fehlbarkeit erkannte, der Philosophie entsagte und sich fortan nur noch dem Ackerbau widmete.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+Sagenkunde +20~
+@487 = ~Ildanfal~
+@488 = ~Auf Jotun, der Sprache der Riesen, bedeutet Ildanfal "Feuerangriff". Diese Waffe ist der Beweis, dass Feuerriesen hervorragende Schmiedemeister sind. 
+
+Der mächtige Hammer ist allerdings viel zu groß und schwer für jemand Kleineren als einen Feuerriesen. Selbst wenn man auf magischem Wege die Stärke zum Schwingen des Hammers aufbringt, kann man diese Waffe nur recht langsam schwingen.
+
+Außerdem besteht die Gefahr, dass der Träger der Waffe gelegentlich in Flammen aufgeht. Was Feuerriesen für einen angenehm heilsamen Flammenschauer halten dürften, könnte für jeden anderen eine tödliche Feuerfalle sein.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: -4
+Schaden: 2W4+4 (Wuchtwaffe)
+Besondere Fähigkeiten: +1w8 Schaden durch Feuer
+Es besteht das Risiko, dass in 5% aller Treffer ein Flammenschlag auf dem Träger niedergeht
+-0,5 Angriffe pro Runde
+Gewicht: 20
+Initiativefaktor: 1
+Waffenfertigkeit: Kriegshammer
+Waffentyp: Einhändig
+Mindeststärke: 22~
+@489 = ~Ihr könnt den Boden dieser Spalte nicht erkennen, doch es strömt daraus stetig warme Luft nach oben.~
+@490 = ~Trollhund~
+@491 = ~Kursh Bruchhorn~
+//@492 = ~Bariaur~
+@495 = ~Bogen des Todesregens~
+@496 = ~Der Bogen des Todesregens wurde vor vielen Jahrhunderten aus den damals jungen Ästen eines für Elfen heiligen Baumes gefertigt. Sein Schaft ist mit zahlreichen Symbolen graviert. Er verfügt über die Fähigkeit, einmal täglich einen verheerenden Pfeilhagel auf seine Feinde niederregnen zu lassen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+ 
+- Pfeilhagel: Einmal täglich regnen Pfeile auf einen Gegner nieder, die bei diesem und jedem Gegner in 5m Entfernung 2w6 Schadenspunkte verursachen.
+
+ETW0: -4
+Schaden: +1 (Fernkampfwaffe)
+Gewicht: 7
+Initiativefaktor: 4
+Waffenfertigkeit: Langbogen
+Waffentyp: Beidhändig
+Mindeststärke: 16~
+@497 = ~Dieser verrostete Schalter diente wohl früher dazu, Fallen in den Räumen an-und wieder auszuschalten. Er scheint noch funktionsfähig zu sein.~
+@498 = ~Ihr legt den Schalter um. Sämtliche Fallen in den Gängen scheinen deaktiviert worden zu sein.~
+@499 = ~Ihr habt die Fallen bereits entschärft.~
+@510 = ~Ritterliches Edikt~
+@511 = ~Haimmon, Ihr habt Euch als würdig erwiesen, in den heiligen Orden Kuldar von Barakmordin als Ritter aufgenommen zu werden. 
+
+Eure letzte Prüfung vor dem Initiationsritus wird sein, in die Trollberge zu reisen und dort nach dem Bösen zu suchen, dem wir schon so lange auf der Spur sind und das sich in den Überresten des alten Zwergenreiches Korolnors zu verstecken sucht. Unser Orden ist auf den uralten Gemäuern der Zwerge errichtet, und Barakmordin bedeutet in der Zwergensprache "Schildberge". Außerdem ist der Legende nach in den benachbarten Omlaradinbergen das sagenhafte Zwergenreich Iltkazars beheimatet gewesen. Auch wenn die Zwerge längst verschwunden sind, stehen wir Menschen immer noch in der Tradition ihrer Werte, und ich bin mir sicher, dass Ihr diesen Auftrag zu unserer aller Zufriedenheit ausführen werdet. 
+
+Barakmordin, im Jahre 1303, gezeichnet von Gaufrid, dem Breitschwert des Torm, Großmeister des Ordens der Paladine Kuldars.~
+/*@512 = ~Nach langem, beschwerlichem Aufstieg durch die Trollberge erreicht Ihr das Bergtal, in welchem das Zwergenmonument "Der klagende Zwerg" liegen soll. Schon aus der Ferne ist ein konstantes Heulen des Windes zu hören, welches Euch bestätigt, dem Ziel Eurer Reise näher zu kommen. Das monumentale Abbild eines in Stein gehauenen Zwergenkolosses ist sicherlich ein erhebender Anblick, doch das Gefühl, in die Tiefe dieses von heulenden Winden umtosten Bauwerkes vordringen zu müssen, ist alles andere als angenehm. Ihr streckt den Rücken durch und atmet die kühle Luft der Berge ein. Ihr habt entlang der Schwertküste schon so vielen Gefahren ins Auge geblickt, dass Euch dieses weitere Abenteuer nicht aus der Ruhe bringen wird.~ [AC#MGM10]
+*/
+
+@514 = ~Hier ruht Ragmus, Erstgeborener des Hauses Kuldelver, Sohn des Karlyn Riesentöter, gestorben in seinem 8. Lebensjahr durch den hinterhältigen Pfeil eines Menschen.~
+@515 = ~Kinderknochen~
+@516 = ~Dies sind die Knochen eines Kindes. Der Form des Schädels nach zu urteilen müsste es sich um ein Zwergenkind gehandelt haben.~
+@517 = ~Auf diesem großen Stein steht in Zwergenrunen geschrieben:
+"Fremde, seid gewahr, dass Ihr nun das Gebiet der Zwerge Korolnors betretet, der Erben des großen Königreiches Shanatar."~
+@518 = ~Auf diesem großen Stein sind zahlreiche Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+@519 = ~Auf diesem großen Stein steht in Zwergenrunen geschrieben:
+"Hört die Stimme des Standbildes Kuldelvons, wie sein Rufen und Klagen die Feinde der Zwerge in die Flucht schlägt!"~
+@520 = ~Auf diesem großen Stein steht in Zwergenrunen geschrieben:
+"Königreich Korolnor im Norden. Karlyn vom Clan Kuldelver heißt alle Freunde der Zwerge in seinen Hallen willkommen."~
+@521 = ~Auf diesem großen Stein steht in Zwergenrunen geschrieben:
+"An dieser Furt erschlug Karlyn vom Clan Kuldelver mit einem Hieb seiner Axt den feigen Kutlog, König der Hügelriesen."~
+@522 = ~Auf diesem großen Stein steht in Zwergenrunen geschrieben:
+"Die übrigen Riesen flohen in die Riesenlaufberge und gaben diesem Gebirge damit seinen Namen. Karlyn beschloss, an dieser Furt die neue Festung für seinen Clan zu errichten. Um die Riesen immer an ihre Niederlage zu erinnern, ließ er ein riesiges Standbild eines Zwergenwächters errichten, welches nach Osten sieht, schon aus der Weite für alle Wesen zu hören ist und auf ewig ruft: Fürchtet den Zorn der Zwerge!"~
+@523 = ~Diese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Korolnor, Juwelenkönigreich, Heim des Clans Kuldelver, stolzer Teil des Königreiches Shanatar."~
+@524 = ~Diese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+
+@528 = ~Auf goldenen Runen steht auf zwergisch "Korolnor" über dem Eingang.~
+@529 = ~Das heilige Schwert dringt durch das Fleisch des damönischen Trolls und zerreißt ihn in seine Einzelteile.~
+@530 = ~Diese Bronzeplatte zeigt das Symbol eines Hammers mit Amboss, um das sieben Edelsteine angeordnet sind. Das Symbol ist das Zeichen Moradins, des Göttervaters der Zwerge. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Korolnor, Juwelenkönigreich, Nachfahren von Taark Shanat, des Gründers von Shanatar, Diener Moradins."~
+@531 = ~Diese Bronzeplatte zeigt das Symbol eines Hammers mit Amboss, um das sieben Edelsteine angeordnet sind. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+@532 = ~Diese Bronzeplatte zeigt das Symbol eines Hammers mit Amboss, um das sieben Edelsteine angeordnet sind. Das Symbol ist das Zeichen Moradins. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Wie alle zehn Königreiche Shanatars erlebte auch das Juwelenkönigreich Korolnor eine Zeit des Wohlstandes. Moradin war seinen Kindern wohlgesonnen. Die Zwerge Korolnors wählten bei der Gründung ihres Reiches eines der Zwillingskinder Moradins als ihren Schutzpatron, zu einer Zeit, als dieser noch nicht dem Wahnsinn anheim gefallen war."~
+@533 = ~Diese Bronzeplatte zeigt das Symbol eines Zwerges in Robe, um den sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Doch im Laufe der Zeit veränderte der Schutzpatron sein Antlitz und wurde zu einer selbstsüchtigen Gottheit, die damit Begann, nach verbotener Magie und verborgenenen Geheimnisse zu suchen."~
+@534 = ~Diese Bronzeplatte zeigt das Symbol eines Zwerges in Robe, um den sieben Edelsteine angeordnet sind. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+@535 = ~Diese Bronzeplatte zeigt das Symbol eines Gedankenschinders, um den sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Auf einer seiner verbotenen Ausflüge betrat Moradins Sohn gemeinsam mit seinem Bruder das Reich der Gottheit der Gedankenschinder und wurde dafür mit immerwährendem Wahnsinn bestraft."~
+@536 = ~Diese Bronzeplatte zeigt das Symbol eines Gedankenschinders, um den sieben Edelsteine angeordnet sind. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+
+@538 = ~Diese Brücke wurde eindeutig von Zwergenhand erbaut und scheint früher über den reißenden Fluss geführt zu haben. Leider ist sie schon seit langem eingestürzt. Ihr erkennt, dass sie wohl mithilfe einer Vorrichtung zum Einsturz gebracht worden ist, um Angreifer mit in die Tiefe zu reißen.~
+@539 = ~Diese Brücke scheint früher über den reißenden Fluss geführt zu haben. Leider ist sie schon seit langem eingestürzt. Ihr erkennt, dass sie wohl mithilfe einer Vorrichtung zum Einsturz gebracht worden ist, um Angreifer mit in die Tiefe zu reißen.~
+@540 = ~Diese Brücke scheint früher über den reißenden Fluss geführt zu haben. Leider ist sie schon seit langem eingestürzt.~
+/*
+@541 = ~Stab der Augen~
+@542 = ~Dieser Zauberstab beschwört auf Befehl ein Zauberauge (wie der Magierzauber der vierten Stufe). Bei jeder Verwendung wird eine Ladung verbraucht. Die Reichweite und Dauer des Auges ist so, als würde es von einem Magier der 6. Stufe gewirkt, unabhängig von der Stufe des Zauberstabträgers. Jeder Benutzer benötigt normalerweise eine Runde, um das Auge zu beschwören und das Bewegen, Fokussieren und Verstehen dessen, was von einem Auge gesehen wird, zu beherrschen. Es ist noch kein bekanntes Verfahren zum Wiederaufladen derartiger Stäbe perfektioniert worden.
+SPEZIFISCHE EIGENSCHAFTEN:
+Wirkung: Zauberauge
+Wirkungsbereich: Anwender
+Kann nicht verwendet werden von:
+ Kämpfern
+ Klerikern
+ Druiden
+ Dieben~
+*/ 
+@543 = ~Dieser Leiche fehlt der Kopf.~
+@544 = ~Dies scheint einer der früheren Versorgungsschächte zu sein, der tief nach unten führt. Ihr könnt den Boden nicht erkennen, da Ihr fürchtet, dass Ihr hinunterstürzen könntet, solltet Ihr zu nahe an den Schacht herantreten. Die Luft, die aus der Finsternis entweicht, ist übelriechend und stickig.~
+@545 = ~Diese Platte zeigt das Antlitz Moradins, des Göttervaters. In Zwergenrunen steht darum geschrieben: Voller Zorn verbannte Moradin seine eigenen Zwillingskinder aus der Gemeinschaft der Zwergengötter, auf dass diese niemals mehr solch unsägliches Unheil anrichten könnten.~
+@546 = ~Diese Bronzeplatte zeigt das Symbol eines bärtigen Zwerges. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern könnt.~
+@547 = ~Tanzende Klingen~
+@548 = ~Schrei der Vargouille~
+@549 = ~Gase neutralisieren~
+@550 = ~Gase neutralisieren
+
+Grad: 7
+Schule: Bannzauber
+Reichweite: Anwender
+Dauer: Sofort
+Zeitaufwand: 1
+Bereich: Speziell
+Rettungswurf: Nein
+
+Durch die Verwendung dieses Zaubers macht der Magier schädliche Dämpfe, Gase, Wolken oder Nebel im Wirkungsbereich unschädlich. Dazu gehören "Stinkende Wolke", "Todeswolke", "Tödlicher Nebel", "Flammende Wolke" sowie ähnliche Zauber und Effekte. Schädliche Gase oder Dämpfe lösen sich auf. 
+Wesen, die vor dem Wirken des Zauberspruchs getroffen wurden, leiden weiterhin unter den Auswirkungen der vorherigen Einflüsse – der Zauber wirkt nicht gegen bereits vorhandenen Schaden. 
+Wenn der Zauber in derselben Runde gewirkt wird, in welcher der Gaseffekt auftritt, kann "Gase Neutralisieren" auch dazu verwendet werden, um gasförmige Odemwaffen zu neutralisieren, indem betroffenen Kreaturen ein Bonus von +4 auf ihre Rettungswürfe gewährt sowie ein 50%iger Schutz vor solchen Odemangriffen gegeben wird.~
+@551 = ~Schwarztroll~
+@552 = ~Massenentzug von Lebenskraft~
+@553 = ~Massenentzug von Lebenskraft
+
+Grad: 9
+Schule: Nekromantie
+Reichweite: 9 m
+Dauer: Speziell
+Zeitaufwand: 3
+Bereich: Kreatur und ein Gebiet von 9m Kantenlänge
+Rettungswurf: Nein
+
+Mit diesem Zauber kann der Anwender die Lebenskraft aller Wesen in einem Gebiet entziehen und seiner eigenen hinzufügen. Die Opfer erleiden 1W8 Schadenspunkte, während der Anwender 1W8 zusätzliche Trefferpunkte je Opfer erhält. Wenn der Anwender dabei seine maximale Trefferpunktzahl überschreitet, verliert er die zusätzlichen Punkte nach drei Runden wieder.~
+
+@554 = ~Krakelige Notiz~
+@555 = ~Dieser Zettel besteht nicht aus Papier, sondern aus einem Stück stinkenden Leders. Geschrieben mit rot-schwarzer Farbe steht darauf mit unförmigen Buchstaben in Allgemeinsprache geschrieben: "Trolle des Norrdens, kommt nach Süden und schliest Euch dem imerwehrenden Konigreich Stommheim an! Ursummnogh der Untötbare erwartet Euch."~
+@556 = ~Schutz vor Gutem~
+@557 = ~Narg der Schwarze~
+@558 = ~Im Schatten verschwinden~
+@559 = ~Im Schatten verschwunden~
+
+
+@564 = ~Geist von Nhair Ebendar~
+@565 = ~Dies ist eine Statue Berronar Wahrsilbers, der zwergischen Göttin des Lebens, der Heilung und der Sicherheit.~
+@566 = ~Riesenspalter +2/+3~
+@567 = ~Riesenspalter +2/+3
+
+Der Schaft dieser Streitaxt ist aus dem Oberschenkelknochen eines Riesen gefertigt. Die Waffe wurde einst von Rothdor, einem zwergischen Schlachtenwüter einer Axtbruderschaft Clangeddins, geschwungen. 
+
+Rothdor stand im Dienste eines Königs von Shanatar, und zwar zu einer Zeit, als eine große Riesenhorde aus dem Osten drohte, die Ländereien oberhalb des Zwergenreiches zu überrennen. Die Schlachtenwüter wurden den Verbündeten Menschen an der Oberfläche zur Verstärkung geschickt und erledigten ihre Aufgabe mit Bravour, da sie schon bald die Riesen in einer großen Schlacht an den Rand der Niederlage gebracht hatten. 
+
+Unglücklicherweise hatten die Menschen, zu deren Hilfe die Zwerge geschickt worden waren, keinerlei Interesse daran, selbst in die Schlacht einzugreifen, und so wurden die Schlachtenwüter nach einem langen, harten Gefecht einer nach dem anderen von den Riesen überrannt und zertrampelt. 
+
+Rothdors Axt wanderte über mehrere Besitzer wieder in die Hände der Zwerge Shanatars, doch nach dem Fall der Königreiche Xothaerin, Torglor und Korolnor geriet die mächtige Waffe in Vergessenheit und blieb verschwunden.
+
+EIGENSCHAFTEN:
+
+Bei jedem Treffer erleiden Riesen zusätzlich 3 Schadenspunkte durch Bluten pro Runde für 2 Runden und werden für 2 Runden verlangsamt.
+
+ETW0 -2, -3 (nur Zwerge)
+Schaden: 1W8 +2, +3 (nur Zwerge) (Klingenwaffe)
+Gewicht: 5
+Initiativefaktor: 5
+Waffenfertigkeit: Axt
+Waffentyp: einhändig
+Mindeststärke: 10~
+
+@570 = ~Smaragdgolem~
+//@571 = ~Frostriese~
+@572 = ~Bryam Lancameth~
+@573 = ~Lancameths Kopf~
+@574 = ~Dies ist der Kopf von Bryam Lancameth, des Hauptmanns der amnischen Armee, der mit seinen Gefährten in den klagenden Zwerg hinabgestiegen ist. Durch den Biss einer Vargouille ist er selbst zu einer dieser Kreaturen aus der Abyss geworden. Sein Kopf sieht scheußlich aus, das Gesicht zu einer Fratze entstellt - in dieser Form solltet Ihr ihn seiner Witwe am Friedhofsviertel besser nicht zeigen.~
+@575 = ~Zwergenwächterstatue~
+@576 = ~Schwertschlüssel~
+@577 = ~Dieses "Schwert" ist in Wirklichkeit ein kunstvoll geformter Schlüssel, der in irgendeine Art Schloss passen müsste.~
+@578 = ~Die Luft in dieser Kammer riecht nach Fäulnis, Verfall und abgrundtiefer Bosheit. Der Nebel, der sich auf dem Boden abgesetzt hat, lässt nicht erahnen, wie tief der Abgrund weiter nach unten reicht.~
+/*
+@579 = ~Korolnor-Zepter~
+@580 = ~Dies ist eines der alten Herrschaftszepter des Zwergenreiches Shanatars. Der Griff ist aus Mithril gefertigt, und der Kopf ist aus einer Bronzeplatte gestaltet, der auf der einen Seite die Insignien des Clans Kuldelver zeigt, auf der anderen Seite das Symbol Diinkarazans, des alten und gefallenen Schutzpatrons Korolnors. Trotz seiner Größe eignet sich das Zepter erstaunlich gut als Waffe und kann wie ein Streitkolben geschwungen werden, da es sich auf wundersame Weise verkleineren und vergrößern kann, um leicht in einer Hand im Kampf geschwungen zu werden. Allein diese Fähigkeit zeigt eindrucksvoll, welches handwerkliche Geschick die Zwerge in das Relikt eingearbeitet haben.
+Es verfügt sicher noch über weitere versteckte Kräfte, die sich Euch jedoch nicht ohne Weiteres erschließen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+ETW0: -2
+Schaden: 1W6+3 (Wuchtwaffe)
+Gewicht: 7 
+Initiativefaktor: 5
+Waffenfertigkeit: Streitkolben
+Waffentyp: Einhändig
+Kann nicht verwendet werden von:
+Druiden
+Magiern
+Dieben~
+@581 = ~Zepter~
+@582 = ~Dies ist ein altes Zepter. Der Griff ist aus einem seltsamen Metall gefertigt, den Kopf ziert eine Bronzeplatte mit Zwergenrunen auf der einen und sieben Juwelen auf der anderen Seite.~
+*/
+@583 = ~Dies scheint der alte Thron Korolnors zu sein. Auf der Plattform davor sind Zwergenrunen eingelassen, die Ihr nicht entziffern könnt.~
+@584 = ~Der alte, mächtige Thron Korolnors. Auf der Plattform davor steht in Zwergenrunen geschrieben: 
+"Sechs Wächter stehen, fest und kalt,
+In ihren Äxten Kristalle alt.
+Sie wahren den Siebten, tief versteckt,
+Dass niemals erwacht, was Böses weckt.
+
+Gebunden in Stein, so hält die Wacht,
+Zwergenmut durch finsterste Nacht.
+Der Irre Gott tobt, im Abgrund verbannt,
+Gehalten in Ketten durch Wächters Hand."~
+
+@585 = ~Kleiner Hebel~
+@586 = ~Dieser Hebel scheint von einem größeren Mechanismus zu stammen.~
+@595 = ~BANAUSEN!~
+@596 = ~Gisbert~
+@603 = ~Darcia Lancameth~
+//@604 = ~Faruk~
+@605 = ~Lancameths Unterlagen~
+@606 = ~Dies sind die Unterlagen des Hauptmanns Bryam Lancameth. Sie enthalten zahlreiche Dokumente, die sich mit der Führung einer amnischen Einheit, seinem Dienst in Eshpurta und Ähnlichem befassen, was nichts mit Eurer jetzigen Aufgabe zu tun hat. 
+
+Auf einigen Notizen beschreibt Lancameth seine Studien über die Ruinen der Zwerge im heutigen Amn, seine Recherche über den vermeintlichen Quell der Trollplage in den entsprechenden Bergen und die Suche nach geeigneten Mitstreitern für sein letztes Abenteuer. 
+
+Außerdem ist eine detaillierte Karte der Trollberge enthalten, auf welcher ein Berg an der Quelle eines Flusses besonders markiert ist. Darüber steht geschrieben: 'Der klagende Zwerg.' 
+
+Ihr fasst die Notizen kurz zusammen, um einen besseren Überblick zu bekommen:
+"Der 'klagende Zwerg' ist eine alte Zwergenfestung in den Trollbergen. Aus meiner Zeit in Eshpurta weiß ich, wie zahlreich und lästig die Trolle in diesem Gebiet sind. Mein Verdacht ist, dass die Trolle ihren Ursprung in dieser alten Festung haben könnten. Daneben habe ich von dem merkwürdigen kleinen Magier, der mir begegnete, erfahren, dass sich allerhand Edelsteine in diesem Bauwerk befinden könnten. 
+
+Mir strebt es nicht nach Ruhm und Reichtum, doch von den Schätzen könnte meine von Intrigen gebeutelte Heimat sicher profitieren. Es war schwierig, geeignete Mitstreiter für dieses Abenteuer zu finden, doch ich denke, ich habe jetzt eine vertrauenswürdige Truppe beisammen.
+ 
+Morgen brechen wir nach Eshpurta auf, werden dort ein letztes Gebet an Tempus richten und dann von Süden her in die Trollberge vorstoßen. Wenn wir dem Trollzahnlauf nach Norden folgen, bis er nur noch ein kleiner Gebirgsbach ist, werden wir bald in das steinerne Antlitz des 'Klagenden Zwerges' blicken können."~
+@607 = ~Iremars Aufzeichnungen~
+@608 = ~Diese Notizen stammen von der Priesterin Iremar vom Tempel Oghmas. Sie enthalten detaillierte Aufzeichnungen über die Geschichte der Zwerge in den Ländern Amns und Tethyrs. An einer Stelle des Buches hat sie sich ein Lesezeichen eingelegt. Dieser Abschnitt handelt vom Bauwerk des "Klagenden Zwerges".~
+//@609 = ~Bhapar Ghalmrin~
+@610 = ~Stoßdolch von Quar-Shan~
+@611 = ~Quar-Shan war ein mächtiger Meuchelmörder aus Calimshan im Dienste der frühen Paschas. Sein Stoßdolch verursacht zwar durch eine recht kurze Klinge nicht allzuviel Schaden, durch die geringe Größe lässt er sich jedoch leicht verstecken, was viele Gegner unvorbereitet trifft, da sie ihre Verteidigung vernachlässigen. Insofern ist dies die ideale Waffe für jemanden, der aus dem Hinterhalt heraus maximalen Schaden zufügen möchte.
+
+EIGENSCHAFTEN:
+
+Chance auf kritischen Treffer: +5% mit dieser Waffe
+Bonus auf hinterhältigen Angriff: +1 
+ETW0-Bonus: -3
+Schaden: 1W3 +3 (Stich)
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 0~
+@612 = ~Jorboud Hornfinger~
+@613 = ~Glouris Mristifos~
+@846 = ~Versteinerungsumhang~
+@847 = ~Dieser angeblich in Gorgonenblut getränkte Umhang lässt den Träger augenblicklick zu Stein erstarren. Jeder, der nicht als Statue in dem Park eines Fürsten der Schwertküste enden möchte, sollte tunlichst vermeiden, das Kleidungsstück anzulegen.~
+@848 = ~Sir Kandelar~
+
+@900 = ~Alle Feinde der Zwerge müssen zerstört werden!~ [AC#MGGM1]
+@901 = ~~ [AC#MGDI1]
+@902 = ~~ [AC#MGDI2]
+@903 = ~~ [AC#MGDR4]
+@904 = ~~ [AC#MGDR5]
+@905 = ~~ [AC#MGDR1]
+@906 = ~~ [AC#MGDR2]
+@907 = ~~ [AC#MGDR3]
+@908 = ~~ [AC#MGDR6]
+@909 = ~~ [AC#MGDR7]
+@910 = ~~ [AC#MGDR8]
+@911 = ~~ [AC#MGDR9]
+@912 = ~~ [AC#MGGB2]
+@913 = ~~ [AC#MGGB3]
+@914 = ~~ [AC#MGDI3]
+@915 = ~Verfluchte Magie, will mir nicht gehorchen!~ [AC#MGDI5]// ~Cursed magic, it won't obey me!~ [AC#MGDI5]
+@916 = ~~[AC#MGDI4]
+@917 = ~~[AC#MGFG3]
+@918 = ~~ [AC#MG1KF]
+@919 = ~~ [AC#MGUR0]
+
+@956 = ~Vargouille beschwören~
+
+@961 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Drakkalor, Stadt des Geizes"~
+@962 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Xothaerin, Adamantitkönigreich"~
+@963 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Barakuir, Eisenkönigreich"~ 
+@964 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Ultoksamrin, Zardazilkönigreich"~ 
+@965 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Alatorin, Heimat Taark Shanats"~ 
+@966 = ~Auf dem Boden steht eine kleine Zwergenstatue. In Dethek-Runen steht daneben geschrieben: "Sondarr, Meereskönigreich"~
+@967 = ~Diese kleine Zwergenstatue ist umgestürzt.~
+@968 = ~Diese Figur stellt einen Betrachter dar.~
+@969 = ~Diese Figur stellt einen Steinriesen dar.~
+@970 = ~Diese Figur zeigt einen Gedankenschinder. In Dethek-Runen steht daneben geschrieben: "Oryndoll, Heimat der Wissensnehmer"~
+@971 = ~Maid Sternendorn~
+@972 = ~Fomorischer Käse~
+@973 = ~Dies ist ein Stück stinkender Käse der fomorischen Riesen. Ihr möchtet Euch lieber nicht vorstellen, welche Zutaten zu seiner Herstellung verwendet wurden.~
+
+@975 = ~Moldark~
+@983 = ~Dieser Zettel besteht nicht aus Papier, sondern aus stinkendem Leder. Geschrieben mit rot-schwarzer Farbe steht darauf in unförmigen Buchstaben in Allgemeinsprache geschrieben: "TrOLLe unt Risen imm sÜden, komT zum KlaGenden zWerK und schliest Euch Ursummnogh dem Untötbaren und Kong Madugg an! Zusamen werrden tRolle unt Risen den Mänschen dass FurcHten leeren!"~
+@984 = ~Todesregen~
+
+@1000 = ~Unzählige Schädel verschiedener Kreaturen sind hier zu einem grausigen Mahnmal aufeinandergestapelt. Ihr könnt nur hoffen, dass nicht die Schädel der Abenteurergruppe, die Ihr sucht, darunter sind.~
+@1001 = ~Diese Flagge ziert die ausgebreitete Hand eines Monsters, vielleicht eines Trolles.~
+@1002 = ~Haupteingang~
+
+@1102 = ~Bruder Starrdorn~
+@1103 = ~Silberaxt~
+@1104 = ~Diese Axt ist aus reinem Silber hergestellt. Es sieht danach aus, als sei dies eine Zeremonienwaffe gewesen - nicht ein Gegenstand, mit dem man in den Krieg zieht.~
+
+@1106 = ~zerschmettert~
+@1107 = ~Heilung durch Vargouillengift gehindert~
+@1108 = ~Gifttroll~
+@1109 = ~Giftspritzer~
+@1110 = ~Faerzress-Troll~
+@1111 = ~Dieser Schlüssel scheint nicht für ein Türschloss, sondern für eine andere Vorrichtung geschaffen zu sein.~
+@1113 = ~Stimme aus dem Horn~
+@1114 = ~Ein Aufzug scheint hier nach unten in die Tiefe zu führen.~
+@1115 = ~Dies ist ein merkwürdiger Altar, der allem Anschein nach von den Trollen errichtet wurde, um eine Gottheit anzubeten. Auf dem Boden davor liegen Opfergaben in Form zahlreicher menschlicher Überreste. Zwei bronzene Rohre ragen an der Wand hervor. Es scheint, als wären diese noch von den Zwergen erschaffen worden.~
+@1116 = ~In dieser Ecke liegen zahlreiche ausgemergelte Leichen, vermutlich Zwerge. Gemeinsames Merkmal aller Kadaver ist, dass ihnen der Kopf fehlt.~
+@1117 = ~Auf dieser Runentafel steht geschrieben: "Alle Gebissenen müssen in die Zellen gebracht werden, bis die Verwandlung eingetreten ist. Sobald sich der Kopf vom Rumpf gelöst hat, ist er durch einen Schuss aus der Armbrust zu töten. Möge Moradin ihrer Seele gnädig sein."~
+@1118 = ~Als Waldläufer erkennt Ihr, dass dieser Durchgang von Trollen gegraben worden ist, um unter Umgehung geschlossener Türen in das Innere oder wieder heraus gelangen zu können.~
+@1119 = ~Dieser Durchgang scheint von großen Wesen gegraben worden zu sein, um unter Umgehung geschlossener Türen in das Innere oder wieder heraus gelangen zu können.~
+@1120 = ~Der Sarg ist aus massivem Metall gefertigt und lässt sich nicht aufbrechen. Allerdings entdeckt Ihr an seiner Seite ein kleines Schloss, in welches wohl ein Schlüssel passen könnte.~
+@1121 = ~In diesen Mechanismus scheint nur ein spezieller Schlüssel zu passen.~
+@1122 = ~Die Fassung dieses zwergischen Behälters ist leer und scheint früher einen kleinen Edelstein beherbergt zu haben, um ihn zu öffnen. Ohne diesen Stein lässt sich das Schloss unmöglich entriegeln.~
+@1123 = ~Weisheitspunkt verloren~
+
+@1400 = ~Niemand antwortet mehr.~
+@1401 = ~Ein bronzenes Horn ragt aus den Felsen hervor. Es scheint, man könnte in das Horn hinein sprechen.~
+@1402 = ~Dieser Mechanismus scheint glühend heiße Luft von den Öfen in eine entferntere Kammer umzuleiten - wahrscheinlich, um damit andere Öfen zu erhitzen. Jedoch fehlt ein Handrad, um die Ventile zu öffnen.~
+@1403 = ~Euch fehlt ein Handrad, um die Ventile zu öffnen und die Luft entweichen zu lassen.~
+@1404 = ~Ihr setzt das Handrad ein. Wenn Ihr möchtet, könnt Ihr es drehen.~
+@1405 = ~Das Ventil ist geöffnet.~
+@1406 = ~Ihr dreht das Handrad, und das Ventil lässt sich öffnen. Ihr hört, wie extrem heiße Luft durch die Rohre in einen anderen Raum strömt.~
+@1407 = ~Ihr könnt das Ventil nicht öffnen. Irgendetwas scheint in den Öfen Hitze zu binden und damit zu verhindern, dass die heiße Luft herausströmen kann.~
+@1408 = ~Ihr könnt das Ventil nicht öffnen. Die Hitze ist zu gering, da noch eine Ofentür offenzustehen scheint.~
+@1409 = ~Der Schlüsselstein, welchen Ihr in der alten Gießerei im Besitz des Vampirs gefunden habt, scheint perfekt in diese kleine Schatulle zu passen. Er rastet ein und verschwindet dann.~ [AC#MGCLK]
+@1410 = ~Ausgang~
+@1411 = ~Zur zweiten Ebene~
+@1412 = ~Zur alten Gießerei~
+@1413 = ~Zur alten Schmiede~
+
+@1500 = ~Als Ihr den Gegenstand in der Schüssel platziert hört Ihr ein leichtes Klicken. Irgendein Mechanismus scheint eingerastet zu sein.~ [AC#MGCLK]
+@1501 = ~Beim Herausnehmen des Gegenstandes hört Ihr wieder das Klicken. Irgendein Mechanismus sich scheint wieder zurückgesetzt zu haben.~ [AC#MGCLK]
+
+@1510 = ~Das Symbol des Zwergengottes Abbathor. Darunter steht geschrieben: "Drakkalor, Stadt des Geizes"~
+@1511 = ~Das Symbol des Zwergengottes Vergadain. Darunter steht geschrieben: "Sondarr, Seesternkönigreich"~
+@1512 = ~Das Symbol Moradins. Darunter steht geschrieben: "Holorarar, Goldkönigreich"~
+@1513 = ~Das Symbol des Zwergengottes Dumathoin. Darunter steht geschrieben: "Ultoksamrin, Zardazilkönigreich"~
+@1514 = ~Das Symbol des Zwergengottes Laduguer. Darunter steht geschrieben: "Barakuir, Eisenkönigreich"~
+@1515 = ~Dieses Symbol könnt Ihr keiner Euch bekannten Zwergengottheit zuordnen. Darunter steht jedoch in Zwergenrunen geschrieben: "Torglor, Silberkönigreich"~
+@1516 = ~Das Symbol zeigt sieben kreisende Edelsteine. Darunter steht in Zwergenrunen geschrieben: "Korolnor, Juwelenkönigreich"~
+@1517 = ~Das Symbol des Zwergengottes Thard Harr. Darunter steht geschrieben: "Hoch-Shanatar, Gletscherkönigreich"~
+@1518 = ~Das Symbol der Zwergengöttin Sharindlar. Darunter steht geschrieben: "Xothaerin, Adamantitkönigreich"~
+@1519 = ~Das Symbol Clangeddin Silberbarts. Darunter steht geschrieben: "Iltkazar, Mithrilkönigreich"~
+
+@1520 = ~Ein Symbol eines Dolches, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1521 = ~Ein Symbol einer Goldmünze, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1522 = ~Ein Symbol eines Amboss, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1523 = ~Ein Symbol eines Berges, über dem ein Juwel schwebt, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1524 = ~Ein Symbol eines an einem Schild zerbrochenen Pfeiles, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1525 = ~Ein unbekanntes Symbol, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1526 = ~Ein unbekanntes Symbol, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1527 = ~Ein Symbol zweier Handschuhe, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1528 = ~Ein Symbol einer brennenden Nadel, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1529 = ~Ein Symbol zweier gekreuzter Äxte, oben und unten eingerahmt in Zwergenrunen, die Ihr nicht entziffern könnt.~
+@1530 = ~Diese Pfanne könnte man auf den Boden fallen lassen und die Riesen ablenken, um in Ruhe nach dem Käse für die Ratten greifen zu können.~
+@1531 = ~Eine Pfanne ist ziemlich instabil an der Säule befestigt.~
+
+
+@1700 = ~In diesem Gerät wurden früher Gussteile hergestellt. Es gibt eine Vorrichtung, in welche man Gussformen einsetzen kann. Allerdings müsstet Ihr dazu zunächst die alte Gießerei wieder in Gang setzen.~
+@1701 = ~Das geschmolzene Metall wird unter hohem Druck in die Gussform gepresst. Heraus kommt ein perfekt geformter Schlüssel, der in ein ganz besonderes Schloss zu passen scheint.~
+@1702 = ~Die Gießerei scheint wieder in Betrieb - zumindest halbwegs. Wenigstens einen kleinen Teil des Raumes konntet Ihr genug erhitzen, damit wieder zähflüssiges Metall aus dem Kelch in die Gussmechanik fließt.~
+@1703 = ~Ihr müsst beide Gussformen in den Behälter legen, um den Gießvorgang zu starten.~
+@1704 = ~Ihr zieht den rostigen Hebel, um den Gussvorgang zu starten.~
+
+@1600 = ~Auf dem Schild, das diesem toten Troll um den Hals gehängt ist, steht: "Das pasirt mit Trolen, dii nicht das Haubt vor Ursummnogh und Vaprak beugn!"~
+
+@1800 = ~"Clangeddins Zwillingsäxte halten den Thron des Irren Gottes unter Verschluss"~
+@1801 = ~Zur zweiten Ebene~
+@1802 = ~Aufzug nach oben~
+@1803 = ~Zum Thron des Irren Gottes~
+
+@1900 = ~~
+@1901 = ~Nach dem Entfernen dieses Kristalles wird die Luft in der Kammer plötzlich kühler, und der Luftzug aus dem Abgrund unter Euch wird stärker. Es scheint, dass mit dem Entfernen der Kristalle die Bande zwischen den Welten schwächer werden.~
+@1902 = ~Kristallsprung~ // Gem jump
+@1903 = ~Vermurkster Hokuspokus~
+@1904 = ~Verpatzte Zauberei~
+@1905 = ~Stampfen~
+@1906 = ~Ilsensines Illusionen~
+@1907 = ~Stellt Euch meinen tiefsten Ängsten!~
+@1908 = ~Wahnsinniges Gelächter~
+@1909 = ~Zone wilder Magie~
+@1910 = ~Windstoß~
+@1911 = ~Diener herbeirufen~
+@1912 = ~Schwarztroll beschwören~
+@1913 = ~Verwandlung in Vargouille~
+
+@2000 = ~Sprache und Schrift der Zwerge~
+@2001 = ~Sprache und Schrift der Zwerge
+von Aldym Ryscelsar aus Halarahh, Halruaa
+
+
+Für Außenstehende und Vertreter anderer Rassen ist das Gebaren der Zwergenrasse häufig schwer verständlich. Die Zwerge selbst scheinen auch kein Interesse daran zu haben, diesen Umstand zu ändern, gelten sie doch nicht umsonst als eine der zurückgezogensten und verschwiegensten Rassen aller Humanoiden. Für den Forscher, der sich aus den verschiedensten Gründen mit ihrer Kultur befassen muss, stellt dies ein Hindernis dar. Anhand meiner Ausführungen sollte es dem geneigten Leser möglich sein, die Sprache und Runenzeichen der Zwergenrasse ebenso entziffern zu können als auch manche ihrer Eigenarten besser verstehen zu können.
+
+Die Sprache der Zwerge, Dethek, wird in einer alten Runenschrift geschrieben, welche ebenfalls Dethek genannt wird. Wie bei Zwergen nicht anders zu erwarten hat sich das Schriftbild und der Satzbau in den vergangenen fünftausend Jahren kaum verändert.
+Dethek-Runen werden selten auf Papier oder Stoff geschrieben, da diese Materialien kurzlebig und zerbrechlich sind. Die Runen werden gewöhnlich in Stein oder Metall geritzt oder gekratzt, sei es in die Wände eines Gebäudes oder in die Klinge eines Schwertes. Besondere Formen der Zwergenniederschrift findet man in Büchern aus gebundenen Metallplatten oder in Steintafeln, welche Runensteine genannt werden.
+Die zwergische Sprache weist ähnliche grammatikalische Konstruktionen wie die Gemeinsprache auf. Dies ist zweifellos darauf zurückzuführen, dass sich beide Sprachen parallel zueinander entwickelt haben. Diese gemeinsamen Regeln bedeuten, dass es für Sprecher der Gemeinsprache relativ einfach ist, Zwergisch zu lernen und zu übersetzen.
+Das Dethek-Runenalphabet besteht aus 24 Zeichen. Die Laute "w", "x" und "z" werden jeweils durch dasselbe Zeichen dargestellt. Dies könnte für Menschen verwirrend sein, wenn sie versuchen, diese Sprache zu übersetzen. Für Dethek-Muttersprachler ist es kein Problem, da nur wenige Wörter jene Buchstaben enthalten.
+Clan- und Stammnamen sowie einige der häufigsten Wörter, Rassen oder Redewendungen haben ihre eigenen Symbole. Diese waren für die Beschilderung oder die Erstellung von Runensteinen nützlich.
+Jedem der wichtigsten Völker in Faerûn wurde ein einzigartiges Symbol zugewiesen. Das Symbol gilt sowohl für die Einzahl als auch für die Mehrzahl, so dass der Leser die Bedeutung aus dem Kontext herausfinden muss.
+Andere Symbole dienen der Orientierung und der Beschilderung. Dabei handelt es sich um Diagramme, die auf allgemein verständlichen Begriffen beruhen: ein Fuß zur Kennzeichnung eines sicheren Weges, ein umgedrehter Helm oder ein Trinkhorn als Hinweis auf frisches Wasser und dergleichen mehr.
+
+(Es folgt eine ausführliche Auflistung der Symbole der zwergischen Runensprache und des Dethek-Alphabetes, welche Euch sicher nützen könnte, solltet Ihr einmal zwergische Runensteine entziffern müssen.)~
+@2002 = ~Die Geschichte der Schildzwerge~
+@2003 = ~Die Geschichte der Schildzwerge - Band 1
+
+Eine Abhandlung von Oleus von Mintar, Gelehrtem im Dienste Oghmas.
+
+Die Zwerge sind für uns Menschen eine schwer zu begreifende Rasse. Sie wirken misstrauisch und missmutig. Um zu verstehen, warum viele für uns so typische Eigenarten beim stämmigen Volk entstanden sind, müssen wir uns näher mit der Geschichte der Zwerge entlang der Schwertküste befassen. Gängigen Meinungen der Gelehrten nach stammen die Schildzwerge, wie wir sie heute kennen, von einem großen Zwergenreich ab, welches sich Shanatar nannte und von Taark Shanat, einem Zwergenhelden vergangener Zeiten, gegründet wurde.
+
+Taark Shanat führte seinen Clan in ein Gebiet, welches wir heute als die Länder der Intrige kennen. Er ließ sich in einer großen Höhle im Unterreich nieder, gründete das Reich Shanatar und nannte seine Heimstatt fortan 'Alatorin'. Seine Kinder zogen aus und gründeten ihrerseits weitere Königreiche, die sich über viele Meilen im Unterreich erstreckten. Gemeinsam bildeten sie das Zwergenreich Tief-Shanatar.
+
+Zu seinen glorreichen Zeiten bestand das Königreich Tief-Shanatar neben Alatorin aus neun weiteren Unterkönigreichen, den Königreichen Barakuir, Drakkalor, Iltkazar, Korolnor, Sondarr, Torglor, Ultoksamrin, Xothaerin im Unterreich und Hoch-Shanatar an der Oberfläche. Jedes Königreich wählte seinen eigenen Schutzpatron aus dem Zwergenpantheon, auch wenn einige der Götter längst in Vergessenheit geraten zu sein scheinen. 
+
+Daneben erhielt jedes Unterkönigreich einen eigenen Namen, der auf seine besondere Stellung im Zwergenverbund abzielte:
+
+Barakuir - das Eisen-Königreich
+Drakkalor - die Stadt des Geizes
+Iltkazar - das Mithril-Königreich
+Korolnor - das Juwelen-Königreich
+Sondarr - das Seestern-Königreich
+Torglor - das Silber-Königreich
+Ultoksamrin - das Zardazil-Königreich
+Xothaerin - das Adamant-Königreich
+Hoch-Shanatar - das Gletscherkönigreich.
+
+Die Zwerge mussten sich gegen viele Feinde zur Wehr setzen: Drow, Betrachter, Riesen und Illithiden. Besonders hervorgetan haben sich hierbei Clan Duergar des Königreiches Barakuir im Kampf gegen Gedankenschinder und Clan Kuldelver, Herrscher von Korolnor, durch ihren Kampf gegen die Riesen, welche dem benachbarten Riesenlaufgebirge seinen Namen gab. Doch irgendwann zogen die Königreiche gegeneinander ins Feld, und die einstige Gemeinschaft zerfiel.
+
+Geschwächt durch die stetigen Fehden fiel es den Zwergen fortwährend schwerer, sich gegen die zahlreichen Feinde zu behaupten, welche von allen Seiten in das Hoheitsgebiet der Kinder Moradins eindrangen. So brach letztlich das größte Reich der Zwerge auseinander, und die Überlebenden der Rasse zogen gen Norden, um dort neue Reiche zu gründen. Sie waren die Vorfahren jener Zwergenrasse, die wir heutzutage als "Schildzwerge" kennen. 
+Es gelang ihnen nie mehr, an den Glanz des alten Shanatar anzuknüpfen.~
+@2004 = ~Die Götter der Zwerge~
+@2005 = ~Die Götter der Zwerge: Eine Zusammenfassung
+geschrieben von Aldric von Arabel
+
+Moradin, der Schmiedegott
+
+Moradin, der Allvater, thront über allen anderen Göttern des Zwergenpantheons. Er ist der Schmied der Welt und der Schöpfer der Zwerge. Seine Hammerhiebe formten die ersten Zwergenrassen aus dem harten Stein der Berge. Unter seinem wachsamen Auge werden die Zwerge in den Künsten des Schmiedens, des Bergbaus und der Kriegsführung ausgebildet.
+
+Berronar Wahrsilber, die Beschützerin
+
+Berronar Wahrsilber, die Mutter der Zwerge, steht an Moradins Seite und teilt mit ihm die Herrschaft über das Zwergenpantheon. Sie ist die Beschützerin der Familie, die Hüterin des Heims und die Schutzpatronin der Ehe. Unter ihrem Segen gedeihen die Familien der Zwerge und werden stark und geeint.
+
+Clangeddin Silberbart, der Kriegsfürst
+
+Clangeddin Silberbart, der Kriegsfürst der Zwerge, ist der unbeugsame Verteidiger des Zwergenvolkes. Mit seinen mächtigen Zwillingsäxten in der Hand führt er die Armeen der Zwerge in die Schlacht gegen ihre Feinde. Sein Name wird von den Kriegern der Zwerge bei Beginn einer Schlacht gerufen, denn unter seinem Schutz kennen sie keine Furcht.
+
+Dumathoin, der Wächter der Gräber
+
+Dumathoin, der Hüter der Geheimnisse, wacht über die Gräber und Schätze der Zwerge. In den Tiefen der Erde bewahrt er die Geheimnisse vergangener Zeiten und schützt die Schätze, die von den Zwergen geschaffen wurden. Sein Wissen ist unermesslich, und nur diejenigen, die würdig sind, können von seinem Rat profitieren.
+
+Vergessene Gottheiten
+
+Neben den aktuellen Göttern des Zwergenpantheons gibt es auch andere, weniger bekannte Gottheiten, die von bestimmten Zwergenclans verehrt wurden. Diese Gottheiten, obwohl heute vergessen, waren dennoch wichtig für die Historie der Zwerge und verdienen es, weiter erforscht zu werden. Alte Geschichten erzählen von Zwillingskindern Moradins, welche aufgrund eines unbekannten Verrats von ihrem eigenen Vater aus dem Zwergenpantheon ausgestoßen wurden. Die Zwergenclans, welche sie verehrten, waren besonders gestraft, mussten sie sich doch in Windeseile (für einen Zwerg zumindest) einen neuen Schutzpatron suchen.~
+@2006 = ~Vertrag~
+@2007 = ~Vertrag zwischen Savant Dokuriingor und Moldark 
+
+Moldark lebt schon lange in diesen Ruinen. Er erkennt aber die neuen Herrscher an, deren Blut bis auf das der Gründerzwerge zurückgeht.
+
+Moldark fertigt jeden Zehntag einen Grautroll durch Aussaugen für das Zuchtprogramm an. Im Austausch dafür gibt der neue Herr Korolnors Moldark Kontrolle über die alte Gießerei und liefert ihm zweimal je Zehntag frische Nahrung in Form von gefangenen Menschen.
+
+Der neue Herr verpflichtet sich, die Rohre der Schmiedeöfen gegenüber der Gießerei verschlossen zu halten, um eine Wiedererhitzung der alten Gussöfen zu verhindern.~
+@2008 = ~Zwergen-Gebetsstein~
+@2009 = ~Bitte Moradin, verlasst mich nicht! Ich will mich nicht verwandeln.~
+@2010 = ~Berronar, nehmt den Fluch von unserem Clan! Der Ausgestoßene soll uns nicht weiter behelligen können.~
+@2011 = ~Sargschlüssel~
+@2012 = ~Dieser Schlüssel ist in einer kleinen Schatulle untergebracht, die wie ein Sarg geformt ist. Der Gegenstand riecht nach Tod und Verwesung und scheint tatsächlich zu einem Sarg zu gehören. Nur: Warum sollte jemand seinen Sarg abschließen müssen?~
+@2013 = ~Dokuriingors Tagebuch~
+@2014 = ~Dokuriingors Tagebuch
+
+Tag 101:
+Heute ist ein glorreicher Tag, ein Tag des Schicksals, denn ich habe die Wahrheit erkannt! Ich, Dokuriingor, bin der letzte Nachfahre des großen Zwergenclans von Karlyn Kuldelver! Meine Bestimmung ist es, mein verlorenes Reich Korolnor zurückzuerobern! Die Stimmen flüstern von unermesslichem Reichtum und Macht, die uns gehören, wenn wir die Hallen unserer Vorfahren wieder in Besitz nehmen. Der Ruf meiner Ahnen ist stark in meinen Ohren, und ich folge ihm, bereit, die Herausforderungen und Prüfungen zu meistern, die vor mir liegen.
+
+Tag 103:
+Die Tiefen unseres alten Reiches rufen nach mir, locken mich mit ihren verborgenen Schätzen und verlorenen Geheimnissen. Ich spüre die Anwesenheit des großen Diinkarazan, des verstoßenen Sohnes Moradins, der in der Abyss gefangen ist und doch mächtiger ist als je zuvor. Seine Stimme flüstert mir Versprechungen von unvorstellbarem Reichtum zu, von Schätzen, die unsere kühnsten Träume übertreffen. Ich werde ihm folgen, ich werde seinen Willen erfüllen und Korolnor wiedererwecken, indem ich ihn befreie!
+
+Tag 121:
+Ich habe Diinkarazans Kerker fast erreicht, stehe vor den Toren seines finsteren Throns tief in den verschlungenen Höhlen des Klagenden Zwerges. Er verspricht mir unermessliche Reichtümer, und ich bin bereit, alles zu tun, um sie zu erhalten. Die Macht, die ich in meinen Händen spüre, ist berauschend, und ich werde sie nutzen, um Korolnor wieder aufzubauen und unseren Platz in der Welt zu erobern. Die Zeit des Derro-Clans von Korolnor ist gekommen, und nichts wird mich aufhalten können!
+
+Tag 127:
+Die Tore des versiegelten Thronsaals bleiben verschlossen, und meine Hoffnungen schwinden, sie jemals alleine öffnen zu können. Die alten Zwerge haben ihre Schlösser mit einer Tücke versehen, die selbst meine List übertrifft. Die Siegel sind stark und besagen, dass kein Zwerg Korolnors mehr imstande sein wird, die Tore zum alten Thronsaal aufzustoßen. Auch kein Derro, als Nachfahre des großen Shanatar! Auch ich nicht. Wie geht es weiter?
+
+Tag 130:
+Doch plötzlich, ein Funken der Erkenntnis! Die alten Schriften, die ich so sorgfältig studiert habe, offenbaren eine unerwartete Wahrheit. Die verschlossene Tür, die mich von Diinkarazans Thronsaal trennt, kann nicht von den Nachfahren Korolnor geöffnet werden. Dann aber von jenen, die nicht von den Blutlinien Korolnors abstammen. Ich kann die Tore nicht öffnen, Vertreter anderer Rassen vermutlich schon! Ich muss einen Dummen finden, den ich hierher locke, damit er für mich die Tore öffnet.
+
+Tag 233:
+Ich habe einen Plan geschmiedet, einen Plan, der die Kräfte der niederen Rassen nutzt, um mein Ziel zu erreichen. Ich werde den menschlichen Abenteurer Bryam Lancameth in die Tiefen dieser Festung locken, unter dem Vorwand einer gemeinsamen Expedition, und ihn unwissentlich dazu bringen, die Tore zu öffnen, die mir verschlossen sind. Niemand ahnt, dass der kleine Magier, der "Hundehexer", als den ich mich ausgebe, in Wirklichkeit ein mächtiger Derro-Savant ist!
+
+Tag 281:
+Die Vorbereitungen sind getroffen, und die Falle ist gestellt. Lancameth und seine Gefährten werden bald in die finsteren Tiefen hinabsteigen, begleitet von meiner List unter meiner Führung. Sie werden nicht ahnen, dass sie die Schlüssel zu meinem Erfolg in ihren Händen halten, und ich werde sicherstellen, dass sie die Tore öffnen, die mich von meinem Schicksal trennen. Diinkarazan wartet, und ich werde ihn nicht enttäuschen!
+
+Tag 342:
+Die Expedition hat die Korridore unserer Festung erreicht. Die Stunden vergehen, und meine Ungeduld wächst mit jedem Herzschlag, der verhallt. Die Gefährten nennen mich immer noch "Hundehexer", die Dummköpfe. Sie werden alle einen qualvollen Tod sterben.
+
+Tag 345:
+Mein Plan scheint aufzugehen. Die Gefährten von Bryam Lancameth sind einer nach dem anderen gefallen. Nur noch ich und er stehen vor der verschlossenen Tür, und ich kann den Argwohn in seinen Augen sehen, den Funken des Misstrauens, der in seinem Herzen glimmt. Doch ich werde nicht aufgeben, nicht jetzt, wo das Ziel so nah ist. Er sucht nach einer Möglichkeit, die Tür zu öffnen - ich brauche einfach nur zu warten.
+
+Tag 351:
+Verdammt! Bryam Lancameth hat den Verrat erkannt, er hat den Betrug in meinem Herzen gespürt und die Wahrheit hinter meinen Lügen gehört. Ohne ein Wort des Abschieds schritt er durch die ersehnte Tür, verschloss sie hinter sich wieder und lässt mich nun allein zurück, erneut harrend in der Ödnis vor dem Thronsaal! Wahnsinn umklammert meine Gedanken, während ich nach einem neuen Weg suche, die Tür zu öffnen. Diinkarazan wartet, wird ungeduldig... ich muss hinein, hinein, hinein!~
+@2015 = ~Anthrazit~
+@2016 = ~Anthrazit, eine spezielle Form von Kohle, ist bekannt für seine bemerkenswerte Dichte und Hitzebeständigkeit, was es zu einer bevorzugten Wahl für Zwerge macht, um Wärme in ihren Hallen und Hitze in ihren Schmieden zu erzeugen. Das glänzend schwarze Material verbrennt lang anhaltend und gleichmäßig, ist unempfindlich gegen Feuchtigkeit und strahlt intensive Hitze und Helligkeit aus. Aufgrund seiner symbolischen Bedeutung wird Anthrazit von den Zwergen häufig verwendet, um bedeutende Kultstätten zu beleuchten.~
+@2017 = ~Mithrilharnisch +2~
+@2018 = ~Dieser Mithrilharnisch gehörte einst Karlyn Kuldelver, dem Gründer des Zwergenreichs Korolnor. Die beeindruckende Rüstung ist aus Mithril gefertigt, einem seltenen, silbrig-blauen Metall, das für seine Leichtigkeit und Flexibilität bekannt ist. Der Panzer schimmert im Licht mit einem sanften bläulichen Glanz und bietet dem Träger außergewöhnlichen Schutz, ohne die Beweglichkeit stark zu beeinträchtigen. Er ist sehr leicht und lässt sich auch von weniger starken Kriegern gut tragen. 
+Mithril, das Metall, aus dem der Panzer gefertigt wurde, hat eine natürliche Widerstandskraft gegen Magie, welche es dem Träger der Rüstung ermöglicht, gegen magische Angriffe besser gewappnet zu sein.
+
+EIGENSCHAFTEN:
+
+Magieschadenwiderstand: +30%
+RW-Bonus: -2 gg. Zauber
+
+Rüstungsklasse: -1, -2 (Zwerge)
+RK-Bonus:
+ -1 gg. Geschosswaffen
+ -1 gg. Stichwaffen
+ -2 gg. Klingenwaffen
+Mindeststärke: 10
+
+Gewicht: 15~
+@2019 = ~Teil einer Rüstung~
+@2020 = ~Mithril-Schulterplatte (links)~
+@2021 = ~Dieses kunstvoll verzierte Stück Metall scheint früher einmal zu einer Rüstung gehört zu haben.~
+@2022 = ~Diese Schulterplatte ist Teil der Rüstung des Zwergenhelden Karlyn Kuldelver, dem Gründer des Zwergenreiches Korolnor. Sie ist aus Mithril gefertigt. Die vollständige Rüstung muss einst ein wahrhaft mächtiger Gegenstand gewesen sein.~
+@2023 = ~Mithril-Schulterplatte (rechts)~
+@2024 = ~Diese Schulterplatte ist Teil der Rüstung des Zwergenhelden Karlyn Kuldelver, dem Gründer des Zwergenreiches Korolnor. Sie ist aus Mithril gefertigt. Die vollständige Rüstung muss einst ein wahrhaft mächtiger Gegenstand gewesen sein.~
+@2025 = ~Brustteil von Karlyns Rüstung~
+@2026 = ~Dies ist der zentrale Brustteil der Mithrilrüstung des Zwergenhelden Karlyn Kuldelver. Kombiniert man diesen Teil mit den beiden weiteren fehlenden Teilen - den zwei Schulterplatten - durch die Hände eines fähigen Schmiedes, würde man einen vortrefflichen Mithrilharnisch erhalten. Allerdings wüssten nur die wenigsten Schmiede, wie man Mithril wieder zusammenfügen könnte - wenn es sich nicht gerade um einen zwergischen Schmied handelt. Doch solche Schmiedemeister trifft man in den Reichen nur selten, und meist teilen sie ihr Wissen nicht.~
+@2027 = ~Schwarzbiss~
+@2028 = ~Die Spitze dieses mächtigen Speers ziert ein Reißzahn irgendeiner Bestie. Der Sage nach soll es sich um den Zahn eines schwarzen Drachens handeln, was auch erklären würde, warum die Spitze des Speers vor Säure tropft. Der Name "Schwarzbiss" ist daher eine durchaus treffende Bezeichnung. Unter Verbeeg erzählt man sich die Geschichte, dass ein Kriegsherr eine Bande dieser Riesen in die Sümpfe führte, um den Schwarzen Drachen Vorgarrash zu töten. Nach einem brutalen Kampf stieß der Verbeeg seinen Speer in den Kiefer des Drachen, wobei einer der gewaltigen Reißzähne abbrach. Der Riese ließ den Zahn in seinen Speer einarbeiten, welcher die ätzende Magie des Drachen aufnahm. So entstand Schwarzbiss, ein Speer, der bis heute unter Verbeeg als Trophäe der Stärke gilt.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -3
+Schaden: 1W6 +3 (Stich)
+Schadensbonus: +1 (Säure)
+Initiativefaktor: 3
+Fertigkeit: Speer
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+@2029 = ~Wächteramulett~
+@2030 = ~Dieses Amulett ziert ein Hammer. Es ist aus Messing oder Bronze gefertigt. Ein besonderer Zauber, der den Priesterinnen Berronars von ihrer Göttin gewährt wird, ist in das Emblem eingewoben. Es ist der "Wächterhammer", ein göttlicher Zauber, mit dem sich ein mächtiger magischer Hammer beschwören lässt. 
+Amulette dieser Art wurden meist von hochrangigen Vertretern der Zwergengesellschaft und ihren Familienmitgliedern getragen. 
+
+EIGENSCHAFTEN:
+
+Der Träger kann einmal täglich einen Wächterhamer heraufbeschwören, der bei einem Gegner 2w12 Schadenspunkte verursacht, wenn diesem ein Rettungswurf gegen Zauber misslingt.
+
+RK-Bonus: -1
+RW-Bonus: -1
+
+Gewicht: 1~
+@2031 = ~Berronars Ring~
+@2032 = ~Ringe dieser Art werden von den Faenor, wie die Priester Berronars in der Zwergensprache genannt werden, hergestellt. Ihnen obliegt die Aufgabe, als Wächter und Beschützer der ihnen unterstehenden Zwergenclans zu dienen. 
+
+Diese Gegenstände, hergestellt aus den edelsten Materialien, werden oft von den Anführern eines Zwergenclans getragen, um sie vor unheilvollen Krankheiten zu bewahren, die in den dunklen Tiefen der Erde und des Unterreichs lauern. 
+
+EIGENSCHAFTEN:
+
+Der Träger ist immun gegen Krankheiten und gegen krankmachende Effekte, die von Kreaturen übertragen werden. 
+
+Hierzu gehört die Berührung einer Mumie, der Angriff eines Otyugh, der Biss von Kreaturen des Abgrunds, welche als Vargouille bekannt sind, sowie die Angriffe von Ghulen. Man sollte sich im Klaren sein, dass nicht der Angriff an sich verhindert wird, sondern lediglich die Übertragung von krankheitsähnlichen Effekten.
+
+Gegen Lykanthropie und Vampirismus bietet dieser Ring jedoch keinen Schutz.
+
+Gewicht: 0~
+@2033 = ~Knochenstern +2/+3~
+@2034 = ~Dieser primitive Morgenstern ist aus verschiedenen Knochenteilen eines Riesen zusammengesetzt und eine erstaunlich effektive Waffe. Zum Einen ist er sehr leicht, was das Schwingen im Kampf äußerst erleichtert - man kann damit schnell und hart zuschlagen. Zusätzlich wird noch ein wenig der Kraft, für die Riesen bekannt sind, auf den Träger übertragen.
+Und zu guter Letzt wurde der Morgenstern mit einer Verzauberung belegt, welche demjenigen, der ihn schwingt, einen Trefferbonus gegen die bei Riesen so verhassten kleinwüchsigen humanoiden Rassen gibt.
+
+EIGENSCHAFTEN:
+
+Stärke: +1
+
+ETW0-Bonus: -2, -3 (Halborks) zusätzlich -2 Bonus gegen kleine Humanoide: Halblinge, Gnome, Zwerge, Goblins und Kobolde
+Schaden: 2W4 +2 (Wucht); +3 (Halborks)
+Initiativefaktor: 3
+Fertigkeit: Flegel/Morgenstern
+Typ: 1-händig
+
+Gewicht: 3~
+@2035 = ~Astraler Streitkolben der Entladung~
+@2036 = ~Der Astrale Streitkolben der Entladung ist eine mächtige Waffe, die aus einem seltenen, sternengleich funkelnden Metall geschmiedet wurde. Der Griff ist mit tiefblauen Lederbändern umwickelt, die bei Berührung leicht pulsieren. Die Schlagfläche des Streitkolbens ist kunstvoll verziert und enthält kleine, eingelassene Kristalle, die in den Farben des Nachthimmels schimmern. 
+
+Der Streitkolben wurde zunächst als Zeremonialwaffe verwendet, um die Ankunft oder den Abschluss bedeutender astronomischer Ereignisse zu markieren. 
+
+EIGENSCHAFTEN:
+
+Träger kann einmal täglich den Zauber "Strahl des Ruhms" wirken
+
+ETW0-Bonus: -3
+Schaden: 1W6 +4 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 6~
+@2037 = ~Astrale Entladung~
+@2038 = ~Uhrwerkklinge des Giftes~
+@2039 = ~Die Ursprünge dieses Bastardschwertes scheinen eng mit der Ebene von Mechanus verknüpft zu sein. Anstelle eines Knaufes findet sich ein komplizierter Mechanismus, der beständig Gift auf die Klinge träufeln lässt. Da die Zahnräder an eine gnomische Uhr erinnern, hat sich für das Schwert im Laufe der Jahrhunderte der Name "Uhrwerkklinge" eingebürgert. 
+
+Das in der Klinge verwendete Gift besitzt die Fähigkeit, nur chaotische Wesen zu schädigen. Diese Wirkung macht die Uhrwerkklinge zu einer bevorzugten Waffe der Rechtschaffenen.
+
+Daneben hat die Klinge die Fähigkeit, das Geschiebe der Zeit für einen kurzen Moment zum Stillstand bringen zu können. Den genauen Mechanismus konnte bisher niemand entschlüsseln, sodass unklar ist, wann der Zeitstopp auftreten wird.
+
+
+EIGENSCHAFTEN:
+
+Chaotische Wesen werden durch ein spezielles Gift der Klinge für drei Runden verlangsamt, wenn ihnen ein Rettungswurf -2 gegen Tod misslingt. Magieresistenz schützt nicht gegen dieses Gift.
+2% der Treffer bewirken für eine Runde einen Zeitstopp.
+
+ETW0-Bonus: -3
+Schaden: 2W4 +3 (Klinge), +1 Giftschaden gg. chaotische Wesen, wenn ihnen ein Rettungswurf -2 gegen Tod misslingt
+Initiativefaktor: 5
+Fertigkeit: Bastardschwert
+Typ: 1-händig
+Mindeststärke: 11
+
+Gewicht: 7~
+@2040 = ~Das Götterpantheon der Riesen~
+@2041 = ~Eine Abhandlung über das Götterpantheon der Riesen
+Verfasst von Azmor Delduin, Gelehrter der arkanen Mythen und antiken Religionen
+
+Im weiten Geflecht der mythologischen Traditionen, die sich durch die Reiche der Sterblichen ziehen, steht das Pantheon der Riesen als eines der ältesten und imposantesten. Die Erhabenheit und Größe dieser mächtigen Völker, die einst das Land beherrschten, spiegeln sich in der Vielfalt und Macht ihrer Götter wider. Diese Gottheiten verkörpern nicht nur Naturgewalten und Elementarkräfte, sondern auch die komplexen und oft brutalen gesellschaftlichen Strukturen der Riesen.
+
+Im Zentrum des Pantheons steht Annam Allvater, der Schöpfergott der Riesen, der auch als Vater aller Giganten bekannt ist. Er der Herr des Götterhimmels, des 'Ordning', dessen Kinder die verschiedenen Rassen der Riesen bilden. Doch Annam, so erzählt es die Legende, zog sich zurück, enttäuscht von den ständigen Konflikten unter seinen Nachkommen, und ließ seine Kinder die Welt unter sich aufteilen.
+
+Die Söhne Annams: Thrym, Surtr und Stronmaeus
+
+Die bekanntesten Kinder Annams sind die Ersten unter den Riesen: Thrym, der Gott der Frostriesen, der das Chaos und die Kälte regiert, Surtr, der Feuerriese, Herrscher über Flammen und Zerstörung, und Stronmaeus, der Gott der Sturmriesen, der als weise und wohlwollend gilt, wenn auch jähzornig wie die Gewitter, die er kontrolliert. Diese drei repräsentieren die drei größten Reiche der Riesen: Eis, Feuer und Sturm.
+
+Während diese Götter in der Vorherrschaft ihrer jeweiligen Domänen rivalisieren, teilen sie doch den gemeinsamen Glauben an die unangefochtene Herrschaft der Riesen über die Sterblichen. In ihren Legenden kämpfen sie oft gegeneinander, stets bestrebt, sich als den wahren Erben Annams zu beweisen. Ihre Anhänger leben in ständiger Erwartung, dass ihr jeweiliger Gott eines Tages die ultimative Kontrolle über alle Riesen erlangen wird.
+
+Vaprak der Zerstörer: Ein Außenseiter im Ordning
+
+Im Ordning der Riesen findet sich eine abscheuliche Gestalt, die weder Teil der edlen Abstammung Annams ist noch das Wohlwollen der älteren Götter genießt: Vaprak der Zerstörer, der Gott der Oger und Trolle. Vaprak, eine brutale und unzähmbare Kreatur, verkörpert die rohe Gewalt und den Hunger nach Vernichtung. Seine Anhänger, die Oger und Trolle, stehen in scharfem Kontrast zu den eher geordneten und ehrenhaften Riesen. Vaprak wird als gierig und zerstörerisch beschrieben, ein Gott, der im Schatten agiert und Chaos sät, wo immer er kann. Manche Gelehrten glauben, dass Vaprak einst versuchte, in das Pantheon der Riesen aufgenommen zu werden, aber von Annam selbst verbannt wurde. Seine wütende Natur macht ihn sowohl unter den Göttern als auch unter Sterblichen gefürchtet, denn er strebt danach, alles zu verschlingen, was sich ihm in den Weg stellt.
+
+Karontor: Der Verstoßene unter den Verstoßenen
+
+Ein noch düstereres Kapitel im Pantheon der Riesen ist die Legende von Karontor, dem missgestalteten Gott der Verfluchten, besonders verehrt von den Fomorianern und Verfallenen. Karontor, einst ein schöner und mächtiger Riese, wurde durch Neid und Hass in eine abscheuliche Gestalt verwandelt, und sein Herz wurde so schwarz wie seine Haut. Seine verkrüppelte Gestalt ist ein Spiegel seiner inneren Verbitterung und seines Hasses auf seine Brüder und Schwestern.
+
+Karontor gilt als der Patron der ausgestoßenen Riesen, die nicht den großen Elementargiganten angehören. Er wird in den tiefsten Schatten der Welt verehrt, besonders von denen, die ihre Hoffnung auf Rache und Rückkehr zur Macht setzen. Die alten Legenden erzählen, dass Karontor den anderen Göttern einst ebenbürtig war, aber durch seinen Neid auf Surtr und Thrym verdorben wurde. In seinem Wahnsinn wandte er sich gegen die Ordnung, die Annam geschaffen hatte, und wurde schließlich verflucht, niemals wieder die Größe zu erlangen, die er einst hatte.
+
+
+In den finsteren Mythen, die sowohl Vaprak als auch Karontor betreffen, gibt es Andeutungen, dass diese beiden Götter eine Art zerrüttete Allianz teilen. Beide sind Außenseiter in der Götterordnung und finden Gefallen an Zerstörung und Chaos. Es heißt, dass Karontor einst Vaprak zu sich rief, um gemeinsam die Macht der anderen Riesen zu untergraben. Doch wie bei allen bösartigen Kreaturen ist ihre Partnerschaft instabil und voller Misstrauen. Jeder strebt danach, den anderen zu übertreffen und letztlich die Gunst der verstoßenen Anhänger für sich zu beanspruchen.
+
+Die Philosophie des Pantheons
+
+Das Pantheon der Riesen ist ein Abbild der sozialen Strukturen der Giganten selbst. Es repräsentiert die Hierarchie, das Recht des Stärkeren und die ewigen Kämpfe um Macht und Vorherrschaft. Annam selbst steht für das verlorene Ideal einer geeinten Welt der Giganten, doch seine Abwesenheit hat es den Kräften des Chaos und des Hasses ermöglicht, sich in das Ordning einzuschleichen. Thrym, Surtr und Stronmaeus kämpfen um das Erbe ihres Vaters, während Kreaturen wie Vaprak und Karontor von den Rändern her nagen und darauf warten, das Gleichgewicht zu stören.
+
+Dieses Pantheon ist ein lebendiges, dynamisches Netz von Machtkämpfen und persönlichen Fehden, das die Riesen dazu treibt, in einem endlosen Zyklus von Krieg, Eroberung und Zerstörung gefangen zu bleiben. Wie auch die Riesen selbst stehen ihre Götter für den ewigen Konflikt zwischen Macht, Ordnung und Chaos – ein Konflikt, der nie enden wird.~
+@2042 = ~Schrumpfkopf~
+@2043 = ~Der Schimpfende Stenlan~
+@2044 = ~Dies ist der fein säuberlich abgetrennte und zu einem Schrumpfkopf präparierte Kopf eines Menschen.~
+@2045 = ~Dieser Schrumpfkopf gehörte einst Stenlan von Luskan, einem Magier im Heerturm des Arkanen. Sein ständiges Geschimpfe ging seinen Lehrlingen derart auf die Nerven, dass sie ihm schlussendlich den Kopf abtrennten und einen Schrumpfkopf daraus herstellten. Die Fähigkeit, jeden um sich herum zu beleidigen hat Stenlan jedoch auch nach seinem Tod beibehalten.
+
+EIGENSCHAFTEN:
+
+Schimpftirade (1x täglich): Alle feindlichen Wesen in Hörweite müssen einen Rettungswurf gegen Zauber bestehen, oder sie unterbrechen für einen kurzen Augenblick (eine Runde) ihre derzeitige Tätigkeit - sei es Kampf, Zaubern und dergleichen, um nach der Quelle der Beschimpfungen zu suchen. Die betroffenen Wesen gelten für eine Runde als verwirrt.
+
+Gewicht: 1~
+@2046 = ~Schatullen-Schlüsselstein~
+@2047 = ~Dieser zierliche zwergische Runenstein sieht aus, als wäre er geschaffen worden, um in eine Fassung gesetzt zu werden - vielleicht, um damit ein kleines Behältnis öffnen zu können. Er ist sauber und klar glänzend und scheint somit nicht zu dem Raum zu gehören, in welchem Ihr ihn gefunden habt.~
+
+@2050 = ~Stiefel des Nachtschleichers~
+@2051 = ~Diese schwarzen Stiefel, aus weichem Leder gefertigt, sind auf mysteriöse Weise mit der Macht der Nacht verbunden. Sie verleihen dem Träger die Beweglichkeit und das Geschick eines nächtlichen Raubtieres, das durch die Schatten gleitet. Die Stiefel scheinen zu knarren, wenn sie in helles Licht treten, und hinterlassen in der Dunkelheit keine sichtbaren Fußabdrücke. Wenn der Träger längere Zeit in der Dunkelheit bleibt, beginnen die Stiefel leicht zu pulsieren.
+
+EIGENSCHAFTEN:
+
+- Bewegungsrate: +1 bei Nacht
+- Leise bewegen: +25% bei Nacht
+- Einmal täglich kann der Träger einen Schleier aus Schatten heraufbeschwören, der ihn für zwei Runden unsichtbar macht
+
+Gewicht: 4~
+@2052 = ~Bierkrug~
+@2053 = ~Immervoller Bierkrug~
+@2054 = ~In diesem Bierkrug befindet sich eine schäumende, kühle Substanz.~
+@2055 = ~Dieser zwergische Bierkrug ist mit einer Verzauberung versehen, welche ihn täglich erneut mit kühlem Bier füllt. Das Bier hat insbesondere auf Zwerge einen positiven Effekt, während Elfen und Halbelfen um das Getränk einen großen Bogen machen sollten.
+
+Am Rand des Bierkruges steht in großen, zwergischen Runen geschrieben: 
+"TRAU KEINEM, DER NICHT TRINKT!"
+
+EIGENSCHAFTEN:
+
+Einmal täglich:
+- ETW0: +4 Bonus (nur Zwerge)
+- Konstitution: +1 Bonus (nur Zwerge)
+- Anwender ist für die Dauer des Trankes immun gegen Furcht und Panik (alle außer Elfen)
+- Anwender ist nach dem Leeren des Kruges für 8 Stunden betrunken (alle außer Zwerge)
+- Elfen erleiden beim Trinken aus dem Becher 3W6 Schadenspunkte durch Gift
+Dauer: 10 Phasen
+
+Gewicht: 1
+~
+@2056 = ~Bryam Lancameths Tagebuch~
+@2057 = ~Bryam Lancameths Tagebuch
+
+1.
+Wir begannen unsere Reise in den Klagenden Zwerg mit der Hoffnung, die Geheimnisse der alten Zwergenfeste zu entschlüsseln und den Trollen Einhalt zu gebieten. Die Ruinen sind erfüllt von einem seltsamen Klagelaut, der durch die windigen Hallen weht. Ist dieser Klagelaut wirklich, wie ich vermutete, nur ein raffinierter mechanischer Trick der alten zwergischen Erbauer? Oder beruht er doch auf einem Fluch, wie es einem die alten Überlieferungen weismachen wollen?
+
+2.
+Dok, der Hundehexer, der sich uns als Führer angeschlossen hat, scheint viel über Zwergenbauwerke zu wissen, was uns von großem Nutzen ist.
+
+3.
+Je tiefer wir vordringen, desto merkwürdiger wird es hier. Wir schreiten durch verlassene Hallen und verborgene Pfade, ohne auf Monster zu treffen.
+
+4.
+Verdammt! Es hat unseren Halblingsdieb Nhair Ebendar erwischt. Außerdem ist das Fallgitter, das wir passiert haben, von unbekannter Hand heruntergelassen worden. Es gibt keinen Weg mehr zurück.
+
+5.
+Ich habe begonnen, Dok heimlich zu beobachten. Er flüstert oft, wenn er denkt, dass niemand hinhört. Je tiefer wir gehen, desto zufriedener wird er. Spricht er mit den Schatten? Die Luft hier ist schwer mit altem Verrat. Ich muss wachsam bleiben.
+
+6.
+Der Hundehexer kennt Pfade und Geheimnisse über den Klagenden Zwerg, die er uns vorenthält. Ich fürchte, seine Absichten könnten finsterer sein, als wir ahnen.
+
+7.
+Iremar ist gestorben! Wie konnte das nur passieren? Gerade, als wir das Zwergenrätsel in der Versammlungshalle gemeistert hatten.
+
+8.
+Dok und ich stehen vor der großen Tür, die zum Thron des Irren Gottes führen soll. Ich sah, wie der Hundehexer etwas murmelte – ein Gebet oder einen Fluch? Ich kann nicht länger zögern. Ich habe beschlossen, die Tür für immer zu verschließen. Ich darf nicht zulassen, dass der Wahnsinn, der hinter dieser Tür lauert, freigesetzt wird. Und genau das will der Hundehexer.
+
+9.
+Die Tür ist verschlossen! Dok, die Derro und ihr wahnsinniger Gott müssen eingesperrt bleiben.
+
+10.
+Ich wurde von einer Vargouille gebissen. Ich weiß, was das bedeutet... ich werde hier sterben, und mein Kopf wird weiterleben als dieses grausame Wesen aus dem Abyss. Ich muss dagegen ankämpfen!
+
+11.
+Meine Zeit läuft ab. Der Biss zeigt seine Wirkung, und ich werde bald zu einem von ihnen werden. Ich schreibe diese letzten Worte in der Hoffnung, dass jemand, der fähiger ist als ich, diese Aufzeichnungen findet und aus meinen Fehlern lernt. Meine einzige Hoffnung ist jetzt, dass diese Worte gefunden werden, bevor es zu spät ist.~
+@2058 = ~Die Geschichte der Schildzwerge - Band 2~
+@2059 = ~Die Geschichte der Schildzwerge - Band 2
+
+Eine Abhandlung von Oleus von Mintar, Gelehrtem im Dienste Oghmas.
+
+Neben der klassischen Rasse der Schildzwerge sind den Gelehrten noch weitere Unterrassen der Zwerge bekannt, welche Fremden gegenüber noch weniger freundlich gesonnen sind. Den geneigten Leser mag überraschen, dass man der Meinung ist, dass auch diese Rassen von den Zwergenclans Shanatars abstammen.
+
+Da wären zum Einen die Duergar, auch Grauzwerge genannt. Übereinstimmenden Berichten stammen die Duergar von einem Clan gleichen Namens ab, welcher in Barakuir, dem Eisenkönigreich, sein Zuhause fand. Aus unbekanntem Grund wandte sich der Clan gegen seine Vettern, verschwand lange und kehrte schließlich als boshafte Version eines Zwerges zurück.
+
+Weniger bekannt ist, dass auch ein zweiter, übellauniger Unterreichsbewohner von den Zwergen abstammt: Die Derro. Derro sind kleine, langhaarige Wesen, die zu übermäßiger Grausamkeit und Wahnsinn neigen. Sie verehren die ehemaligen ausgestoßenen Zwillingskinder Moradins - Diirinka und Diinkarazan. Anhänger Diirinkas sind weitaus zahlreicher, was dem Umstand geschuldet sein könnte, dass dessen Zwillingsbruder Diinkarazan in die Abyss verbannt wurde.
+
+Diirinka wurde vor dem Verstoß aus dem Zwergenpantheon von den Zwergen des Unterkönigreiches Torglor verehrt, während Diinkarazan von den Zwergen Korolnors angebetet wurde. Es liegt der Schluss nahe, dass einige der alten Zwergenclans dieser beiden Unterkönigreiche aus unbekanntem Grunde im Laufe der Jahrhunderte zu den Derro wurden, wie wir sie heute kennen, und weiter ihre alten, der Grausamkeit und dem Wahnsinn verfallenen Götter anbeten - die ehemaligen Kinder Moradins.~
+@2060 = ~Lancameths Kopf~
+@2061 = ~Dies ist der Kopf von Bryam Lancameth, nachdem der Fluch einer Vargouille von ihm genommen wurde. Er sieht jetzt ruhig und friedlich aus. Ihr könnt diese letzten Überreste zu seiner Witwe Darcia Lancameth ins Friedhofviertel bringen, damit sie Abschied von ihm nehmen kann.~
+
+@2064 = ~Schinderschnitter +4~
+@2065 = ~Dieses kostbar verzierte Kurzschwert wurde zu einem einzigen Zweck geschaffen: Gegen Gedankenschinder zu kämpfen. Die Wahl eines Kurzschwertes mag für solch eine Klinge überraschen, doch in engen Gängen und Höhlen bietet die kurze Klinge eine viel bessere Hiebtechnik als die längere, unhandlichere Schwertform eines Bastard- oder Langschwertes. 
+
+Die Geschichte der Waffe ist eng mit Diinkarazan, dem ausgestoßenen Zwergengott, verbunden. Diinkarazan wurde von Ilsensine, dem Gott der Gedankenschinder, in den Abyss verbannt. Dort sinnt der Verstoßene, von den Grauen der Ebene längst in den Wahnsinn getrieben, seit Jahrhunderten auf Rache. All der Hass Diinkarazans auf Gedankenschinder scheint in diese Klinge eingewoben zu sein. In den Händen eines geübten Kämpfers wird dieses Schwert zum Albtraum eines jeden Gedankenschinders. 
+
+Es wird vermutet, dass die Illithiden große Mühen darauf verwenden, alle Erinnerungen an diese Waffe schnellstmöglich aus dem kollektiven Gedächtnis zu tilgen. 
+
+EIGENSCHAFTEN:
+
+Bei einem kritischen Treffer werden die Tentakel eines getroffenen Gedankenschinders derart verstümmelt, dass dieser die Fähigkeit verliert, anderen Wesen das Gehirn auszusaugen.
+
+ETW0-Bonus: -4, +5 gegen Gedankenschinder
+Schaden: 1W6 +4 (Stich), +5 gegen Gedankenschinder
+Initiativefaktor: 0
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 1~
+@2066 = ~Klebeöl~
+@2067 = ~Dieses Öl enthält eine klebrige Substanz. Wenn die Flasche geworfen wird, entleert sie sich bei einem Treffer und schränkt den Getroffenen in seiner Bewegung stark ein. Die Derro, eine entfernt mit Zwergen verwandte Rasse des Unterreiches, verwenden solches Öl gerne, um ihre Opfer an der Flucht zu hindern.
+Nur der, dem ein Rettungswurf gegen Zauber gelingt, entgeht der Wirkung. Das Öl kann ungefähr 12 m weit geworfen werden.
+
+EIGENSCHAFTEN:
+
+Bei einem Treffer gerät der Gegner unter einen Effekt vergleichbar mit dem Zauber "Schmieren" für die Dauer von zwei Runden
+
+Gewicht: 1~
+@2068 = ~Lunge~
+@2069 = ~Dies ist die konservierte Lunge eines Lebewesens.~
+@2070 = ~Gorathuls Lunge~
+@2071 = ~Legenden zufolge ist dies die Lunge des Sturmriesenfürsten Gorathul, der für seine laute Stimme und sein mächtiges Lachen bekannt war. Die Lunge ist in der Zeit nach dem Ableben ihres Besitzers stark geschrumpft, verfügt jedoch dennoch weiterhin über die Fähigkeit, einmal am Tag frische, reine Luft zu filtrieren.
+
+EIGENSCHAFTEN:
+
+Anwender ist einmal täglich immun gegen die Zauber "Stinkende Wolke" und "Todeswolke"
+Dauer: 1 Phase
+
+Gewicht: 8~
+@2072 = ~Kronjuwel Korolnors~
+@2073 = ~Dieser beschliffene Edelstein ist Teil der Kronjuwelen des Hauses Korolnor. Tief in seinem Inneren ist ein helles Leuchten zu erkennen. Es ist unmöglich, die uralte Magie, die dem Stein innewohnt, zu deuten.~
+@2074 = ~Altes Zwergenbuch~
+@2075 = ~Wie Moradin die Zwerge schmiedete
+
+In den tiefsten Hallen unter der Erde, wo nur Dunkelheit und das uralte Flüstern des Steins herrschen, entzündete Moradin, der Allvater, seine göttliche Schmiede. Aus dem Fels selbst, gehärtet durch das Feuer seiner Esse, schmiedete er die ersten Zwerge. Mit jedem Hammerschlag formte er ihre Körper aus Eisen, Silber und Granit und ihre Seelen aus dem unbezwingbaren Willen der Erde. Zum Schluss hauchte er ihnen mit seinem Atem Leben ein. So erwachten sie, die Kinder Moradins, stark wie der Fels, standhaft wie die Berge, bereit, ihr Schicksal zu erfüllen.
+
+Moradin entließ seine Zwerge aus den Innereien der Erde, wo die Glut der Welt ewig lodert. Dort, in der Finsternis, lauerte nicht nur das Geheimnisvolle, sondern auch die Gefahr. Uraltes Übel und die ewige Dunkelheit wollten sie an ihrem Aufstieg hindern. Doch die Zwerge, mit der Macht Moradins erfüllt, schlugen sich ihren Weg durch den Stein, kämpften Seite an Seite, Hammer in der einen, Schild in der anderen Hand.
+
+Nach endlosen Tagen und Nächten unter der Erde, als der Fels leichter wurde und die Luft dünner, brach der erste Zwerg durch die letzte Schicht des Gesteins und trat in das Licht der Welt hinaus.
+
+Die Zwerge sahen zum ersten Mal den Himmel – ein endloses Gewölbe, das sie gleichermaßen mit Ehrfurcht und Staunen erfüllte. Doch was ihr Herz am meisten mit Freude füllte, war der Anblick der Berge, die sich vor ihnen erhoben, majestätisch und stolz, als wären sie für sie selbst erschaffen worden. Sie verstanden sofort, dass dies der Ort war, den Moradin für sie bestimmt hatte – der Ort, an dem sie ihre Festungen bauen und ihre Völker ansiedeln würden.
+
+Bevor sie den Fuß in die Berge setzten, erschien Moradin ein letztes Mal. „Ihr habt die Prüfungen der Tiefe bestanden,“ sprach er mit donnernder Stimme. „Nun gehört euch das Reich der Berge. Doch vergesst nie, woher ihr stammt – aus dem Herz der Erde, aus der Glut meiner Schmiede.“
+
+Mit diesen Worten segnete er sie, und die Zwerge errichteten ihre Festungen tief im Fels. Sie bauten mit der Weisheit und Stärke, die Moradin ihnen gegeben hatte, und ließen ihre Städte erblühen. Die Zwerge waren aus der Tiefe empor gestiegen und zu Wächtern der Berge geworden – und ihre Geschichte ist in den steinernen Hallen für alle Ewigkeit eingemeißelt, als Erbe Moradins.
+
+So erzählen es die Ahnen, und so wird es in den großen Hallen stets weitergegeben. Das Volk der Zwerge wird nie vergessen, woher es kam.~
+@2076 = ~Altes Zwergenbuch~
+@2077 = ~Die Wächterin des Heiligen Feuers – Berronar
+
+Seit den ältesten Texten der Zwerge, die in den tiefen Hallen auf steinernen Tafeln gemeißelt sind, wird nicht nur Moradin, der Allvater, gepriesen, sondern auch Berronar, seine Gattin und Hüterin des Heiligen Feuers. Es heißt, dass ohne Berronars Weisheit und Fürsorge selbst der mächtigste Zwerg schwach und verloren sei, denn sie ist es, die die Flamme der Treue und des Schutzes in den Herzen aller Zwerge am Leben erhält.
+
+Als Moradin die ersten Zwerge aus dem Stein schmiedete und ihr Herz der Erde berührte, war es Berronar, die den Zwergen ihr wichtigstes Geschenk mitgab: Die Bindung an die Gemeinschaft. Sie webte unsichtbare Fäden zwischen den Zwergen, die stärker waren als jedes Erz. Diese Fäden waren aus Treue, Ehre und Schutz gesponnen, und sie verbanden die Zwerge nicht nur miteinander, sondern auch mit den Traditionen und Weisheiten ihrer Vorfahren. Berronar war die Hüterin dieser Bande, und ihr Symbol sind zwei ewige Ringe, die niemals zerreißen.
+
+Berronar brachte ihnen bei, wie sie ihre Hallen schützen und ihre Familien behüten konnten: Sie zeigte ihnen, wie man das Feuer des Herdes nährt, das nicht nur Wärme, sondern auch Sicherheit brachte. In jeder zwergischen Heimstatt brennt seither das Heilige Herdfeuer, das von Berronar selbst entzündet worden ist, um die Seelen und Häuser der Zwerge zu schützen. 
+
+Doch die größte Tat Berronars ereignete sich, als die Zwerge zum ersten Mal Gefahr liefen, auseinandergerissen zu werden. In den frühen Tagen, als die Ersten die Berge eroberten und begannen, ihre Hallen zu errichten, kam Neid und Zwietracht in die Reihen. Die Zwerge, die sich um das wertvolle Erz und die Schätze der Erde stritten, begannen, sich voneinander zu entfernen. Es drohte ein Bruch, der die Gemeinschaft der Zwerge in ihren Grundfesten erschüttern würde.
+
+Da stieg Berronar von den Himmelsfesten herab und stellte sich zwischen die streitenden Clans. Ihre Stimme war wie der Klang eines tiefen, uralten Glockenschlags, und die Erde bebte, als sie sprach: „Ihr, Kinder Moradins, seid alle aus demselben Stein geschlagen. Euer Band ist ewig und stärker als jede Ader, die ihr aus der Erde reißt. Vergesst nicht, was euch stark macht – eure Einheit, eure Treue, eure Ehre. Wer dies aufgibt, ist ärmer als der, der ohne Erz bleibt.“
+
+Mit diesen Worten legte sie einen silbernen Ring auf den Boden, das Symbol des ewigen Bandes, das niemals zerbricht. Sie kniete sich nieder und hauchte einen Funken des Heiligen Feuers in den Ring, der sofort aufleuchtete und in den Herzen der Zwerge brannte. Die Streitenden fielen auf die Knie, von tiefer Scham erfüllt, und schworen einander, die Treue niemals zu brechen.
+
+Seit diesem Tag wird Berronar als die Göttin der Treue, des Schutzes und der Gemeinschaft verehrt. Die Zwerge tragen silberne Ringe als Zeichen ihrer Verbundenheit zueinander und zu den Traditionen, die Berronar ihnen übergab. Jedes Mal, wenn ein Feuer in einer zwergischen Halle entzündet wird, wird ein stilles Gebet an Berronar gesprochen, dass sie die Flammen der Gemeinschaft schütze und die Bande zwischen den Zwergen stark halte.
+
+Und so bleibt Berronar, die Gemahlin Moradins, die ewige Wächterin der Zwergengemeinschaft, Hüterin des Heiligen Feuers, und in den Herzen der Zwerge lebt ihr Geschenk weiter – das Band der Treue, das weder Zeit noch Axt zerreißen kann.~
+@2078 = ~Altes Zwergenbuch~
+@2079 = ~Fünf Dinge, die der Zwerg zum Leben braucht
+
+Von Bardain Goldkrug
+Auszug aus dem Werk „Die Weisheit des Steins: Lehrsätze und Weisungen für das Zwergenleben“
+
+1. Ein fester Stein unter den Füßen
+
+Kein Zwerg ist vollständig, wenn er nicht den harten Fels unter sich spürt, sei es tief im Schacht, in der Mine oder in den Hallen seines Heims. Denn Stein trägt uns so, wie er Berge trägt - unbeugsam und schweigsam. Ein Zwerg ohne Stein unter den Füßen ist wie ein Hammer ohne Griff – fehl am Platz und nutzlos. Hüte dich vor all jenen, die ihre Tage auf weichem Boden verbringen, der wankt und bebt wie ein zittriges junges Tiefenrothé. Der Fels allein ist unsere Heimat, und der Erde nahe zu sein, ist das wahre Wesen eines Zwergs.
+
+2. Ein Hammer, der stets die Wahrheit spricht
+
+Ein Zwerg ohne Hammer ist kein Zwerg, sondern ein Felsen ohne Ader. Der Hammer, sei es der Schmiedehammer oder der Kriegshammer, ist das Werkzeug, das unserer Seele entspricht. Er spaltet den Stein und offenbart das Verborgene, ganz gleich, ob das Gespaltene eine Ader Mithril oder ein Orkschädel sein möge. Ein Hammer in der Hand ist mehr als ein Werkzeug; er ist der Willen unseres Volkes und das Symbol unserer Stärke. Hüte dich vor dem Zwerg, der ohne Hammer geht, denn sein Weg ist irrend, und seine Ziele sind unklar.
+
+3. Die Treue des Clans
+
+Kein Zwerg ist allein. So tief ein Stollen auch reichen mag, stets hat der Zwerg seine Brüder und Schwestern des Clans an seiner Seite. Die Treue des Clans ist wie ein Netz aus Stahl, unbrechbar und fest. Sie bindet uns und hält uns aufrecht, selbst wenn der Stein bricht. Ohne Clan ist ein Zwerg wie ein Fluss ohne Quelle, verloren und unfähig, seine Bestimmung zu finden. Die Treue der Brüder und Schwestern ist das ewige Band, das nicht zerbricht, und so weiß jeder Zwerg, dass der Clan sein Schild und seine Heimat ist.
+
+4. Die Weisheit Moradins
+
+Jeder Zwerg darf sich rühmen, die Weisheit des Vaters Moradin in seinem Herzen zu tragen. Denn Moradin schmiedete uns aus dem Felsen und hauchte uns die Kenntnis der Erde und des Feuers ein. Diese Weisheit lehrt uns, was das Herz stark und den Geist klar macht. Wer Moradins Lehren vergisst, ist wie Erz ohne Reinheit, nutzlos und schwach, unter dem ersten Druck zerbrechend. Hüte dich, Zwerg, den Weg des Allvaters zu verlassen, denn nur in seiner Weisheit finden wir die wahre Stärke und die Liebe zum Stein.
+
+5. Ein Krug guten Biers
+
+Kein sterbliches Wesen kennt die Tiefen des Zwergenherzens, doch jedes Kind Moradins weiß, dass der Krug guten Biers wie ein Spiegel unserer Seele ist. Ein Bier, das kräftig, herb und schwer ist, das wärmt uns und gibt uns Kraft, wie der Stein es tut. Aber sei gewarnt vor jenen seltsamen Gebräuen, die die schwächeren Rassen bevorzugen – solche leichten Gebräue lassen das Herz schwach werden. Ein Bier, das nicht die Farbe der Erde hat, ist nichts für einen Zwerg, das muss ein jeder wissen.
+
+Zusammengefasst: Ein Zwerg mag alles verlieren – Gold, Waffen; ja sogar das Dach über dem Kopf –, doch ohne diese fünf Dinge ist er weniger wert als ein Lunker.
+~
+@2080 = ~Altes Zwergenbuch~
+@2081 = ~Über die Magie: Eine Warnung
+
+Es ist allgemein bekannt, dass wir Zwerge ein Volk des Steins und der Erde sind, nicht des Windes oder der geflüsterten Worte. Unsere Stärke liegt in Hammer und Meißel, in der Schmiede und im Minenschacht, nicht in den flüchtigen Gebilden der Magie. Die Ereignisse, die einst unter diesem Berg geschahen, sind ein düsteres Zeugnis unserer Unvereinbarkeit mit der Zauberwelt.
+
+Vor unzähligen Zeitaltern wandte sich unser Schutzpatron, getrieben von Ehrgeiz und einer verhängnisvollen Neugier, den Künsten der Magie zu. Sein Streben nach Macht führte ihn in die verborgensten Enden der Ebenen, wo kein Licht einer Fackel hindurchzudringen imstande ist. Ohne den Respekt vor den alten Gesetzen verlor er sich in seinen magische Gelüsten, und das Ergebnis war, wie wir alle wissen, eine Katastrophe.
+
+Durch seine Handlungen wurden die tiefen Fundamente unseres Reiches erschüttert. Die Magie, wild und unbändig, entfesselte eine Katastrophe, die fast das Ende unserer großen Hallen bedeutet hätte. Stein brach, und schreiende Monster flogen durch unsere Reihen. Es ist klar, dass die Seelen der Zwerge nicht für die Unberechenbarkeit der Magie gemacht sind, so wie der Fels nicht dazu bestimmt ist, den Himmel zu durchfliegen.
+
+So stehen wir, die Zwerge, seit jener Zeit fest in unserem Glauben, dass Magie eine Quelle der Unruhe und des Unglücks für unser Volk ist. Wir meiden die Zauberkräfte und vertrauen stattdessen auf die Stärke der Hände, Schärfe der Äxte und Ergiebigkeit der Minen. Unsere Macht liegt im Erz, nicht in den flüchtigen Versprechen der Zauberer.
+
+Mögen jene, die dieses Buch lesen, die Weisheit unserer Vorfahren ehren und die Grenzen respektieren, die uns schützen. Die Welt der Magie ist eine Welt des Wandels und der Unsicherheit, und wir, das Volk der Zwerge, müssen unser Erbe als Wächter der Erde bewahren.
+Möge das Schicksal des Ausgestoßenen der Morndinsamman gleichsam Zeugnis für die Fehler der Vergangenheit und Warnung an zukünftige Generationen sein.~
+@2082 = ~Die Geschichte von Korolnor~
+@2083 = ~Unter dem unberührten Berg Batyr in den Trollbergen gründeten wir das stolze Reich Korolnor. Unter dem weisen Auge von Karlyn Kuldelver formten wir unsere Hallen aus lebendigem Fels und brachten Glanz und Ehre unter die Gipfel.
+
+Doch der Glanz trübte sich, als unser Schutzpatron Diinkarazan den Pfaden der Magie folgte. Sein Herz, einst fest in den Lehren Moradins verankert, verdarb, als er nach verbotener Zauberei strebte und sich den Geheimnissen hingab, die jenseits der Reichweite aller Zwerge liegen sollten.
+
+Als der Verrat offenbar wurde, wurde Diinkarazan aus dem Pantheon Moradins ausgestoßen. Wir schlossen die Tore zu seinen heiligen Hallen. Sein Tempel, einst ein Ort des Gebets und der Anbetung, wurde versiegelt. Sein Name wurde aus unseren Chroniken getilgt - auf dass niemals mehr seine böse, unkontrollierbare Magie Unheil über uns bringen könnte.
+
+Wir suchten Zuflucht im Glauben an Clangeddin, dem Vater der Schlachten, und schworen, die Wege unserer Ahnen niemals zu verlassen. Hier stehen wir, wachsam und entschlossen, unsere Geschichte zu bewahren und den Frieden zu verteidigen, den unsere Vorfahren einst erträumten.
+
+Diinkarazan, der Verbannte, suchte stets nach einem Weg zurück in den Thronsaal und in die Welt der Sterblichen. Aufgabe Korolnors war es, an diesem Berg Wache zu halten, dass der verlorene Sohn Moradins nie mehr Unheil über das Zwergenvolk bringen könne.
+
+Doch es gab jene unter uns, die sich weigerten, den Pfad von Diinkarazans wilder Magie zu verlassen. Trotz der Verderbnis, die unser Schutzpatron in seinen einst reinen Geist geladen hatte, hielten sie an ihm fest, getrieben von Sucht nach Macht und blindem Glauben. Sie versuchten, ihn zu befreien, und entfesselten Bestien aus dem Abgrund, die in Scharen über uns kamen. Ihr Biss trug den Fluch des Ausgestoßenen weiter, und unsere geliebten Clanbrüder verwandelten sich ebenfalls in Diinkarazans geflügelte Diener.
+
+Als der Verrat offenbar war, entschieden die Ältesten von Korolnor, dass jene, die sich nicht von Diinkarazan lossagen wollten, nicht unter uns verbleiben durften. Sie wurden als Verbannte aus unserer Mitte hinab in die Tiefen des Unterreichs verstoßen. Karlyn selbst sprach einen mächtigen Runenzauber: Keinem Zwerg Korolnors soll es jemals wieder möglich sein, den Zugang in den Thronsaal des Irren Gottes zu öffnen.
+
+Mögen die Nachfahren lernen, das Gute vom Bösen zu trennen. Möge der Fehltritt der Verbannten sie lehren, niemals vom wahren Weg abzuweichen!~
+@2084 = ~Derro-Notiz~
+@2085 = ~Troll-Zuchtprogramm~
+@2086 = ~Diese Notiz ist einer seltsam abgewandelten Form zwergischer Schriftzeichen geschrieben, die Ihr nicht so ohne weiteres entziffern könnt.~
+@2087 = ~Dieser Text ist in Derro-Schrift geschrieben, welche eine abgewandelte Form des Zwergischen zu sein scheint. Es ist eine Auflistung der Bemühungen der Derro-Magier, ein Zuchtprgramm für Trolle aufzubauen:
+
+Troll-Zuchtprogramm:
+5 Grautrolle von Vampir erhalten
+Feuer- und Eistrolle angeworben
+4 Faerzress-Trolle aus dem Unterreich eingetroffen
+
+Weitere Planung:
+20 Spektraltrolle durch Kontakt mit Todesalb herstellen
+20 Steintrolle durch Basiliskenblick herstellen
+30 Geistertrolle durch Kreuzung mit Unsichtbarem Pirscher herstellen
+30 Gifttrolle durch Kontakt mit Lindwurmgift herstellen
+
+Alle normalen Trolle gehen an der Oberfläche auf Jagd nach menschlichen Sklaven, die unser Herr zum Öffnen der versiegelten Tore braucht.
+Sobald die Tore offen sind und unser Gott befreit ist, werden wir die Trollarmee vervollständigen. Dann wird der Plan zur Eroberung des Unterreiches in die Tat umgesetzt.
+~
+@2088 = ~Ursummnoghs Notiz~
+@2089 = ~Mein treuer Diener Ursummnogh,
+
+in Kürze wird eine Abenteurergruppe die Ruinen betreten, die wir für unsere Zwecke benötigen.
+Ihr sollt Euch mit all Euren Trollen so lange verstecken, bis jeder aus der Gruppe das Tor passiert hat. Danach sollt Ihr das Tor schließen. Denkt daran, dass Ihr das Tor nur wieder öffnen könnt, wenn Ihr einen neuen Schlüssel gegossen habt! Schließt deshalb das Tor nicht zu früh. Die Abenteurer sollen denken, dass dieser Teil der Ruinen unbewohnt ist.
+
+Die Abenteurergruppe besteht aus folgenden Mitgliedern:
+Einem menschlichen Soldaten namens Bryam Lancameth
+Einem Halblingsdieb namens Nhair Ebendar
+Einer eflischen Bogenschützin, die sich Maid Sternendorn nennt
+Einer menschlichen Priesterin, die sich Iremar nennt
+Und einem Magier unbekannter Rasse.
+
+Die Gruppe ist äußerst mächtig und wird jeden Eurer Trolle vernichten, wenn sie welche entdeckt.
+
+Eines dieser Mitglieder wird versuchen, unseren Gott aus den Tiefen zu befreien. Er wird sich Euch zu erkennen geben, wenn alle aus der Gruppe passiert sind.~
+@2090 = ~Donnerschild +2~
+@2091 = ~Gefertigt aus dem seltenen Metall Hizaagkur,  welches elektrisch geladen ist, verursacht dieser Schild bei jedem, der ihn - außer dem Träger - berührt - einen unangenehmen Elektrizitätsstoß. Einmal täglich kann sich die im Schild gespeicherte Energie zusätzlich in einem gewaltigen Donnerschlag entladen. Einst nutzte ihn ein namenloser Zwergenkrieger, um in den Schluchten der Trollberge eine Lawine auszulösen, die eine Horde angreifender Orks unter sich begrub. 
+
+EIGENSCHAFTEN:
+
+- Ein erfolgreicher Treffer gegen den Träger des Schildes verursacht beim Gegner einen Schadenspunkt durch Elektrizität
+- Donnerschlag (1x täglich): Ein lauter Knall, der jeden im Umkreis von 3m für drei Runden taub werden lässt, wenn ihm ein Rettungswurf gegen Zauber misslingt.
+
+RK-Bonus: -3
+(kein Schutz vor Geschosswaffen)
+Mindeststärke: 4
+
+Gewicht: 2~
+@2092 = ~Hammer der Archonen~
+@2093 = ~Dieser Hammer hat einen Kopf, der an die Flügel eines himmlischen Wesens erinnert. Er lässt sich hervorragend schwingen. Wie die meisten Waffen der oberen Ebenen besitzt auch diese Waffe die Fähigkeit, Untote zu vernichten - wenn auch nicht in dem gleichen Umfang, wie dies die Waffen mächtigerer Wesen wie Planetare oder Solare besitzen.
+
+EIGENSCHAFTEN:
+
+Wird ein Untoter getroffen, wird dieser zu 5% zerstört (Rettungswurf -4 gg. Tod).
+
+ETW0-Bonus: -3
+Schaden:
+ 1W4 +4 (Wucht)
+Initiativefaktor: 1
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 16
+
+Gewicht: 3~
+@2094 = ~Mantel des Chaos~
+@2095 = ~Dieser Umhang kann Segen oder Fluch für seinen Träger sein - von einem Augenblick auf den nächsten. Ein mächtiger Gegenstand in der einen Sekunde - in der nächsten eine gefährliche Schwachstelle. Es ist unklar, woher der Mantel seine Energie zieht, doch nur äußerst waghalsige oder wahnwitzige Abenteurer sollten diesen Gegenstand tragen. 
+
+Hasardeure in den Reichen genießen aufgrund ihrer Fähigkeit im Umgang mit den chaotischen Formen der Magie größere Vorzüge beim Verwenden dieses Gegenstandes, wenngleich auch diese nicht imstande sind, das wilde Gewebe des Kleidungsstückes vollständig zu kontrollieren.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: schwankt jede Runde zwischen -5 und +5
+RW-Bonus: schwankt jede Runde zwischen -5 und +5
+
+Die Zauber "Chaosschild" und "Verbessertes Chaosschild" schützen vor den negativen Effekten des Mantels. Der Bonus auf Rüstungsklasse und Rettungswurf lässt sich für einen Hasardeur dennoch nicht vollständig kontrollieren und schwankt jeweils zwischen 0 und -5 je Runde.
+
+Gewicht: 3~
+@2096 = ~Bergwächterhelm~
+@2097 = ~Dieser robuste Helm ist mit filigranen Runen verziert, die entlang des Stirnbandes eingraviert sind und ihm ein ehrwürdiges Aussehen verleihen. Neben einem guten Schutz gegen Angriffe ermöglicht der Helm dem Träger, einmal täglich durch solides Gestein zu sehen, als wäre es gläsern. Diese magische Eigenschaft wird durch die alten Zwergenrunen aktiviert, die einmal pro Tag den Blick in verborgene Höhlen, Minenschächte und andere unterirdische Geheimnisse freigeben. Ursprünglich entworfen, um Minenwächtern zu helfen, verborgene Erzadern zu entdecken und die Sicherheit der Tunnel zu gewährleisten, ist der Bergwächterhelm ein unverzichtbares Werkzeug für jeden, der die Geheimnisse des Unterreichs erkunden möchte.
+
+EIGENSCHAFTEN:
+
+Steinsicht (1x täglich)
+Der Träger des Helmes kann unter Tage (nicht im Freien) einmal täglich ein in diesem Gebiet liegendes Areal ausspähen - vergleichbar mit dem Magierzauber "Fernsicht". Nach einer Runde erlischt der Zauber wieder.
+
+RK-Bonus: -1
+Schützt vor kritischen Treffern
+
+Gewicht: 2~
+@2098 = ~Ring der Kameradschaft~
+@2099 = ~Diesen Ring habt Ihr als einziges Überbleibsel der Gefährten gefunden, welche Bryam Lancameth bei seiner letzten Expedition begleitet haben. Er ist aus Holz geschnitzt und bemalt. Der Gegenstand symbolisiert die Treue, Stärke und den Zusammenhalt, den nur eine Gemeinschaft aufbringen kann, die gemeinsam ins Abenteuer zieht.
+
+EIGENSCHAFTEN:
+
+Koordinierte Verteidigung (1x täglich)
+Stärke des Einen (1x täglich)
+
+Gewicht: 0~
+@2100 = ~Schmiedehandschuhe~
+@2101 = ~Diese fein gearbeiteten Handschuhe wurden zu einem Zweck gefertigt: Metall zu verformen und Stahl zu schmieden. Aus diesem Grunde wurden sie mit einer Reihe von Verzauberungen versehen, um die Arbeit eines Meisterschmiedes zu erleichtern. Die Handschuhe können nur von den Rassen des Steins - Zwergen und Gnomen - verwendet werden: Zwerge mit dem Segen Moradins, Gnome mit dem Segen Flandal Stahlhauts - ihrer jeweiligen Götter der Schmiedekunst.
+
+EIGENSCHAFTEN:
+
+Feuerwiderstand: +25 %
+Waffenfertigkeit mit Kriegshämmern: +1
+ETW0-Bonus gegen Eisengolems: -2
+Schaden gegen Eisengolems: +2
+
+Gewicht: 2~
+@2102 = ~Hand eines Trolls~
+@2103 = ~Grubnuks Hand +3~
+@2104 = ~Dies ist die abgetrennte Hand eines Trolls.~
+@2105 = ~Diese Hand gehörte einst dem Troll Grubnuk, bevor er sie Euch aus Dankbarkeit zum Geschenk gemacht hat. Die abgetrennte Hand ist eine erstaunlich effiziente Waffe. Wenn man sie ausrüstet, verbinden sich die Sehnen der Trollhand mit der Hand des Trägers und man kann den Gegenstand wie eine Klaue schwingen, welche Stichschaden verursacht. Man ist zwar langsamer als mit vergleichbaren kleineren Waffen, doch der höhere Schaden macht dieses Manko in den meisten Fällen mehr als wett. Ein Teil der Regenerationsfähigkeit eines Trolls überträgt sich auf den Träger. Allerdings raubt ihm die Hand dafür einen Teil seiner Lebenskraft, und sie lässt sich nicht so einfach wieder ablegen.
+
+EIGENSCHAFTEN:
+
+Träger regeneriert einen Trefferpunkt alle zwei Runden
+Trefferpunkte: -10 
+Kann nur durch Fluch brechen abgenommen werden
+
+ETW0-Bonus: -6
+Schaden: 1W6 +3 (Stich)
+Initiativefaktor: 3
+Fertigkeit: keine
+Typ: 1-händig
+Mindeststärke: 3
+
+Gewicht: 3~
+@2106 = ~Krone~
+@2107 = ~Flüsternde Wahrheit~
+@2108 = ~Eine kunstvoll verzierte zierliche Krone.~
+@2109 = ~Diese Krone stammt aus der Zeit der großen Reiche Nesserils, als ein zauberwirkender Herrscher nach absoluter Erleuchtung strebte. 
+
+Um sein Ziel zu erreichen, band er die Essenz eines uralten Wesens, bekannt als Yllatharn, der Denker, in das Diadem. Yllatharn war ein unfassbar intelligentes, aber auch wahnsinnig gewordenes Wesen, das in der Astralebene von der Flut unendlicher Gedanken und Möglichkeiten überwältigt wurde.
+
+Mit Hilfe Yllatharns schuf der Herrscher dieses kunstvoll gearbeitete Artefakt, welches wie eine kleine Krone gestaltet ist. Der blaue Edelstein scheint im Licht schwach zu pulsieren. Der Gegenstand strahlt eine unheimliche Aura aus – ein Gefühl von tiefer Erkenntnis und zugleich einer bedrückenden Last. Wer es trägt, hört ständig ein leises Flüstern, welches brillante Einsichten gewährt, jedoch auch Zweifel und innere Konflikte sät.
+
+Dadurch leidet sowohl das Selbstbewusstsein des Trägers als auch dessen Möglichkeit, auf Situationen schnell und angemessen zu reagieren.
+
+EIGENSCHAFTEN:
+
+Intelligenz: +1
+Weisheit: +1
+Charisma: -1
+Rettungswürfe: -1
+
+Gewicht: 0~
+@2110 = ~Wächter der Toten~
+@2111 = ~Dieser Schild ist Kelemvor, dem Herrn der Toten, geweiht. Neben einer robusten Verteidigung in jedem Kampf dient der Schild auch als Bollwerk gegen Untote, welche man mit seiner Hilfe leichter in das Totenreich schicken kann. Der Gegenstand ist aus einem dunklen Holz gefertigt und mit einem bronzenen Rahmen verziert. In der Mitte thront das Symbol Kelemvors – eine aufgerichtete Skeletthand, die eine Waage hält.
+
+EIGENSCHAFTEN:
+
+RK-Bonus: -3
+RK-Bonus und Rettungswurf-Bonus gg. Untote: -2
+Rettungswurf-Bonus gg. Nekromantie: -2
+Mindeststärke: 12
+
+Gewicht: 5~
+@2112 = ~Trollgürtel~
+@2113 = ~Dieser Gürtel ist aus vielen verschiedenen Stücken eines Trolls zusammengenäht - Knochen, Haut, Eingeweide. Jeder, der diesen Gürtel anlegt, kommt in den Genuss beschleunigter Regeneration, für die Trolle so berüchtigt sind.
+
+EIGENSCHAFTEN:
+
+Regeneration: 1 Trefferpunkt pro Runde
+
+Gewicht: 2~
+@2114 =  ~Dieser Schild ist völlig verbeult und konnte seinen Träger nicht vor einem vernichtenden Hieb schützen.~
+@2115 = ~Ewigfackel~
+@2116 = ~Die Ewigfackel ist eine ständig glimmende Fackel, grob geschnitzt aus dem feuerbeständigen Holz eines unbekannten Baumes. Diese Fackel fungiert nicht nur als dauerhafte Lichtquelle, sondern auch als halbwegs brauchbare Keule im Kampf. Bei jedem Treffer fügt sie dem Gegner zusätzlich geringen Feuerschaden zu. Dank ihrer nie erlöschenden Flamme ermöglicht die Fackel dem Träger Infravision, um besser in Dunkelheit sehen zu können.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: 0
+Schaden:
+ 1W6 (Wucht)
+Schadensbonus: +1 (Feuer)
+Initiativefaktor: 3
+Fertigkeit: Keule
+Typ: 1-händig
+Mindeststärke: 5
+
+Gewicht: 3~
+@2117 = ~Gezackter Schlüssel~
+@2118 = ~Dieser Schlüssel ist spitz und gezackt und scheint zu einer besonderen Truhe oder zu einem Käfig zu gehören.~
+@2119 = ~Prismatischer Krummsäbel +3~
+@2120 = ~Der Gefangene der Elemente 
+
+Der Prismatische Krummsäbel, von den Elementargeistern selbst geschmiedet, wurde als Gefäß für ihre Macht erschaffen. In die Klinge wurden Geister von Feuer, Eis, Blitz, Säure und reiner magischer Energie gebannt, die ihre Kräfte zufällig bei jedem Hieb freisetzen. Durch das Schillern der Klinge ist ihr Träger vor Blindheit geschützt.
+
+EIGENSCHAFTEN:
+
+Träger ist immun gegen Blindheit
+
+ETW0-Bonus: -3
+Schaden: 1W8 +3 (Klinge), zusätzlich entweder +1 Feuer, +1 Magie, +1 Elektrizität, +1 Kälte, +1 Säure (zufällig ausgewählt)
+Initiativefaktor: 2
+Fertigkeit: Krummsäbel/Wakizashi/Ninjatō
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 1~
+@2121 = ~Lufthammer +3~
+@2122 = ~Der Lufthammer wurde von Zwergenmeistern als magisches Rettungswerkzeug in den dunklen und gefährlichen Schächten unter der Erde, etwa bei Rauchansammlungen oder giftigen Dämpfen, erschaffen. Der Gegenstand erschließt eine Pforte zu einem Raum jenseits der materiellen Welt, angefüllt mit der Luft der Elementarebene. Bei Aktivierung seines Runenzeichens entlässt der Hammer eine kräftige Brise, die einen Bereich von 9 Metern mit frischer Luft versorgt; genug, um acht Menschen (oder zwölf Zwerge) bei mäßiger Anstrengung mit frischer Luft zu versorgen. Diese Luft vermag giftige Schwaden und Nebel zu vertreiben, wie beispielsweise jene, die von Zaubern wie "Todeswolke" erzeugt worden sind.
+
+EIGENSCHAFTEN:
+
+Einmal täglich kann der Zauber "Bereich der frischen Luft" gewirkt werden
+
+ETW0-Bonus: -3
+Schaden: 1W4 +4 (Wucht)
+Initiativefaktor: 1
+Fertigkeit: Kriegshammer
+Typ: 1-händig
+Mindeststärke: 9
+
+Gewicht: ~
+@2123 = ~Rauchkerze~
+@2124 = ~Diese Kerze ist aus einem rußigen Wachs hergestellt, welches beim Entzünden sofort wild zu qualmen beginnt. Der Gegenstand dient dazu, einen Rauchmephit aus den inneren Ebenen herbeizurufen, der dem Anwender für eine Phase lang dient. Nach dem dritten Anzünden ist die Kerze verbraucht.
+
+EIGENSCHAFTEN:
+
+Rauchmephit beschwören (3 Ladungen)
+ Dauer: 1 Phase
+
+Gewicht: 1~
+@2125 = ~Des Zwergen zweite Haut +3~
+@2126 = ~Wer behauptet, dass Zwerge nur in der Verarbeitung von Stein und Metall gut seien, wird mit dieser Lederrüstung eines Besseren belehrt. Die Rüstung stammt aus dem Fell eines Tiefenrothé und wurde sorgsam mit magischen Tinkturen gegerbt, um zum Einen eine gute Schadensresistenz zu ermöglichen und zum Anderen herrlich zu duften.
+
+Allerdings muss man auch den Körperbau und den Leibesumfang eines Zwerges besitzen, um in den vollen Genuss der Vorteile dieser Rüstung kommen zu können.
+
+EIGENSCHAFTEN:
+
+– +10% Resistenz gegen Wucht-, Stich-, Schnitt- und Geschosswaffen (Zwerge)
+– Charisma: +1 (Zwerge)
+
+Rüstungsklasse: 5
+RK-Malus:
+ +2 gg. Geschosswaffen
+ +2 gg. Stichwaffen
+Mindeststärke: 3
+
+Gewicht: 4~
+@2127 = ~Rattenkugel +1~
+@2128 = ~Diese Kugeln sind aus dem Fell einer Ratte gemacht, welches durch eine unbekannte Substanz zu einem harten Klumpen verbacken wurde. Sie besitzen die Fähigkeit, eine Ratte für die Dauer von drei Runden herbei zu beschwören, die an der Stelle des getroffenen Gegners erscheint. 
+
+EIGENSCHAFTEN:
+
+Beschwört bei einem Treffer eine gewöhnliche Ratte neben dem getroffenen Wesen
+
+ETW0-Bonus: -1
+Schaden: 1W4 +2 (Geschoss)
+Schusswaffe: Schleuder
+
+Gewicht: 0~
+@2129 = ~Trunkener Schelm~
+@2130 = ~Der Trunkene Schelm ist ein magischer Streitkolben, einst geschwungen vom berühmten Braumeister und Vergadain-Priester Bardain Goldkrug, auch bekannt als Bardain, der Malzgesalbte. Sein Wahlspruch lautete: "Vergadain lehrt uns, Gold zu mehren. Bardain lehrt uns, Bier zu leeren." 
+Der Kopf der Waffe besteht aus einem metallenen Bierkrug. Der Streitkolben wurde regelmäßig als Zeremonienstab verwendet, um die versammelte Schar von Gläubigen mit Bier zu überschütten. So tropft immer noch konstant Bier aus dem oberen Ende des Streitkolbenkopfes, welches nach einiger Zeit einen getroffenen Gegner oder den Träger selbst betrunken machen kann.
+
+In den Schaft ist eine alte zwergische Weisheit eingelassen: „Wenn du sie nicht besiegen kannst, trink mit ihnen!“
+
+Der Streitkolben gilt als eine göttliche Mischung aus Zwergenhandwerk und absoluter Verantwortungslosigkeit.
+
+EIGENSCHAFTEN:
+
+- Konstitution +1 (nur Zwerge)
+- Bei einem Treffer wird entweder das getroffene Ziel oder der Träger selbst betrunken, indem sein Rauschzustand kumulativ um jeweils 10 Punkte steigt 
+- Außerdem kann der Träger einmal täglich ein "Heiliges Wort" sprechen, wenn er vollständig betrunken ist, indem er einen lauten Rülpser von sich gibt.
+
+EIGENSCHAFTEN:
+
+ETW0-Bonus: -3
+Schaden: 1W6 +4 (Wucht)
+Initiativefaktor: 4
+Fertigkeit: Streitkolben
+Typ: 1-händig
+Mindeststärke: 10
+
+Gewicht: 6~
+@2131 = ~Beutel voll launischer Edelsteine und Käfer~
+@2132 = ~Dieser abgenutzte, lederne Beutel klappert und raschelt auf eine beunruhigende Weise, als würde er mit einem unberechenbaren Willen leben. Sein Ursprung liegt im kuriosen Experiment eines exzentrischen Gnoms, der endlos Edelsteine erschaffen wollte – doch ein kleiner alchemistischer Irrtum verband seine magische Matrix mit dem Chaos der Natur. Nun kann der Träger des Beutels einmal pro Tag einen funkelnden Edelstein aus seinem Inneren ziehen, doch die Magie ist launisch: In einigen Fällen erscheint stattdessen ein aggressiver Käfer, der den Anwender zunächst in die Hand beißt und dann jedes Wesen in Reichweite attackiert. 
+
+EIGENSCHAFTEN:
+
+Einmal pro Tag kann ein Edelstein erschaffen werden
+Es besteht eine Chance von 15 %, dass stattdessen ein feindlicher Käfer herausgezogen wird, der dem Anwender zunächst 20 Schadenspunkte zufügt und dann zum Angriff übergeht
+
+Gewicht: 6~
+@2133 = ~Stecken der Verteidigung~
+@2134 = ~Der Stecken der Verteidigung ist ein verzauberter Kampfstab, der seinen Träger mit Schutzzaubern stärkt. Er ermöglicht es seinem Besitzer, einmal täglich die Zauber Panzer und Schild zu wirken. Zusätzlich verbessert der Stecken die Rüstungsklasse des Trägers, indem er eine subtile, schützende Aura entfaltet. Der Legende nach wurden diese Stäbe einst in Myth Drannor gefertigt, um ihren Zauberern eine bessere Überlebenschance auf dem Schlachtfeld zu geben. Viele gingen in den Wirren des Falls der Stadt verloren, und noch heute flüstern Gelehrte von längst vergessenen Exemplaren, die in den Tiefen alter Ruinen auf ihren nächsten Besitzer warten.
+
+EIGENSCHAFTEN:
+
+Panzer (wie der gleichnamige Magierzauber des ersten Grades) 1x täglich
+Schild (wie der gleichnamige Magierzauber des ersten Grades) 1x täglich
+
+RK-Bonus: -1
+
+ETW0-Bonus: -2
+Schaden: 1W6 +2 (Wucht)
+Initiativefaktor: 1
+Fertigkeit: Kampfstab
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 1~
+
+
+@3000 = ~Ein Standbild Clangeddin Silberbarts~
+@3001 = ~Diinkarazan, Ausgestoßener Sohn Moradins~
+@3002 = ~Ein ausgehöhlter Schädel eines Riesen, von welchem noch große Hitze ausgeht. Wahrscheinlich wurde darin regelmäßig eine Substanz verbrannt.~
+@3003 = ~Der Illithidengott Ilsensine verbannt Diinkarazan in den Abyss~
+@3004 = ~Karlyn Kuldelver, Stammvater Korolnors~
+@3005 = ~Dies scheint die "Endstation" jenes Hornes zu sein, welches in den oberen Stockwerken zur Kommunikation genutzt wurde.~
+@3006 = ~Das Anthrazit beginnt mit heller Flamme zu brennen.~
+@3007 = ~"Zum alten Thronsaal des Ausgestoßenen"~
+@3008 = ~"Diinkarazan, Verräter an den zwergischen Idealen"~
+@3009 = ~"Diinkarazan, angeklagt für die Anwendung unkontrollierbarer Magie"~
+@3010 = ~"Diinkarazan, Ausgestoßener aus dem Zwergenpantheon"~
+@3011 = ~Auf diesem Altar ist eine Axt niedergelegt. Eine weitere Fassung ist noch leer - man müsste dort eine zweite Waffe platzieren können, um einen Mechanismus in Gang zu setzen.~
+@3012 = ~Ihr könnt nicht im Freien den Zauber "Steinsicht" einsetzen.~
+@3013 = ~Ihr könnt hier nicht den Zauber "Steinsicht" einsetzen.~
+@3014 = ~Das Standbild Kelemvors leuchtet kurz auf, und eine Plakette, die an der Seite angebracht war und das Symbol des Herrn der Toten zeigt, fällt plötzlich zu Boden.~
+@3015 = ~Ihr hört, wie sich weiter oben eine Metalltür geschlossen hat.~
+@3016 = ~Weiter oben hat sich eine Metalltür wieder geöffnet.~
+@3017 = ~Schade, dass er einen anderen Zhentarim nicht erkannt hat. Nun ja, vielleicht war er einfach zu dumm dafür! Egal. Ruhe in Frieden, glorreicher Versager! Hah!~  
+@3018 = ~Ich werde meinen Leuten nichts davon erzählen. Es ist nicht ungewöhnlich, dass sich Zhentarim hin und wieder gegenseitig abmurksen, also machen wir mal kein großes Aufheben um die Leiche, die wir hier haben.~
+@3019 = ~Der Edelstein zerfällt in Euren Händen zu Staub.~ [EFF_E03]
+
+@3020 = ~"Was ist das für ein verdammter Lärm? Ich höre jemanden da draußen!"~
+@3021 = ~"Argh. Inkompetente Kreaturen."~
+@3022 = ~"Wer stört da oben meine Trolle? Zeigt Euch!"~
+@3023 = ~"Den nächsten Dummkopf, der mich enttäuscht, werfe ich den Riesen zum Fraß vor!"~
+@3024 = ~"Hört sofort mit dem Krach auf, oder ich komme selbst nach oben!"~
+@3025 = ~"Jemand wird teuer für diese Unverschämtheit bezahlen."~
+@3026 = ~"Wenn diese Trolle mich im Stich gelassen haben, werden Köpfe rollen, das schwöre ich!"~
+@3027 = ~"Welcher Fluch liegt auf diesem elenden Tag! Ich verlange Ruhe!"~
+@3028 = ~"Wer auch immer dieses Chaos verursacht, wird teuer bezahlen. Hört Ihr mich? HÖRT IHR MICH?"~
+@3029 = ~"Mir reißt langsam der Geduldsfaden!"~
+@3030 = ~"Dieser Lärm ist unerträglich! Wer spielt da an meinen Wachen herum?"~
+@3031 = ~"Welche Heimtücke ist das? Zeigt Euch, Feigling!"~
+@3032 = ~"Kann denn niemand da oben seine Arbeit richtig machen? Schafft mir diese Eindringlinge vom Hals!"~
+@3033 = ~"Sind meine Befehle so schwer zu befolgen? Bringt diese Störenfriede zum Schweigen – sofort!"~
+@3034 = ~"Bei Vapraks Zähnen, ich werde dafür sorgen, dass jemand für diesen Tumult leidet!"~
+@3035 = ~Rattenloch~
+@3036 = ~Der Irre Gott wurde wieder verbannt.~ 
+@3037 = ~Emberon~
+@3038 = ~Bohrkäfer~
+@3039 = ~Ihr könnt nur in betrunkenem Zustand das heilige Wort aufstoßen.~
+
+

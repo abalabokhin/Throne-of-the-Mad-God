@@ -1,0 +1,247 @@
+IF
+	Global("Prep","ACIL15",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("CRANIUM_RAT_TALK",FALSE)
+		AmbientActivate("Rateye01",FALSE)
+		AmbientActivate("Rateye02",FALSE)
+		AmbientActivate("Rateye03",FALSE)
+		CreateCreatureImpassableAllowOverlap("AC#MG15D",[2175.1930],S)  // Zwergenwächterstatue
+		SetGlobal("Prep","ACIL15",1)
+END
+
+IF
+    Global("CreateMadugg","ACIL15",0)
+    OR(2)
+        DifficultyGT(NORMAL)
+        LevelPartyGT(12)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateMadugg","ACIL15",1)
+        CreateCreature("AC#MGFK3",[1339.366],SE)  // Madugg
+END
+
+IF
+    Global("CreateMadugg","ACIL15",0)
+    OR(2)
+        DifficultyGT(EASY)
+        LevelPartyGT(10)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateMadugg","ACIL15",1)
+        CreateCreature("AC#MGFK2",[1339.366],SE)  // Madugg
+END
+
+IF
+    Global("CreateMadugg","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("CreateMadugg","ACIL15",1)
+        CreateCreature("AC#MGFGK",[1339.366],SE)  // Madugg
+END
+
+IF
+   LevelPartyGT(15)
+   Global("FomorianSpawn","ACIL15",1)
+THEN
+   RESPONSE #100
+       SetGlobal("FomorianSpawn","ACIL15",2)
+       CreateCreature("AC#MGF53",[1993.867],S)  // Fomorischer Riese
+       CreateCreature("AC#MGF53",[1737.819],NW)  // Fomorischer Riese
+       CreateCreature("AC#MGF53",[2390.661],SW)  // Fomorischer Riese
+END
+
+IF
+    OR(2)
+        DifficultyGT(NORMAL)
+        LevelPartyGT(12)
+    Global("FomorianSpawn","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("FomorianSpawn","ACIL15",1)
+        CreateCreature("AC#MGF53",[2236.516],S)  // Fomorischer Riese
+        CreateCreature("AC#MGF53",[2156.1015],NW)  // Fomorischer Riese
+        CreateCreature("AC#MGF53",[1911.1154],SW)  // Fomorischer Riese
+        CreateCreature("AC#MGF53",[2111.1366],E)  // Fomorischer Riese
+        CreateCreature("AC#MGF53",[2331.1437],NE)  // Fomorischer Riese
+        CreateCreature("AC#MGF53",[2670.1119],W)  // Fomorischer Riese
+END
+
+IF
+    OR(2)
+        DifficultyGT(EASY)
+        LevelPartyGT(9)
+    Global("FomorianSpawn","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("FomorianSpawn","ACIL15",1)
+        CreateCreature("AC#MGF52",[2236.516],S)  // Fomorischer Riese
+        CreateCreature("AC#MGF52",[2156.1015],NW)  // Fomorischer Riese
+        CreateCreature("AC#MGF52",[1911.1154],SW)  // Fomorischer Riese
+        CreateCreature("AC#MGF52",[2111.1366],E)  // Fomorischer Riese
+        CreateCreature("AC#MGF52",[2331.1437],NE)  // Fomorischer Riese
+        CreateCreature("AC#MGF52",[2670.1119],W)  // Fomorischer Riese
+END
+
+IF
+    Global("FomorianSpawn","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("FomorianSpawn","ACIL15",1)
+        CreateCreature("AC#MGF51",[2236.516],S)  // Fomorischer Riese
+        CreateCreature("AC#MGF51",[2156.1015],NW)  // Fomorischer Riese
+        CreateCreature("AC#MGF51",[1911.1154],SW)  // Fomorischer Riese
+        CreateCreature("AC#MGF51",[2111.1366],E)  // Fomorischer Riese
+        CreateCreature("AC#MGF51",[2331.1437],NE)  // Fomorischer Riese
+        CreateCreature("AC#MGF51",[2670.1119],W)  // Fomorischer Riese
+END
+
+IF
+	Global("Plate","ACIL15",0)
+	OpenState("DOOR02",TRUE)
+THEN
+	RESPONSE #100
+		ActionOverride("DOOR02",DisplayString(Myself,@17))  //  Die Pfanne fällt mit einem lauten Knall zu Boden.
+		Wait(1)
+		SetGlobal("Plate","ACIL15",1)
+		TriggerActivation("Info_pan",FALSE)
+		SetGlobalTimer("PlateTimer","ACIL15",FOUR_ROUNDS)
+END
+
+IF
+    GlobalGT("TalkHorn","ACIL15",9)
+    Global("DogWizardAngry","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("DogWizardAngry","ACIL15",1)
+        CreateCreatureDoor("trolsp01",[1250.477],SE)  // Spektraltroll
+        CreateCreatureDoor("trolsi01",[1465.326],SE)  // Geistertroll
+        CreateCreatureDoor("trolsi01",[1340.555],NE)  // Geistertroll
+        CreateCreatureDoor("trolsi01",[1567.398],NW)  // Geistertroll
+END
+
+IF
+    Global("Rats_Cheese","ACIL15",1)
+    PartyHasItem("AC#CHEE1")
+THEN
+    RESPONSE #100
+        SetGlobal("Rats_Cheese","ACIL15",2)
+        AddJournalEntry(@15001,QUEST)
+		TriggerActivation("Info_pan",FALSE)
+END
+
+IF
+	Global("Plate","ACIL15",1)
+	GlobalTimerExpired("PlateTimer","ACIL15")
+THEN
+	RESPONSE #100
+		SetGlobal("Plate","ACIL15",2)
+END
+
+IF
+	Global("CraniumRatSpawn","ACIL15",1)
+THEN
+	RESPONSE #100
+		TriggerActivation("CRANIUM_RAT_TALK",TRUE)
+		AmbientActivate("Rateye01",TRUE)
+		AmbientActivate("Rateye02",TRUE)
+		AmbientActivate("Rateye03",TRUE)
+		CreateCreatureImpassableAllowOverlap("AC#15RAT",[2907.343],0)  // No such index
+		SetGlobal("CraniumRatSpawn","ACIL15",2)
+END
+
+IF
+    Contains("ac#shan1","Conshan01")  // Meeresschmuck
+    Contains("ac#shan2","Conshan02")  // Goldklumpen
+    Contains("ac#shan3","Conshan03")  // Zardazil
+    Contains("ac#shan4","Conshan04")  // Eisenkugel
+    Contains("ac#shan5","Conshan05")  // Silbererz
+    Contains("ac#shan6","Conshan06")  // Beschliffener Juwel
+    Contains("ac#shan7","Conshan07")  // Gletscherstein
+    Contains("ac#shan8","Conshan08")  // Adamant
+    Contains("ac#shan9","Conshan09")  // Mithril
+    Contains("ac#shan0","Conshan10")  // Rubinknauf
+    Global("PlantedItems","ACIL15",0)
+THEN
+    RESPONSE #100
+        ClearAllActions()
+        SetGlobal("PlantedItems","ACIL15",1)
+        StartCutSceneMode()
+        ActionOverride("Conshan01",DestroyItem("ac#shan1"))  // Meeresschmuck
+        ActionOverride("Conshan02",DestroyItem("ac#shan2"))  // Goldklumpen
+        ActionOverride("Conshan03",DestroyItem("ac#shan3"))  // Zardazil
+        ActionOverride("Conshan04",DestroyItem("ac#shan4"))  // Eisenkugel
+        ActionOverride("Conshan05",DestroyItem("ac#shan5"))  // Silbererz
+        ActionOverride("Conshan06",DestroyItem("ac#shan6"))  // Beschliffener Juwel
+        ActionOverride("Conshan07",DestroyItem("ac#shan7"))  // Gletscherstein
+        ActionOverride("Conshan08",DestroyItem("ac#shan8"))  // Adamant
+        ActionOverride("Conshan09",DestroyItem("ac#shan9"))  // Mithril
+        ActionOverride("Conshan10",DestroyItem("ac#shan0"))  // Rubinknauf
+        PlaySound("AC#MG15G")
+        ScreenShake([5.5],10)
+        DisplayStringHead(Player1,23493)  // Durch die Räume hallt das Geräusch von schleifendem Stein. Irgendwo in der Nähe hat sich eine Tür geöffnet.
+        Wait(3)
+        ScreenShake([5.5],5)
+        EndCutSceneMode()
+        AddexperienceParty(9000)
+END
+
+IF
+	Global("ACIL15Door","ACIL15",0)
+	Global("PlantedItems","ACIL15",1)
+THEN
+	RESPONSE #100
+		SetGlobal("ACIL15Door","ACIL15",1)
+		OpenDoor("DOOR01")
+END
+
+IF
+    GlobalGT("PlantedItems","ACIL15",0)
+    Global("VargouilleSpawn","ACIL15",0)
+	Difficulty(EASIEST)
+THEN
+    RESPONSE #100
+        SetGlobal("VargouilleSpawn","ACIL15",1)
+END
+
+IF
+    GlobalGT("PlantedItems","ACIL15",0)
+    Global("VargouilleSpawn","ACIL15",0)
+	Difficulty(EASY)
+THEN
+    RESPONSE #100
+        SetGlobal("VargouilleSpawn","ACIL15",1)
+        CreateCreature("AC#MGVRG",[567.2112],NW)  // Vargouille
+END
+
+IF
+    GlobalGT("PlantedItems","ACIL15",0)
+    Global("VargouilleSpawn","ACIL15",0)
+THEN
+    RESPONSE #100
+        SetGlobal("VargouilleSpawn","ACIL15",1)
+        CreateCreature("AC#MGVRG",[567.2112],W)  // Vargouille
+        CreateCreature("AC#MGVRG",[574.2148],NW)  // Vargouille
+        CreateCreature("AC#MGVRG",[635.2086],SW)  // Vargouille
+END
+
+/*
+IF
+	Global("AC#Cheats","GLOBAL",1)
+	Global("CheatItems","ACIL15",0)
+THEN
+	RESPONSE #100
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan1",0,0,0))  // Ammonit
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan2",0,0,0))  // Goldbarren
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan3",0,0,0))  // Zardazil
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan4",0,0,0))  // Eisenerz
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan5",0,0,0))  // Silberbarren
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan6",0,0,0))  // beschliffener Juwel
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan7",0,0,0))  // Kieselsteine
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan8",0,0,0))  // Adamantit
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan9",0,0,0))  // Mithril
+		ActionOverride("Shanatar_cheat",CreateItem("ac#shan0",0,0,0))  // Rubinknauf
+		SetGlobal("CheatItems","ACIL15",1)
+END
+*/
+

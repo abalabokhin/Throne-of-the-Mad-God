@@ -1,0 +1,56 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL13",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@497) //  Dieser verrostete Schalter dient ewohl fr�her dazu, irgendeinen Mechanismus in Gang zu setzen. Er scheint noch funktionsf�hig zu sein.
+		SetGlobal("Switch01","ACIL13",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL13",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@498) // Ihr legt den Schalter um und h�rt, wie aus unterirdischen Rohren Gas in die benachbarten G�nge str�mt und sich in einer gewaltigen Explosion entz�ndet.
+		Wait(1)
+		SetGlobal("Switch01","ACIL13",2)
+		AddXPObject(LastTrigger,200)
+		PlaySound("AC#LEVER")
+		TriggerActivation("Trap_Diinstandin",FALSE)
+		TriggerActivation("Trap_Illithid",FALSE)
+		TriggerActivation("Trap_Gems",FALSE)
+		TriggerActivation("Trap_Moradin",FALSE)
+		TriggerActivation("Trap_spear",FALSE)
+		TriggerActivation("Trap_01",FALSE)
+		TriggerActivation("Trap_02",FALSE)
+		TriggerActivation("Trap_03",FALSE)
+		TriggerActivation("Trap_04",FALSE)
+		TriggerActivation("Trap_05",FALSE)
+		TriggerActivation("Trap_06",FALSE)
+		TriggerActivation("Trap_07",FALSE)
+		TriggerActivation("Trap_08",FALSE)
+		TriggerActivation("Trap_09",FALSE)
+		TriggerActivation("Trap_10",FALSE)
+		TriggerActivation("Trap_11",FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,12)
+	Global("Switch01","ACIL13",2)
+THEN
+	RESPONSE #100
+	        PlaySound("AC#CLICK")
+		DisplayString(Myself,@499) 
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,12)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702) // Ihr seid zu weit entfernt, um das zu benutzen.
+END

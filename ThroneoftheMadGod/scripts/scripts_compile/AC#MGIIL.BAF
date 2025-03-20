@@ -1,0 +1,25 @@
+IF
+    OnCreation()
+THEN
+    RESPONSE #100
+        CreateVisualEffectObject("SPFLESHS",Myself)
+END
+
+IF
+    Die()
+THEN
+    RESPONSE #100
+        DisplayStringHead(Myself,57749)  // Illusion gebannt
+        ReallyForceSpellDead(Myself,ILLUSION_DEATH)  // SPIN835.SPL (No such index)
+        Wait(1)
+        DestroySelf()
+END
+
+IF
+    ActionListEmpty()
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

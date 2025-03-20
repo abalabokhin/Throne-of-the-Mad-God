@@ -1,0 +1,73 @@
+/*
+
+Dieses Skript steuert den Geist Iremars, einer ehemaligen Priesterin Oghmas, die erst dann Ruhe findet, wenn das Rätsel um den Verräter gelöst ist.
+*/
+
+IF
+	Dead("AC#DOGWI")  // Dokuriingor
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+        Detect([PC])
+        Global("Walking","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Walking","LOCALS",1)
+END
+
+IF
+	ActionListEmpty()
+	Global("Walking","LOCALS",1)
+	!See([ENEMY])
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		MoveToPoint([1135.1216])
+		Face(7)
+		Wait(10)
+	RESPONSE #100
+		MoveToPoint([1334.1360])
+		Face(6)
+		Wait(10)
+	RESPONSE #100
+		MoveToPoint([1534.1507])
+		Face(14)
+		Wait(10)
+	RESPONSE #100
+		MoveToPoint([1723.1635])
+		Face(6)
+		Wait(10)
+	RESPONSE #100
+		MoveToPoint([1907.1777])
+		Face(2)
+		Wait(10)
+		DisplayStringHead(Myself,@338) // ...muss... Zugang...zu unterer Ebene... finden...
+	RESPONSE #100
+		DisplayStringHead(Myself,@339) // ...zehn K�nigreiche Shanatars... zehn Schl�ssel...
+		MoveToPoint([904.1670])
+	RESPONSE #100
+		MoveToPoint([1307.1797])
+		Face(8)
+		Wait(10)
+		DisplayStringHead(Myself,@340) // Ultoksamrin... das Zardazilk�nigreich...
+	RESPONSE #100
+	        MoveToPoint([1495.1930])
+		DisplayStringHead(Myself,@341) // Barakuir... Heimat von Clan Duergar, den Eisenschmieden...
+	RESPONSE #100
+		MoveToPoint([1675.2067])
+		Face(2)
+		Wait(10)
+		DisplayStringHead(Myself,@342) // Torglor... Silberk�nigreich... unbekannter Zwergengott... einer der zwei Ausgesto�enen?
+	RESPONSE #100
+		MoveToPoint([1135.1216])
+		Face(8)
+		Wait(10)
+		DisplayStringHead(Myself,@343) // Drakkalor... Stadt des Geizes... Anbeter des Abbathor...
+END
+
+
+
+

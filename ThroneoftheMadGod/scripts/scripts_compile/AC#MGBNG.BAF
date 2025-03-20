@@ -1,0 +1,45 @@
+IF
+    See(NearestEnemyOf(Myself))
+    GlobalLT("Missile","LOCALS",4)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #50
+        IncrementGlobal("Missile","LOCALS",1)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        SpellNoDec(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoss)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !HasBounceEffects(LastSeenBy(Myself))
+    GlobalLT("LightningBolt","LOCALS",2)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #50
+        IncrementGlobal("LightningBolt","LOCALS",1)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        SpellNoDec(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    Global("Blindness","LOCALS",0)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #50
+        SetGlobal("Blindness","LOCALS",1)
+        SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+        SpellNoDec(NearestEnemyOf(Myself),WIZARD_BLINDNESS)  // SPWI106.SPL (Blindheit)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    GlobalGT("Missile","LOCALS",3)
+    GlobalGT("LightningBolt","LOCALS",1)
+    Global("Blindness","LOCALS",1)
+    !GlobalTimerNotExpired("BD_Cast","LOCALS")
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

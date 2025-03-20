@@ -1,0 +1,51 @@
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,25)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@359) // Aus dieser Entfernung k�nnt Ihr nichts erkennen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	Race(LastTrigger,DWARF)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@523) /* Diese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Korolnor, Juwelenk�nigreich, Heim des Clans Kuldelver, stolzer Teil des K�nigreiches Shanatar." */
+
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	CheckStatGT(LastTrigger,30,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@523)  /* ADiese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Korolnor, Juwelenk�nigreich, Heim des Clans Kuldelver, stolzer Teil des K�nigreiches Shanatar." */
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	PartyHasItemIdentified("AC#BKDWF") // Die Schrift und Sprache der Zwerge
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@523) /* Diese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung steht in Zwergenrunen geschrieben:
+"Korolnor, Juwelenk�nigreich, Heim des Clans Kuldelver, stolzer Teil des K�nigreiches Shanatar." */
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,25)
+	CheckStatLT(LastTrigger,31,LORE)
+
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@524) // Diese Bronzeplatte zeigt eine Zwergenstatue, um die sieben Edelsteine angeordnet sind. Auf der Umrandung sind Zwergenrunen eingraviert, die Ihr nicht entziffern k�nnt.
+END
+

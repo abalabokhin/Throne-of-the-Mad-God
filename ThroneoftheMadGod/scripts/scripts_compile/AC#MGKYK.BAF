@@ -1,0 +1,10 @@
+IF
+    Opened([ANYONE])
+THEN
+    RESPONSE #100
+        CreateVisualEffect("ICMAGICH",[1659.2261])
+        CreateVisualEffect("SPPORTAL",[1649.2313])
+        Wait(1)
+        CreateCreature("AC#MGEFR",[1649.2313],S)  // Ifrit
+END
+

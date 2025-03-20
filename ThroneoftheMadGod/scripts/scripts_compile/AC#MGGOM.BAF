@@ -1,0 +1,28 @@
+IF
+    Delay(15)
+THEN
+    RESPONSE #100
+        ForceSpellRES("AC#MGCL",[ANYONE])  // Kettenblitz
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+    RESPONSE #100
+        AttackReevaluate(LastAttackerOf(Myself),12)
+END
+
+IF
+    See([0.0.TROLL])
+THEN
+    RESPONSE #100
+        AttackReevaluate([0.0.TROLL],6)
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+

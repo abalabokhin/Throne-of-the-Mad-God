@@ -1,0 +1,11 @@
+IF
+    Opened([ANYONE])
+    !Dead("AC#MGLDS")  // Maid Sternendorn
+    Global("StarthornCorpse","ACIL1L",0)
+    Global("DescrateCorpse","ACIL1L",0)
+THEN
+    RESPONSE #100
+        SetGlobal("StarthornCorpse","ACIL1L",1)
+        ActionOverride("AC#MGLDS",StartDialogueNoSet(LastTrigger))
+END
+

@@ -1,0 +1,41 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+
+IF
+	HPLT(Myself,12)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+		ChangeAnimationNoEffect("AC#FRTR2")  // Faerzress-Troll
+END
+
+IF
+	TimerExpired(77)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+
+IF
+	OR(3)
+		See(NearestEnemyOfType([PC.0.0.BARD_ALL]))
+		See(NearestEnemyOfType([PC.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([PC.0.0.SORCERER]))
+!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),5)
+END
+	
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
