@@ -499,11 +499,10 @@ COPY ~%MOD_FOLDER%/cre/ac#diin2.cre~ ~override~
   //SAY DYING @916
   SAY UNHAPPY_ANNOYED @915
 
-COPY ~%MOD_FOLDER%/cre/AC#VETRO.cre~ ~override~ // Venom Troll; Mordenkainen's tome of foes p.245
-  SAY NAME1 @1108 SAY NAME2 @1108
-WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
+COPY ~%MOD_FOLDER%/cre/AC#MGMSH.cre~ ~override~ // poisonous mush, carcass of a venom troll
+  SAY NAME1 @3040 SAY NAME2 @3040
 
-COPY ~%MOD_FOLDER%/cre/AC#VETR2.cre~ ~override~ // Venom Troll; Mordenkainen's tome of foes p.245
+COPY ~%MOD_FOLDER%/cre/AC#VETRO.cre~ ~override~ // Venom Troll; Mordenkainen's tome of foes p.245
   SAY NAME1 @1108 SAY NAME2 @1108
 WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
 

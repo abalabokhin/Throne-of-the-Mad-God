@@ -485,6 +485,13 @@ COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MG1UD.bam~ ~override~  // coffin k
  LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1055.pvrz~
  END
  END
+ 
+  COPY ~ThroneoftheMadGod/bam/bam_desc_BG2EE/AC#MGBBD.bam~ ~override~  //     gem beetle bag desc bam
+ LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+ ACTION_IF (original_base_index >= 0 AND new_base_index >= 0) BEGIN 
+ LAF INSTALL_PVRZ INT_VAR original_base_index new_base_index STR_VAR source_file = ~ThroneoftheMadGod/bam/bam_desc_BG2EE/MOS1056.pvrz~
+ END
+ END
 ///////////////////////////////////////////////////////////////////////
 // VVC files
 //
@@ -616,6 +623,9 @@ SAY 0x50  @553
 COPY ~ThroneoftheMadGod/spl/AC#MGBT.spl~           ~override~ // Boots of night shadow invisibilty
 SAY NAME1 @558
 SAY 0xce  @559
+
+COPY ~ThroneoftheMadGod/spl/AC#MGVT.spl~           ~override~ // poisonous cloud
+SAY NAME1 @3041
 
 // patching chaos shield and improved chaos shield to prevent from the negative effects of the cloak of chaos
 
