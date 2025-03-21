@@ -985,8 +985,8 @@ STATISTICS:
 Equipped abilities:
 – Strength: +1
 
-THAC0: +2, +3 (halforcs only); +2 extra vs. small humanoids: halflings, gnomes, dwarves, goblins, and kobolds  
-Damage: 2d4+2, (crushing) +3 (halforcs only) 
+THAC0: +2, +3 (only for halforcs); +2 extra vs. small humanoids: halflings, gnomes, dwarves, goblins, and kobolds  
+Damage: 2d4+2, (crushing) +3 (only for halforcs) 
 Speed Factor: 3
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -1514,7 +1514,7 @@ Weight: 3~
 @2119 = ~Prismatic Scimitar +3~
 @2120 = ~The Prisoner of the Elements
 
-The Prismatic Scimitar, forged by the elemental forces themselves, was created as a vessel for their power. Spirits of fire, ice, lightning, acid, and pure magical energy are bound within the blade, unleashing their forces randomly with each strike. Its shimmering glow protects its wielder from blindness.
+This Prismatic Scimitar, forged by the elemental forces themselves, was created as a vessel for their power. Spirits of fire, ice, lightning, acid, and pure magical energy are bound within the blade, unleashing their forces randomly with each strike. Its shimmering glow protects its wielder from blindness.
 
 STATISTICS:
 
@@ -1522,7 +1522,7 @@ Equipped abilities:
 – The wielder is immune to blindness.
 
 THAC0: +3
-Damage: 1d8+3 (slashing), either 1+ fire, +1 acid, +1 magic, +1 cold, +1 electricity (random)
+Damage: 1d8+3 (slashing), either +1 fire, +1 acid, +1 magic, +1 cold, +1 electricity (random)
 Speed Factor: 2
 Proficiency Type: Scimitar/Wakizashi/Ninjatō
 Type: One-handed
@@ -1565,8 +1565,8 @@ However, one must possess the sturdy build and ample girth of a dwarf to fully b
 STATISTICS:
 
 Equipped abilities:
-– +10% resistance to slashing, piercing, missile and crushing damage (dwarf only)
-– Charisma: +1 (dwarf only)
+– +10% resistance to slashing, piercing, missile and crushing damage (only for dwarves)
+– Charisma: +1 (only for dwarves)
 
 Armor Class: 5 (7 vs. piercing and missile) 
 Requires:
@@ -1595,13 +1595,13 @@ The mace is considered a divine blend of dwarven craftsmanship and utter irrespo
 STATISTICS:  
 
 Equipped abilities:
-– Constitution: +1 (dwarf only)
+– Constitution: +1 (only for dwarves)
 
 Charge abilities:
 – Once per day, if intoxicated, the wielder can utter a Holy Word by releasing a thunderous belch. 
 
 Combat abilities:
-– On a successful hit, the mace makes either a target or the wielder more and more intoxicated by increasing intoxication by 10.  
+– On a successful hit, the mace increases either the target's or the wielder's intoxication by 10.
 
 STATISTICS:
 

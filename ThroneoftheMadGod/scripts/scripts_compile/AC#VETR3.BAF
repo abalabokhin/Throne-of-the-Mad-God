@@ -2,8 +2,7 @@ IF
     Die()
 THEN
     RESPONSE #100
-        ReallyForceSpellDeadRES("AC#MGVT",Myself)  // Mane: Säuredampf
-        CreateCreature("AC#MGMSH",[-1.-1],S)  // Grüner Schleim
+        ReallyForceSpellDeadRES("AC#MGVT",Myself)  // Giftwolke
 END
 
 IF

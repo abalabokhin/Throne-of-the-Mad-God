@@ -93,6 +93,7 @@ IF
 	IF
 	InParty("L#XZA")
 	!Dead("L#XZA")
+	AreaCheckObject("ACIL10","L#XZA")
 	Global("ACIL10#ZhentarimXzar","ACIL10",1)
 	GlobalTimerExpired("ACIL10#ZhentarimXzarTime","ACIL10")
 	THEN
@@ -118,6 +119,7 @@ IF
 	IF
 	InParty("L#MON")
 	!Dead("L#MON")
+	AreaCheckObject("ACIL10","L#MON")
 	Global("ACIL10#ZhentarimMontaron","ACIL10",1)
 	GlobalTimerExpired("ACIL10#ZhentarimMontaronTime","ACIL10")
 	THEN
