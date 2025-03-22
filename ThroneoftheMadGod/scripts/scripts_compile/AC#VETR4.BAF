@@ -2,6 +2,7 @@ IF
     Die()
 THEN
     RESPONSE #100
+        ReallyForceSpellDeadRES("AC#MGV2",Myself)  // No such index
         ReallyForceSpellDeadRES("AC#MGVT",Myself)  // Poisonous Cloud
 END
 

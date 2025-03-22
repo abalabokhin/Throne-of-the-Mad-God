@@ -510,6 +510,9 @@ COPY ~%MOD_FOLDER%/cre/AC#VETR3.cre~ ~override~ // Venom Troll (ranged attack); 
   SAY NAME1 @1108 SAY NAME2 @1108
 WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
 
+COPY ~%MOD_FOLDER%/cre/AC#VETR4.cre~ ~override~ // Venom Troll ACIL1k - turns in poisonous mush; Mordenkainen's tome of foes p.245
+  SAY NAME1 @1108 SAY NAME2 @1108
+WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TROLL_VENOM~))
 
 COPY ~%MOD_FOLDER%/cre/AC#FRTRO.cre~ ~override~ // Faerzress-infused Troll (inspired by "Underdark", p.86)
   SAY NAME1 @1110 SAY NAME2 @1110  

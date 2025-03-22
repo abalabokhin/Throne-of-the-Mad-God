@@ -1,8 +1,9 @@
 ***Throne of the Mad God - Credits***
 
-Acifer: Graphics, design, programming 
-Lava: Worldmap icon, Beta Testing
-Megrimlock: Proofreading
+Acifer - graphics and design
+Lava - ideas, item and worldmap icons, testing 
+Megrimlock - English version
+Shai Hulud - German version
 
 The following assets were used to create the mod:
 

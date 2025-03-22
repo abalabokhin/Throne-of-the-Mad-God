@@ -80,6 +80,22 @@ END
 
 IF
     Global("DiinDeath","ACIL19",10)
+    PartyHasItem("AC#KEY19")
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDeath","ACIL19",11)
+END
+
+IF
+    Global("DiinDeath","ACIL19",11)
+    !PartyHasItem("AC#KEY19")
+THEN
+    RESPONSE #100
+        SetGlobal("DiinDeath","ACIL19",12)
+END
+
+IF
+    Global("DiinDeath","ACIL19",12)
     OpenState("DOOR01",TRUE)
 THEN
     RESPONSE #100

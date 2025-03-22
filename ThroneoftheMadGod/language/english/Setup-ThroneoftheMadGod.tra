@@ -528,8 +528,8 @@ STATISTICS:
 Combat abilities:
 – On hit, giants suffer an additional 3 bleeding damage per round for 2 rounds and are slowed for 2 rounds.  
 
-THAC0: +2, +3 (dwarves only)
-Damage: 1d8+2, +3 (dwarves only) (slashing)
+THAC0: +2, +3 (only for dwarves)
+Damage: 1d8+2,(slashing); +3 (only for dwarves) 
 Speed Factor: 5
 Proficiency Type: Axe
 Type: One-handed
@@ -1111,8 +1111,8 @@ The rim of the tankard bears an inscription in dwarven runes:
 STATISTICS:
 
 Charge abilities (once per day):
-– THAC0: +4 bonus (Dwarves only)  
-  Constitution: +1 bonus (Dwarves only)  
+– THAC0: +4 bonus (only for dwarves)  
+  Constitution: +1 bonus (only for dwarves)  
   Drinker is immune to fear and panic for the duration (all but elves)  
   Draining the tankard leaves most drinkers intoxicated for 8 hours—except for dwarves, who can handle their ale. 
   Elves suffer 3d6 poison damage when drinking from the tankard  
@@ -1532,6 +1532,7 @@ Requires:
 Weight: 1~
 @2121 = ~Air Hammer +3~
 @2122 = ~Forged by dwarven craftsmen, the Air Hammer was designed as a magical rescue tool for the dark and perilous tunnels in the Underdark, where smoke and toxic fumes pose a constant threat. This item opens a gateway to a realm beyond the material world, filled with the pure air of the Elemental Plane. When its rune is activated, the hammer releases a powerful gust, refreshing a 30-foot area with clean air—sufficient to sustain eight humans (or twelve dwarves) under moderate exertion. This wind can disperse poisonous clouds and magical fog, including those created by spells such as Cloudkill.
+This weapon can only be used by dwarves.
 
 Charge abilities:
 – Zone of Sweet Air once per day
