@@ -45,13 +45,6 @@ Compatible with **BG2EE** and **EET**
 
 ---
 
-## License  
-**© 2025 Acifer – All Rights Reserved**  
-
-This mod and all its contents may not be copied, modified, distributed, or used in any form without explicit permission from the author.
-
----
-
 ## Feedback & Support  
 If you encounter issues or have suggestions, please report them on the **Gibberlings3 Forum**:  
 [**G3 Forums – Throne of the Mad God**](https://www.gibberlings3.net/forums/)
@@ -63,6 +56,13 @@ If you encounter issues or have suggestions, please report them on the **Gibberl
 **Lava** – Additional design, item and worldmap icons, testing  
 **Megrimlock** – English version  
 **Shai Hulud** – German version
+
+---
+
+## License  
+**© 2025 Acifer – All Rights Reserved**  
+
+This mod and all its contents may not be copied, modified, distributed, or used in any form without explicit permission from the author.
 
 ---
 
