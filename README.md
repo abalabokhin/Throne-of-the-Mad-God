@@ -65,3 +65,12 @@ If you encounter issues or have suggestions, please report them on the **Gibberl
 **Lava** – Additional design, item and worldmap icons, testing  
 **Megrimlock** – English version  
 **Shai Hulud** – German version
+
+---
+
+**Legal Notice**  
+This mod is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., the Wizards of the Coast, Overhaul Games, or Beamdog.  
+All other trademarks and copyrights are property of their respective owners.  
+**Baldur's Gate II: Enhanced Edition** and **Icewind Dale: Enhanced Edition** © Beamdog Inc.  
+**Baldur's Gate**, **Baldur's Gate II: Shadows of Amn**, and **Baldur's Gate II: Throne of Bhaal** © TSR, Inc.  
+The **BioWare Infinity Engine** is © BioWare Corp.
