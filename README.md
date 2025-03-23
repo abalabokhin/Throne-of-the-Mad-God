@@ -15,6 +15,7 @@
 - Intriguing puzzles and mysteries  
 - Unique magical items to discover and wield  
 
+*Watch the trailer on Youtube:*
 [![Watch the trailer](https://github.com/AciferBG/Throne-of-the-Mad-God/blob/main/Documentation_pics/totmg%20thumbnail%2001.png)](https://youtu.be/wKwR5bLL-Uk)
 
 ## Compatibility  
