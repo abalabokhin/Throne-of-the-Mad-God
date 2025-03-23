@@ -1,5 +1,7 @@
 # Throne of the Mad God
 
+![Throne of the Mad God Logo](https://github.com/AciferBG/Throne-of-the-Mad-God/blob/main/Documentation_pics/Madgod%20Logo.png)
+
 *"Each region deserves its own desolate dwarven dungeon hiding a dastardly villain."* - Volo  
 *"And each dastardly villain deceives desperate adventurers into delving into desolate dwarven dungeons."* - Elminster  
 
@@ -52,3 +54,11 @@ This mod and all its contents may not be copied, modified, distributed, or used 
 ## Feedback & Support  
 If you encounter issues or have suggestions, please report them on the **Gibberlings3 Forum**:  
 [**G3 Forums – Throne of the Mad God**](https://www.gibberlings3.net/forums/)
+
+---
+
+## Credits  
+**Acifer** – Graphics and design  
+**Lava** – Ideas, item and worldmap icons, testing  
+**Megrimlock** – English version  
+**Shai Hulud** – German version
