@@ -1,7 +1,5 @@
 # Throne of the Mad God
 
-![Throne of the Mad God Logo](https://github.com/AciferBG/Throne-of-the-Mad-God/blob/main/Documentation_pics/Madgod%20Logo.png)
-
 *"Each region deserves its own desolate dwarven dungeon hiding a dastardly villain."* - Volo  
 *"And each dastardly villain deceives desperate adventurers into delving into desolate dwarven dungeons."* - Elminster  
 
