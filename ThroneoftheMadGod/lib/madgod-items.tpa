@@ -11,10 +11,6 @@ COPY ~%MOD_FOLDER%/itm/AC#MGBBG.itm~         ~override~    // Bag of Capricious 
   SAY NAME2 @2131
   SAY DESC @2132
 
-COPY ~%MOD_FOLDER%/itm/AC#MGBMC.itm~         ~override~    // drunken wink
-  SAY NAME2 @2129
-  SAY DESC @2130
-
 COPY ~%MOD_FOLDER%/itm/AC#MGRBU.itm~         ~override~    // rat bullet
   SAY NAME2 @2127
   SAY DESC @2128

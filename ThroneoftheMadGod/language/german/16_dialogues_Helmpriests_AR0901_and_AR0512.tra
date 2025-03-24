@@ -1,31 +1,36 @@
-@4400 = ~Ein Kopf? Lasst einmal sehen... das ist - Oh! Bei dem Wächter aller Wächter! Das ist kein gewöhnlicher Fluch. Natürlich müssen wir versuchen, diesen scheußlichen Fluch von dem armen Toten zu bannen! Sprecht mit Sir Lothtyran hinter mir in diesem Raum, er weiß, was zu tun ist.~
+// creator: Shai Hulud
+// game: Throne of the Mad God
+// date: 2025-03-23, 22:02
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@4400 = ~Ein Kopf? Lasst einmal sehen … Das ist … Oh! Bei dem W-Wächter aller W-Wächter! Das ist kein gewöhnlicher Fluch. Natürlich müssen wir versuchen, diesen scheußlichen Fluch von dem armen Toten zu bannen! Sprecht mit Sir Lothtyran hinter mir in diesem Raum. Er weiß, was zu tun ist.~
 @4401 = ~Ich habe ein wichtiges Anliegen. Dies hier ist der Kopf eines gefallenen Soldaten im Dienste Amns. Ich hatte gehofft, Ihr könntet ihn nach seinem Tode Erlösung von einem Fluch schenken.~
-@4402 = ~Ein Kopf? Lasst einmal sehen... das ist - Oh! Bei dem Wächter aller Wächter! Das ist kein gewöhnlicher Fluch. Nein, damit kann ich Euch nicht helfen. Doch in unserem Tempel im Tempelbezirk gibt es sicher jemanden, der sich diesem... armen Toten annehmen kann! Sprecht dort mit Sir Lothtyran, er wird Euch weiterhelfen können.~
+@4402 = ~Ein Kopf? Lasst einmal sehen … Das ist … Oh! Beim Wachsamen! Das ist kein gewöhnlicher Fluch. Nein, damit kann ich Euch nicht helfen. Doch in unserem Tempel im Tempelbezirk gibt es sicher jemanden, der sich diesem … armen Toten annehmen kann. Sprecht dort mit Sir Lothtyran, er wird Euch weiterhelfen können.~
 @4403 = ~Ich habe hier den Kopf eines gefallenen Soldaten und hatte gehofft, Ihr könntet ihn nach seinem Tode Erlösung von einem Fluch schenken.~
 @4404 = ~Nun, für solche Dinge sind eigentlich die Priester Kelemvors zuständig, doch da es sich um die Leiche eines gefallenen Kriegers handelt, könnte ich einmal einen Blick darauf werfen. Wisst Ihr, um welche Person es sich handelt?~
 @4405 = ~Um Hauptmann Bryam Lancameth.~
-@4406 = ~Um Hauptmann Lancameth? Ich kannte ihn. Hatte in der Vergangenheit einige Schlachten mit ihm zusammen geschlagen - ein tapferer Mann! Doch wie ich hörte, besingen die Barden in den Tavernen der Stadt bereits seinen Tod. Nicht, dass ich mich in solchen Spelunken aufhalten würde, nein! Aber dennoch habe ich davon gehört. Deshalb überrascht es mich, dass Ihr mir nun seinen - was war es? Kopf? - präsentiert.~
+@4406 = ~Um Hauptmann Lancameth? Ich kannte ihn. Hatte in der Vergangenheit einige Schlachten mit ihm zusammen geschlagen – ein tapferer Mann! Doch wie ich hörte, besingen die Barden in den Tavernen der Stadt bereits seinen Tod. Nicht dass ich mich in solchen Spelunken aufhalten würde, nein! Aber dennoch habe ich davon gehört. Deshalb überrascht es mich, dass Ihr mir nun seinen – was war es? Kopf? – präsentiert.~
 @4407 = ~Genau um diesen Mann geht es. Seht selbst.~
-@4408 = ~Oh! Das ist... das ist...ugh... was für eine grauenhaft entstellte Fratze! Dies soll das Gesicht des Hauptmannes sein? Ist er Baphomet persönlich begegnet oder was erklärt diesen... ähm... schrecklichen Gesichtsausdruck?~
+@4408 = ~Oh! Das ist … das ist … ugh … Was für eine grauenhaft entstellte Fratze! Dies soll das Gesicht des Hauptmannes sein? Ist er Baphomet persönlich begegnet oder was erklärt diesen … ähm … schrecklichen Gesichtsausdruck?~
 @4409 = ~Er hatte sich in eine Vargouille verwandelt.~
-@4410 = ~Eine... Vargouille? Noch nie habe ich eine solche Ausgeburt der Abyss zu Gesicht bekommen. Und in dieser Form seid Ihr ihm begegnet?~
+@4410 = ~Eine … Vargouille? Noch nie habe ich eine solche Ausgeburt des Abyss zu Gesicht bekommen. Und in dieser Form seid Ihr ihm begegnet?~
 @4411 = ~Das ist richtig. Er bat mich, ihn zu töten und hier um Erlösung zu bitten.~
-@4412 = ~Dies ist... höchst ungewöhnlich. Ich werde Sir Kandelar um Rat fragen, was in diesem Falle weiter zu tun ist.~
+@4412 = ~Dies ist … höchst ungewöhnlich. Ich werde Sir Kandelar um Rat fragen, was in diesem Falle weiter zu tun ist.~
 @4413 = ~Sir Kandelar?~
-@4414 = ~Seht Euch diesen Kopf einer Vargouille an. Es soll sich um den Kopf des Hauptmanns Lancameth handeln, den diese tapferen Männer hier in unserem Tempel von seiner ewigen Pein in der Abyss erlösen möchten.~
+@4414 = ~Seht Euch diesen Kopf einer Vargouille an. Es soll sich um den Kopf des Hauptmanns Lancameth handeln, den diese tapferen Abenteurer hier in unserem Tempel von seiner ewigen Pein im Abyss erlösen möchten.~
 @4415 = ~Ich habe hier den Kopf eines gefallenen Soldaten von Amn und hatte gehofft, Ihr könntet ihn nach seinem Tode Erlösung schenken.~
-@4416 = ~Unsere Bitten sind erhört worden. Helm hat Lancameth seine Gnade zuteil werden lassen.~
+@4416 = ~Unsere Bitten sind erhört worden. Helm hat Lancameth seine Gnade zuteilwerden lassen.~
 @4417 = ~Gibt es Hinterbliebene?~
 @4418 = ~Ja, seine trauernde Witwe.~
 @4419 = ~Ich wüsste nicht.~
 @4420 = ~Dann werden wir seinen Schädel im Beinhaus aufbewahren. Habt Dank, dass Ihr Euch die Mühe gemacht habt, diesen armen Mann von seinem Leid zu erlösen.~
 @4421 = ~Gut. Gebt Ihr den Kopf ihres Mannes, damit sie ihm ein würdiges Begräbnis bereiten kann. In dieser Form ist von dem schaurigen Zustand nichts mehr zu erkennen. Er sieht aus, als sei er friedlich eingeschlafen. Es bleibt Euch anheim, seiner armen Witwe von dem wahren Schicksal des braven Lancameth zu berichten. Möge Helm über jeden Eurer Schritte wachen.~
 @4422 = ~Ihr habt gerufen, Sir Lothtyran?~
-@4423 = ~Welch schaurige Kreatur! Doch ich habe schon von solchen Wesen gehört. Ihr Biss pflanzt ihren Fluch in eine neue arme Seele, die sich kurz darauf ebenfalls in ein solches Untier verwandelt, indem sich der Kopf in einem Schwall Blutes vom Rumpf löst und zu einer Ausgeburt der Abyss mutiert.~
-@4424 = ~Äh... ja. Besteht vielleicht eine weniger blutrünstige Möglichkeit, Lancameth wieder von seinem Fluch zu erlösen?~
+@4423 = ~Welch schaurige Kreatur! Doch ich habe schon von solchen Wesen gehört. Ihr Biss pflanzt ihren Fluch in eine neue arme Seele, die sich kurz darauf ebenfalls in ein solches Untier verwandelt, indem sich der Kopf in einem Schwall Blutes vom Rumpf löst und zu einer Ausgeburt des Abyss mutiert.~
+@4424 = ~Äh … ja. Besteht vielleicht eine weniger blutrünstige Möglichkeit, Lancameth wieder von seinem Fluch zu erlösen?~
 @4425 = ~Besser hätte ich es nicht beschreiben können.~
 @4426 = ~Gibt es eine Möglichkeit, Lancameth von diesem Fluch zu erlösen?~
-@4427 = ~Ja, das sollte möglich sein - wenn Helm uns dies gestattet. Ich werde den ... Kopf an mich nehmen und Helm bitten, sich seiner anzunehmen.~
-@4428 = ~Der Ewig-Wachsame möge sich dem Schicksal des armen Lancameth erbarmen und ihm Erlösung schenken. Lasst mich ein Gebet sprechen.~
-@4429 = ~O wachsamer Helm, Herr der Wächter, in Deiner unerschütterlichen Gnade bitten wir Dich: Blicke herab auf Bryam Lancameth, gefallen in der Dunkelheit, gefangen im Schatten, verloren im Tod. Von bösartigem Fluch berührt, sucht er nun Frieden jenseits der Qualen.~
+@4427 = ~Ja, das sollte möglich sein – wenn Helm uns dies gestattet. Ich werde den … Kopf an mich nehmen und Helm bitten, sich seiner anzunehmen.~
+@4428 = ~Der Ewig Wachsame möge sich dem Schicksal des armen Lancameth erbarmen und ihm Erlösung schenken. Lasst mich ein Gebet sprechen.~
+@4429 = ~Oh wachsamer Helm, Herr der Wächter, in Deiner unerschütterlichen Gnade bitten wir Dich: Blicke herab auf Bryam Lancameth, gefallen in der Dunkelheit, gefangen im Schatten, verloren im Tod. Von bösartigem Fluch berührt, sucht er nun Frieden jenseits der Qualen.~
 @4430 = ~Wir legen seinen Geist in Deine Hände, mächtiger Helm. Löse die Bande des Fluches, der ihn hält, reinige sein Wesen mit Deinem göttlichen Licht! Gewähre ihm Ruhe, frei von Fesseln, im Hafen Deiner ewigen Wacht!~

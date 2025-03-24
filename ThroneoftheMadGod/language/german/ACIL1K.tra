@@ -1,25 +1,30 @@
-@4500 = ~Eindringlinge! Eindringlinge? Hier? Hihi, hoho, hehe! Das wird ein Tanz! Wir werden Euch vernichten, unser Gott wird Euch vernichten! Die Derro sind jetzt die neuen Herren Korolnors! Die Savants, ja, die Savants, sie sollen euch kneten und formen, bis ihr quiekt! Quiek, quiek, quiek! Hihihi...~
+// creator: Shai Hulud
+// game: Throne of the Mad God
+// date: 2025-03-23, 22:02
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@4500 = ~Eindringlinge! Eindringlinge? Hier? Hihi, hoho, hehe! Das wird ein Tanz! Wir werden Euch vernichten, unser Gott wird Euch vernichten! Die Derro sind jetzt die neuen Herren Korolnors! Die Savants, ja, die Savants, sie sollen Euch kneten und formen, bis Ihr quiekt! (quiek, quiek, quiek) Hihihi…~
 @4501 = ~Diese Wesen wollen für all den Ärger hier verantwortlich sein?~
 @4502 = ~Derro? Ich kenne diese kleinen Verrückten aus dem Unterreich. Sie sind wie wahnsinnige Zwerge, die mit Magie um sich werfen. Passt auf, <CHARNAME>, denn sie sind völlig unberechenbar.~
-@4503 = ~Quiek, quiek! Muss Savants warnen. Husch, husch, hihihi!~
+@4503 = ~(quiek, quiek) Muss Savants warnen. Husch, husch, hihihi!~
 @4504 = ~Argh! Jemand dringt in unsere Troll-Zuchtstation ein! Nein, nein, nein, das darf nicht sein! Wir Derro werden herrschen! Rappeldibam, Rappeldibautz.~
 @4505 = ~Sieh an, sieh an. Die Derro züchten Trolle. Normalerweise habe ich ja nichts gegen ein wenig Wahnsinn und Raserei, aber die Derro treiben es eindeutig zu weit!~
 @4506 = ~Ein völlig verwirrtes Wesen! Hat wohl zu viele Schläge auf den Kopf bekommen?~
 @4507 = ~Befreit die Zuchtobjekte! Lasst keinen der Eindringlinge am Leben!~
-@4508 = ~B-bitte tut uns nichts! W-wir wollen k-keinen Ärger! W-wir s-sind nur Sklaven...~
+@4508 = ~B-Bitte tut uns nichts! W-Wir wollen k-keinen Ärger! W-Wir s-sind nur Sklaven …~
 @4509 = ~Nicht mehr. Ihr seid in Sicherheit und könnt diesen Ort verlassen.~
-@4510 = ~Ihr wollt keinen Ärger? Dann verschwindet und sorgt dafür, dass ihr uns nicht weiter im Weg herumsteht.~
-@4511 = ~Dann verhaltet Euch gefälligst auch wie Sklaven! Schweigt und lasst mich in Ruhe.~
+@4510 = ~Ihr wollt keinen Ärger? Dann verschwindet und sorgt dafür, dass Ihr uns nicht weiter im Weg herumsteht.~
+@4511 = ~Dann verhaltet Euch gefälligst auch wie Sklaven! Schweigt und lasst mich in Ruhe!~
 @4512 = ~Oh, b-bitte um Verzeihung, <PRO_LADYLORD>, wir werden Euch nicht weiter behelligen.~
-@4513 = ~Ihr... Ihr  meint, wir sind frei? Wirklich? Oh, Danke!~
-@4514 = ~Erzählt mir zuerst, wie ihr hierher gekommen seid.~
-@4515 = ~Fort mit Euch! Macht weiterhin so einen Lärm, und Ihr werdet Euch wünschen, wir hätten Euch nie gefunden.~
+@4513 = ~Ihr … Ihr meint, wir sind frei? Wirklich? Oh, Danke!~
+@4514 = ~Erzählt mir zuerst, wie Ihr hier hergekommen seid.~
+@4515 = ~Fort mit Euch! Macht weiterhin so einen Lärm und Ihr werdet Euch wünschen, wir hätten Euch nie gefunden.~
 @4516 = ~Verschwendet meine Zeit nicht mit Dankbarkeit. Geht, bevor die Derro zurückkehren.~
 @4517 = ~Die Trolle hatten uns in die Berge verschleppt und an die Derro übergeben. Die Reise hierher war grausam; viele von uns haben nicht überlebt, andere wurden von Trollen verspeist. Was übrig bleibt, seht Ihr hier, und unsere Zahl schwindet täglich.~
 @4518 = ~Was sind Derro?~
 @4519 = ~Ihr meint, die Derro stecken hinter all dem, was hier passiert?~
 @4520 = ~Aus welchem Zweck halten die Derro Euch als Sklaven?~
-@4521 = ~Ich bin kein Gelehrter, aber nach Allem, was ich hier beobachtet habe, sind die Derro eine boshafte Rasse, die aus dem Unterreich emporgestiegen sind. Sie halten sich für die rechtmäßigen Erben dieses Ortes - als wären sie Zwerge! Und irgendwie sehen sie auch ähnlich wie Zwerge aus. Zumindest wie ein Zwerg, der durch Magie völlig wahnsinnig geworden ist.~
+@4521 = ~Ich bin kein Gelehrter, aber nach allem, was ich hier beobachtet habe, sind die Derro eine boshafte Rasse, die aus dem Unterreich emporgestiegen sind. Sie halten sich für die rechtmäßigen Erben dieses Ortes, als wären sie Zwerge! Und irgendwie sehen sie auch ähnlich wie Zwerge aus. Zumindest wie ein Zwerg, der durch Magie völlig wahnsinnig geworden ist.~
 @4522 = ~Das weiß ich nicht. Sie haben vier Magier, die sie Savants nennen und die hier das Sagen haben. Wobei diese vier wieder einem fünften, mächtigeren Derro-Magier zu dienen scheinen. Er kommt ab und zu hier vorbei und wählt Sklaven aus, die dann mit ihm verschwinden. Und niemals zurückkehren.~
 @4523 = ~Was könnt Ihr mir über diesen Derro-Magier erzählen?~
 @4524 = ~Ihr solltet jetzt gehen. Findet Ihr den Weg nach draußen allein?~
@@ -27,12 +32,12 @@
 @4526 = ~Wir wissen es nicht. Es gibt Gerüchte, dass die Derro von einem besonders mächtigen Zauberer angeführt werden, dessen Wahnsinn tief und gefährlich ist. Er versucht, eine Tür in den Tiefen des Komplexes zu öffnen und brauchte die Hilfe von Menschen. Mehr wissen wir auch nicht.~
 @4527 = ~Findet Ihr den Weg nach draußen allein?~
 @4528 = ~Dann geht jetzt besser. Wir werden unseren Weg in die Tiefen des Komplexes fortsetzen.~
-@4529 = ~Wir wissen es nicht. Es scheint, dass der Magier der Wahnsinnigste von allen ist ist. Er versucht, eine Tür in den Tiefen des Komplexes zu öffnen und braucht die Hilfe von Menschen. Mehr wissen wir auch nicht.~
+@4529 = ~Wir wissen es nicht. Es scheint, dass der Magier der Wahnsinnigste von allen ist. Er versucht, eine Tür in den Tiefen des Komplexes zu öffnen und braucht die Hilfe von Menschen. Mehr wissen wir auch nicht.~
 @4530 = ~Bitte, können wir jetzt gehen?~
 @4531 = ~Ja, aber seid vorsichtig auf Eurem Weg nach draußen.~
 @4532 = ~Findet Ihr den Weg nach draußen wirklich allein?~
 @4533 = ~Natürlich könnt Ihr jetzt gehen. Solltet Ihr unterwegs ein paar Monster treffen, schickt Sie zu uns.~
-@4534 = ~J-ja, bestimmt. So, wie Ihr ausseht, habt Ihr nicht viel von unseren ehemaligen Gefängniswärtern übriggelassen. Wir werden den Weg nach draußen schon finden.~
+@4534 = ~J-Ja, bestimmt. So, wie Ihr ausseht, habt Ihr nicht viel von unseren ehemaligen Gefängniswärtern übriggelassen. Wir werden den Weg nach draußen schon finden.~
 @4535 = ~Dann geht jetzt.~
 @4536 = ~Passt auf Euch auf. Wir werden unseren Weg in die Tiefen des Komplexes fortsetzen.~
 @4537 = ~Lebt wohl. Und passt hier gut auf Euch auf! Wenngleich ich Euch das wohl nicht zu sagen brauche, wenn Ihr es bis hierhin geschafft habt. Ihr habt uns das Leben gerettet. Wir werden nie vergessen, was Ihr für uns getan habt!~
