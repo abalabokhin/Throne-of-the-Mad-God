@@ -171,20 +171,20 @@ At last, we have reached the old assembly hall, where, centuries ago, the envoys
 
 I managed to decipher the symbols on either side of the corridor—each represents one of Shanatar's sub-kingdoms.  
 Additionally, the names and titles of the kingdoms are recorded.  
-Each kingdom was given a title reflecting its primary industry—for instance, Ultoksamrin, rich in Zardazil, was called the 'Zardazil Kingdom.' Only the greedy dwarves of Drakkalor received no mineral name for their city but were instead given the fitting title 'City of Greed.'  
+Each kingdom was given a title reflecting its primary industry—for instance, Ultoksamrin, rich in Zardazil, was called the Zardazil Kingdom. Only the greedy dwarves of Drakkalor received no mineral name for their city but were instead given the fitting title City of Greed.  
 
 The symbols are as follows:  
 
-- Sondarr, the Seastar Kingdom – A coin, likely representing the god Vergadain  
-- Holorarar, the Gold Kingdom – Moradin’s symbol, an anvil  
-- Ultoksamrin, the Zardazil Kingdom – Dumathoin’s symbol, a mountain with a crystal  
-- Barakuir, the Iron Kingdom – Laduguer’s symbol, a shield with an arrow  
-- Torglor, the Silver Kingdom – An unknown symbol (a downward spiral?), unknown deity  
-- Korolnor, the Jewel Kingdom – Seven gemstones, a symbol of an unidentified god—mayhap the old patron deity of this stronghold?  
-- High Shanatar, the Glacier Kingdom – Thard Harr’s symbol, two gloves  
-- Xothaerin, the Adamant Kingdom – Sharindlar’s symbol, a burning needle  
-- Iltkazar, the Mithral Kingdom – Clangeddin’s symbol, two crossed axes  
-- Drakkalor, the City of Greed – Abbathor’s symbol, a jewel-encrusted dagger  
+– Sondarr, the Seastar Kingdom – A coin, likely representing the god Vergadain
+– Holorarar, the Gold Kingdom – Moradin’s symbol, an anvil  
+– Ultoksamrin, the Zardazil Kingdom – Dumathoin’s symbol, a mountain with a crystal  
+– Barakuir, the Iron Kingdom – Laduguer’s symbol, a shield with an arrow  
+– Torglor, the Silver Kingdom – An unknown symbol (a downward spiral?), unknown deity  
+– Korolnor, the Jewel Kingdom – Seven gemstones, a symbol of an unidentified god—mayhap the old patron deity of this stronghold?  
+– High Shanatar, the Glacier Kingdom – Thard Harr’s symbol, two gloves  
+– Xothaerin, the Adamant Kingdom – Sharindlar’s symbol, a burning needle  
+– Iltkazar, the Mithral Kingdom – Clangeddin’s symbol, two crossed axes  
+– Drakkalor, the City of Greed – Abbathor’s symbol, a jewel-encrusted dagger  
 
 Beside each symbol is a small offering altar. It seems that the envoys of each kingdom once placed their ruling symbols here. The purpose of this ritual remains unknown to me.  
 
@@ -254,12 +254,13 @@ However, this particular piece of Mithral seems to serve a different purpose.~
 @375 = ~Inkagurksul~
 @376 = ~Derro~
 @377 = ~Bolt of Weakening~
-@378 = ~These crossbow bolts were crafted by the Derro, a dwarven-like race from the Underdark. Infamous for both their cruelty and madness, the Derro coat their bolts in a paralyzing poison that saps the victim’s strength, much like the effects of a Ray of Enfeeblement spell. A successful saving throw against death negates the poison’s effect.  
+@378 = ~These crossbow bolts were crafted by the Derro, a dwarven-like race from the Underdark. Infamous for both their cruelty and madness, the Derro coat their bolts in a paralyzing poison that saps the victim’s strength, much like the effects of a Ray of Enfeeblement spell. A successful Save vs. death negates the poison’s effect.  
 
 STATISTICS:  
 
 Combat abilities:
-– Strength-draining poison (Save vs. death negates) 
+– Strength -1 (cumulative, Save vs. death negates) 
+Duration: 1 turn
 
 Damage: 1d8 (missile)
 Launcher: Crossbow
@@ -372,7 +373,7 @@ Requires:
 Weight: 20~
 @489 = ~You cannot see the bottom of this crevice, but warm air steadily rises from within.~
 @490 = ~Troll Hound~
-@491 = ~Kursh Breakhorn~
+@491 = ~Kursh Brokenhorn~
 @495 = ~Bow of Death's Rain~
 @496 = ~The Bow of Death's Rain was crafted centuries ago from the young branches of a tree sacred to the elves. Its shaft is engraved with numerous symbols.  
 
@@ -381,7 +382,7 @@ It possesses the ability to unleash a devastating rain of arrows upon its foes o
 STATISTICS: 
 
 Charge abilities:
-–Arrow Rain: Once per day, a volley of arrows rains down on a target, dealing 2d6 damage to it and all enemies within a 10-feet radius.  
+– Arrow Rain: Once per day, a volley of arrows rains down on a target, dealing 2d6 damage to it and all enemies within a 10-feet radius.  
 
 THAC0: +4
 Speed Factor: 4
@@ -1162,9 +1163,9 @@ Beyond the well-known race of Shield Dwarves, scholars have identified several o
 
 Among them are the Duergar, also known as Gray Dwarves. According to consistent reports, the Duergar trace their lineage back to a clan of the same name, which once made its home in Barakuir, the Iron Kingdom. For reasons unknown, the clan turned against its kin, vanished for a time, and eventually returned—transformed into a cruel and twisted version of their former selves.  
 
-Lesser known is that another ill-tempered denizen of the Underdark also descends from dwarves: the Derro. These small, long-haired creatures are prone to excessive cruelty and madness. They revere the former outcast twins of Moradin—Diirinka and Diinkarazan. Worshippers of Diirinka are far more numerous, perhaps because his twin brother, Diinkarazan, was banished to the Abyss.  
+Lesser known is that another ill-tempered denizen of the Underdark also descends from dwarves: The Derro. These small, long-haired creatures are prone to excessive cruelty and madness. They revere the former outcast twins of Moradin—Diirinka and Diinkarazan. Worshippers of Diirinka are far more numerous, mayhap because his twin brother, Diinkarazan, was banished to the Abyss.  
 
-Before his expulsion from the dwarven pantheon, Diirinka was venerated by the dwarves of the subkingdom of Torglor, while Diinkarazan was worshipped by the dwarves of Korolnor. It stands to reason that over the centuries, some of the ancient dwarven clans of these two subkingdoms gradually became the Derro as we know them today, continuing their veneration of their cruel and maddened gods—the forsaken children of Moradin.~  
+Before their expulsion from the dwarven pantheon, Diirinka was venerated by the dwarves of the subkingdom of Torglor, while Diinkarazan was worshipped by the dwarves of Korolnor. It stands to reason that over the centuries, some of the ancient dwarven clans of these two subkingdoms gradually became the Derro as we know them today, continuing their veneration of their cruel and maddened gods—the forsaken children of Moradin.~  
 
 @2060 = ~Lancameth's Head~  
 @2061 = ~This is the head of Bryam Lancameth, after the curse of a Vargouille was lifted from him. His expression is now calm and peaceful. You may bring these final remains to his widow, Darcia Lancameth, in the Graveyard District so she may say her farewells.~  
