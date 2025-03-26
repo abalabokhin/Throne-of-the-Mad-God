@@ -3,7 +3,7 @@ IF
     Detect([PC])
 THEN
     RESPONSE #100
-        StartDialogueNoSet("AC#MG18S")  // Slave
+        StartDialogueNoSet("AC#MG18S")  // Sklave
 END
 
 IF
@@ -20,8 +20,8 @@ IF
     Global("Prepare","LOCALS",0)
 THEN
     RESPONSE #100
-        ApplySpell(Myself,WIZARD_IMPROVED_MANTLE)  // SPWI808.SPL (Improved Mantle)
-        ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Stoneskin)
+        ApplySpell(Myself,WIZARD_IMPROVED_MANTLE)  // SPWI808.SPL (Verbesserter Schutzmantel)
+        ApplySpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
         SetGlobal("Prepare","LOCALS",1)
 END
 
@@ -30,13 +30,13 @@ IF
     Global("SpellTrigger","LOCALS",0)
 THEN
     RESPONSE #100
-        DisplayString(Myself,39968)  // Spell Trigger—Fired
-        DisplayString(Myself,43046)  // Spell Trigger—Mislead
-        ReallyForceSpell(Myself,WIZARD_MISLEAD)  // SPWI607.SPL (Mislead)
-        DisplayString(Myself,43047)  // Spell Trigger—Fire Shield Red
-        ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)  // SPWI418.SPL (Fire Shield (Red))
-        DisplayString(Myself,40245)  // Spell Trigger—Globe of Invulnerability
-        ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (Globe of Invulnerability)
+        DisplayString(Myself,39968)  // Zauberauslöser: Ausgelöst
+        DisplayString(Myself,43046)  // Zauberauslöser: Ablenkung
+        ReallyForceSpell(Myself,WIZARD_MISLEAD)  // SPWI607.SPL (Ablenkung)
+        DisplayString(Myself,43047)  // Zauberauslöser: Roter Feuerschild
+        ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)  // SPWI418.SPL (Roter Feuerschild)
+        DisplayString(Myself,40245)  // Zauberauslöser: Kugel der Unverwundbarkeit
+        ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI602.SPL (Kugel der Unverwundbarkeit)
         SetGlobal("SpellTrigger","LOCALS",1)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
@@ -45,10 +45,10 @@ IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
     StateCheck(Myself,STATE_SILENCED)
-    HaveSpell(WIZARD_VOCALIZE)  // SPWI219.SPL (Vocalize)
+    HaveSpell(WIZARD_VOCALIZE)  // SPWI219.SPL (Wortloses Zaubern)
 THEN
     RESPONSE #100
-        Spell(Myself,WIZARD_VOCALIZE)  // SPWI219.SPL (Vocalize)
+        Spell(Myself,WIZARD_VOCALIZE)  // SPWI219.SPL (Wortloses Zaubern)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
@@ -56,21 +56,21 @@ IF
     Allegiance(Myself,ENEMY)
     Detect([PC])
     !See(LastSeenBy(Myself))
-    HaveSpell(WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+    HaveSpell(WIZARD_TRUE_SIGHT)  // SPWI609.SPL (Wahrer Blick)
 THEN
     RESPONSE #100
-        Spell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+        Spell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (Wahrer Blick)
 END
 
 IF
     Allegiance(Myself,ENEMY)
     Detect([PC])
     !See(LastSeenBy(Myself))
-    !HaveSpell(WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+    !HaveSpell(WIZARD_TRUE_SIGHT)  // SPWI609.SPL (Wahrer Blick)
     Delay(10)
 THEN
     RESPONSE #100
-        ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (True Sight)
+        ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)  // SPWI609.SPL (Wahrer Blick)
 END
 
 IF
@@ -79,23 +79,23 @@ IF
     Global("Prepare2","LOCALS",0)
 THEN
     RESPONSE #100
-        DisplayString(Myself,43050)  // Chain Contingency—Improved Mantle
-        ApplySpell(Myself,WIZARD_IMPROVED_MANTLE)  // SPWI808.SPL (Improved Mantle)
-        DisplayString(Myself,3302)  // Chain Contingency—Spell Turning
-        ApplySpell(Myself,WIZARD_SPELL_TURNING)  // SPWI701.SPL (Spell Turning)
-        DisplayString(Myself,40240)  // Chain Contingency—Mislead
-        ApplySpell(Myself,WIZARD_MISLEAD)  // SPWI607.SPL (Mislead)
+        DisplayString(Myself,43050)  // Kombinierter Notfall: Verbesserter Schutzmantel
+        ApplySpell(Myself,WIZARD_IMPROVED_MANTLE)  // SPWI808.SPL (Verbesserter Schutzmantel)
+        DisplayString(Myself,3302)  // Kombinierter Notfall: Zauber zurückwerfen
+        ApplySpell(Myself,WIZARD_SPELL_TURNING)  // SPWI701.SPL (Zauber zurückwerfen)
+        DisplayString(Myself,40240)  // Kombinierter Notfall: Ablenkung
+        ApplySpell(Myself,WIZARD_MISLEAD)  // SPWI607.SPL (Ablenkung)
         SetGlobal("Prepare2","LOCALS",1)
 END
 
 IF
     Allegiance(Myself,ENEMY)
     See([GOODCUTOFF.0.0.0.0.SUMMONED])
-    HaveSpell(WIZARD_DEATH_SPELL)  // SPWI605.SPL (Death Spell)
+    HaveSpell(WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
 THEN
     RESPONSE #100
-        Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)  // SPWI605.SPL (Death Spell)
+        Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)  // SPWI605.SPL (Todeszauber)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
@@ -105,8 +105,8 @@ IF
     Global("Prepare2","LOCALS",1)
 THEN
     RESPONSE #100
-        DisplayString(Myself,40252)  // Contingency—Protection From Magical Weapons
-        ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (Protection From Magical Weapons)
+        DisplayString(Myself,40252)  // Notfall: Schutz vor magischen Waffen
+        ApplySpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)  // SPWI611.SPL (Schutz vor magischen Waffen)
         SetGlobal("Prepare2","LOCALS",2)
 END
 
@@ -118,21 +118,21 @@ IF
 THEN
     RESPONSE #100
         SetGlobal("AnimateSlaves","LOCALS",1)
-        ReallyForceSpellRES("AC#MG18","AC#MG181")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG181")  // Tote beleben
         ActionOverride("AC#MG181",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG182")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG182")  // Tote beleben
         ActionOverride("AC#MG182",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG182")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG182")  // Tote beleben
         ActionOverride("AC#MG182",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG183")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG183")  // Tote beleben
         ActionOverride("AC#MG183",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG184")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG184")  // Tote beleben
         ActionOverride("AC#MG184",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG185")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG185")  // Tote beleben
         ActionOverride("AC#MG185",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG186")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG186")  // Tote beleben
         ActionOverride("AC#MG186",DestroySelf())
-        ReallyForceSpellRES("AC#MG18","AC#MG187")  // Animate Dead
+        ReallyForceSpellRES("AC#MG18","AC#MG187")  // Tote beleben
         ActionOverride("AC#MG187",DestroySelf())
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
@@ -140,10 +140,10 @@ END
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+    HaveSpell(WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+        Spell(NearestEnemyOf(Myself),WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
@@ -153,7 +153,7 @@ IF
     Global("SummonFiend","LOCALS",0)
 THEN
     RESPONSE #100
-        DisplayStringHead(Myself,31971)  // *uses a wand*
+        DisplayStringHead(Myself,31971)  // verwendet einen Stab
         CreateCreatureObjectEffect("demnabsu","SPGFLSH1",Myself)  // Nabassu
         SetGlobal("SummonFiend","LOCALS",1)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
@@ -162,99 +162,109 @@ END
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_MORDENKAINENS_SWORD)  // SPWI716.SPL (Mordenkainen's Sword)
+    HaveSpell(WIZARD_MORDENKAINENS_SWORD)  // SPWI716.SPL (Mordenkainens Schwert)
 THEN
     RESPONSE #100
-        Spell(Myself,WIZARD_MORDENKAINENS_SWORD)  // SPWI716.SPL (Mordenkainen's Sword)
+        Spell(Myself,WIZARD_MORDENKAINENS_SWORD)  // SPWI716.SPL (Mordenkainens Schwert)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_CLOUDKILL)  // SPWI502.SPL (Cloudkill)
+    HaveSpell(WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)  // SPWI502.SPL (Cloudkill)
+        Spell(NearestEnemyOf(Myself),WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_SUMMON_NISHRUU)  // SPWI624.SPL (Summon Nishruu)
+    HaveSpell(WIZARD_SUMMON_NISHRUU)  // SPWI624.SPL (Nishruu beschwören)
     See(NearestEnemyOfType([0.0.0.LONG_BOW]))
 THEN
     RESPONSE #100
-        Spell(LastSeenBy(Myself),WIZARD_SUMMON_NISHRUU)  // SPWI624.SPL (Summon Nishruu)
+        Spell(LastSeenBy(Myself),WIZARD_SUMMON_NISHRUU)  // SPWI624.SPL (Nishruu beschwören)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_PRISMATIC_SPRAY)  // SPWI714.SPL (Prismatic Spray)
+    HaveSpell(WIZARD_PRISMATIC_SPRAY)  // SPWI714.SPL (Regenbogenstrahlen)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)  // SPWI714.SPL (Prismatic Spray)
+        Spell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)  // SPWI714.SPL (Regenbogenstrahlen)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (Finger of Death)
+    HaveSpell(WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (Finger des Todes)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (Finger of Death)
+        Spell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)  // SPWI713.SPL (Finger des Todes)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Chain Lightning)
+    HaveSpell(WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Kettenblitz)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Chain Lightning)
+        Spell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)  // SPWI615.SPL (Kettenblitz)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol, Fear)
+    HaveSpell(WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol der Furcht)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol, Fear)
+        Spell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)  // SPWI899.SPL (Symbol der Furcht)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_SUN_FIRE)  // SPWI523.SPL (Sunfire)
+    HaveSpell(WIZARD_SUN_FIRE)  // SPWI523.SPL (Sonnenfeuer)
 THEN
     RESPONSE #100
-        Spell(Myself,WIZARD_SUN_FIRE)  // SPWI523.SPL (Sunfire)
+        Spell(Myself,WIZARD_SUN_FIRE)  // SPWI523.SPL (Sonnenfeuer)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
     !GlobalTimerNotExpired("BD_Cast","LOCALS")
-    HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (Domination)
+    HaveSpell(WIZARD_DOMINATION)  // SPWI506.SPL (Beherrschung)
 THEN
     RESPONSE #100
-        Spell(NearestEnemyOf(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (Domination)
+        Spell(NearestEnemyOf(Myself),WIZARD_DOMINATION)  // SPWI506.SPL (Beherrschung)
         SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
 END
 
 IF
     See(NearestEnemyOf(Myself))
+    HasItem("DART03",Myself)
 THEN
     RESPONSE #100
         EquipRanged()
+        AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+    !HasItem("DART03",Myself)
+THEN
+    RESPONSE #100
+        EquipMostDamagingMelee()
         AttackOneRound(NearestEnemyOf(Myself))
 END
 

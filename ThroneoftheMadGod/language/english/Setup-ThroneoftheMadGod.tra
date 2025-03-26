@@ -490,8 +490,8 @@ Creatures affected by the gas before the spell is cast will still suffer its pri
 If cast in the same round as a gaseous effect, Neutralize Gas can also be used to counteract gaseous breath weapons, granting affected creatures a +4 bonus to saving throws and a 50% resistance against such breath attacks.~
 
 @551 = ~Black Troll~
-@552 = ~Larloch's Major Drain~
-@553 = ~Larloch's Major Drain  
+@552 = ~Larloch's Mass Drain~
+@553 = ~Larloch's Mass Drain  
 (Necromancy)
 
 Level: 9  
@@ -501,7 +501,7 @@ Casting Time: 3
 Area of Effect: Creature and a 30 ft. square  
 Saving Throw: None  
 
-With this spell, the caster drains the life force of all beings within the affected area and adds it to <PRO_HISHER> own.  
+With this spell, the caster drains the life force of all enemies within the affected area and adds it to <PRO_HISHER> own.  
 
 The victims suffer 1d8 points of damage, while the caster gains an additional 1d8 hit points per affected creature.  
 
@@ -900,9 +900,9 @@ Damnation! Bryam Lancameth has seen through my deception, has sensed the treache
 @2015 = ~Anthracite~  
 @2016 = ~Anthracite, a special form of coal, is known for its remarkable density and heat resistance, making it the preferred choice for dwarves to generate warmth in their halls and heat in their forges. The glossy black material burns long and evenly, is resistant to moisture, and radiates intense heat and brightness. Due to its symbolic significance, anthracite is often used by dwarves to illuminate sacred sites.~  
 @2017 = ~Mithral Field Plate +2~  
-@2018 = ~This Mithral armor once belonged to Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. The impressive armor is crafted from Mithral, a rare, silvery-blue metal known for its lightness and flexibility. The breastplate shimmers with a soft bluish glow and provides exceptional protection to its wearer without significantly hindering mobility. It is lightweight and can be worn comfortably even by warriors of lesser strength.  
+@2018 = ~This mithral armor once belonged to Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. The impressive armor is crafted from mithral, a rare, silvery-blue metal known for its lightness and flexibility. The breastplate shimmers with a soft bluish glow and provides exceptional protection to its wearer without significantly hindering mobility. It is lightweight and can be worn comfortably even by warriors of lesser strength.  
 
-The Mithral used in this armor possesses a natural resistance to magic, allowing its wearer to better withstand magical attacks.  
+The mithral used in this armor possesses a natural resistance to magic, allowing its wearer to better withstand magical attacks.  
 
 STATISTICS:
  
@@ -919,11 +919,11 @@ Weight: 15~
 @2019 = ~Piece of Armor~  
 @2020 = ~Mithral Shoulder Plate (Left)~  
 @2021 = ~This finely crafted piece of metal appears to have once belonged to a suit of armor.~  
-@2022 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of Mithral. The complete armor must have been a truly powerful artifact.~  
+@2022 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of mithral. The complete armor must have been a truly powerful artifact.~  
 @2023 = ~Mithral Shoulder Plate (Right)~  
-@2024 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of Mithral. The complete armor must have been a truly powerful artifact.~  
+@2024 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of mithral. The complete armor must have been a truly powerful artifact.~  
 @2025 = ~Breastplate of Karlyn’s Armor~  
-@2026 = ~This is the central breastplate of the Mithral armor of the dwarven hero Karlyn Kuldelver. If combined with the two missing pieces—the shoulder plates—by the hands of a skilled blacksmith, it could be reforged into an excellent Mithral harness. However, very few smiths possess the knowledge to work with Mithral, save for dwarven master smiths. Such artisans are rare in the realms, and they are reluctant to share their secrets.~  
+@2026 = ~This is the central breastplate of the mithral armor of the dwarven hero Karlyn Kuldelver. If combined with the two missing pieces—the shoulder plates—by the hands of a skilled blacksmith, it could be reforged into an excellent mithral harness. However, very few smiths possess the knowledge to work with mithral, save for dwarven master smiths. Such artisans are rare in the realms, and they are reluctant to share their secrets.~  
 
 @2027 = ~Blackbite +3~  
 @2028 = ~The tip of this mighty spear is adorned with the fang of some great beast. Legends claim it to be the tooth of a black dragon, which would explain why the spear’s tip constantly drips with acid. The name "Blackbite" is thus quite fitting.  
@@ -1213,7 +1213,7 @@ Duration: 1 phase
 Weight: 8~
 
 @2072 = ~Crown Jewel of Korolnor~
-@2073 = ~This finely cut gemstone is part of the crown jewels of House Korolnor. Deep within its core, a bright glow can be seen. It is impossible to decipher the ancient magic that dwells within the stone.~
+@2073 = ~This finely cut gemstone is part of the crown jewels of House Korolnor. Deep within its core, a bright glow can be seen. It is impossible to unravel the ancient magic that dwells within the stone.~
 @2074 = ~Ancient Dwarven Book~
 @2075 = ~How Moradin Forged the Dwarves
 

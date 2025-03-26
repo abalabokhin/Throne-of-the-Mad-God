@@ -80,6 +80,8 @@ SAY @4227
 ++ @4228 + pray_for_you
 IF ~PartyHasItem("AC#HEAD1")~ THEN REPLY @4229 GOTO lancahead_vargouille
 IF ~PartyHasItem("AC#MGLN2")~ THEN REPLY @4229 GOTO Lancahead_redeemed
+IF ~PartyHasItem("AC#MGLN2")~ THEN REPLY @4320 GOTO Lancahead_redeemed
+IF ~PartyHasItem("AC#MGLN2")~ THEN REPLY @4321 GOTO Lancahead_redeemed
 IF ~OR(2)
 PartyHasItem("AC#HEAD1")
 PartyHasItem("AC#MGLN2")~ THEN REPLY @4230 GOTO Lancahead_head_look_eyes
