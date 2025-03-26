@@ -23,6 +23,11 @@ Compatible with **BG2EE** and **EET**
 
 ---
 
+### Languages  
+The mod is available in **English and German**.
+
+---
+
 ## Installation  
 1. Remove any previous version of the mod before installing a new one.  
 2. Extract the contents of the mod archive into your game's main directory (`BG2EE` / `EET`, where `CHITIN.KEY` is located).  
@@ -44,6 +49,12 @@ Compatible with **BG2EE** and **EET**
 ### Recommended Character Level  
 - Level 9+  
 - Features dynamic enemy scaling based on character level and game difficulty settings.  
+
+---
+
+## Documentation  
+For detailed information, see the full readme (PDF):  
+[Throne of the Mad God – Readme](https://github.com/AciferBG/Throne-of-the-Mad-God/blob/main/ThroneoftheMadGod/documentation/Throne_of_the_Mad_God_Readme.pdf)
 
 ---
 
