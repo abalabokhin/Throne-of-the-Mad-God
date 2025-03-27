@@ -59,13 +59,15 @@ For detailed information, see the full readme (PDF):
 ---
 
 ## Feedback & Support  
-If you encounter issues or have suggestions, please report them on the **Gibberlings3 Forum**:  
-[**G3 Forums – Throne of the Mad God**](https://www.gibberlings3.net/forums/)
+If you encounter issues or have suggestions, please report them in the official discussion thread:  
+[**G3 Forums – Throne of the Mad God**](https://www.gibberlings3.net/forums/topic/39354-mod-throne-of-the-mad-god-a-quest-mod-for-bg2ee/)
+
 
 ---
 
 ## Credits  
-**Acifer** – Writer, artist, designer and programmer 
+**Acifer** – Writer, artist, designer and programming
+
 **Lava** – Additional design, item and worldmap icons, testing  
 **Megrimlock** – English version  
 **Shai Hulud** – German version
