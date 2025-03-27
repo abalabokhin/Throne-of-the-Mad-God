@@ -24,7 +24,7 @@ Compatible with **BG2EE** and **EET**
 ---
 
 ### Languages  
-The mod is available in **English and German**.
+The mod is available in **English** and **German**.
 
 ---
 
