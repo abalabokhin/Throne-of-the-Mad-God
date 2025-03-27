@@ -65,7 +65,7 @@ If you encounter issues or have suggestions, please report them on the **Gibberl
 ---
 
 ## Credits  
-**Acifer** – Graphics and design  
+**Acifer** – Writer, artist, designer and programmer 
 **Lava** – Additional design, item and worldmap icons, testing  
 **Megrimlock** – English version  
 **Shai Hulud** – German version

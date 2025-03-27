@@ -1,4 +1,8 @@
 ***Throne of the Mad God - Version***
 
+V 1.1
+- updated readme
+- switched ac#der04 halberd to weapon slot #1
+
 V 1.0
 - initial release
