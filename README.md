@@ -10,7 +10,6 @@
 ## Table of Contents
 
 - [Features](#features)
-- [Watch the trailer on Youtube](#watch-the-trailer-on-youtube)
 - [Compatibility](#compatibility)
 - [Languages](#languages)
 - [Installation](#installation)
