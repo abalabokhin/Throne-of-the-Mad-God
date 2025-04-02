@@ -7,6 +7,23 @@
 
 **Throne of the Mad God** is a quest mod for *Baldur’s Gate II: Enhanced Edition (BG2EE) / Enhanced Edition Trilogy (EET)*. It introduces new areas, enemies, and a questline set deep within the lore of the Forgotten Realms.
 
+## Table of Contents
+
+- [Features](#features)
+- [Watch the trailer on Youtube](#watch-the-trailer-on-youtube)
+- [Compatibility](#compatibility)
+- [Languages](#languages)
+- [Installation](#installation)
+- [How to Start the Mod](#how-to-start-the-mod)
+- [Recommended Character Level](#recommended-character-level)
+- [Documentation](#documentation)
+- [Feedback & Support](#feedback--support)
+- [Reviews](#reviews)
+- [Credits](#credits)
+- [License](#license)
+- [Legal Notice](#legal-notice)
+
+
 ## Features
 - Engaging new storyline based on Forgotten Realms lore  
 - 16 newly designed 3D areas, including a vast dwarven dungeon  
@@ -24,7 +41,9 @@ Compatible with **BG2EE** and **EET**
 ---
 
 ### Languages  
-The mod is available in **English** and **German**.
+The mod is available in: 
+- English
+- German
 
 ---
 
@@ -62,6 +81,15 @@ For detailed information, see the full readme (PDF):
 If you encounter issues or have suggestions, please report them in the official discussion thread:  
 [**G3 Forums – Throne of the Mad God**](https://www.gibberlings3.net/forums/topic/39354-mod-throne-of-the-mad-god-a-quest-mod-for-bg2ee/)
 
+
+---
+
+## Reviews
+
+Curious what others think of the mod?  
+Read a detailed article at **The Smoldering Mods Bar**:
+
+[**Review of Throne of the Mad God – Smoldering Mods Bar**](https://smolderingmodsbar.com/throne-of-the-mad-god-bg2ee/)
 
 ---
 
