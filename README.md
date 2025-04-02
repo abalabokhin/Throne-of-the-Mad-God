@@ -2,8 +2,8 @@
 
 ![Throne of the Mad God Logo](https://github.com/AciferBG/Throne-of-the-Mad-God/blob/main/Documentation_pics/Madgod_symbol.png)
 
-*"Each region deserves its own desolate dwarven dungeon hiding a dastardly villain."* - Volo  
-*"And each dastardly villain deceives desperate adventurers into delving into desolate dwarven dungeons."* - Elminster  
+>*"Each region deserves its own desolate dwarven dungeon hiding a dastardly villain."* - Volo  
+>*"And each dastardly villain deceives desperate adventurers into delving into desolate dwarven dungeons."* - Elminster  
 
 **Throne of the Mad God** is a quest mod for *Baldur’s Gate II: Enhanced Edition (BG2EE) / Enhanced Edition Trilogy (EET)*. It introduces new areas, enemies, and a questline set deep within the lore of the Forgotten Realms.
 
