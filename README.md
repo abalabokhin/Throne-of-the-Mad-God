@@ -12,6 +12,7 @@
 - [Features](#features)
 - [Compatibility](#compatibility)
 - [Languages](#languages)
+- [Download](#Download)
 - [Installation](#installation)
 - [How to Start the Mod](#how-to-start-the-mod)
 - [Recommended Character Level](#recommended-character-level)
@@ -43,6 +44,15 @@ Compatible with **BG2EE** and **EET**
 The mod is available in: 
 - English
 - German
+
+---
+
+## Download
+
+You can download the latest version of **Throne of the Mad God** as a `.zip` archive including a **WeiDU installer** from the **Releases** section of this GitHub page.
+
+Click on the **“Releases”** tab on the right side (or top of the page, depending on your screen size), and download the latest `.zip` file.  
+After downloading, extract the archive into your game’s main directory and follow the instructions below.
 
 ---
 
