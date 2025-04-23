@@ -1,0 +1,1703 @@
+@3 	  = ~Huh?~ [AC#MFFO1]
+@4	  = ~Ah!~ [FOMOR06A] //[AC#MFFO2] 
+@5    = ~The water of this spring suddenly appears crystal clear and pure.~
+@6    = ~You take a sip and feel healthy and refreshed.~
+@7    = ~You need to step closer if you wish to drink from the basin.~
+@8    = ~Dretch~
+@9    = ~Globe of Darkness~
+@10   = ~Korolnor Jewel~
+@11   = ~This is a cut gemstone from House Korolnor, a fallen dwarven realm renowned for its gem-cutting artistry. While the stone holds no particular magical properties, its craftsmanship could fetch a handsome sum from a merchant.~
+@12   = ~This withered tree remains firmly rooted in the rock. The trunk still appears strong enough to bear considerable weight.~
+@13   = ~You could attempt to fell the trunk and use it to cross the small ravine back to the exit.~
+@14   = ~You are too weak to cut down the tree.~
+@15   = ~With a few powerful swings of your weapon, you carve a notch into the wood until the trunk begins to lean...~
+@16   = ~The trunk has fallen perfectly. You are satisfied with your work.~ [AC#10TRE]
+@17   = ~The pan falls to the ground with a loud clang.~ [AC#15POT]
+@18   = ~Trolls and Their Subspecies~
+@19   = ~Trolls and Their Subspecies
+
+By Glouris Mristifos, Conjurer of the Tower of Art, Zhentil Keep  
+Commissioned by Mage Thagdal, Master of the Tower of Art  
+
+Assignment: Seek out new troll species for breeding programs  
+Location: Dwarven ruins in the Troll Mountains  
+
+Preface: Trolls exhibit remarkable adaptability. On one hand, they interbreed with many other primitive races; on the other, they absorb traits from their surroundings. Both factors can give rise to new troll subtypes with entirely unique properties. This makes them ideal subjects for Zhentil Keep’s breeding programs.  
+
+My task is to explore the ruins of an ancient dwarven fortress, known to the locals as the "Wailing Dwarf," in search of additional troll variants. Local folk speak in hushed tones of dreadful new crossbreeds.  
+
+The most promising specimens will be cataloged so that our strike team can capture them and integrate them into the monster-breeding facilities of Zhentil Keep.  
+
+Discovered specimens so far:  
+
+Ghost Troll – Contrary to what one might expect, this is not an undead troll. Rather, it is a crossbreed between an Invisible Stalker and a common troll.  
+
+Spectral Troll – This appears to be a truly undead form of a troll—mayhap one that had contact with a wraith?  
+
+Gray Troll – Another variety of troll corrupted by undeath. It seems that a complete level drain creates a Gray Troll.  
+
+Phase Troll – This troll has been touched by the Ethereal Plane, allowing it to shift between planes like a phase spider. It can also create mirror images of itself, confounding attackers. A fascinating specimen, though difficult to control.  
+
+Stone Troll – A breed of troll that, for some unknown reason, possesses the ability to harden its skin like solid rock. Extremely difficult to slay. Must be captured for breeding purposes!  
+
+Black Troll – A highly dangerous type of troll. Black Trolls carry the blood of the Lower Planes within them. They can summon minor fiends, unleash powerful lightning spells, and shroud enemies in darkness.
+
+Faerzress Troll – These trolls have been exposed to a rare magical aura in the Underdark, known to the drow as "Faerzress", which grants them extraordinary properties. They are highly resistant to magic and can suppress it with their touch.
+
+Venom Troll – Trolls whose regenerative abilities have been severely exposed to potent toxins may, in rare cases, transform into Venom Trolls. The poisonous blood of this breed splashes onto nearby foes when struck, even onto the weapons that pierce it! Excellent for breeding, as they can be easily created. No need to capture one—experiments with common trolls and various toxins should suffice.  
+
+Rumors also speak of a troll species from the East, one as large as a giant with two heads. However, as these creatures constantly seek to dominate other trolls, they are unsuitable for breeding.  
+
+Additionally, Zhentil Keep has heard whispers of strange, ancient, and forgotten arcane magics slumbering within the fortress. Dwarves and magic? A peculiar thought. I shall investigate further.~
+@20   = ~Ring of Acid Resistance~
+@21   = ~Ring of Acid Resistance, 'Zabarin’s Folly'  
+
+During his conjurations of various oozes and slimes, the Sembian mage Zabarin relied on this ring to shield himself from the negative effects of his summoned creatures.  
+His specialty was the summoning of miniature black puddings, which he sealed in prepared jars and discreetly placed in the pantries of his rivals.  
+Zabarin met his rightful end beneath a massive avatar of Ghaunadaur, which he had attempted to control.  
+Against the sheer power and malice of the Lord of Slime, even his beloved ring proved useless.  
+
+STATISTICS:
+
+Equipped abilities:
+– Acid Resistance: +40%
+
+Weight: 0~
+@22   = ~Someone has left a rope here—likely to rappel down to another level.~
+@23   = ~If you wish, you can tie the rope to the collapsed bridge.~
+@24   = ~You loop the rope around a stone. It is now possible to climb up and down.~
+@25   = ~Trap sprung~ [AC#MGTR1] // Spear trap
+@26   = ~Trap sprung~ [AC#MGTR2] // Ground plate trap
+@27   = ~Tentacle severed~ [AC#MGFLS]
+
+@30   = ~Protection from Disease~
+@31   = ~Wild Magic~
+@51   = ~This passage is blocked by numerous boulders. You will need to find another way into the dwarven city.~
+@52   = ~This appears to have been an adventurer’s camp.~
+@53   = ~A bronze plaque inscribed with dwarven runes, though you cannot decipher them.~
+@54   = ~Verbeeg Shaman~
+@55   = ~Diinkarazan~
+@56   = ~Fomorian Giant~
+@57   = ~Verbeeg~
+@58   = ~This statue undoubtedly depicts a dwarven goddess unfamiliar to you.~
+@59   = ~Note of a Treasure Hunter~
+@60   = ~By the gods! Nothing keeps me in this place any longer. We thought that after that Amnian captain cleared the way, we could enter the ruins freely and loot to our hearts' content. We assumed the trolls were the worst of it—how wrong we were!  
+
+It had all started so promisingly. We discovered a shaft that we hoped would lead us deeper into the fortress—without facing more trolls. Barkley was the first to descend and was bitten by a winged fiend. We managed to drive the creature away, but after we rested, Barkley’s head was suddenly torn from his shoulders! His ears sprouted wings, and he shrieked as he launched himself at me!  
+
+By Beshaba, I ran as if stung by a phase spider. Now I just have to sneak back through the entrance hall and get out of here as fast as I can!~
+@61   = ~Nhair’s Journal~
+@62   = ~Day 2 of the Expedition  
+We have arrived at the 'Wailing Dwarf', crossed the rickety suspension bridge, solved the puzzles, and now stand before this colossal statue. The wind howls through the stone. Only dwarves would think to carve such a monument straight from the mountain!  
+
+Day 3 of the Expedition  
+This whole venture is unsettling. Here we are, in the entrance hall of Korolnor, and I must say, it is eerily quiet. Too quiet for my liking. The others don't seem to mind, but a halfling knows when something is amiss. The hairs on my feet prickle with every step.  
+
+Day 4 of the Expedition  
+Captain Bryam, our fearless leader, marches ahead as if there's gold to be made at every corner. Lady Starthorn, the elf, is always so serious and contemplative—she studies every rune on the walls. Our mage, the Dogwizard, remains a mystery, constantly muttering to himself—I understand none of it. Then there’s Matron Iremar, our priestess, blessing everything and everyone with a calm that is almost unsettling. Stay alert, Nhair!  
+
+Day 5 of the Expedition  
+We've reached the great hall. The bronze plaques on the floor speak of this place’s long history. Everything is eerily empty. Not a single troll in sight! I don't trust this silence. No sound but our own echoes. It feels as if we are dancing on a thin sheet of ice over the Shaengarne River, and beneath us, the Wastrilith waits. I’ll keep my eyes open, especially at night. Who knows? This could all be a trap, and we’d be the fools walking blindly into it. I’ll watch the doors and the shadows. If something is lurking, I want to see it first.  
+
+Day 6 of the Expedition  
+Bryam and the others moved ahead to the second level. I stayed back to pry open one of these old dwarven chests when it happened—the portcullis behind me crashed down with a loud clatter. No way back! It was indeed an ambush. Now I must disarm the trap ahead and warn the others...~
+@63   = ~Handwheel~
+@64   = ~This is a handwheel used to open some sort of valve. It looks as if it has been exposed to great heat in the past.~
+@65   = ~Dwarven Key~
+@66   = ~You crafted this dwarven key in the old foundry. It seems to fit a very particular lock.~
+@67   = ~Mold (Upper Part)~
+@68   = ~This is the lid of an old dwarven mold used for casting a key. The mold is heavily corroded—likely from repeated exposure to molten metal. Without the lower part, it is useless.~
+@69   = ~Mold (Lower Part)~
+@70   = ~This is the base of an old dwarven mold used for casting a key. The mold is heavily corroded—likely from repeated exposure to molten metal. Without the lid, it is useless.~
+@71   = ~Girdle of Dwarvenkind~
+@72   = ~This dwarven-crafted belt is awarded to trusted members of other races—an honor rarely bestowed by the ever-wary stout folk. It allows the wearer to comprehend the intricate dwarven script and basic language.  
+
+However, the peculiar customs and quirks of the dwarves cannot be so easily imparted; those can only be learned through years of living alongside their famously gruff and stubborn kind.  
+
+Dwarves cannot use this belt.
+
+STATISTICS: 
+
+Equipped abilities:
+– Grants the ability to decipher the dwarven runes of Shanatar and understand the fundamentals of the dwarven Dethek script  
+– Constitution: +1  
+
+Weight: 2~
+@199  = ~Weathered Dwarven Statue~
+@200  = ~Listener~
+@201  = ~Bone Naga~
+@202  = ~Ash Golem~
+@203  = ~Thragmorr~
+@204  = ~Hammer Golem~
+@205  = ~Mithral Golem~
+@206  = ~Derro Assassin~
+
+@221  = ~Vargouille~
+@222  = ~Vargouille’s Scream~
+@223  = ~Troll Shaman~
+@224  = ~Ursummnogh the Unkillable~
+@225  = ~Phase Troll~
+@226  = ~Gray Troll~
+@227  = ~Scream~ [AC#VARGS]
+@228  = ~Vargouille’s Kiss~
+@229  = ~Infected Troll~
+@230  = ~Grullak Runeweaver~
+@231  = ~Durnak Gravestone~
+@232  = ~Hammer Archon~
+@233  = ~Howling Horror~
+@234 = ~Tarnished Sentry~ // Tarnished Sentry
+@235 = ~Grexilor~
+
+@236 = ~Slave Aglar~
+@237 = ~Goblin Shaman~
+@238 = ~Derro Scout~
+@239 = ~Vorgul Strongspear~
+@240 = ~Grubnuk~
+@241 = ~Glouris’ Familiar~
+@242 = ~Allip~
+@243 = ~Rutterkin~
+@244 = ~Wild Nishruu~
+
+@316 = ~Iremar’s Notes~
+@317 = ~With great enthusiasm, I joined Bryam Lancameth to explore the secrets of the ancient dwarven stronghold of the Kingdom of Korolnor.  
+
+I have always been fascinated by the history of Shanatar, and I could not pass up the chance to see one of its old realms with my own eyes.  
+
+Lancameth’s choice of companions may be surprising, but each is a capable adventurer—ready to face whatever evils stand in our way. I quickly befriended Lady Starthorn, the elven archer. The only one I find unsettling is the strange mage who calls himself the Dogwizard. He seems to be some kind of dwarf—mayhap a duergar? Either way, he has much experience in exploring dungeons. Could he be from the Underdark?  
+
+Sadly, we lost our halfling thief, Nhair Ebendar. His body is beyond my reach, and thus, I cannot bring him back to life. Now only Lancameth, Starthorn, the Dogwizard, and I remain.  
+
+At last, we have reached the old assembly hall, where, centuries ago, the envoys of Shanatar’s various kingdoms once gathered.  
+
+I managed to decipher the symbols on either side of the corridor—each represents one of Shanatar's sub-kingdoms.  
+Additionally, the names and titles of the kingdoms are recorded.  
+Each kingdom was given a title reflecting its primary industry—for instance, Ultoksamrin, rich in Zardazil, was called the Zardazil Kingdom. Only the greedy dwarves of Drakkalor received no mineral name for their city but were instead given the fitting title City of Greed.  
+
+The symbols are as follows:  
+
+– Sondarr, the Seastar Kingdom – A coin, likely representing the god Vergadain
+– Holorarar, the Gold Kingdom – Moradin’s symbol, an anvil  
+– Ultoksamrin, the Zardazil Kingdom – Dumathoin’s symbol, a mountain with a crystal  
+– Barakuir, the Iron Kingdom – Laduguer’s symbol, a shield with an arrow  
+– Torglor, the Silver Kingdom – An unknown symbol (a downward spiral?), unknown deity  
+– Korolnor, the Jewel Kingdom – Seven gemstones, a symbol of an unidentified god—mayhap the old patron deity of this stronghold?  
+– High Shanatar, the Glacier Kingdom – Thard Harr’s symbol, two gloves  
+– Xothaerin, the Adamant Kingdom – Sharindlar’s symbol, a burning needle  
+– Iltkazar, the Mithral Kingdom – Clangeddin’s symbol, two crossed axes  
+– Drakkalor, the City of Greed – Abbathor’s symbol, a jewel-encrusted dagger  
+
+Beside each symbol is a small offering altar. It seems that the envoys of each kingdom once placed their ruling symbols here. The purpose of this ritual remains unknown to me.  
+
+I will rest here briefly before continuing my research. I must be careful not to fall asleep, for strange noises echo from the surrounding halls, and I have not seen my remaining companions in some time. Where must they be wandering off to?~
+@318 = ~Sea Ornament~
+@319 = ~This is an intricately crafted piece of jewelry featuring coral and a central seastar. It must have been made in a place that, many centuries ago, was once a sea.~
+@320 = ~Gold Nugget~
+@321 = ~This is a massive lump of pure gold. Its value must be immense, yet something tells you that you shouldn’t sell it so easily.~
+@322 = ~Zardazil~
+@323 = ~Zardazil is a rare, amber-colored ore. Being a very soft metal, it is never used in its pure form but is instead alloyed or used to enamel other metals. It binds seamlessly with other materials, almost as if fusing with them.  
+
+You have the feeling that this chunk of Zardazil was never meant for a smelting furnace. It is well-worn, as if it has passed through many hands over the centuries.~
+@324 = ~Iron Sphere~
+@325 = ~This is a slightly rusted iron sphere. Its purpose is unclear.~
+@326 = ~Silver Ore~
+@327 = ~This is a massive chunk of silver ore. You have the feeling that it was never meant for a smelting furnace, as it is well-worn, as if it has passed through many hands over the centuries.~
+@328 = ~Cut Gem~
+@329 = ~This gemstone has been carefully cut and polished. It may be an emerald, though you are not entirely certain.  
+
+The craftsmanship is exquisite, though the once-flawless edges have grown brittle over the centuries.  
+
+Since you have seen similar stones throughout the stronghold, you are certain this gem was crafted here. You should not remove it carelessly before discovering its true purpose.  
+
+It appears that this stone was frequently set into a socket or some kind of mechanism.~
+@330 = ~Glacier Stone~
+@331 = ~This smooth, rounded stone must have come from a glacier, its surface polished over the centuries by constant movement. It fits comfortably in your hand. How it found its way from the surface to the depths of this crumbling dwarven city remains a mystery.~
+@332 = ~Adamant~
+@333 = ~Adamant is a pure, jet-black metal ore. It is among the hardest, lightest, and most brittle of metals and is used to forge the legendary alloy known as adamantite.  
+
+It is often utilized by the races of the Underdark, such as the drow, to craft weapons and armor.  
+
+This chunk of adamant does not appear to have been meant for a smelting furnace. Its edges are worn, as if it has passed through many hands over the centuries.~
+@334 = ~Mithral~
+@335 = ~Mithral is a silvery-blue, lustrous metal mined from rare veins and deep deposits found throughout Faerûn and the depths of the Underdark.  
+
+Mithral is one of the lightest and most flexible metals—yet strong enough to be used in the forging of armor.  
+
+However, this particular piece of Mithral seems to serve a different purpose.~
+
+@336 = ~Ruby Pommel~
+@337 = ~This large ruby appears to have been crafted for the pommel of a valuable blade. However, the weapon would have to be of enormous size—perhaps the blade of a statue or some other dwarven depiction?~
+@338 = ~...must... find access... to the lower level...~
+@339 = ~...ten kingdoms of Shanatar... ten keys...~
+@340 = ~Ultoksamrin... the Zardazil Kingdom...~
+@341 = ~Barakuir... home of Clan Duergar, the Ironforgers...~
+@342 = ~Torglor... Silver Kingdom... unknown dwarven god... one of the two outcasts?~
+@343 = ~Drakkalor... City of Greed... worshippers of Abbathor...~
+@344 = ~Ghost of Iremar~
+@355 = ~As a dwarf, you easily recognize the ancient Dethek runes. Engraved in large letters on the metal floor is the name "Shanatar," the legendary dwarven realm of which so many songs of your ancestors speak—now long fallen into ruin.~
+@356 = ~You have seen such runes many times before. They are Dethek runes, the script of the dwarves. Engraved in large letters on the metal floor is the name "Shanatar," the legendary dwarven kingdom that once spanned the southern lands beneath the Sword Coast in ages past.~
+@357 = ~With the help of your book on dwarven script, you easily decipher the Dethek runes. Engraved in large letters on the metal floor is the name "Shanatar," the legendary dwarven kingdom that once spanned the southern lands beneath the Sword Coast in ages past.~
+@358 = ~Thick dwarven runes are embedded in the metal floor, but you cannot decipher them.~
+@359 = ~You cannot spot anything from this distance.~
+@360 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Iltkazar, the Mithral Kingdom."~
+@361 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Iltkazar, the Mithral Kingdom."~
+@362 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. With the help of your book on dwarven script, you easily decipher the Dethek runes. They read: "Iltkazar, the Mithral Kingdom."~
+@363 = ~A small dwarven statue stands on the floor. Thick dwarven runes are embedded in the metal floor beside it, but you cannot decipher them.~
+@364 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Korolnor, the Jewel Kingdom."~
+@365 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Korolnor, the Jewel Kingdom."~
+@366 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. With the help of your book on dwarven script, you easily decipher the Dethek runes. They read: "Korolnor, the Jewel Kingdom."~
+@367 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Torglor, the Silver Kingdom."~
+@368 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. They read: "Torglor, the Silver Kingdom."~
+@369 = ~A small dwarven statue stands on the floor. Next to it, small runes are engraved into the metal plate. With the help of your book on dwarven script, you easily decipher the Dethek runes. They read: "Torglor, the Silver Kingdom."~
+@370 = ~Madugg~
+@371 = ~This banner bears the symbol of Karontor, god of the Fomorian giants. It depicts a winter wolf.~
+@372 = ~A white wolf is crudely painted onto this banner.~
+@375 = ~Inkagurksul~
+@376 = ~Derro~
+@377 = ~Bolt of Weakening~
+@378 = ~These crossbow bolts were crafted by the Derro, a dwarven-like race from the Underdark. Infamous for both their cruelty and madness, the Derro coat their bolts in a paralyzing poison that saps the victim’s strength, much like the effects of a Ray of Enfeeblement spell. A successful Save vs. death negates the poison’s effect.  
+
+STATISTICS:  
+
+Combat abilities:
+– Strength -1 (cumulative, Save vs. death negates) 
+Duration: 1 turn
+
+Damage: 1d8 (missile)
+Launcher: Crossbow
+
+Weight: 0~
+@379 = ~Dlimoruk~
+@380 = ~Jamrry Quarrellaugh~
+
+@381 = ~Excuse me, please let me speak before you attack.~ [AC#LOTH1]
+@382 = ~My life is in shambles.~ [AC#LOTH2]
+@383 = ~Dokuriingor~
+@384 = ~Staff of Hellgate~
+@385 = ~This staff is crafted from a heavy metal alloy and seems to radiate an aura of pure evil.  
+
+The name 'Hellgate' does not refer to the Nine Hells but rather to the fallen city of Ascalhorn, now known only as Hellgate Keep. Countless wielders of arcane magic once dueled within its walls, summoning fiends from the Lower Planes, until the city was ultimately overrun by a great horde of Tanar'ri—demons of the Abyss.  
+
+This staff, attributed to the enemies of the famed mage Wulgreth of Ascalhorn, grants its wielder the ability to summon such creatures.  
+
+By wielding the staff, the user can briefly open a portal to the Abyss, allowing several lesser demons, known as Tanar'ri, to enter the Material Plane for a short time. Due to their chaotic nature, these demons may be difficult to control, though they will never attack their summoner. One can never be certain which fiend will answer the call—most often lesser Tanar'ri such as Manes, Rutterkin, or Dretches, and occasionally an Imp.  
+
+However, there is a small chance that a greater Tanar'ri—a Nabassu—will emerge through the portal. The Nabassu cannot be controlled and will immediately attack any being in its vicinity that is not protected by a Protection from Evil spell.  
+
+STATISTICS: 
+
+Charge abilities:
+– Once per day, summons a group of lesser Tanar'ri to serve the wielder for a brief time.  
+– 10% chance that a Nabassu will appear instead, attacking everything in sight. 
+Duration: 1 turn 
+
+Requires:
+ 12 Intelligence
+
+Weight: 1~
+@387 = ~Jamrry’s Potions~
+@392 = ~Stone Troll~
+@393 = ~Forge Worker~
+@395 = ~You open the blast furnace door, and suddenly, an enraged fire elemental leaps out!~
+@398 = ~Heat-Warped Key~
+@399 = ~This key appears to have been exposed to extreme heat for a long time.~
+@400 = ~You open the blast furnace door, and a mighty fire elemental bursts forth!~
+@405 = ~Dwarven Rune Tablet~
+@406 = ~This is a dwarven runestone. It is hastily carved with the words:
+"We have sealed the paths to the Underdark. There is no way back now. The plague brought upon us by the Outcast and his winged beasts must not spread to the other sub-kingdoms of Shanatar. My duty is to remain here with Garbo, my brother-in-arms, and guard the sealed gate.  
+
+Many desperate souls try to flee the city, but there is no way through—not since the traitors who refused to renounce the Outcast were banished by this very path."
+
+Although this item may hold cultural value, it appears neither magical nor useful in advancing your mission.~
+@407 = ~"By decree of the royal house of Kuldelver, all passages to the Deep Lands have been sealed, so that the curse afflicting our clan may not spread to the other sub-kingdoms.  
+
+Henceforth, Korolnor stands alone, abandoned to its fate against enemies both within and without.  
+
+May our kingdom either rise anew in its darkest hour or perish forever."~
+@408 = ~This former passageway is blocked by massive boulders. It appears to have once led into the Underdark, but there is no longer any way through.~
+@409 = ~Broken Dwarven Armor~
+@410 = ~This armor is forged from an unknown metal and appears to be incredibly old.  
+
+It looks as though its wearer survived many battles—but not the last one. Now shattered beyond repair, it is of no further use.~
+@411 = ~Giant Skeleton~
+@413 = ~A massive bronze map is embedded in the floor of this room, with several stone figures representing dwarves placed upon it.~
+@415 = ~This mighty pillar is inscribed with dwarven runes:  
+
+"Built by Karlyn Kuldelver, Lord of Korolnor, in the year 433 after the founding of his house.  
+
+May these halls stand for all eternity, a safe haven for the brothers and sisters of Shanatar."~
+@416 = ~Numerous dwarven runes are engraved upon this mighty pillar, but you cannot decipher them.~
+@417 = ~This appears to be the same elevator shaft you saw on the floor above. It must lead even deeper into the depths below.~
+@418 = ~A shaft descends further downward from here.~
+@419 = ~Skeletal Ettin~
+@420 = ~Ancient Book~
+@421 = ~Spirit of Karlyn Kuldelver~
+@422 = ~Statue of Clangeddin~
+@423 = ~Chimera~
+@484 = ~After the tormented scream of the vampire fades, you notice that its corpse is clutching a small handwheel used to operate a machine. You take the wheel and store it safely.~
+@485 = ~Ring of Lore~
+@486 = ~This unassuming ring greatly enhances its wearer’s knowledge, granting <PRO_HIMHER> flashes of memory from distant past events, allowing <PRO_HIMHER> to better understand historical connections and decipher ancient texts and languages.  
+
+Such artifacts are highly sought after by scholars.  
+
+It is said that Oghma once gifted such a ring to an arrogant philosopher who, upon realizing his own ignorance, abandoned philosophy entirely and devoted himself to farming instead.  
+
+STATISTICS:
+
+Equipped abilities:
+– Lore +20~
+@487 = ~Ildanfal~
+@488 = ~In Jotun, the language of giants, "Ildanfal" means "Fire Assault". This weapon stands as proof that fire giants are masterful smiths.  
+
+However, the mighty hammer is far too large and heavy for anyone smaller than a fire giant. Even if one were to magically enhance <PRO_HIMHER> strength to wield it, the weapon could only be swung with great effort and sluggish speed.  
+
+Additionally, there is a risk that the wielder may occasionally burst into flames. What fire giants might consider a pleasant, healing warmth could prove to be a deadly inferno for anyone else.  
+ 
+STATISTICS:  
+
+Equipped abilities:
+– -0.5 attacks per round
+
+Combat abilities:
+– 5% chance that the wielder is struck by a Flame Strike upon landing a hit
+  
+THAC0: +4
+Damage: 2d4+4, +1d8 fire damage   
+Damage type: Crushing
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+
+Requires:
+ 22 Strength
+
+Weight: 20~
+@489 = ~You cannot see the bottom of this crevice, but warm air steadily rises from within.~
+@490 = ~Troll Hound~
+@491 = ~Kursh Brokenhorn~
+@495 = ~Bow of Death's Rain~
+@496 = ~The Bow of Death's Rain was crafted centuries ago from the young branches of a tree sacred to the elves. Its shaft is engraved with numerous symbols.  
+
+It possesses the ability to unleash a devastating rain of arrows upon its foes once per day.  
+
+STATISTICS: 
+
+Charge abilities:
+– Arrow Rain: Once per day, a volley of arrows rains down on a target, dealing 2d6 damage to it and all enemies within a 10-feet radius.  
+
+THAC0: +4
+Speed Factor: 4
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 16 Strength~
+
+@497 = ~This rusted lever once served to activate and deactivate traps within these rooms. It still appears to be functional.~
+@498 = ~You flip the lever. All traps in the corridors seem to have been deactivated.~
+@499 = ~You have already disarmed the traps.~
+@510 = ~Knightly Edict~
+@511 = ~Haimmon, you have proven yourself worthy of being knighted into the sacred Order of Kuldar of Barakmordin.  
+
+Your final trial before the initiation rite shall be to journey into the Troll Mountains and seek out the evil we have long pursued—an evil that now lurks within the remnants of the ancient dwarven realm of Korolnor.  
+
+Our order was founded upon the ancient ruins of the dwarves, and Barakmordin means "Shield Mountains" in their tongue. Moreover, legend holds that the neighboring Omlarandin Mountains were once home to the fabled dwarven kingdom of Iltkazar. Though the dwarves have long since vanished, we humans still uphold the traditions of their values, and I am confident that you will carry out this mission to our utmost satisfaction.  
+
+Barakmordin, 1303 DR,  
+Signed by Gaufrid, the Broadblade of Torm,  
+Grandmaster of the Paladin Order of Kuldar.~
+
+@514 = ~Here rests Ragmus, firstborn of House Kuldelver, son of Karlyn Giantslayer, slain at the age of eight by the treacherous arrow of a human.~
+@515 = ~Child’s Bones~
+@516 = ~These are the bones of a child. Judging by the shape of the skull, it must have been a dwarven child.~
+@517 = ~This large stone is inscribed with dwarven runes:  
+"Strangers, be aware that you now enter the lands of the dwarves of Korolnor, heirs to the great kingdom of Shanatar".~
+@518 = ~This large stone is covered in numerous dwarven runes, but you cannot decipher them.~
+@519 = ~This large stone is inscribed with dwarven runes:  
+"Hear the voice of the statue of Kuldelvon, whose wailing drives the enemies of the dwarves into flight!"~
+@520 = ~This large stone is inscribed with dwarven runes:  
+"Kingdom of Korolnor to the north. Karlyn of Clan Kuldelver welcomes all friends of the dwarves into his halls."~
+@521 = ~This large stone is inscribed with dwarven runes:  
+"At this ford, Karlyn of Clan Kuldelver slew the cowardly Kutlog, King of the Hill Giants, with a single stroke of his axe."~
+@522 = ~This large stone is inscribed with dwarven runes:  
+"The remaining giants fled into the Giant’s Run Mountains, giving the range its name. Karlyn decided to build his clan’s new fortress at this ford.  
+
+To remind the giants forever of their defeat, he ordered the construction of a massive statue of a dwarven guardian, facing eastward, its call heard from afar by all who approach, eternally proclaiming: Fear the wrath of the dwarves!"~
+@523 = ~This bronze plaque depicts a dwarven statue surrounded by seven gemstones. The border is inscribed with dwarven runes:  
+"Korolnor, Jewel Kingdom, home of Clan Kuldelver, proud part of the Kingdom of Shanatar."~
+@524 = ~This bronze plaque depicts a dwarven statue surrounded by seven gemstones. The border is covered in dwarven runes, but you cannot decipher them.~
+@528 = ~In golden runes, the word "Korolnor" is inscribed in dwarvish above the entrance.~
+@529 = ~The holy sword pierces the flesh of the demonic troll, tearing it apart.~
+@530 = ~This bronze plaque displays the symbol of a hammer and anvil surrounded by seven gemstones. This is the mark of Moradin, the All-Father of the dwarves.  
+
+The border is inscribed with dwarven runes:  
+"Korolnor, Jewel Kingdom, descendants of Taark Shanat, founder of Shanatar, servants of Moradin."~
+@531 = ~This bronze plaque displays the symbol of a hammer and anvil surrounded by seven gemstones. The border is covered in dwarven runes, but you cannot decipher them.~
+@532 = ~This bronze plaque displays the symbol of a hammer and anvil surrounded by seven gemstones—the mark of Moradin.  
+
+The border is inscribed with dwarven runes:  
+"Like all ten kingdoms of Shanatar, the Jewel Kingdom of Korolnor once thrived in an age of prosperity.  
+
+Moradin looked upon his children with favor. The dwarves of Korolnor chose one of Moradin’s twin sons as their patron deity when their kingdom was founded—a time when he had not yet succumbed to madness."~
+@533 = ~This bronze plaque displays the symbol of a robed dwarf surrounded by seven gemstones.  
+
+The border is inscribed with dwarven runes:  
+"But as time passed, their patron’s visage changed, and he became a selfish god who began seeking forbidden magic and hidden secrets."~
+@534 = ~This bronze plaque displays the symbol of a robed dwarf surrounded by seven gemstones. The border is covered in dwarven runes, but you cannot decipher them.~
+@535 = ~This bronze plaque displays the symbol of a mindflayer surrounded by seven gemstones.  
+
+The border is inscribed with dwarven runes:  
+"On one of his forbidden excursions, Moradin’s son, along with his brother, entered the domain of the god of the mindflayers and was cursed with eternal madness as punishment."~
+@536 = ~This bronze plaque displays the symbol of a mindflayer surrounded by seven gemstones. The border is covered in dwarven runes, but you cannot decipher them.~
+@538 = ~This bridge was clearly built by dwarven hands and once spanned the rushing river.  
+
+Unfortunately, it has long since collapsed. You recognize that it was likely destroyed using a mechanism to send attackers plunging into the depths below.~
+@539 = ~This bridge once spanned the rushing river.  
+
+Unfortunately, it has long since collapsed. You recognize that it was likely destroyed using a mechanism to send attackers plunging into the depths below.~
+@540 = ~This bridge once spanned the rushing river.  
+
+Unfortunately, it has long since collapsed.~
+
+@543 = ~This corpse is missing its head.~
+@544 = ~This appears to be one of the old supply shafts, leading deep into the depths below.  
+
+You cannot see the bottom, as you fear stepping too close might cause you to fall in. The air that escapes from the darkness is foul and stifling.~
+@545 = ~This plaque bears the visage of Moradin, the All-Father.  
+
+Inscribed around it in dwarven runes:  
+"In his wrath, Moradin banished his own twin children from the fellowship of the dwarven gods, so that they would never again bring such unspeakable ruin upon the world."~
+@546 = ~This bronze plaque displays the symbol of a bearded dwarf.  
+
+The border is inscribed with dwarven runes, but you cannot decipher them.~
+@547 = ~Dancing Blades~
+@548 = ~Vargouille’s Scream~
+@549 = ~Neutralize Gas~
+@550 = ~Neutralize Gas
+(Abjuration)  
+
+Level: 7   
+Range: Caster  
+Duration: Permanent 
+Casting Time: 1  
+Area of Effect: Special  
+Saving Throw: None  
+
+By using this spell, the caster renders harmful vapors, gases, clouds, or mists within the area of effect harmless.  
+
+This includes Stinking Cloud, Cloudkill, Death Fog, Incendiary Cloud, and similar spells or effects. Any lingering harmful gases or fumes dissipate.  
+
+Creatures affected by the gas before the spell is cast will still suffer its prior effects—this spell does not negate existing damage.  
+
+If cast in the same round as a gaseous effect, Neutralize Gas can also be used to counteract gaseous breath weapons, granting affected creatures a +4 bonus to saving throws and a 50% resistance against such breath attacks.~
+
+@551 = ~Black Troll~
+@552 = ~Larloch's Mass Drain~
+@553 = ~Larloch's Mass Drain  
+(Necromancy)
+
+Level: 9  
+Range: 30 ft.  
+Duration: Special  
+Casting Time: 3  
+Area of Effect: Creature and a 30 ft. square  
+Saving Throw: None  
+
+With this spell, the caster drains the life force of all enemies within the affected area and adds it to <PRO_HISHER> own.  
+
+The victims suffer 1d8 points of damage, while the caster gains an additional 1d8 hit points per affected creature.  
+
+If the caster’s hit points exceed <PRO_HISHER> maximum, <PRO_HESHE> loses any extra Hit Points after 3 rounds.~
+@554 = ~Crude Note~
+@555 = ~This scrap is not made of paper but rather a piece of foul-smelling leather.  
+
+Scrawled in jagged, misshapen letters with red-black ink in Common:  
+"Trols off the Norrth, come sowth and jion the everlastin Kingdam off Stommheim! Ursummnogh the Unkilablle aweids yuh."~
+@556 = ~Protection from Good~
+@557 = ~Narg the Black~
+@558 = ~Fade into Shadows~
+@559 = ~Vanished into Shadows~
+@564 = ~Ghost of Nhair Ebendar~
+@565 = ~This is a statue of Berronar Truesilver, the dwarven goddess of life, healing, and safety.~
+@566 = ~Giant-Splitter +2/+3~
+@567 = ~The shaft of this battleaxe is crafted from the thigh bone of a giant. This weapon was once wielded by Rothdor, a dwarven berserker of a Clangeddin axe-brotherhood.  
+
+Rothdor served a king of Shanatar in an age when a massive horde of giants from the east threatened to overrun the lands above the dwarven kingdom. The berserkers were sent to aid their human allies on the surface and carried out their mission with distinction, quickly bringing the giants to the brink of defeat in a great battle. Unfortunately, the humans whom the dwarves had been sent to assist showed no desire to enter the fray themselves. One by one, after a long and grueling fight, the berserkers were overwhelmed and trampled by the giants.  
+
+Rothdor’s axe passed through several hands before returning to the dwarves of Shanatar, but after the fall of the kingdoms of Xothaerin, Torglor, and Korolnor, the mighty weapon was lost and faded into obscurity.  
+
+STATISTICS:
+
+Combat abilities:
+– On hit, giants suffer an additional 3 bleeding damage per round for 2 rounds and are slowed for 2 rounds.  
+
+THAC0: +2, +3 (only for dwarves)
+Damage: 1d8+2,(slashing); +3 (only for dwarves) 
+Speed Factor: 5
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+@570 = ~Emerald Golem~
+
+@572 = ~Bryam Lancameth~
+@573 = ~Lancameth’s Head~
+@574 = ~This is the head of Bryam Lancameth, captain of the Amnian army, who descended into the Wailing Dwarf alongside his companions. Bitten by a Vargouille, he himself has become one of these creatures of the Abyss.  
+
+His head is grotesque, his face twisted into a hideous grimace—in this state, it would be unwise to present it to his widow in the Graveyard District.~
+@575 = ~Dwarven Guardian Statue~
+@576 = ~Sword Key~
+@577 = ~This "sword" is in fact an intricately crafted key, designed to fit into some kind of lock.~
+@578 = ~The air in this chamber reeks of rot, decay, and unfathomable malevolence. A dense mist clings to the ground, obscuring the depths below and leaving no indication of how far the abyss truly descends.~
+
+@583 = ~This appears to be the old throne of Korolnor. The platform before it is engraved with dwarven runes, but you cannot decipher them.~
+@584 = ~The ancient, mighty throne of Korolnor.  
+
+Engraved in dwarven runes on the platform before it:  
+
+"Six guardians stand, steadfast and cold,  
+Their axes bear crystals, ancient and old.  
+They guard the Seventh, hidden deep,  
+Lest evil wake from its cursed sleep.  
+
+Bound in stone, they keep the ward,  
+Dwarven courage through darkness hard.  
+The Mad God rages, cast below,  
+Chained in shackles by guardians’ hold."~
+@585 = ~Small Lever~
+@586 = ~This lever appears to be part of a larger mechanism.~
+@595 = ~PHILISTINES!~
+@596 = ~Gisbert~
+@603 = ~Darcia Lancameth~
+
+@605 = ~Lancameth’s Documents~
+@606 = ~These are the personal documents of Captain Bryam Lancameth. They contain various records related to commanding an Amnian unit, his service in Eshpurta, and other administrative matters that have little to do with your current mission.  
+
+Some of his notes detail his research on the ruins of dwarves in present-day Amn, his investigation into the supposed source of the troll plague in the surrounding mountains, and his search for suitable companions for his final expedition.  Also included is a detailed map of the Troll Mountains, with a particular peak near the source of a river marked prominently. Above it is written: "The Wailing Dwarf"  
+
+You skim through the notes for a better overview:  
+
+"The 'Wailing Dwarf' is an ancient dwarven fortress in the Troll Mountains.  
+
+From my time in Eshpurta, I know how numerous and troublesome the trolls are in this region. I suspect the origin of these trolls may lie within this old stronghold.  
+
+Furthermore, a peculiar little mage I encountered claimed that the ruins might contain a great number of gemstones. I do not seek fame or fortune, but such treasures could surely benefit my homeland.  
+
+Finding reliable companions for this venture was no easy task, but I believe I have now assembled a trustworthy party. Tomorrow, we set out for Eshpurta, where we will offer one final prayer to Tempus before advancing into the Troll Mountains from the south.  
+
+If we follow the Trolltooth Run northward until it becomes nothing more than a mountain stream, we should soon gaze upon the stone visage of the 'Wailing Dwarf.'"~
+@607 = ~Iremar’s Records~
+@608 = ~These notes belong to the priestess Iremar from the Temple of Oghma.  
+
+They contain detailed accounts of dwarven history in the lands of Amn and Tethyr.  
+
+A bookmark marks a specific section—an entry concerning the construction of the 'Wailing Dwarf.'~
+
+@610 = ~Punching Dagger of Quar-Shan~
+@611 = ~Quar-Shan was a formidable assassin from Calimshan who served the early Pashas.  
+
+While this Punching Dagger does not deal much damage due to its short blade, its small size makes it easy to conceal, often catching foes off guard as they lower their defenses.  
+
+As such, it is the perfect weapon for someone seeking to inflict maximum damage from the shadows.  
+
+STATISTICS:
+
+Combat abilities:
+– Critical Hit Chance: +5% with this weapon  
+– Backstab Bonus: +1
+
+  
+THAC0: +3
+Damage: 1d3+3 (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@612 = ~Jorboud Hornfinger~
+@613 = ~Glouris Mristifos~
+@846 = ~Cloak of Petrification~
+@847 = ~This cloak, allegedly soaked in the blood of a gorgon, causes its wearer to instantly turn to stone.  
+
+Anyone who does not wish to end up as a statue in the garden of some Sword Coast noble should be wise enough to avoid donning this garment.
+
+STATISTICS:
+
+Equipped abilities:
+– Petrification
+
+Weight: 3~
+@848 = ~Sir Kandelar~
+
+
+@900 = ~All enemies of the dwarves must be destroyed!~ [AC#MGGM1]
+@901 = ~~ [AC#MGDI1]
+@902 = ~~ [AC#MGDI2]
+@903 = ~~ [AC#MGDR4]
+@904 = ~~ [AC#MGDR5]
+@905 = ~~ [AC#MGDR1]
+@906 = ~~ [AC#MGDR2]
+@907 = ~~ [AC#MGDR3]
+@908 = ~~ [AC#MGDR6]
+@909 = ~~ [AC#MGDR7]
+@910 = ~~ [AC#MGDR8]
+@911 = ~~ [AC#MGDR9]
+@912 = ~~ [AC#MGGB2]
+@913 = ~~ [AC#MGGB3]
+@914 = ~~ [AC#MGDI3]
+@915 = ~Cursed magic, it won't obey me!~ [AC#MGDI5]
+@916 = ~~[AC#MGDI4]
+@917 = ~~[AC#MGFG3]
+@918 = ~~ [AC#MG1KF]
+@919 = ~~ [AC#MGUR0]
+
+@956 = ~Summon Vargouille~
+@961 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Drakkalor, City of Greed."~
+@962 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Xothaerin, Adamant Kingdom."~
+@963 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Barakuir, Iron Kingdom."~
+@964 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Ultoksamrin, Zardazil Kingdom."~
+@965 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Alatorin, Home of Taark Shanat."~
+@966 = ~A small dwarven statue stands on the ground. In Dethek runes, it reads: "Sondarr, Sea Kingdom."~
+@967 = ~This small dwarven statue has toppled over.~
+@968 = ~This figurine depicts a beholder.~
+@969 = ~This figurine represents a stone giant.~
+@970 = ~This figurine depicts a mindflayer. In Dethek runes, it reads: "Oryndoll, Home of the Loretakers."~
+@971 = ~Lady Starthorn~
+@972 = ~Fomorian Cheese~
+@973 = ~This is a piece of foul-smelling cheese made by the fomorian giants.  
+
+You would rather not imagine what ingredients were used in its creation.~
+@975 = ~Moldark~
+@983 = ~This scrap is not made of paper but of foul-smelling leather.  
+
+Scrawled in jagged, misshapen letters with red-black ink in Common:  
+"TrOLs anD Gians in da sOuth, coMm to tha WAILinG dWaRf an jion Ursummnogh the UNkilAble an King Madugg! toGether tRolz an gianz will tEech tHe hUmanS to fEAR!"~
+@984 = ~Death Rain~
+@1000 = ~Countless skulls from various creatures have been stacked into a gruesome monument here.  
+
+You can only hope that the skulls of the adventurers you seek are not among them.~
+@1001 = ~This flag bears the image of an outstretched monster’s hand—perhaps that of a troll.~
+@1002 = ~Main Entrance~
+@1102 = ~Brother Starthorn~
+@1103 = ~Silver Axe~
+@1104 = ~This axe is made of pure silver. It appears to be a ceremonial weapon rather than something meant for battle.~  
+
+@1106 = ~Shattered~
+@1107 = ~Healing hindered by Vargouille venom~
+@1108 = ~Venom Troll~
+@1109 = ~Poison Spray~
+@1110 = ~Faerzress Troll~
+@1111 = ~This key does not appear to be made for a door lock but rather for some other kind of mechanism.~
+@1113 = ~Voice from the Horn~
+@1114 = ~An elevator seems to descend deeper into the depths from here.~
+@1115 = ~This is a strange altar, seemingly built by the trolls to worship a deity. Offerings, in the form of numerous human remains, lie scattered before it.  
+Two bronze pipes protrude from the wall above—it appears these were crafted by dwarves long ago.~
+@1116 = ~Numerous emaciated corpses, likely dwarves, lie piled in this corner.  
+One common feature among them all—their heads are missing.~
+@1117 = ~This rune tablet reads:  
+"All those bitten must be taken to the cells until transformation is complete.  
+Once the head separates from the body, it must be destroyed with a crossbow bolt.  
+May Moradin be merciful upon their souls."~
+@1118 = ~You recognize that this passage was dug by trolls as a way to bypass locked doors and gain entry or exit.~
+@1119 = ~This passage appears to have been dug by large creatures to bypass locked doors and gain entry or exit.~
+@1120 = ~The sarcophagus is made of solid metal and cannot be forced open. However, you notice a small lock on its side—it seems a key would fit.~
+@1121 = ~Only a specific key appears to fit into this mechanism.~
+@1122 = ~The setting of this dwarven container is empty. It once held a small gemstone, likely used as a key to open it. Without it, the lock cannot be disengaged.~
+@1123 = ~Wisdom point lost~
+@1400 = ~No one answers anymore.~
+@1401 = ~A bronze horn protrudes from the rock. It looks like one could speak into it.~
+@1402 = ~This mechanism seems to redirect scalding air from the furnaces to a distant chamber—likely to heat other furnaces. However, a handwheel is missing to open the valves.~
+@1403 = ~You are missing a handwheel to open the valves and release the air.~
+@1404 = ~You attach the handwheel. If you wish, you can turn it.~
+@1405 = ~The valve is now open.~
+@1406 = ~You turn the handwheel, and the valve opens. You hear extremely hot air rushing through the pipes into another room.~
+@1407 = ~You cannot open the valve. Something appears to be binding the heat within the furnaces, preventing the hot air from escaping.~
+@1408 = ~You cannot open the valve. The heat is too low—an oven door seems to be left open somewhere.~
+@1409 = ~The keystone you found in the old foundry, in the possession of the vampire, fits perfectly into this small chest. It locks into place and then vanishes.~ [AC#MGCLK]
+@1410 = ~Exit~
+@1411 = ~To the Second Level~
+@1412 = ~To the Old Foundry~
+@1413 = ~To the Old Forge~
+
+
+@1500 = ~As you place the item in the bowl, you hear a faint clicking sound. Some mechanism seems to have locked into place.~ [AC#MGCLK]  
+@1501 = ~As you remove the item, you hear the clicking sound again. Some mechanism seems to have reset itself.~ [AC#MGCLK]  
+@1510 = ~The symbol of the dwarven god Abbathor. Below it reads: "Drakkalor, City of Greed."~  
+@1511 = ~The symbol of the dwarven god Vergadain. Below it reads: "Sondarr, Seastar Kingdom."~  
+@1512 = ~The symbol of Moradin. Below it reads: "Holorarar, Gold Kingdom."~  
+@1513 = ~The symbol of the dwarven god Dumathoin. Below it reads: "Ultoksamrin, Zardazil Kingdom."~  
+@1514 = ~The symbol of the dwarven god Laduguer. Below it reads: "Barakuir, Iron Kingdom."~  
+@1515 = ~This symbol does not match any dwarven deity you recognize. However, the Dethek runes below read: "Torglor, Silver Kingdom."~  
+@1516 = ~The symbol depicts seven circling gemstones. Below it, the Dethek runes read: "Korolnor, Jewel Kingdom."~  
+@1517 = ~The symbol of the dwarven god Thard Harr. Below it reads: "High-Shanatar, Glacier Kingdom."~  
+@1518 = ~The symbol of the dwarven goddess Sharindlar. Below it reads: "Xothaerin, Adamant Kingdom."~  
+@1519 = ~The symbol of Clangeddin Silverbeard. Below it reads: "Iltkazar, Mithral Kingdom."~  
+@1520 = ~A symbol of a dagger, framed above and below by dwarven runes that you cannot decipher.~  
+@1521 = ~A symbol of a gold coin, framed above and below by dwarven runes that you cannot decipher.~  
+@1522 = ~A symbol of an anvil, framed above and below by dwarven runes that you cannot decipher.~  
+@1523 = ~A symbol of a mountain with a floating gemstone above it, framed above and below by dwarven runes that you cannot decipher.~  
+@1524 = ~A symbol of an arrow broken against a shield, framed above and below by dwarven runes that you cannot decipher.~  
+@1525 = ~An unknown symbol, framed above and below by dwarven runes that you cannot decipher.~  
+@1526 = ~An unknown symbol, framed above and below by dwarven runes that you cannot decipher.~  
+@1527 = ~A symbol of two gloves, framed above and below by dwarven runes that you cannot decipher.~  
+@1528 = ~A symbol of a burning needle, framed above and below by dwarven runes that you cannot decipher.~  
+@1529 = ~A symbol of two crossed axes, framed above and below by dwarven runes that you cannot decipher.~  
+@1530 = ~This pan could be dropped to distract the giants, giving you time to grab the cheese for the rats unnoticed.~  
+@1531 = ~A pan is precariously attached to the pillar.~  
+@1600 = ~The shield hanging around this dead troll’s neck reads: "Tis wut hapens to Trolz who do not bow befor Ursummnogh ant Vaprak!"~  
+@1700 = ~This device was once used for casting metal parts. There is a slot where molds can be inserted, but you will need to get the old foundry running again first.~  
+@1701 = ~The molten metal is forced into the mold under high pressure. A perfectly crafted key emerges, seemingly made for a very specific lock.~  
+@1702 = ~The foundry seems to be operational—at least partially. You have managed to heat up a section of the chamber enough for molten metal to flow from the crucible into the casting mechanism.~  
+@1703 = ~You must place both mold pieces into the container to begin the casting process.~  
+@1704 = ~You pull the rusted lever to start the casting process.~  
+@1800 = ~"Clangeddin’s twin axes keep the Throne of the Mad God sealed."~  
+@1801 = ~To the Second Level~  
+@1802 = ~Elevator Up~  
+@1803 = ~To the Throne of the Mad God~  
+
+
+@1900 = ~~
+@1901 = ~After removing this crystal, the air in the chamber suddenly grows colder, and the draft from the chasm below intensifies. It seems that removing the crystals weakens the bonds between the worlds.~  
+@1902 = ~Gem Jump~  
+@1903 = ~Magical Mumbojumbo~  
+@1904 = ~Fumbled Sorcery~  
+@1905 = ~Stomp~  
+@1906 = ~Ilsensine’s Illusions~  
+@1907 = ~Face my deepest fears!~  
+@1908 = ~Maniacal Laughter~  
+@1909 = ~Wild Zone~  
+@1910 = ~Gust of Wind~  
+@1911 = ~Summon Servant~  
+@1912 = ~Summon Black Troll~  
+@1913 = ~Transform into Vargouille~  
+
+
+@2000 = ~Language and Script of the Dwarves~  
+@2001 = ~Language and Script of the Dwarves 
+by Aldym Ryscelsar of Halarahh, Halruaa. 
+
+For outsiders and members of other races, the ways of the dwarves can often be difficult to comprehend. The dwarves themselves seem to have no interest in changing this, as they are rightfully known as one of the most reclusive and secretive humanoid races. 
+For scholars who, for various reasons, must study their culture, this presents a significant challenge. Through my research, I aim to enable the reader to decipher the language and runes of the dwarven race, as well as to understand some of their peculiar customs.  
+
+The dwarven language, Dethek, is written in an ancient runic script also called Dethek. 
+
+As one might expect from dwarves, the script and sentence structure have remained largely unchanged for over five thousand years. Dethek runes are rarely written on paper or cloth, as such materials are short-lived and fragile. The runes are typically carved or etched into stone or metal—be it the walls of a building or the blade of a sword. Special forms of dwarven writing can be found in books made of bound metal plates or on stone tablets known as rune stones.  
+
+Dwarven grammar is similar in structure to the Common tongue, likely due to the parallel development of both languages. 
+
+This shared structure makes it relatively easy for speakers of Common to learn and translate Dwarvish. The Dethek runic alphabet consists of 24 characters. The sounds for "w," "x," and "z" are all represented by the same symbol. 
+This may be confusing for humans attempting to translate the language, but for native Dethek speakers, it poses no issue, as very few words contain these letters.  
+
+Clan and tribe names, as well as some of the most common words, races, or phrases, have their own symbols. These were useful for signage or the creation of rune stones. 
+
+Each of the major races of Faerûn has been assigned a unique symbol. These symbols apply to both singular and plural forms, meaning the reader must infer the meaning from context. 
+
+Other symbols serve as directional markers and signage, representing widely understood concepts: a foot indicating a safe path, an overturned helmet or drinking horn marking fresh water, and so forth.  
+
+(A detailed list of dwarven rune symbols and the Dethek alphabet follows, which may prove useful should you ever need to decipher dwarven rune stones.)~  
+@2002 = ~The History of the Shield Dwarves~  
+@2003 = ~The History of the Shield Dwarves - Volume 1. 
+
+A treatise by Oleus of Mintar, scholar in the service of Oghma.  
+
+To us humans, dwarves are a difficult race to understand. They appear suspicious and grim. To comprehend why many of their seemingly peculiar traits have developed, we must examine the history of the dwarves along the Sword Coast. 
+
+According to prevailing scholarly opinion, the Shield Dwarves, as we know them today, descend from a great dwarven kingdom known as Shanatar, founded by Taark Shanat, a dwarven hero of ancient times.  
+
+Taark Shanat led his clan into what we now call the Lands of Intrigue. He settled in a vast cavern in the Underdark, founded the kingdom of Shanatar, and named his home Alatorin. His children set out and established their own kingdoms, stretching for miles beneath the earth. Together, they formed the dwarven empire of Deep Shanatar.  
+
+At its height, Deep Shanatar consisted of nine sub-kingdoms alongside Alatorin: the kingdoms of Barakuir, Drakkalor, Iltkazar, Korolnor, Sondarr, Torglor, Ultoksamrin, Xothaerin in the Underdark, and High Shanatar on the surface. 
+
+Each kingdom chose a patron deity from the dwarven pantheon, though some of these gods have long faded into obscurity.  
+
+Additionally, each sub-kingdom was given a title reflecting its role within the dwarven dominion: 
+Barakuir - the Iron Kingdom. 
+Drakkalor - the City of Greed. 
+Iltkazar - the Mithral Kingdom. 
+Korolnor - the Jewel Kingdom. 
+Sondarr - the Seastar Kingdom. 
+Torglor - the Silver Kingdom. 
+Ultoksamrin - the Zardazil Kingdom. 
+Xothaerin - the Adamant Kingdom. 
+High Shanatar - the Glacier Kingdom.  
+
+The dwarves faced many enemies: Drow, beholders, giants, and illithids. 
+
+Particularly notable were Clan Duergar of Barakuir in their battles against the mindflayers and Clan Kuldelver, ruler of Korolnor, for their wars against the giants, which gave the neighboring Giant’s Run Mountains their name. 
+
+But in time, the kingdoms turned against one another, and their once-unified realm collapsed.  
+
+Weakened by constant infighting, the dwarves struggled to hold back the many foes that besieged them from all sides, encroaching upon the domains of Moradin’s children. 
+
+Thus, the greatest of dwarven empires ultimately fell, and the survivors migrated northward to establish new realms. 
+
+These were the ancestors of the race we now call Shield Dwarves. Yet, they never again achieved the splendor of old Shanatar.~  
+@2004 = ~The Gods of the Dwarves~  
+@2005 = ~The Gods of the Dwarves: A Summary. 
+Written by Aldric of Arabel.  
+
+Moradin, The Soul Forger. 
+Moradin, the All-Father, reigns supreme over the dwarven pantheon. He is the world’s forgemaster and the creator of the dwarves. His hammer blows shaped the first dwarven beings from the unyielding stone of the mountains. Under his watchful gaze, dwarves are trained in the arts of smithing, mining, and warfare.  
+
+Berronar Truesilver, The Revered Mother. 
+Berronar Truesilver, the Mother of the Dwarves, stands by Moradin’s side, sharing dominion over the dwarven pantheon. She is the protector of family, the keeper of hearth and home, and the patron of marriage. Under her blessing, dwarven families thrive, growing strong and united.  
+
+Clangeddin Silverbeard, The Father of Battle.
+Clangeddin Silverbeard, the god of battle and honour in warfare, is the unyielding defender of his people. With his mighty twin axes in hand, he leads dwarven armies into battle against their foes. 
+His name is called upon by dwarven warriors at the onset of battle, for under his protection, they know no fear.
+
+Dumathoin, The Silent Keeper. 
+Dumathoin, the Guardian of Secrets, watches over the tombs and treasures of the dwarves. Deep within the earth, he safeguards the lost knowledge of past ages and protects the riches forged by dwarven hands. His wisdom is boundless, and only those deemed worthy may benefit from his counsel.  
+
+Forgotten Deities. 
+In addition to the known gods of the dwarven pantheon, there were once other, lesser-known deities worshiped by certain dwarven clans. Though forgotten today, these gods played an important role in dwarven history and deserve further study.  
+
+Old tales speak of Moradin’s twin children, who were cast out of the dwarven pantheon by their own father due to an unknown betrayal. The dwarven clans that once followed them were especially cursed, for they were forced at great speed—at least by dwarven standards—to choose a new patron deity.~  
+@2006 = ~Contract~  
+@2007 = ~Contract between Savant Dokuriingor and Moldark. Moldark has long dwelled within these ruins, yet he acknowledges the new rulers, whose blood traces back to the founding dwarves. Moldark shall create one Gray Troll every ten-day through level draining for the breeding program.  
+
+In return, the new lord of Korolnor grants Moldark dominion over the old foundry and delivers fresh human captives twice per ten-day as sustenance. The new lord also pledges to keep the forge oven pipes sealed to prevent the old casting furnaces from being reignited.~  
+@2008 = ~Dwarven Prayer Stone~  
+@2009 = ~This is a dwarven runestone. It is hastily carved with the words: "Moradin, do not abandon me! I do not want to be transformed." Although this item may hold cultural value, it appears neither magical nor useful in advancing your mission.~
+@2010 = ~This is a dwarven runestone. It is hastily carved with the words: "Berronar, lift this curse from our clan! The Outcast must not trouble us any longer." Although this item may hold cultural value, it appears neither magical nor useful in advancing your mission.~
+@2011 = ~Coffin Key~  
+@2012 = ~This key is housed in a small chest shaped like a coffin. The object reeks of death and decay, and it apparently seems to belong to a coffin. But why would someone need to lock his own coffin?~  
+@2013 = ~Dokuriingor's Journal~  
+@2014 = ~Dokuriingor's Journal  
+
+Day 101:  
+Today is a glorious day, a day of destiny, for I have realized the truth! I, Dokuriingor, am the last descendant of the great dwarven clan of Karlyn Kuldelver! It is my fate to reclaim my lost kingdom of Korolnor! The voices whisper of immeasurable wealth and power, rightfully ours, should we seize the halls of our ancestors once more. The call of my forebears is strong in my ears, and I shall follow it, ready to overcome the challenges and trials that lie ahead.  
+
+Day 103:  
+The depths of our ancient kingdom call to me, luring me with their hidden treasures and lost secrets. I can feel the presence of the great Diinkarazan, the forsaken son of Moradin, imprisoned in the Abyss yet mightier than ever before. His voice whispers promises of unimaginable riches, of treasures surpassing our wildest dreams. I shall follow him, I shall fulfill his will, and I shall restore Korolnor by freeing him!  
+
+Day 121:  
+I have almost reached Diinkarazan’s prison. I stand before the gates of his dark throne, deep within the winding caverns of the Wailing Dwarf. He promises me endless riches, and I am prepared to do whatever it takes to claim them. The power I feel coursing through my hands is intoxicating, and I shall wield it to rebuild Korolnor and reclaim our place in the world. The time of the Derro clan of Korolnor has come, and nothing will stand in my way!  
+
+Day 127:  
+The doors to the sealed throne room remain closed, and my hopes of opening them alone begin to wane. The ancient dwarves imbued their locks with a cunning that even surpasses my own. The seals are strong, decreeing that no dwarf of Korolnor shall ever again be able to unbar the doors to the old throne room. Not even a Derro, descendant of the great Shanatar! Not even I. What now?  
+
+Day 130:  
+But then, a spark of revelation! The ancient texts I have so meticulously studied reveal an unexpected truth. The sealed door that separates me from Diinkarazan’s throne cannot be opened by any descendant of Korolnor. But perhaps it *can* be opened by those outside Korolnor’s bloodline. I cannot unseal the doors—but perhaps others can! I must find a fool, someone I can lure here, someone who will open the doors for me.  
+
+Day 233:  
+I have devised a plan, a plan that will use the lesser races to achieve my goal. I shall lure the human adventurer Bryam Lancameth into the depths of this fortress, under the pretense of a joint expedition, and unwittingly make him open the doors that are locked to me. No one suspects that the feeble Dog Wizard they see before them is, in truth, a powerful Derro Savant!  
+
+Day 281:  
+The preparations are complete, and the trap is set. Soon, Lancameth and his companions shall descend into the abyssal depths, led by my cunning, guided by my deception. They will never realize that they hold the keys to my success in their hands, and I shall ensure that they unlock the gates that stand between me and my destiny. Diinkarazan waits, and I shall not disappoint him!  
+
+Day 342:  
+The expedition has reached the corridors of our fortress. The hours pass, and my impatience grows with every fading heartbeat. The fools still call me Dog Wizard. They will all die screaming.  
+
+Day 345:  
+My plan appears to be working. One by one, Bryam Lancameth’s companions have fallen. Now, only he and I remain before the sealed doors, and I can see the suspicion in his eyes, the flicker of mistrust taking root in his heart. But I shall not yield—not now, not when the goal is so close. He searches for a way to open the door. All I must do is wait.  
+
+Day 351:  
+Damnation! Bryam Lancameth has seen through my deception, has sensed the treachery in my heart and uncovered the truth behind my lies. Without a word of farewell, he stepped through the longed-for doorway, sealing it behind him and leaving me alone once more—left to linger in the void before the throne room! Madness claws at my thoughts as I scramble for a new way to open the doors. Diinkarazan waits, growing impatient… I must enter, enter, enter!~  
+
+@2015 = ~Anthracite~  
+@2016 = ~Anthracite, a special form of coal, is known for its remarkable density and heat resistance, making it the preferred choice for dwarves to generate warmth in their halls and heat in their forges. The glossy black material burns long and evenly, is resistant to moisture, and radiates intense heat and brightness. Due to its symbolic significance, anthracite is often used by dwarves to illuminate sacred sites.~  
+@2017 = ~Mithral Field Plate +2~  
+@2018 = ~This mithral armor once belonged to Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. The impressive armor is crafted from mithral, a rare, silvery-blue metal known for its lightness and flexibility. The breastplate shimmers with a soft bluish glow and provides exceptional protection to its wearer without significantly hindering mobility. It is lightweight and can be worn comfortably even by warriors of lesser strength.  
+
+The mithral used in this armor possesses a natural resistance to magic, allowing its wearer to better withstand magical attacks.  
+
+STATISTICS:
+ 
+Equipped abilities:
+–  Magic Damage Resistance: +30%  
+–  Save Bonus: -2 vs. Spells  
+
+Armor Class: -1 (-2 vs. slashing, -1 vs. piercing and missile), -2 (dwarves) 
+Requires:
+ 10 Strength
+ 
+Weight: 15~  
+
+@2019 = ~Piece of Armor~  
+@2020 = ~Mithral Shoulder Plate (Left)~  
+@2021 = ~This finely crafted piece of metal appears to have once belonged to a suit of armor.~  
+@2022 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of mithral. The complete armor must have been a truly powerful artifact.~  
+@2023 = ~Mithral Shoulder Plate (Right)~  
+@2024 = ~This shoulder plate is part of the armor of the dwarven hero Karlyn Kuldelver, founder of the dwarven kingdom of Korolnor. It is made of mithral. The complete armor must have been a truly powerful artifact.~  
+@2025 = ~Breastplate of Karlyn’s Armor~  
+@2026 = ~This is the central breastplate of the mithral armor of the dwarven hero Karlyn Kuldelver. If combined with the two missing pieces—the shoulder plates—by the hands of a skilled blacksmith, it could be reforged into an excellent mithral harness. However, very few smiths possess the knowledge to work with mithral, save for dwarven master smiths. Such artisans are rare in the realms, and they are reluctant to share their secrets.~  
+
+@2027 = ~Blackbite +3~  
+@2028 = ~The tip of this mighty spear is adorned with the fang of some great beast. Legends claim it to be the tooth of a black dragon, which would explain why the spear’s tip constantly drips with acid. The name "Blackbite" is thus quite fitting.  
+
+Among the Verbeeg, there is a tale of a warlord who led a band of these giants into the swamps to slay the black dragon Vorgarrash. After a brutal battle, the Verbeeg thrust his spear into the dragon’s maw, breaking off one of its massive fangs. The giant then had the tooth embedded into his spear, where it absorbed the dragon’s corrosive magic. Thus, Blackbite was born—a weapon still revered as a trophy of strength among the Verbeeg.  
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d6+3, +1 acid damage
+Damage type: Piercing
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~  
+
+@2029 = ~Guardian’s Amulet~  
+@2030 = ~This amulet bears the symbol of a hammer, crafted from brass or bronze. It is imbued with a divine spell granted by the goddess Berronar to her priestesses—the "Guardian Hammer"—which allows the summoning of a mighty magical hammer in battle.  
+
+Amulets of this kind were commonly worn by high-ranking members of dwarven society and their families.  
+
+STATISTICS:
+
+Charge abilities:
+– Once per day, the wearer can summon a Guardian Hammer. The hammer appears mid-air, deals 2d12 damage to an opponent (Save vs. spells negates) and disappears.
+
+Equipped abilities:
+– Armor Class: +1
+– Saving Throws: +1
+  
+ 
+Weight: 1~  
+
+@2031 = ~Berronar’s Ring~  
+@2032 = ~Rings of this kind are crafted by the Faenor, as Berronar’s priests are called in the dwarven tongue. Their duty is to serve as guardians and protectors of the dwarven clans under their care.  
+
+These rings, forged from the finest materials, are often worn by dwarven clan leaders to shield them from foul diseases lurking in the deep, dark corners of the Underdark.  
+
+STATISTICS:
+
+Equipped abilities:
+– The wearer is immune to diseases and afflictions transmitted by creatures.  
+
+This includes the touch of a mummy, the attack of an otyugh, the bite of abyssal creatures known as vargouilles, and the strikes of ghouls. Note that while the attack itself is not prevented, the transmission of disease-like effects is.  
+
+However, this ring offers no protection against lycanthropy or vampirism.  
+
+Weight: 0~  
+
+@2033 = ~Bonefang +2/+3~  
+@2034 = ~This primitive morningstar is crafted from the bones of a giant and proves to be a surprisingly effective weapon. It is remarkably lightweight, allowing for swift and powerful strikes in battle.  
+
+Additionally, it imparts a portion of the strength for which giants are known to its wielder. Lastly, the morningstar is enchanted to provide a bonus against the small humanoid races that giants despise so much.  
+
+STATISTICS:
+
+Equipped abilities:
+– Strength: +1
+
+THAC0: +2, +3 (only for halforcs); +2 extra vs. small humanoids: halflings, gnomes, dwarves, goblins, and kobolds  
+Damage: 2d4+2, (crushing) +3 (only for halforcs) 
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+ 
+Weight: 3~  
+
+@2035 = ~Astral Mace of Blasting~  
+@2036 = ~The Astral Mace of Blasting is a powerful weapon forged from a rare, star-like shimmering metal. The handle is wrapped in deep blue leather straps that pulse faintly to the touch. Its striking head is intricately decorated with embedded crystals that glimmer like the night sky.  
+
+Originally, this mace was used ceremonially to mark the arrival or conclusion of significant astronomical events.  
+
+STATISTICS:
+
+Charge abilities:
+– Once per day, the wielder can cast "Bolt of Glory."
+
+THAC0: +3
+Damage: 1d6+4 (crushing)
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8~  
+
+@2037 = ~Astral Discharge~  
+@2038 = ~Clockwork Blade of Venom~  
+@2039 = ~The origins of this bastard sword are closely tied to the plane of Mechanus. Instead of a pommel, a complex mechanism continuously drips poison onto the blade. Due to its intricate gears, which resemble those of a gnomish timepiece, the weapon has long been known as the "Clockwork Blade."  
+
+The poison infused in the blade specifically harms chaotic beings, making the Clockwork Blade a favored weapon of the righteous.  
+
+Besides that, the blade holds the ability to halt the shifting sands of time for a brief moment. The exact mechanism remains a mystery, making it unclear when the time stop will occur.  
+
+STATISTICS:
+
+Combat abilities:
+– Chaotic creatures struck by the blade are slowed for three rounds if they fail a -2 saving throw vs. death. Magic resistance does not prevent this effect. 
+– 2% of hits trigger a time stop for one round. 
+
+THAC0: +3
+Damage: 2d4+3 (slashing), +1 Poison damage vs. chaotic creatures if they fail a -2 saving throw vs. death 
+Speed Factor: 5
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7~  
+
+@2040 = ~The Giant Pantheon~  
+@2041 = ~A Treatise on the Giant Pantheon  
+Written by Azmor Delduin, Scholar of Arcane Myths and Ancient Religions  
+
+Within the vast tapestry of mythological traditions woven throughout the realms of mortals, the pantheon of the giants stands as one of the oldest and most imposing. The grandeur and might of these ancient peoples, who once ruled the lands, are reflected in the diversity and power of their deities. These gods embody not only elemental forces and the raw power of nature but also the complex and brutal societal structures of the giants.  
+
+At the center of the pantheon stands Annam All-Father, the creator god of the giants, also known as the Father of All Titans. He is the ruler of the divine realm, the Ordning, from which his children, the various races of giants, originate. Yet, according to legend, Annam withdrew from his progeny, disappointed by their endless conflicts, leaving them to divide the world among themselves.  
+
+The Sons of Annam: Thrym, Surtr, and Stronmaeus  
+
+The most renowned children of Annam are the First among Giants: Thrym, god of the frost giants, ruler of chaos and cold; Surtr, god of the fire giants, master of flame and destruction; and Stronmaeus, god of the storm giants, known for his wisdom and benevolence, yet as temperamental as the tempests he commands. These three embody the greatest realms of giantkind: Ice, Fire, and Storm.  
+
+While these gods compete for dominance over their respective domains, they share a common belief in the unquestioned supremacy of giants over mortals. In their legends, they wage endless battles against one another, each striving to prove themselves as the true heir of Annam. Their followers live in perpetual anticipation that one day, their chosen god will claim ultimate control over all giants.  
+
+Vaprak the Destroyer: An Outcast in the Ordning  
+
+Among the giants, there exists a loathsome figure, neither of noble Annamite descent nor blessed by the elder gods: Vaprak the Destroyer, god of ogres and trolls. Vaprak, a brutal and untamed entity, embodies raw savagery and an insatiable hunger for destruction. His followers—ogres and trolls—stand in stark contrast to the more structured and honor-bound giants.  
+
+Vaprak is described as greedy and ruinous, a god who lurks in the shadows, sowing chaos wherever he can. Some scholars believe that Vaprak once sought to be inducted into the pantheon of the giants, only to be cast out by Annam himself. His violent nature makes him feared among both gods and mortals, for he seeks to consume all that stands before him.  
+
+Karontor: The Outcast Among Outcasts  
+
+An even darker chapter in the pantheon of giants is the legend of Karontor, the deformed god of the cursed, worshiped primarily by fomorians and the forsaken. Once a beautiful and mighty giant, Karontor was twisted by envy and hatred, his heart as black as his ruined flesh. His crippled form is a reflection of his inner bitterness and his loathing for his kin.  
+
+Karontor is regarded as the patron of outcast giants, those who do not belong among the great elemental titans. He is venerated in the deepest shadows of the world, especially by those who cling to the hope of revenge and a return to power. Ancient legends tell that Karontor was once equal to the other gods but was corrupted by his jealousy of Surtr and Thrym. In his madness, he defied the order Annam had established and was ultimately cursed, never to regain the greatness he once had.  
+
+Among the dark myths that surround both Vaprak and Karontor, there are hints of a twisted alliance between these two gods. Both are outcasts in the divine order, delighting in destruction and chaos. It is said that Karontor once summoned Vaprak to conspire against the other giants. Yet, like all wicked beings, their partnership is fraught with mistrust. Each seeks to surpass the other and claim the loyalty of the forsaken for themselves.  
+
+The Philosophy of the Pantheon  
+
+The pantheon of the giants mirrors the societal structures of the titans themselves. It represents hierarchy, the rule of the strong, and the ceaseless struggles for power and dominion. Annam himself stands for the lost ideal of a united world of giants, but in his absence, the forces of chaos and hatred have crept into the Ordning. Thrym, Surtr, and Stronmaeus battle for their father’s legacy, while creatures like Vaprak and Karontor gnaw at the edges, waiting to disrupt the balance.  
+
+This pantheon is a living, dynamic web of power struggles and personal vendettas, driving the giants into an endless cycle of war, conquest, and destruction. Just like the giants themselves, their gods embody the eternal conflict between power, order, and chaos—a struggle that will never end.~  
+
+@2042 = ~Shrunken Head~  
+@2043 = ~The Scolding Stenlan~  
+@2044 = ~This is the neatly severed and preserved head of a human, shrunken through arcane rituals.~  
+@2045 = ~This shrunken head once belonged to Stenlan of Luskan, a mage of the Arcane Tower. His constant ranting and scolding so infuriated his apprentices that they ultimately removed his head and fashioned it into a shrunken relic. Yet even in death, Stenlan has retained his gift for hurling insults.  
+
+STATISTICS:  
+Ranting Tirade (1x per day): All hostile creatures within earshot must make a saving throw vs. spells or momentarily halt their actions (for one round)—whether fighting, casting spells, or otherwise—to seek out the source of the insults. Affected creatures are considered confused for one round.  
+
+Weight: 1~  
+
+@2046 = ~Casket Keystone~  
+@2047 = ~This delicate dwarven rune stone appears to have been crafted to fit into a setting—perhaps to unlock a small container. It is clean and gleaming, suggesting it does not belong to the room where you found it.~  
+
+@2050 = ~Boots of the Nightstalker~  
+@2051 = ~These black boots, crafted from supple leather, are mysteriously tied to the power of the night. They grant the wearer the agility and cunning of a nocturnal predator gliding through the shadows. The boots seem to creak when stepping into bright light and leave no visible footprints in darkness. When the wearer remains in darkness for an extended time, the boots begin to pulse faintly.  
+
+STATISTICS:
+
+Equipped abilities:
+– Movement Rate: +1 at night  
+– Move Silently: +25% at night 
+
+Charge abilities: 
+– Once per day, the wearer can summon a veil of shadows, becoming invisible for two rounds  
+
+Weight: 4~  
+
+@2052 = ~Beer Stein~  
+@2053 = ~Tankard of Plenty~  
+@2054 = ~This beer stein holds a frothy, cool liquid.~  
+@2055 = ~This dwarven tankard bears an enchantment that causes it to refill with cool, frothy beer once per day. The brew has a particularly beneficial effect on dwarves, though elves and half-elves would be wise to avoid drinking from it.  
+
+The rim of the tankard bears an inscription in dwarven runes:  
+"NEVER TRUST SOMEONE WHO DOESN’T DRINK!"  
+
+STATISTICS:
+
+Charge abilities (once per day):
+– THAC0: +4 bonus (only for dwarves)  
+  Constitution: +1 bonus (only for dwarves)  
+  Drinker is immune to fear and panic for the duration (all but elves)  
+  Draining the tankard leaves most drinkers intoxicated for 8 hours—except for dwarves, who can handle their ale. 
+  Elves suffer 3d6 poison damage when drinking from the tankard  
+  Duration: 10 turns  
+
+Weight: 1~  
+
+@2056 = ~Bryam Lancameth’s Journal~  
+@2057 = ~Bryam Lancameth’s Journal
+
+We began our journey into the Wailing Dwarf hoping to uncover the secrets of the ancient dwarven fortress and put an end to the trolls. The ruins are filled with a strange wailing sound that echoes through the wind-swept halls. Is this wail, as I suspected, merely a clever mechanical trick crafted by the old dwarven builders? Or is it truly a curse, as the old legends claim?
+
+Day 5
+Dok, the Dogwizard, who joined us as a guide, seems to know a great deal about dwarven structures, which has been of great use to us.
+
+Day 7
+The deeper we go, the stranger this place becomes. We walk through abandoned halls and hidden pathways, yet encounter no monsters.
+
+Day 8
+Damn it! Our halfling thief, Nhair Ebendar, is dead. And the portcullis we passed has been dropped by an unknown hand. There is no way back.
+
+Day 9
+I've started watching Dok in secret. He whispers often when he thinks no one is listening. The deeper we go, the more pleased he seems. Is he speaking to the shadows? The air here is thick with old treachery. I must remain vigilant.
+
+Day 10
+The Dogwizard knows paths and secrets about the Wailing Dwarf that he has been keeping from us. I fear his intentions may be darker than we realize.
+
+Day 11
+Iremar is dead! How could this have happened? Just as we solved the dwarven puzzle in the assembly hall.
+
+Day 12
+Dok and I now stand before the great door said to lead to the Throne of the Mad God. I saw the Dogwizard mutter something – a prayer or a curse? I can wait no longer. I have decided to seal the door forever. I cannot allow the madness that lurks behind it to be unleashed. And that is exactly what the Dogwizard wants.
+
+Day 13
+The door is sealed! Dok, the Derro, and their mad god must remain trapped.
+
+Day 14
+I have been bitten by a Vargouille. I know what this means... I will die here, and my head will live on as one of those grotesque creatures from the Abyss. I must fight against it!
+
+My time is running out. The bite is taking effect, and soon I will become one of them. I write these final words in the hope that someone more capable than I will find this record and learn from my mistakes. My only hope now is that these words are discovered before it is too late.~  
+@2058 = ~The History of the Shield Dwarves - Volume 2~  
+@2059 = ~The History of the Shield Dwarves - Volume 2  
+
+A treatise by Oleus of Mintar, scholar in the service of Oghma.  
+
+Beyond the well-known race of Shield Dwarves, scholars have identified several other dwarven subraces, many of whom are even less welcoming to outsiders. It may surprise the reader to learn that these races, too, are believed to descend from the dwarven clans of Shanatar.  
+
+Among them are the Duergar, also known as Gray Dwarves. According to consistent reports, the Duergar trace their lineage back to a clan of the same name, which once made its home in Barakuir, the Iron Kingdom. For reasons unknown, the clan turned against its kin, vanished for a time, and eventually returned—transformed into a cruel and twisted version of their former selves.  
+
+Lesser known is that another ill-tempered denizen of the Underdark also descends from dwarves: The Derro. These small, long-haired creatures are prone to excessive cruelty and madness. They revere the former outcast twins of Moradin—Diirinka and Diinkarazan. Worshippers of Diirinka are far more numerous, mayhap because his twin brother, Diinkarazan, was banished to the Abyss.  
+
+Before their expulsion from the dwarven pantheon, Diirinka was venerated by the dwarves of the subkingdom of Torglor, while Diinkarazan was worshipped by the dwarves of Korolnor. It stands to reason that over the centuries, some of the ancient dwarven clans of these two subkingdoms gradually became the Derro as we know them today, continuing their veneration of their cruel and maddened gods—the forsaken children of Moradin.~  
+
+@2060 = ~Lancameth's Head~  
+@2061 = ~This is the head of Bryam Lancameth, after the curse of a Vargouille was lifted from him. His expression is now calm and peaceful. You may bring these final remains to his widow, Darcia Lancameth, in the Graveyard District so she may say her farewells.~  
+
+@2064 = ~Flayer Slayer +4~
+@2065 = ~This finely decorated short sword was created for a single purpose: Killing mindflayers. The choice of a short sword for such a weapon may seem surprising, but in narrow tunnels and caverns, the shorter blade allows for a far more effective cutting technique than the longer, more cumbersome bastard- or longsword.
+
+The history of this weapon is closely tied to Diinkarazan, the outcast dwarven god. Diinkarazan was banished into the Abyss by Ilsensine, god of the mindflayers. There, the outcast, long since driven mad by the horrors of the plane, has been brooding over revenge for centuries. All of Diinkarazan's hatred for mindflayers seems to be woven into this blade. In the hands of a skilled fighter, this sword becomes the nightmare of any illithid.
+
+It is believed that the illithids go to great lengths to erase all memories of this weapon from the collective consciousness as quickly as possible.
+
+STATISTICS:
+
+Combat abilities:
+– On a critical hit, the tentacles of a struck mindflayer are mutilated so it loses the ability to extract the brains of other creatures.
+
+THAC0: +4, +5 vs. mindflayers
+Damage: 1d6+4 (piercing), +5 vs. mindflayers
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 1~
+@2066 = ~Sticky Oil~
+@2067 = ~This oil contains a viscous substance. When the bottle is thrown, it spills upon impact, significantly restricting the movement of the affected target. The Derro, a race distantly related to dwarves and native to the Underdark, often use such oil to prevent their victims from escaping.
+Only those who succeed on a saving throw vs. spells can resist its effects. The oil can be thrown approximately 40 foot.
+
+STATISTICS:
+
+On a successful hit, the target is affected by an effect similar to the "Grease" spell for two rounds.
+
+Weight: 1~
+@2068 = ~Lung~
+@2069 = ~This is the preserved lung of a creature.~
+@2070 = ~Gorathul’s Lung~
+@2071 = ~According to legend, this is the lung of the storm giant lord Gorathul, known for his thunderous voice and mighty laughter. Over time, the lung has significantly shrunk since the death of its owner, yet it still retains the ability to filter fresh, pure air once per day.
+
+STATISTICS:
+
+The user is immune to the spells "Stinking Cloud" and "Cloudkill" once per day.
+Duration: 1 phase
+
+Weight: 8~
+
+@2072 = ~Crown Jewel of Korolnor~
+@2073 = ~This finely cut gemstone is part of the crown jewels of House Korolnor. Deep within its core, a bright glow can be seen. It is impossible to unravel the ancient magic that dwells within the stone.~
+@2074 = ~Ancient Dwarven Book~
+@2075 = ~How Moradin Forged the Dwarves
+
+In the deepest halls beneath the earth, where only darkness and the ancient whispers of stone reign, Moradin the All-Father kindled his divine forge. From the rock itself, hardened by the fire of his furnace, he forged the first dwarves. With each hammer blow, he shaped their bodies from iron, silver, and granite, and their souls from the unyielding will of the earth. At last, he breathed life into them. Thus, the children of Moradin awakened, strong as stone, steadfast as the mountains, ready to fulfill their destiny.
+
+Moradin sent his dwarves forth from the bowels of the earth, where the world's molten core burns eternally. There, in the darkness, lurked not only mystery but also danger. Ancient evils and eternal night sought to halt their ascent. But the dwarves, imbued with Moradin's power, carved their way through the stone, fighting side by side, hammer in one hand, shield in the other.
+
+After endless days and nights beneath the earth, as the rock grew lighter and the air thinner, the first dwarf broke through the final layer of stone and stepped into the light of the world.
+
+For the first time, the dwarves beheld the sky—an endless vault that filled them with both awe and wonder. But what filled their hearts with the greatest joy was the sight of the mountains rising before them, majestic and proud, as if they had been created just for them. They immediately understood that this was the land Moradin had destined for them—the place where they would build their fortresses and settle their kin.
+
+Before they set foot into the mountains, Moradin appeared one last time. "You have passed the trials of the deep", he spoke in a voice like thunder. "Now the realm of the mountains is yours. But never forget where you came from—from the heart of the earth, from the fire of my forge."
+
+With these words, he blessed them, and the dwarves built their fortresses deep within the rock. They built with the wisdom and strength Moradin had granted them, and their cities flourished. The dwarves had risen from the depths and become the guardians of the mountains—and their history is etched into the stone halls for all eternity, the legacy of Moradin.
+
+So the ancestors tell, and so it is passed down in the great halls. The dwarven people shall never forget where they came from.~
+@2076 = ~Ancient Dwarven Book~
+@2077 = ~The Matron of Hearth – Berronar
+
+Since the oldest dwarven texts, carved onto stone tablets deep within the halls of their ancestors, not only Moradin the All-Father has been praised, but also Berronar, his wife and the Keeper of the Hearth. It is said that without Berronar’s wisdom and care, even the mightiest dwarf would be weak and lost, for she is the one who keeps the fire of loyalty and protection burning in the hearts of all dwarves.
+
+When Moradin forged the first dwarves from stone and touched their hearts with the essence of the earth, it was Berronar who bestowed upon them their most precious gift: The bond of community. She wove invisible threads between the dwarves, stronger than any metal. These threads were spun from loyalty, honor, and protection, binding the dwarves not only to each other but also to the traditions and wisdom of their ancestors. Berronar was the guardian of these bonds, and her symbol is two eternal rings that never break.
+
+Berronar taught them how to protect their halls and guard their families. She showed them how to tend the hearth fire, which not only brought warmth but also security. In every dwarven home, the Sacred Hearthfire burns—a fire lit by Berronar herself to protect the souls and dwellings of the dwarves.
+
+But Berronar’s greatest act took place when the dwarves first faced the danger of being torn apart. In the early days, when the First Ones conquered the mountains and began carving their halls, envy and discord crept among them. The dwarves, quarreling over the precious ores and treasures of the earth, began to drift apart. A rift threatened to shake the very foundation of dwarven society.
+
+Then Berronar descended from the celestial halls and stood between the warring clans. Her voice rang like the chime of an ancient, deep bell, and the earth trembled as she spoke: “You, children of Moradin, are all hewn from the same stone. Your bond is eternal and stronger than any vein of ore you might claim. Forget not what makes you strong—your unity, your loyalty, your honor. He who forsakes this is poorer than one who has no gold at all.”
+
+With these words, she placed a silver ring upon the ground, the symbol of the eternal bond that can never be broken. She knelt and breathed a spark of the Sacred Flame into the ring, which immediately ignited, burning in the hearts of all dwarves. The quarreling clans fell to their knees, overcome with deep shame, and swore to never again break their loyalty to one another.
+
+Since that day, Berronar has been revered as the goddess of loyalty, protection, and kinship. Dwarves wear silver rings as a sign of their bond to one another and to the traditions that Berronar gifted them. Every time a fire is lit in a dwarven hall, a silent prayer is whispered to Berronar, asking her to keep the flames of community burning and to strengthen the bonds between the dwarves.
+
+And so Berronar, the wife of Moradin, remains the eternal guardian of dwarven unity, Keeper of the Sacred Flame, and in the hearts of the dwarves, her gift endures—the bond of loyalty, which neither time nor axe can sever.~
+
+@2078 = ~Ancient Dwarven Book~
+@2079 = ~Five Things a Dwarf Needs to Live
+
+By Bardain Goldmug 
+Excerpt from the work "The Wisdom of Stone: Tenets and Teachings for a Dwarven Life"
+
+1. Solid Stone Beneath His Feet
+
+No dwarf is whole unless he feels the solid rock beneath him, whether deep in the mines, the shaft, or the halls of his home. Stone carries us as it carries mountains—unyielding and silent. A dwarf without stone beneath his feet is like a hammer without a handle—out of place and useless. Beware those who spend their days on soft ground that wobbles and shifts like a trembling young deep rothé. Rock alone is our home, and being close to the earth is the true nature of a dwarf.
+
+2. A Hammer That Always Speaks the Truth
+
+A dwarf without a hammer is no dwarf, but a rock without an ore vein. The hammer—be it the forge hammer or the war hammer—is the tool that reflects our very soul. It splits the stone and reveals what lies hidden, whether that be a vein of mithral or the skull of an orc. A hammer in hand is more than a tool; it is the will of our people and a symbol of our strength. Beware the dwarf who walks without a hammer, for his path is wayward, and his goals are unclear.
+
+3. The Loyalty of the Clan
+
+No dwarf stands alone. No matter how deep a tunnel may reach, the dwarf always has his brothers and sisters of the clan by his side. The loyalty of the clan is like a web of steel—unbreakable and firm. It binds us and holds us upright, even when the stone crumbles. Without a clan, a dwarf is like a river without a source—lost and unable to find its purpose. The loyalty of our kin is the eternal bond that does not break, and every dwarf knows that the clan is his shield and his home.
+
+4. The Wisdom of Moradin
+
+Every dwarf may take pride in carrying the wisdom of Father Moradin in his heart. For Moradin forged us from stone and breathed into us the knowledge of earth and fire. This wisdom teaches us what strengthens the heart and clears the mind. He who forgets Moradin’s teachings is like ore without purity—useless and weak, crumbling under the first pressure. Beware, dwarf, of straying from the path of the All-Father, for only in his wisdom do we find true strength and the love of stone.
+
+5. A Tankard of Good Ale
+
+No mortal being knows the depths of a dwarf’s heart, but every child of Moradin knows that a tankard of good ale is like a mirror to our soul. A beer that is strong, bitter, and heavy warms us and gives us strength, just as the stone does. But beware of those strange brews favored by the weaker races—such light drinks make the heart feeble. A beer that does not have the color of the earth is not fit for a dwarf, and that is something every dwarf should know.
+
+In summary: A dwarf may lose everything—gold, weapons, even the roof over his head—but without these five things, he is worth less than a hollow stone.~
+@2080 = ~Ancient Dwarven Book~
+@2081 = ~On Magic: A Warning
+
+It is well known that we dwarves are a people of stone and earth, not of wind or whispered words. Our strength lies in hammer and chisel, in the forge and the mine shaft, not in the fleeting constructs of magic. The events that once took place beneath this mountain stand as a grim testament to our incompatibility with the world of sorcery.
+
+Countless ages ago, our patron, driven by ambition and a fateful curiosity, turned to the arts of magic. His pursuit of power led him to the farthest reaches of the planes, where no torchlight could ever shine. Without respect for the ancient laws, he became lost in his magical cravings, and the result, as we all know, was catastrophe.
+
+Through his actions, the deep foundations of our realm were shaken. Magic, wild and untamed, unleashed a calamity that nearly spelled the end of our great halls. Stone cracked, and screaming monsters flew through our ranks. It is clear that the souls of dwarves were never meant for the unpredictability of magic, just as rock was never meant to soar through the sky.
+
+Thus, we dwarves have stood firm ever since, believing that magic is a source of unrest and misfortune for our people. We shun the arcane arts and instead place our trust in the strength of our hands, the sharpness of our axes, and the bounty of our mines. Our power lies in metal and stone, not in the fleeting promises of wizards.
+
+May those who read this book honor the wisdom of our ancestors and respect the boundaries that protect us. The world of magic is a realm of change and uncertainty, and we, the people of stone, must uphold our legacy as guardians of the earth. 
+
+May the fate of the Outcast of the Morndinsamman serve as both a testament to past mistakes and a warning to future generations.~
+@2082 = ~The History of Korolnor~
+@2083 = ~In the depths of time, beneath the untouched peak of Mount Batyr in the Troll Mountains, we founded the kingdom of Korolnor. Under the wise rule of Karlyn Kuldelver, the First of His Name, we carved our halls from living rock and brought glory and honor to the mountains.
+
+But that glory faded when Diinkarazan, our patron, followed the path of magic. His heart, once pure and firmly rooted in the teachings of Moradin, was corrupted as he sought forbidden sorcery and delved into secrets that should have remained beyond the reach of all dwarves.
+
+When his betrayal became apparent, Diinkarazan was cast out of Moradin’s pantheon. We sealed the gates to his sacred halls. His temple, once a place of prayer and reverence, was locked away, and his name was erased from our chronicles—so that never again would his dark, uncontrollable magic bring ruin upon us.
+
+We sought refuge in the faith of Clangeddin, Father of Battle, and swore never to stray from the path of our ancestors. Here we stand, watchful and resolute, preserving our history and defending the peace our forebears once dreamed of.
+
+Diinkarazan, the Banished One, always sought a way back into the throne room and the world of mortals. Korolnor’s duty was to stand watch over this mountain, ensuring that the lost son of Moradin could never again bring calamity upon the dwarven people.
+
+But there were those among us who refused to abandon the path of Diinkarazan’s wild magic. Despite the corruption that had taken hold of our former patron, they remained devoted to him, driven by a thirst for power and blind faith. They attempted to free him and, in doing so, unleashed beasts from the Abyss that descended upon us in swarms. Their bite carried the Outcast’s curse, and our beloved clan brothers transformed into Diinkarazan’s winged servants.
+
+When the betrayal was revealed, the elders of Korolnor decreed that those who would not renounce Diinkarazan could no longer remain among us. They were cast out as exiles, banished to the depths of the Underdark, into the realm of eternal darkness. Karlyn himself spoke a mighty rune-curse: No dwarf of Korolnor would ever again be able to open the door to the throne of the Mad God. Karlyn was the guardian, and he would fulfill this duty for all eternity, even beyond death.
+
+May the descendants learn to recognize good and shun evil, and may the mistakes of the Banished Ones teach them always to seek the true path.~
+
+@2084 = ~Derro Note~
+@2085 = ~Troll Breeding Program~
+@2086 = ~This note is written in a strangely altered form of dwarven script that you cannot decipher easily.~
+@2087 = ~This text is written in Derro script, which appears to be a variant of dwarven writing. It is a record of the Derro savants' efforts to establish a troll breeding program:
+
+Troll Breeding Program:
+5 Gray Trolls received from the vampire
+Fire and Ice Trolls recruited
+4 Faerzress Trolls arrived from the Underdark
+
+Further Plans:
+Create 20 Spectral Trolls through contact with a wraith
+Create 20 Stone Trolls using a basilisk’s gaze
+Create 30 Ghost Trolls by crossbreeding with an invisible stalker
+Create 30 Venom Trolls through contact with wyvern poison
+
+All normal trolls are sent to the surface to hunt for human slaves, whom our master requires to open the sealed gates.
+Once the gates are open and our god is freed, we will complete the troll army. Then, the plan to conquer the Underdark will be set into motion.~
+@2088 = ~Ursummnogh’s Note~
+@2089 = ~My loyal servant Ursummnogh,
+
+Soon, a group of adventurers will enter the ruins we require for our purposes.
+You are to hide with all your trolls until every member of the group has passed through the gate. Then, you must close the gate. Remember, you can only reopen the gate if you forge a new key! So do not seal it too early. The adventurers must believe this part of the ruins is uninhabited.
+
+The adventuring party consists of the following members:
+A human soldier named Bryam Lancameth
+A halfling thief named Nhair Ebendar
+An elven archer who calls herself Maid Starthorn
+A human priestess known as Iremar
+And a wizard of unknown race.
+
+The group is extremely powerful and will destroy any of your trolls if they are discovered.
+
+One of these members will attempt to free our god from the depths. He will reveal himself to you once all of the group has passed.~
+@2090 = ~Thundershield +2~
+@2091 = ~Crafted from the rare metal Hizaagkur, which holds an innate electrical charge, this shield delivers an unpleasant jolt to anyone who touches it—except for the wielder. Once per day, the stored energy within the shield can be unleashed in a powerful thunderclap. It is said that an unnamed dwarven warrior once used this shield to trigger an avalanche in the Troll Mountains, burying a horde of attacking orcs beneath the falling rock.
+
+STATISTICS:
+
+Charge abilities:
+– Thunderclap: A loud blast that stuns everyone within 15-ft. radius (Save vs. spell negates) once per day
+ Duration: 3 rounds
+
+Equipped abilities:
+– Armor Class: +3
+– No protection against missile attacks
+– A successful hit vs. the wielder of this shield causes the attacker to take 1 point of electricity damage.
+
+Requires:
+ 4 Strength
+
+Weight: 2~
+@2092 = ~Hammer of the Archons~
+@2093 = ~This hammer’s head is shaped like the wings of a celestial being. It is expertly balanced for powerful swings. Like most weapons from the Upper Planes, it possesses the ability to destroy the undead—though not to the same degree as weapons wielded by more powerful beings such as planetars or solars.
+
+STATISTICS:
+
+Combat abilities:
+– On a successful hit, an undead creature has a 5% chance of being destroyed (Save vs. Death -4)
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d4+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 16 Strength
+
+Weight: 3~
+@2094 = ~Cloak of Chaos~
+@2095 = ~This cloak can be both a blessing and a curse to its wearer—changing from one moment to the next. It may be a powerful asset one second and a dangerous weakness the next. Its source of energy is unknown, but only the most reckless or insane adventurers should dare to wear it.
+
+Wild Mages, known for their ability to wield chaotic magic, gain greater benefits when using this item, though even they cannot fully control its wild nature. The spells "Chaos Shield" and "Improved Chaos Shield" protect against the negative effects of the mantle. However, even for a Wild Mage, the Armor Class and Saving Throw bonuses remain unpredictable, fluctuating between 0 and -5 each round.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: fluctuates between -5 and +5 each round
+– Saving Throws: fluctuates between -5 and +5 each round
+
+Weight: 3~
+@2096 = ~Mountain Warden~
+@2097 = ~This sturdy helmet is engraved with delicate runes along the brow, giving it an air of ancient authority. In addition to offering strong protection against attacks, it allows the wearer to see through solid stone once per day as though it were glass. This magical ability is activated by the ancient dwarven runes, granting insight into hidden caves, mine shafts, and other underground secrets. Originally designed to help mine wardens locate hidden ore veins and ensure tunnel safety, the Mountain Warden is an invaluable tool for those who seek to uncover the mysteries of the Underdark.
+
+STATISTICS:
+
+Charge abilities:
+– Stone Sight
+ The wearer of this helm can once per day survey an area underground (not outdoors), similar to the wizard spell "Farsight". After one round, the effect dissipates.
+
+Equipped abilities:
+– Armor Class: +1
+– Protects against critical hits
+
+Weight: 2~
+@2098 = ~Ring of Companionship~
+@2099 = ~This ring is the only remnant of the companions who accompanied Bryam Lancameth on his final expedition. It is carved from wood and painted. The ring symbolizes loyalty, strength, and the bond shared only by those who venture into the unknown together.
+
+STATISTICS:
+
+Equipped abilities:
+– Defensive Harmony (once per day)
+– Strength of One (once per day)
+
+Weight: 0~
+@2100 = ~Forgeborn Gauntlets~
+@2101 = ~These gloves were crafted for shaping metal and forging steel. As such, they have been imbued with a series of enchantments to assist a master smith in <PRO_HISHER> craft. These gloves can only be worn by the races of stone—dwarves and gnomes. Dwarves don them with the blessing of Moradin, while gnomes receive the favor of Flandal Steelskin, their respective patrons of smithcraft.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +25%
+– Weapon Proficiency with Warhammers: +1
+– THAC0 Bonus vs. Iron Golems: -2
+– Damage Bonus vs. Iron Golems: +2
+
+Weight: 2~
+@2102 = ~Hand of a Troll~
+@2103 = ~Grubnuk’s Hand +3~
+@2104 = ~This is the severed hand of a troll.~
+@2105 = ~This hand once belonged to the troll Grubnuk before he gifted it to you out of gratitude. The severed hand serves as a surprisingly effective weapon. When equipped, the tendons of the troll’s hand fuse with the wielder’s own, allowing it to be wielded like a claw, dealing piercing damage. While slower than smaller weapons, its greater damage output more than compensates for this drawback. A fragment of a troll's regenerative power transfers to the wielder. However, the hand saps a portion of <PRO_HISHER> life force in return, and it cannot be easily removed.
+
+STATISTICS:
+
+Equipped abilities:
+– Regenerate 1 Hit Point per 2 rounds
+– Hit Points: -10
+– May only be removed with a Remove Curse spell
+
+THAC0: +6
+Damage: 1d6+3 (piercing)
+Speed Factor: 3
+Proficiency Type: none
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 3~
+
+@2106 = ~Crown~
+@2107 = ~Whispering Truth~
+@2108 = ~A delicately crafted, ornate crown.~
+@2109 = ~This crown originates from the era of the great empires of Netheril, when a spell-wielding ruler sought absolute enlightenment. 
+
+To achieve his goal, he bound the essence of an ancient being, known as Yllatharn the Thinker, into the diadem. Yllatharn was an incredibly intelligent yet utterly insane entity, overwhelmed by the flood of infinite thoughts and possibilities in the Astral Plane.
+
+With Yllatharn’s guidance, the ruler created this intricately designed artifact, shaped like a small crown. The blue gemstone embedded within it seems to pulse faintly in the light. The item emanates an eerie aura—a feeling of deep insight coupled with a burdensome weight. Whoever wears it constantly hears a soft whisper, granting brilliant revelations yet sowing doubts and inner conflicts.
+
+As a result, the wearer’s confidence and ability to react swiftly to situations suffer.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1
+– Wisdom: +1
+– Charisma: -1
+– Saving Throws: -1
+
+Weight: 0~
+@2110 = ~Doomwarden’s Shield~
+@2111 = ~This shield is consecrated to Kelemvor, Lord of the Dead. Beyond providing solid protection in battle, it also serves as a bulwark against the undead, helping send them to their final rest. The shield is crafted from dark wood and reinforced with a bronze frame. At its center, Kelemvor’s symbol—a skeletal hand holding a balanced scale—stands prominently.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– AC and Saving Throw Bonus vs. Undead: +2
+– Saving Throw Bonus vs. Necromancy: +2
+
+Requires:
+ 12 Strength
+
+Weight: 5~
+@2112 = ~Troll Belt~
+@2113 = ~This belt is sewn together from various parts of a troll—bones, skin, and entrails. Anyone who wears it benefits from the accelerated regeneration that trolls are so infamous for.
+
+STATISTICS:
+
+Equipped abilities:
+– Regeneration: 1 hit point per round
+
+Weight: 2~
+@2114 = ~This shield is completely dented and failed to protect its bearer from a devastating blow.~
+@2115 = ~Evertorch~
+@2116 = ~The Evertorch is a perpetually smoldering torch, roughly carved from the fire-resistant wood of an unknown tree. This torch serves not only as a permanent source of light but also as a somewhat decent club in combat. With each strike, it inflicts additional minor fire damage upon the opponent. Thanks to its never-extinguishing flame, the torch grants its bearer infravision, allowing for better sight in darkness.
+
+STATISTICS:
+
+Equipped abilities:
+– Infravision up to 120 ft.
+
+THAC0: +0
+Damage: 1d2, +1d4 fire damage
+Damage type: Crushing
+Speed Factor: 3
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@2117 = ~Jagged Key~  
+@2118 = ~This key is sharp and jagged, seemingly meant for a special chest or a cage.~
+@2119 = ~Prismatic Scimitar +3~
+@2120 = ~The Prisoner of the Elements
+
+This Prismatic Scimitar, forged by the elemental forces themselves, was created as a vessel for their power. Spirits of fire, ice, lightning, acid, and pure magical energy are bound within the blade, unleashing their forces randomly with each strike. Its shimmering glow protects its wielder from blindness.
+
+STATISTICS:
+
+Equipped abilities:
+– The wielder is immune to blindness.
+
+THAC0: +3
+Damage: 1d8+3 (slashing), either +1 fire, +1 acid, +1 magic, +1 cold, +1 electricity (random)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 1~
+@2121 = ~Air Hammer +3~
+@2122 = ~Forged by dwarven craftsmen, the Air Hammer was designed as a magical rescue tool for the dark and perilous tunnels in the Underdark, where smoke and toxic fumes pose a constant threat. This item opens a gateway to a realm beyond the material world, filled with the pure air of the Elemental Plane. When its rune is activated, the hammer releases a powerful gust, refreshing a 30-foot area with clean air—sufficient to sustain eight humans (or twelve dwarves) under moderate exertion. This wind can disperse poisonous clouds and magical fog, including those created by spells such as Cloudkill.
+This weapon can only be used by dwarves.
+
+Charge abilities:
+– Zone of Sweet Air once per day
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d4+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 4~
+@2123 = ~Smoke Candle~
+@2124 = ~This candle is made from a sooty wax that immediately begins to billow thick smoke when lit. It serves as a conduit to summon a smoke mephit from the Inner Planes, which will serve the user for a short duration. The candle can be used three times before it is completely consumed.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Smoke Mephit (3 charges)
+  Duration: 1 turn
+
+Weight: 1~
+@2125 = ~Dwarf's Second Skin +3~
+@2126 = ~Whoever claims that dwarves excel only in the craft of stone and metal will be proven wrong by this leather armor. Made from the hide of a deep rothé, it has been carefully tanned with magical tinctures to provide excellent damage resistance—while also boasting a surprisingly pleasant scent.
+
+However, one must possess the sturdy build and ample girth of a dwarf to fully benefit from this armor.
+
+STATISTICS:
+
+Equipped abilities:
+– +10% resistance to slashing, piercing, missile and crushing damage (only for dwarves)
+– Charisma: +1 (only for dwarves)
+
+Armor Class: 5 (7 vs. piercing and missile) 
+Requires:
+ 3 Strength
+
+Weight: 4~
+@2127 = ~Rat Bullet +1~
+@2128 = ~These bullets are made from the fur of a rat, fused into a hardened lump by an unknown substance. They have the ability to summon a rat for the duration of three rounds, appearing at the location of the struck enemy. 
+
+STATISTICS:
+
+– On hit: Summons an ordinary rat next to the struck creature
+
+THAC0: +1
+Damage: 1d4+2 (missile)
+Launcher: Sling
+
+Weight: 0~
+@2129 = ~Drunken Wink~  
+@2130 = ~The Drunken Wink is a magical mace wielded by the famous brewmaster and Vergadain priest, Bardain Goldmug, also known as Bardain the Ale-Anointed. His guiding principle was: "Vergadain hoards gold with cheer, Bardain drowns it all in beer." 
+ 
+The head of this weapon is a metal stein, its sturdy handle repurposed as a deadly bludgeon. This ceremonial mace was frequently used in sacred rituals to douse gathered worshippers in ale, a blessing in the name of the Brewmaster’s divine revelry. To this day, the mace drips a steady trickle of beer from its upper rim. After prolonged exposure, either a struck opponent or even the wielder may find themselves intoxicated. Engraved into the shaft is an ancient dwarven saying: "If you can't outfight 'em, outdrink 'em!" 
+
+The mace is considered a divine blend of dwarven craftsmanship and utter irresponsibility.  
+
+STATISTICS:  
+
+Equipped abilities:
+– Constitution: +1 (only for dwarves)
+
+Charge abilities:
+– Once per day, if intoxicated, the wielder can utter a Holy Word by releasing a thunderous belch. 
+
+Combat abilities:
+– On a successful hit, the mace increases either the target's or the wielder's intoxication by 10.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d6+4
+Damage type: Crushing
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6~
+@2131 = ~Bag of Capricious Gems and Beetles~
+@2132 = ~This worn, leather pouch rattles and rustles in an unsettling manner, as if possessed by an unpredictable will of its own. It originates from the curious experiment of an eccentric gnome who sought to create an endless supply of gemstones—yet a small alchemical mishap bound its magical matrix to the chaotic forces of nature.  
+
+Now, once per day, the bearer of the pouch may reach inside and retrieve a glimmering gemstone. However, the magic is fickle—on occasion, instead of treasure, an irate beetle emerges, eager to make its displeasure known. The creature immediately bites the user’s hand before scuttling off to attack any creature within reach.    
+
+STATISTICS: 
+
+– Once per day, produces a random gemstone 
+– 15% chance to instead summon a hostile beetle that first inflicts 20 points of damage before attacking nearby creatures 
+
+Weight: 6~
+@2133 = ~Staff of Defense~  
+@2134 = ~The Staff of Defense is an enchanted quarterstaff that bolsters its wielder with protective spells. It allows its owner to cast Armor and Shield once per day. Additionally, the staff enhances the wielder’s armor class by emanating a subtle protective aura.  
+
+According to legend, these staves were once crafted in Myth Drannor to grant their wizards a better chance of survival on the battlefield. Many were lost in the chaos of the city's fall, and to this day, scholars whisper of long-forgotten relics lying in the depths of ancient ruins, awaiting their next wielder.  
+
+STATISTICS: 
+
+Equipped abilities:
+– Armor Class: +1
+
+Charge abilities:
+– Armor (as the 1st-level wizard spell) once per day  
+– Shield (as the 1st-level wizard spell) once per day  
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 1~  
+
+@3000 = ~A statue of Clangeddin Silverbeard~
+@3001 = ~Diinkarazan, the Outcast Son of Moradin~
+@3002 = ~A hollowed-out skull of a giant, still radiating great heat. It was likely used to burn substances regularly.~
+@3003 = ~The Illithid god Ilsensine banishes Diinkarazan to the Abyss~
+@3004 = ~Karlyn Kuldelver, Patriarch of Korolnor~
+@3005 = ~This appears to be the other end of the horn used for communication in the upper levels.~
+@3006 = ~The anthracite ignites with a bright flame.~
+@3007 = ~"To the Old Throne Room of the Outcast"~
+@3008 = ~"Diinkarazan, Betrayer of Dwarven Ideals"~
+@3009 = ~"Diinkarazan, Accused of Practicing Uncontrollable Magic"~
+@3010 = ~"Diinkarazan, Cast Out from the Dwarven Pantheon"~
+@3011 = ~An axe has been placed upon this altar. A second slot remains empty—it appears that placing another weapon might activate a mechanism.~
+@3012 = ~You cannot use the "Stone Sight" spell outdoors.~
+@3013 = ~You cannot use the "Stone Sight" spell here.~
+@3014 = ~The statue of Kelemvor briefly glows, and a plaque bearing the symbol of the Lord of the Dead suddenly falls to the ground.~
+@3015 = ~You hear a metal door closing further above.~
+@3016 = ~A metal door further above has reopened.~
+
+@3017 = ~It's a pity he didn't recognize a fellow Zhentarim. Well, maybe he was too sutpid for that! Nevermind. Rest well, Glorious Misfit-us! Hah!~
+@3018 = ~I ain't tellin' my bosses 'bout any of this. It ain't uncommon for Zhentarim to kill each other every now an' then, bu' let's not make a big deal of the stiff one we've got 'ere.~
+@3019 = ~As you grasp it, the gemstone disintegrates into shimmering dust.~ [EFF_E03]
+
+@3020 = ~"What's that damn noise? I can hear someone out there!"~
+@3021 = ~"Argh. Incompetent things."~
+@3022 = ~"Who's messing with my trolls up there? Show yourself!"~
+@3023 = ~"I’ll feed the next fool who disappoints me to the giants!"~
+@3024 = ~"Stop that racket right now, or I'll come up there myself!"~
+@3025 = ~"Someone will pay dearly for this outrage."~
+@3026 = ~"If those trolls have failed me, heads will roll, I swear!"~
+@3027 = ~"What curse upon this wretched day! I demand silence!"~
+@3028 = ~"Whoever is causing this chaos will pay dearly. You hear me? YOU HEAR ME?"~
+@3029 = ~"I'm losing my patience!"~
+@3030 = ~"This noise is unbearable! Who's tampering with my guards?"~
+@3031 = ~"What treachery is this? Reveal yourself, coward!"~
+@3032 = ~"Can’t anyone do their job right up there? Quiet down those intruders!"~
+@3033 = ~"Are my commands so hard to follow? Silence those interlopers now!"~
+@3034 = ~"By Vaprak's teeth, I'll make sure someone suffers for this uproar!"~
+@3035 = ~Rat-hole~
+@3036 = ~The Mad God has been banished again.~ 
+@3037 = ~Emberon~
+@3038 = ~Boring Beetle~
+@3039 = ~You can only belch the holy word while intoxicated.~  
+
+@3040 = ~Poisonous Mush~
+@3041 = ~Poisonous Cloud~
+
+
+
+

@@ -1,0 +1,129 @@
+// Journal strings
+// Throne of the Mad God
+@15000 = ~A Cheesy Tactic
+
+In the second level of the Wailing Dwarf, I encountered a group of intelligent rats. In exchange for stealing a piece of cheese from giants, they promised to help me fight these creatures. I should try to sneak up on the cheese unnoticed and distract the giants to snatch it.~ 
+
+@15001 = ~A Cheesy Tactic
+
+I have the cheese! Now I must return it to the talking rats.~ 
+
+@15002 = ~A Cheesy Tactic
+
+The rats were extremely grateful for the cheese and provided me with useful information and assistance.~ 
+
+@17000 = ~The Old Dwarven Foundry
+
+In the halls of the Wailing Dwarf, I discovered an old foundry that has gone cold. I wonder if I can get it running again.~ 
+
+@17001 = ~The Old Dwarven Foundry
+
+I have restarted the foundry and should take a closer look at how it works.~ 
+
+@17002 = ~The Old Dwarven Foundry
+
+I have found the upper part of a casting mold that could be used to forge a key—if I had the other part and could restart the old foundry in the northern part of the Wailing Dwarf.~ 
+
+@17003 = ~The Old Dwarven Foundry
+
+I have found the lower part of a casting mold that could be used to forge a key—if I had the other part and could restart the old foundry in the northern part of the Wailing Dwarf.~ 
+
+@17004 = ~The Old Dwarven Foundry
+
+In the hands of a vampire, I found a handwheel that was likely once used to open and close pipes.~ 
+
+@17010 = ~The Old Dwarven Foundry
+
+In the foundry, I was able to cast a large key that will hopefully allow me to advance further into the dwarven ruins.~ 
+
+@19000 = ~The Throne of the Mad God
+
+The dwarves sealed off the deeper sections where the "Outcast" was once worshipped. It appears that the statue of Clangeddin guards the entrances to this area, and perhaps I can find a way to open the gates there.~ 
+
+@19001 = ~The Throne of the Mad God
+
+The spirit of Karlyn Kuldelver has appeared to me. He will not stop me from opening the throne room, as I am not a descendant of Korolnor. To gain access to the throne room of the Outcast, I must reunite two halves of a weapon—if I understood correctly, at the statue of Clangeddin Silverbeard.~ 
+
+@19002 = ~The Throne of the Mad God
+
+I have opened the sealed gates. Somewhere below, the throne room must be located—and hopefully, Captain Bryam Lancameth as well.~ 
+
+@19003 = ~The Throne of the Mad God
+
+Behind the last sealed door lies the Throne of the Mad God. Bryam Lancameth warned me sternly against opening this chamber and facing the entity imprisoned within.~ 
+
+@19010 = ~The Throne of the Mad God
+
+I have defeated Diinkarazan in his old throne room. Perhaps peace will now return to the ancient fortress.~ 
+
+@50000 = ~Lancameth’s Last Expedition
+
+At the tavern "Den of the Seven Vales" in Waukeen’s Promenade, I listened to a bard’s ballad. The song supposedly tells a true story about a group of adventurers who journeyed into the Troll Mountains and never returned. I should speak with the bard if I want to learn more.~ 
+
+@50001 = ~Lancameth’s Last Expedition
+
+I have learned some background information about a ballad performed by a bard in "Den of the Seven Vales". Lancameth’s Last Expedition was an adventurer's party led by the Amnian captain Bryam Lancameth, who, along with four companions, set out to explore a dwarven fortress in the Troll Mountains. It seems the group was a mix of individuals with differing goals and ambitions. No one returned—despite the powerful weapons they carried. I could ask Lancameth’s grieving wife where his last journey led him. She has been staying in the Graveyard District near the statue of Kelemvor in Athkatla since her husband disappeared.~ 
+
+@51000 = ~Lancameth’s Last Expedition
+
+I have encountered the last surviving member of Captain Bryam Lancameth’s party. The one who went by the alias "Dog Wizard" was, in truth, a Derro mage. He believed that the Derro were the true descendants of this dwarven clan. He had led Lancameth’s expedition to this place solely to reopen the sealed doors to the old throne room of the forsaken god. Lancameth seems to have seen through his deception and sealed the doors shut after entering. I must get past these doors to finally find Bryam Lancameth.~ 
+
+@52001 = ~Lancameth’s Last Expedition
+
+The widow of the missing captain Bryam Lancameth has given me his old notes. His party traveled to an ancient dwarven fortress in the Troll Mountains, known as the "Wailing Dwarf". She waits in the Graveyard District of Athkatla near the statue of Kelemvor. If I discover anything about her husband’s fate, I can report back to her there.~ 
+
+@52002 = ~Lancameth’s Last Expedition
+
+I have found Bryam Lancameth. Unfortunately, he was transformed into a Vargouille, and I had no choice but to slay him. He asked me to take his head and find a way to lift the curse from him—even though it would not bring him back to life.~ 
+
+@52003 = ~Lancameth’s Last Expedition
+
+I have taken Bryam Lancameth’s skull. He asked me to seek a way to lift the curse at a temple of Helm—even though it would not bring him back to life.~ 
+
+@52004 = ~Lancameth’s Last Expedition
+
+With Helm’s blessing, the grotesquely transformed head of Bryam Lancameth returned to his true, human form. In this state, I can return the skull to his widow, who waits at Kelemvor’s statue in Athkatla’s Graveyard District.~ 
+
+@52008 = ~Lancameth’s Last Expedition
+
+Lancameth’s remains have found their final rest in Helm’s temple.~ 
+
+@52009 = ~Lancameth’s Last Expedition
+
+I have given Lancameth’s widow the grotesquely transformed head of her husband. She refused to believe that this was all that remained of him and fled in distress.~ 
+
+@52010 = ~Lancameth’s Last Expedition
+
+I have returned the mortal remains of her husband to Lancameth’s widow, for which she was very grateful.~ 
+
+@52050 = ~Lancameth’s Last Expedition
+
+I have encountered the halfling thief Nhair Ebendar from Lancameth’s party, who now lingers within the Wailing Dwarf as an undead spirit. His vague hints suggest that a betrayal among the former companions prevents his soul from finding rest.~ 
+
+@52051 = ~Lancameth’s Last Expedition
+
+I have encountered another former member of Captain Bryam Lancameth’s adventuring party: The priestess Iremar. She, too, now lingers as a restless spirit within the ancient dwarven stronghold. She also speaks of a betrayal that denies her soul peace.~ 
+
+@52052 = ~Lancameth’s Last Expedition
+
+I have now located the third former companion of Bryam Lancameth—Lady Starthorn. Like the others I’ve encountered so far, she exists only as a restless ghost, seeking vengeance against a betrayer.~ 
+
+@55000 = ~Lancameth’s Last Expedition
+
+Bryam Lancameth set out for a place in the Troll Mountains called the "Wailing Dwarf" and was never seen again.~ 
+
+@52060 = ~Lancameth’s Last Expedition
+
+Bryam Lancameth set out for a place in the Troll Mountains called the "Wailing Dwarf" and was never seen again.~ 
+
+@70000 = ~A Ballad at the "Den of the Seven Vales"
+
+At the tavern "Den of the Seven Vales" in Waukeen’s Promenade, a bard wishes to perform a ballad. If I’m interested, I should listen to the story.~ 
+
+@80000 = ~The Alchemist in the "Wailing Dwarf"
+
+In the dungeons of the "Wailing Dwarf", I freed a gnome alchemist who had been forced to brew potions for the trolls. He was overjoyed at his rescue and gave me some of his potions, which will surely prove useful.~ 
+
+@80001 = ~The Alchemist in the "Wailing Dwarf"
+
+Jamrry, the alchemist, has agreed to stay in the dwarven ruins and continue providing me with potions.~ 
