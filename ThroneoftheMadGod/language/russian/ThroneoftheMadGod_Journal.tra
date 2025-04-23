@@ -1,129 +1,129 @@
 // Journal strings
 // Throne of the Mad God
-@15000 = ~A Cheesy Tactic
+@15000 = ~НП: Пошлый прием
 
-In the second level of the Wailing Dwarf, I encountered a group of intelligent rats. In exchange for stealing a piece of cheese from giants, they promised to help me fight these creatures. I should try to sneak up on the cheese unnoticed and distract the giants to snatch it.~ 
+На втором уровне "Плачущего гнома" я столкнулся с группой разумных крыс. В обмен на кражу куска сыра у великанов они пообещали помочь мне в борьбе с этими существами. Я должен попытаться незаметно подкрасться к сыру и отвлечь гигантов, чтобы они его украли.~ 
 
-@15001 = ~A Cheesy Tactic
+@15001 = ~НП: Пошлый прием
 
-I have the cheese! Now I must return it to the talking rats.~ 
+У меня есть сыр! Теперь я должен вернуть его говорящим крысам.~ 
 
-@15002 = ~A Cheesy Tactic
+@15002 = ~НП: Пошлый прием
 
-The rats were extremely grateful for the cheese and provided me with useful information and assistance.~ 
+Крысы были очень благодарны за сыр и предоставили мне полезную информацию и помощь.~ 
 
-@17000 = ~The Old Dwarven Foundry
+@17000 = ~НП: Старая гномья литейная мастерская
 
-In the halls of the Wailing Dwarf, I discovered an old foundry that has gone cold. I wonder if I can get it running again.~ 
+В залах Плачущего Гнома я обнаружил старую литейную мастерскую, которая остыла. Интересно, смогу ли я снова запустить его?~ 
 
-@17001 = ~The Old Dwarven Foundry
+@17001 = ~НП: Старая гномья литейная мастерская
 
-I have restarted the foundry and should take a closer look at how it works.~ 
+Я перезапустил литейную мастерскую и должен внимательно посмотреть, как она работает.~ 
 
-@17002 = ~The Old Dwarven Foundry
+@17002 = ~НП: Старая гномья литейная мастерская
 
-I have found the upper part of a casting mold that could be used to forge a key—if I had the other part and could restart the old foundry in the northern part of the Wailing Dwarf.~ 
+Я нашел верхнюю часть литейной формы, из которой можно было бы выковать ключ - если бы у меня была другая часть и я смог возобновить работу старой литейной мастерской в северной части Плачущего Гнома.~ 
 
-@17003 = ~The Old Dwarven Foundry
+@17003 = ~НП: Старая гномья литейная мастерская
 
-I have found the lower part of a casting mold that could be used to forge a key—if I had the other part and could restart the old foundry in the northern part of the Wailing Dwarf.~ 
+Я нашел нижнюю часть литейной формы, из которой можно было бы выковать ключ - если бы у меня была другая часть и я смог возобновить работу старой литейной мастерской в северной части Плачущего Гнома.~ 
 
-@17004 = ~The Old Dwarven Foundry
+@17004 = ~НП: Старая гномья литейная мастерская
 
-In the hands of a vampire, I found a handwheel that was likely once used to open and close pipes.~ 
+В руках вампира я нашел маховик, который, вероятно, когда-то использовался для открытия и закрытия труб.~ 
 
-@17010 = ~The Old Dwarven Foundry
+@17010 = ~НП: Старая гномья литейная мастерская
 
-In the foundry, I was able to cast a large key that will hopefully allow me to advance further into the dwarven ruins.~ 
+В литейной мастерской я смог разыграть большой ключ, который, надеюсь, позволит мне продвинуться дальше в гномьи руины.~ 
 
-@19000 = ~The Throne of the Mad God
+@19000 = ~НП: Трон безумного бога
 
-The dwarves sealed off the deeper sections where the "Outcast" was once worshipped. It appears that the statue of Clangeddin guards the entrances to this area, and perhaps I can find a way to open the gates there.~ 
+Гномы запечатали глубокие участки, где когда-то поклонялись "Изгою". Похоже, что статуя Клангеддина охраняет входы в эту область, и, возможно, мне удастся найти способ открыть ворота.~ 
 
-@19001 = ~The Throne of the Mad God
+@19001 = ~НП: Трон безумного бога
 
-The spirit of Karlyn Kuldelver has appeared to me. He will not stop me from opening the throne room, as I am not a descendant of Korolnor. To gain access to the throne room of the Outcast, I must reunite two halves of a weapon—if I understood correctly, at the statue of Clangeddin Silverbeard.~ 
+Ко мне явился дух Карлина Кулдельвера. Он не помешает мне открыть тронный зал, поскольку я не потомок Королнора. Чтобы получить доступ в тронный зал Изгоя, я должен воссоединить две половинки оружия - если я правильно понял, у статуи Клангеддина Серебряная Борода.~ 
 
-@19002 = ~The Throne of the Mad God
+@19002 = ~НП: Трон безумного бога
 
-I have opened the sealed gates. Somewhere below, the throne room must be located—and hopefully, Captain Bryam Lancameth as well.~ 
+Я открыл запечатанные ворота. Где-то внизу должен находиться тронный зал и, надеюсь, капитан Брайам Ланкамет.~ 
 
-@19003 = ~The Throne of the Mad God
+@19003 = ~НП: Трон безумного бога
 
-Behind the last sealed door lies the Throne of the Mad God. Bryam Lancameth warned me sternly against opening this chamber and facing the entity imprisoned within.~ 
+За последней запечатанной дверью находится Трон Безумного Бога. Брайам Ланкамет строго-настрого предостерег меня от того, чтобы открывать эту камеру и сталкиваться с заключенной в ней сущностью.~ 
 
-@19010 = ~The Throne of the Mad God
+@19010 = ~НП: Трон безумного бога
 
-I have defeated Diinkarazan in his old throne room. Perhaps peace will now return to the ancient fortress.~ 
+Я победил Динкаразана в его старом тронном зале. Возможно, теперь в древнюю крепость вернется мир.~ 
 
-@50000 = ~Lancameth’s Last Expedition
+@50000 = ~НП: Последняя экспедиция Ланкамета
 
-At the tavern "Den of the Seven Vales" in Waukeen’s Promenade, I listened to a bard’s ballad. The song supposedly tells a true story about a group of adventurers who journeyed into the Troll Mountains and never returned. I should speak with the bard if I want to learn more.~ 
+В таверне "Логово семи долин" на променаде Ваукина я слушал балладу барда. В песне якобы рассказывалась правдивая история о группе искателей приключений, которые отправились в Горы Троллей и не вернулись. Мне следует поговорить с бардом, если я хочу узнать больше.~ 
 
-@50001 = ~Lancameth’s Last Expedition
+@50001 = ~НП: Последняя экспедиция Ланкамета
 
-I have learned some background information about a ballad performed by a bard in "Den of the Seven Vales". Lancameth’s Last Expedition was an adventurer's party led by the Amnian captain Bryam Lancameth, who, along with four companions, set out to explore a dwarven fortress in the Troll Mountains. It seems the group was a mix of individuals with differing goals and ambitions. No one returned—despite the powerful weapons they carried. I could ask Lancameth’s grieving wife where his last journey led him. She has been staying in the Graveyard District near the statue of Kelemvor in Athkatla since her husband disappeared.~ 
+Я узнал некоторую предысторию баллады, исполняемой бардом в "Логове Семи Долин". Последняя экспедиция Ланкамета - это отряд искателей приключений, возглавляемый амнийским капитаном Брайамом Ланкаметом, который вместе с четырьмя спутниками отправился исследовать гномью крепость в Тролльих горах. Судя по всему, группа состояла из людей с разными целями и амбициями. Никто не вернулся, несмотря на мощное оружие, которое они несли. Я мог бы расспросить скорбящую жену Ланкамета о том, куда завело его последнее путешествие. С тех пор как ее муж пропал, она живет в районе Кладбищ возле статуи Келемвора в Аткатле.~ 
 
-@51000 = ~Lancameth’s Last Expedition
+@51000 = ~НП: Последняя экспедиция Ланкамета
 
-I have encountered the last surviving member of Captain Bryam Lancameth’s party. The one who went by the alias "Dog Wizard" was, in truth, a Derro mage. He believed that the Derro were the true descendants of this dwarven clan. He had led Lancameth’s expedition to this place solely to reopen the sealed doors to the old throne room of the forsaken god. Lancameth seems to have seen through his deception and sealed the doors shut after entering. I must get past these doors to finally find Bryam Lancameth.~ 
+Я столкнулся с последним выжившим членом отряда капитана Брайама Ланкамета. Тот, кто ходил под псевдонимом "Собачий волшебник", на самом деле был магом Дерро. Он верил, что дерро - истинные потомки этого гномьего клана. Он возглавил экспедицию Ланкамета в это место только для того, чтобы вновь открыть запечатанные двери в старый тронный зал забытого бога. Ланкамет, похоже, раскусил его обман и запечатал двери после входа. Я должен пройти через эти двери, чтобы наконец найти Брайама Ланкамета.~ 
 
-@52001 = ~Lancameth’s Last Expedition
+@52001 = ~НП: Последняя экспедиция Ланкамета
 
-The widow of the missing captain Bryam Lancameth has given me his old notes. His party traveled to an ancient dwarven fortress in the Troll Mountains, known as the "Wailing Dwarf". She waits in the Graveyard District of Athkatla near the statue of Kelemvor. If I discover anything about her husband’s fate, I can report back to her there.~ 
+Вдова пропавшего капитана Брайама Ланкамета передала мне его старые записи. Его отряд отправился в древнюю гномью крепость в Тролльих горах, известную как "Плачущий гном". Она ждет в Кладбищенском районе Аткатла возле статуи Келемвора. Если я узнаю что-нибудь о судьбе ее мужа, я смогу сообщить ей об этом там.~ 
 
-@52002 = ~Lancameth’s Last Expedition
+@52002 = ~НП: Последняя экспедиция Ланкамета
 
-I have found Bryam Lancameth. Unfortunately, he was transformed into a Vargouille, and I had no choice but to slay him. He asked me to take his head and find a way to lift the curse from him—even though it would not bring him back to life.~ 
+Я нашел Брайама Ланкамета. К сожалению, он был превращен в варгу, и у меня не было другого выбора, кроме как убить его. Он попросил меня забрать его голову и найти способ снять с него проклятие - даже если это не вернет его к жизни.~ 
 
-@52003 = ~Lancameth’s Last Expedition
+@52003 = ~НП: Последняя экспедиция Ланкамета
 
-I have taken Bryam Lancameth’s skull. He asked me to seek a way to lift the curse at a temple of Helm—even though it would not bring him back to life.~ 
+Я забрал череп Брайама Ланкамета. Он попросил меня найти способ снять проклятие в храме Хельма - даже если это не вернет его к жизни.~ 
 
-@52004 = ~Lancameth’s Last Expedition
+@52004 = ~НП: Последняя экспедиция Ланкамета
 
-With Helm’s blessing, the grotesquely transformed head of Bryam Lancameth returned to his true, human form. In this state, I can return the skull to his widow, who waits at Kelemvor’s statue in Athkatla’s Graveyard District.~ 
+С благословения Хельма гротескно трансформированная голова Брайама Ланкамета вернулась к своему истинному, человеческому облику. В таком виде я могу вернуть череп его вдове, которая ждет у статуи Келемвора в районе Кладбища Аткатла.~ 
 
-@52008 = ~Lancameth’s Last Expedition
+@52008 = ~НП: Последняя экспедиция Ланкамета
 
-Lancameth’s remains have found their final rest in Helm’s temple.~ 
+Останки Ланкамета нашли свое последнее пристанище в храме Хельма.~ 
 
-@52009 = ~Lancameth’s Last Expedition
+@52009 = ~НП: Последняя экспедиция Ланкамета
 
-I have given Lancameth’s widow the grotesquely transformed head of her husband. She refused to believe that this was all that remained of him and fled in distress.~ 
+Я отдал вдове Ланкамета гротескно преображенную голову ее мужа. Она не захотела поверить, что это все, что от него осталось, и в бешенстве бежала.~ 
 
-@52010 = ~Lancameth’s Last Expedition
+@52010 = ~НП: Последняя экспедиция Ланкамета
 
-I have returned the mortal remains of her husband to Lancameth’s widow, for which she was very grateful.~ 
+Я вернул вдове Ланкамета бренные останки ее мужа, за что она была мне очень благодарна.~ 
 
-@52050 = ~Lancameth’s Last Expedition
+@52050 = ~НП: Последняя экспедиция Ланкамета
 
-I have encountered the halfling thief Nhair Ebendar from Lancameth’s party, who now lingers within the Wailing Dwarf as an undead spirit. His vague hints suggest that a betrayal among the former companions prevents his soul from finding rest.~ 
+Я встретил вора халфлинга Нхаира Эбендара из партии Ланкамета, который теперь обитает в Плачущем гноме в виде духа нежити. Его туманные намеки говорят о том, что предательство бывших соратников не дает его душе обрести покой.~ 
 
-@52051 = ~Lancameth’s Last Expedition
+@52051 = ~НП: Последняя экспедиция Ланкамета
 
-I have encountered another former member of Captain Bryam Lancameth’s adventuring party: The priestess Iremar. She, too, now lingers as a restless spirit within the ancient dwarven stronghold. She also speaks of a betrayal that denies her soul peace.~ 
+Я встретил еще одного бывшего члена приключенческого отряда капитана Брайама Ланкамета: жрицу Иремар. Она тоже теперь обитает в древней гномьей крепости в виде беспокойного духа. Она также говорит о предательстве, которое лишило ее душу покоя.~ 
 
-@52052 = ~Lancameth’s Last Expedition
+@52052 = ~НП: Последняя экспедиция Ланкамета
 
-I have now located the third former companion of Bryam Lancameth—Lady Starthorn. Like the others I’ve encountered so far, she exists only as a restless ghost, seeking vengeance against a betrayer.~ 
+Я обнаружил третью бывшую спутницу Брайама Ланкамета - леди Старторн. Как и все остальные, с кем я сталкивался до сих пор, она существует лишь в виде беспокойного призрака, жаждущего отомстить предателю.~ 
 
-@55000 = ~Lancameth’s Last Expedition
+@55000 = ~НП: Последняя экспедиция Ланкамета
 
-Bryam Lancameth set out for a place in the Troll Mountains called the "Wailing Dwarf" and was never seen again.~ 
+Брайам Ланкамет отправился в место в Горах Троллей под названием "Плачущий гном", и больше его не видели.~ 
 
-@52060 = ~Lancameth’s Last Expedition
+@52060 = ~НП: Последняя экспедиция Ланкамета
 
-Bryam Lancameth set out for a place in the Troll Mountains called the "Wailing Dwarf" and was never seen again.~ 
+Брайам Ланкамет отправился в место в Горах Троллей под названием "Плачущий гном", и больше его не видели.~ 
 
-@70000 = ~A Ballad at the "Den of the Seven Vales"
+@70000 = ~НП: Баллада в "Логове семи долин"
 
-At the tavern "Den of the Seven Vales" in Waukeen’s Promenade, a bard wishes to perform a ballad. If I’m interested, I should listen to the story.~ 
+В таверне "Логово семи долин" на променаде Ваукина бард хочет исполнить балладу. Если мне интересно, я должен послушать историю.~ 
 
-@80000 = ~The Alchemist in the "Wailing Dwarf"
+@80000 = ~НП: Алхимик в "Плачущем гноме"
 
-In the dungeons of the "Wailing Dwarf", I freed a gnome alchemist who had been forced to brew potions for the trolls. He was overjoyed at his rescue and gave me some of his potions, which will surely prove useful.~ 
+В подземельях "Плачущего гнома" я освободил гнома-алхимика, которого заставили варить зелья для троллей. Он был очень рад своему спасению и дал мне несколько своих зелий, которые наверняка пригодятся.~ 
 
-@80001 = ~The Alchemist in the "Wailing Dwarf"
+@80001 = ~НП: Алхимик в "Плачущем гноме"
 
-Jamrry, the alchemist, has agreed to stay in the dwarven ruins and continue providing me with potions.~ 
+Алхимик Джамрри согласился остаться в гномьих руинах и продолжать снабжать меня зельями.~ 
