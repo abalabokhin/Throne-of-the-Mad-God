@@ -2,7 +2,7 @@
 BACKUP ~ThroneoftheMadGod/backup~
 AUTHOR ~Acifer~
 README ~ThroneoftheMadGod/documentation/Throne_of_the_Mad_God_Readme.pdf~
-VERSION ~V 1.2~
+VERSION ~V 1.3~
 
 ALWAYS
 
@@ -62,8 +62,13 @@ LANGUAGE ~Simplified Chinese by Abdel-613~
          ~schinese~
          ~ThroneoftheMadGod/language/schinese/Setup-ThroneoftheMadGod.tra~
          ~ThroneoftheMadGod/language/schinese/ThroneoftheMadGod_Journal.tra~
+         
+LANGUAGE ~Spanish by AlleyV~
+         ~spanish~
+         ~ThroneoftheMadGod/language/spanish/Setup-ThroneoftheMadGod.tra~
+         ~ThroneoftheMadGod/language/spanish/ThroneoftheMadGod_Journal.tra~
 
-BEGIN ~Throne of the Mad God V 1.2~
+BEGIN ~Throne of the Mad God V 1.3~
 
 //REQUIRE_PREDICATE GAME_IS ~bg2ee eet~       ~This mod runs only on Enhanced Edition engine.~
 REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~ && FILE_EXISTS ~engine.lua~) ~Requires BG2:EE or EET patched to 2.0 or higher.~  // Requires BG2:EE or EET patched to 2.0 or higher.
