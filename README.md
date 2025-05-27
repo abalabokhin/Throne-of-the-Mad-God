@@ -46,6 +46,7 @@ The mod is available in:
 - English
 - German
 - Chinese
+- Spanish
 
 ---
 
