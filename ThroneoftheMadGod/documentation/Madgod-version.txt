@@ -1,5 +1,8 @@
 ***Throne of the Mad God - Version***
 
+V 1.5
+- added the mod's areas to the debug console, thanks Argent77!
+
 V 1.4
 - changed the script in AR0800 to not break Bodhi's appearance in chapter 6 anymore
 - Ring of Companionship has correct item stats
