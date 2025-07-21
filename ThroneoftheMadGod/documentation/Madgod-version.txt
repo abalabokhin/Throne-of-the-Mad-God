@@ -1,6 +1,19 @@
 ***Throne of the Mad God - Version***
+
+V 1.5
+- added the mod's areas to the debug console, thanks Argent77!
+
+V 1.4
+- changed the script in AR0800 to not break Bodhi's appearance in chapter 6 anymore
+- Ring of Companionship has correct item stats
+- added compatibility for the EE Fixpack for Snow Trolls, Ice Trolls, Troll Shamans, Fire Trolls and Faerzress Trolls.
+
+V 1.3
+- added Spanish version by AlleyV
+
 V 1.2
 - added simplified Chinese version by Abdel-613
+
 V 1.1
 - updated readme
 - switched ac#der04 halberd to weapon slot #1

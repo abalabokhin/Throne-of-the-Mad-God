@@ -38,6 +38,7 @@
 
 ## Compatibility  
 Compatible with **BG2EE** and **EET**  
+**There might be an issue if you play this mod using SCS's troll regeneration option, making the trolls of this mod invincible**
 
 ---
 
@@ -46,6 +47,7 @@ The mod is available in:
 - English
 - German
 - Chinese
+- Spanish
 
 ---
 
